@@ -1,0 +1,13 @@
+{
+  "id": "hebrews",
+  "order": 19,
+  "bookKo": "히브리서",
+  "bookEn": "Hebrews",
+  "chapterCount": 13,
+  "verseCount": 303,
+  "data": "data/hebrews.json",
+  "path": "data/hebrews.json",
+  "file": "data/hebrews.json",
+  "dataFile": "data/hebrews.json",
+  "json": "data/hebrews.json"
+}
