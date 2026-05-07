@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 6,
+  "updatedBooks": 7,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -81,6 +81,19 @@
       "file": "data/romans.json",
       "dataFile": "data/romans.json",
       "json": "data/romans.json"
+    },
+    {
+      "id": "1corinthians",
+      "order": 7,
+      "bookKo": "고린도전서",
+      "bookEn": "1 Corinthians",
+      "chapterCount": 16,
+      "verseCount": 437,
+      "data": "data/1corinthians.json",
+      "path": "data/1corinthians.json",
+      "file": "data/1corinthians.json",
+      "dataFile": "data/1corinthians.json",
+      "json": "data/1corinthians.json"
     }
   ]
 }
