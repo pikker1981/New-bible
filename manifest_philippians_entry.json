@@ -1,0 +1,13 @@
+{
+  "id": "philippians",
+  "order": 11,
+  "bookKo": "빌립보서",
+  "bookEn": "Philippians",
+  "chapterCount": 4,
+  "verseCount": 104,
+  "data": "data/philippians.json",
+  "path": "data/philippians.json",
+  "file": "data/philippians.json",
+  "dataFile": "data/philippians.json",
+  "json": "data/philippians.json"
+}
