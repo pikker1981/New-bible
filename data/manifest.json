@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 11,
+  "updatedBooks": 12,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -146,6 +146,19 @@
       "file": "data/philippians.json",
       "dataFile": "data/philippians.json",
       "json": "data/philippians.json"
+    },
+    {
+      "id": "colossians",
+      "order": 12,
+      "bookKo": "골로새서",
+      "bookEn": "Colossians",
+      "chapterCount": 4,
+      "verseCount": 95,
+      "data": "data/colossians.json",
+      "path": "data/colossians.json",
+      "file": "data/colossians.json",
+      "dataFile": "data/colossians.json",
+      "json": "data/colossians.json"
     }
   ]
 }
