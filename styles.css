@@ -299,3 +299,16 @@ mark{padding:0 2px}
   0%{background:rgba(255,241,118,.55)}
   100%{background:transparent}
 }
+
+.mark-menu.delete-mode .mark-menu-btn{
+  border-color:#333;
+  background:#333;
+  color:#fff;
+}
+.mark-remove-flash{
+  animation:markRemoveFlash .9s ease;
+}
+@keyframes markRemoveFlash{
+  0%{background:rgba(0,0,0,.08)}
+  100%{background:transparent}
+}

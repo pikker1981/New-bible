@@ -1,32 +1,38 @@
-const BOOK_ACCENTS = {
-  matthew: "#C0392B",
-  mark: "#2563EB",
-  luke: "#16A34A",
-  john: "#7C3AED",
-  acts: "#D97706",
-  romans: "#DC2626",
-  "1corinthians": "#0891B2",
-  "2corinthians": "#4F46E5",
-  galatians: "#65A30D",
-  ephesians: "#9333EA",
-  philippians: "#0D9488",
-  colossians: "#EA580C",
-  "1thessalonians": "#0284C7",
-  "2thessalonians": "#BE123C",
-  "1timothy": "#7C2D12",
-  "2timothy": "#4338CA",
-  titus: "#15803D",
-  philemon: "#A21CAF",
-  hebrews: "#B45309",
-  james: "#047857",
-  "1peter": "#1D4ED8",
-  "2peter": "#6D28D9",
-  "1john": "#0F766E",
-  "2john": "#B91C1C",
-  "3john": "#0369A1",
-  jude: "#92400E",
-  revelation: "#111827"
-};
+const BOOK_ACCENT_PALETTE = [
+  "#C0392B", "#2563EB", "#16A34A", "#7C3AED", "#D97706",
+  "#DC2626", "#0891B2", "#4F46E5", "#65A30D", "#9333EA",
+  "#0D9488", "#EA580C", "#0284C7", "#BE123C", "#7C2D12",
+  "#4338CA", "#15803D", "#A21CAF", "#B45309", "#047857",
+  "#1D4ED8", "#6D28D9", "#0F766E", "#B91C1C", "#0369A1",
+  "#92400E", "#111827", "#BE185D", "#2F855A", "#6B21A8",
+  "#B7791F", "#1E40AF"
+];
+
+function hashString(value) {
+  let hash = 0;
+  const text = String(value || "");
+  for (let i = 0; i < text.length; i += 1) {
+    hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash);
+}
+
+function generatedAccentFromBook(book) {
+  const seed = hashString((book?.id || "") + ":" + (book?.order || ""));
+  const hue = (seed * 137.508) % 360;
+  return "hsl(" + Math.round(hue) + " 68% 42%)";
+}
+
+function getBookAccent(bookOrId) {
+  const books = state.manifest?.books || [];
+  const book = typeof bookOrId === "string"
+    ? books.find((item) => item.id === bookOrId) || { id: bookOrId }
+    : bookOrId;
+
+  const index = Number.isFinite(Number(book?.order)) ? Number(book.order) - 1 : books.findIndex((item) => item.id === book?.id);
+  if (index >= 0 && index < BOOK_ACCENT_PALETTE.length) return BOOK_ACCENT_PALETTE[index];
+  return generatedAccentFromBook(book);
+}
 
 const state = {
   manifest: null,
@@ -106,8 +112,17 @@ function getVerseHighlights(bookId, chapter, verse) {
   return state.highlights[highlightKey(bookId, chapter, verse)] || [];
 }
 
+function normalizeHighlightText(text) {
+  return String(text || "").replace(/\s+/g, " ").trim();
+}
+
+function hasVerseHighlight(bookId, chapter, verse, text) {
+  const clean = normalizeHighlightText(text);
+  return getVerseHighlights(bookId, chapter, verse).includes(clean);
+}
+
 function addVerseHighlight(bookId, chapter, verse, text) {
-  const clean = String(text || "").replace(/\s+/g, " ").trim();
+  const clean = normalizeHighlightText(text);
   if (!clean) return false;
 
   const key = highlightKey(bookId, chapter, verse);
@@ -118,8 +133,23 @@ function addVerseHighlight(bookId, chapter, verse, text) {
   return true;
 }
 
+function removeVerseHighlight(bookId, chapter, verse, text) {
+  const clean = normalizeHighlightText(text);
+  if (!clean) return false;
+
+  const key = highlightKey(bookId, chapter, verse);
+  const list = state.highlights[key] || [];
+  const next = list.filter((item) => item !== clean);
+  if (next.length === list.length) return false;
+
+  if (next.length) state.highlights[key] = next;
+  else delete state.highlights[key];
+  saveHighlights();
+  return true;
+}
+
 function applyBookAccent(bookId) {
-  const color = BOOK_ACCENTS[bookId] || "#C0392B";
+  const color = getBookAccent(bookId);
   document.documentElement.style.setProperty("--accent", color);
 }
 
@@ -179,7 +209,7 @@ function renderBookList() {
   els.bookList.innerHTML = books.map((book) => {
     const active = book.id === state.currentBookId ? " active" : "";
     const order = String(book.order).padStart(2, "0");
-    const color = BOOK_ACCENTS[book.id] || "#C0392B";
+    const color = getBookAccent(book);
     return (
       '<button class="book-btn' + active + '" type="button" data-book="' + book.id + '" style="--book-accent:' + color + '">' +
       "<span>" + order + " " + escapeHTML(book.bookKo) + "</span>" +
@@ -432,8 +462,8 @@ function getSelectionContext() {
   const selection = window.getSelection();
   if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
 
-  const text = selection.toString().replace(/\s+/g, " ").trim();
-  if (!text || text.length < 2) return null;
+  const selectedText = normalizeHighlightText(selection.toString());
+  if (!selectedText || selectedText.length < 2) return null;
 
   const anchorEl = getElementFromNode(selection.anchorNode);
   const focusEl = getElementFromNode(selection.focusNode);
@@ -446,6 +476,12 @@ function getSelectionContext() {
   const meta = parseVerseMeta(startArticle);
   if (!meta) return null;
 
+  const anchorMark = anchorEl.closest(".user-mark");
+  const focusMark = focusEl.closest(".user-mark");
+  const isSameExistingMark = Boolean(anchorMark && focusMark && anchorMark === focusMark);
+  const text = isSameExistingMark ? normalizeHighlightText(anchorMark.textContent) : selectedText;
+  const mode = isSameExistingMark || hasVerseHighlight(state.currentBookId, meta.chapter, meta.verse, text) ? "delete" : "mark";
+
   const range = selection.getRangeAt(0);
   const rect = range.getBoundingClientRect();
   if (!rect || rect.width === 0) return null;
@@ -455,6 +491,7 @@ function getSelectionContext() {
     chapter: meta.chapter,
     verse: meta.verse,
     text,
+    mode,
     rect
   };
 }
@@ -474,7 +511,7 @@ function getMarkMenu() {
   });
 
   menu.querySelector(".mark-menu-btn").addEventListener("click", () => {
-    applyPendingMark();
+    applyPendingMarkAction();
   });
 
   return menu;
@@ -482,7 +519,13 @@ function getMarkMenu() {
 
 function showMarkMenu(context) {
   const menu = getMarkMenu();
+  const button = menu.querySelector(".mark-menu-btn");
   state.pendingMark = context;
+
+  const isDelete = context.mode === "delete";
+  button.textContent = isDelete ? "d" : "m";
+  button.title = isDelete ? "형광펜 마킹 취소" : "형광펜 마킹";
+  menu.classList.toggle("delete-mode", isDelete);
 
   const top = window.scrollY + context.rect.top - 42;
   const left = window.scrollX + context.rect.left + context.rect.width / 2;
@@ -498,19 +541,22 @@ function hideMarkMenu() {
   state.pendingMark = null;
 }
 
-function applyPendingMark() {
+function applyPendingMarkAction() {
   const context = state.pendingMark;
   if (!context) return;
 
-  const added = addVerseHighlight(context.bookId, context.chapter, context.verse, context.text);
+  const changed = context.mode === "delete"
+    ? removeVerseHighlight(context.bookId, context.chapter, context.verse, context.text)
+    : addVerseHighlight(context.bookId, context.chapter, context.verse, context.text);
+
   hideMarkMenu();
   window.getSelection()?.removeAllRanges();
 
-  if (added) {
+  if (changed) {
     renderChapter();
     const target = document.getElementById("v-" + context.chapter + "-" + context.verse) ||
       document.getElementById("search-" + context.chapter + "-" + context.verse);
-    if (target) target.classList.add("mark-flash");
+    if (target) target.classList.add(context.mode === "delete" ? "mark-remove-flash" : "mark-flash");
   }
 }
 
