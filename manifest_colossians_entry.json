@@ -1,0 +1,13 @@
+{
+  "id": "colossians",
+  "order": 12,
+  "bookKo": "골로새서",
+  "bookEn": "Colossians",
+  "chapterCount": 4,
+  "verseCount": 95,
+  "data": "data/colossians.json",
+  "path": "data/colossians.json",
+  "file": "data/colossians.json",
+  "dataFile": "data/colossians.json",
+  "json": "data/colossians.json"
+}
