@@ -1,0 +1,13 @@
+{
+  "id": "1thessalonians",
+  "order": 13,
+  "bookKo": "데살로니가전서",
+  "bookEn": "1 Thessalonians",
+  "chapterCount": 5,
+  "verseCount": 89,
+  "data": "data/1thessalonians.json",
+  "path": "data/1thessalonians.json",
+  "file": "data/1thessalonians.json",
+  "dataFile": "data/1thessalonians.json",
+  "json": "data/1thessalonians.json"
+}

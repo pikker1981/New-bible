@@ -1,14 +1,15 @@
-고린도전서 표시 안 됨 수정 패치
+# 데살로니가전서 data patch only
 
-적용 파일:
-- data/1corinthians.json
-- data/07_1Corinthians_Korean_working_full.md
-- data/07_1Corinthians_Korean_annotated.md
-- data/manifest.json
-- manifest.json
-- validation.json
+적용 위치:
+- `data/1thessalonians.json`
+- `data/13_1Thessalonians_Korean_working_1-4.md`
+- `data/13_1Thessalonians_Korean_working_5.md`
+- `data/13_1Thessalonians_Korean_working_full.md`
+- `data/13_1Thessalonians_Korean_annotated.md`
+- `data/manifest.json`
+- `manifest.json`
+- `validation.json`
 
-중요:
-- index.html, styles.css, app.js는 포함하지 않았습니다.
-- 기존 data/matthew.json, data/mark.json, data/luke.json, data/john.json, data/acts.json, data/romans.json은 삭제하지 마세요.
-- 웹앱이 읽는 핵심 파일은 data/manifest.json입니다.
+주의:
+- `index.html`, `styles.css`, `app.js`는 포함하지 않았습니다.
+- 디자인/구조 파일은 수정하지 않았습니다.
