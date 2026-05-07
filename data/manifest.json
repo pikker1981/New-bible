@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 10,
+  "updatedBooks": 11,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -133,6 +133,19 @@
       "file": "data/ephesians.json",
       "dataFile": "data/ephesians.json",
       "json": "data/ephesians.json"
+    },
+    {
+      "id": "philippians",
+      "order": 11,
+      "bookKo": "빌립보서",
+      "bookEn": "Philippians",
+      "chapterCount": 4,
+      "verseCount": 104,
+      "data": "data/philippians.json",
+      "path": "data/philippians.json",
+      "file": "data/philippians.json",
+      "dataFile": "data/philippians.json",
+      "json": "data/philippians.json"
     }
   ]
 }

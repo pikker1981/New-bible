@@ -1,18 +1,15 @@
 {
-  "book": "ephesians",
-  "bookKo": "에베소서",
-  "chapterCount": 6,
-  "actualChapterCount": 6,
-  "verseCount": 155,
-  "actualVerseCount": 155,
+  "book": "philippians",
+  "bookKo": "빌립보서",
+  "chapterCount": 4,
+  "actualChapterCount": 4,
+  "verseCount": 104,
+  "actualVerseCount": 104,
   "notesCount": 33,
-  "bodyNoteRefs": 31,
+  "bodyNoteRefs": 33,
   "numericFootnotes": [],
   "missingNoteDefinitions": [],
-  "unusedNotes": [
-    "adoption",
-    "ephesus"
-  ],
+  "unusedNotes": [],
   "jsonSchemaOk": true,
   "designFilesModified": false,
   "ok": true
