@@ -1,20 +1,15 @@
 {
-  "book": "1thessalonians",
-  "bookKo": "데살로니가전서",
-  "sourceXml": "1Thess.xml",
-  "xmlRangeChecked": true,
-  "xmlChapterVerseCounts": {
-    "1": 10,
-    "2": 20,
-    "3": 13,
-    "4": 18,
-    "5": 28
+  "bookId": "2thessalonians",
+  "bookKo": "데살로니가후서",
+  "declaredChapterCount": 3,
+  "actualChapterCount": 3,
+  "declaredVerseCount": 47,
+  "actualVerseCount": 47,
+  "chapterVerseCounts": {
+    "1": 12,
+    "2": 17,
+    "3": 18
   },
-  "xmlVerseTotal": 89,
-  "declaredChapterCount": 5,
-  "actualChapterCount": 5,
-  "declaredVerseCount": 89,
-  "actualVerseCount": 89,
   "chapterSequenceOk": true,
   "verseSequenceOk": true,
   "missingNotes": [],

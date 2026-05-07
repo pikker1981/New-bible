@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 13,
+  "updatedBooks": 14,
   "books": [
     {
       "id": "matthew",
@@ -169,6 +169,19 @@
       "file": "data/1thessalonians.json",
       "dataFile": "data/1thessalonians.json",
       "json": "data/1thessalonians.json"
+    },
+    {
+      "id": "2thessalonians",
+      "order": 14,
+      "bookKo": "데살로니가후서",
+      "bookEn": "2 Thessalonians",
+      "chapterCount": 3,
+      "verseCount": 47,
+      "data": "data/2thessalonians.json",
+      "path": "data/2thessalonians.json",
+      "file": "data/2thessalonians.json",
+      "dataFile": "data/2thessalonians.json",
+      "json": "data/2thessalonians.json"
     }
   ]
 }
