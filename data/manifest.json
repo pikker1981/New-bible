@@ -1,26 +1,31 @@
 {
-  "title": "신약 현대어 번역",
-  "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 2,
-  "totalTargetBooks": 27,
+  "version": "0.3.0",
+  "updated": "2026-05-07",
+  "description": "신약 한국어 번역 웹앱용 권 목록. 현재 완료 권: 마태복음, 마가복음, 누가복음.",
   "books": [
     {
       "id": "matthew",
       "order": 1,
-      "bookKo": "마태복음",
-      "bookEn": "Matthew",
-      "chapterCount": 28,
-      "verseCount": 1068,
-      "data": "data/matthew.json"
+      "title": "마태복음",
+      "abbr": "마",
+      "file": "data/matthew.json",
+      "chapters": 28
     },
     {
       "id": "mark",
       "order": 2,
-      "bookKo": "마가복음",
-      "bookEn": "Mark",
-      "chapterCount": 16,
-      "verseCount": 673,
-      "data": "data/mark.json"
+      "title": "마가복음",
+      "abbr": "막",
+      "file": "data/mark.json",
+      "chapters": 16
+    },
+    {
+      "id": "luke",
+      "order": 3,
+      "title": "누가복음",
+      "abbr": "눅",
+      "file": "data/luke.json",
+      "chapters": 24
     }
   ]
 }
