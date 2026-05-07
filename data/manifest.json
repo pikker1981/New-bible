@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 14,
+  "updatedBooks": 15,
   "books": [
     {
       "id": "matthew",
@@ -182,6 +182,19 @@
       "file": "data/2thessalonians.json",
       "dataFile": "data/2thessalonians.json",
       "json": "data/2thessalonians.json"
+    },
+    {
+      "id": "1timothy",
+      "order": 15,
+      "bookKo": "디모데전서",
+      "bookEn": "1 Timothy",
+      "chapterCount": 6,
+      "verseCount": 113,
+      "data": "data/1timothy.json",
+      "path": "data/1timothy.json",
+      "file": "data/1timothy.json",
+      "dataFile": "data/1timothy.json",
+      "json": "data/1timothy.json"
     }
   ]
 }
