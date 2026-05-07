@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 9,
+  "updatedBooks": 10,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -120,6 +120,19 @@
       "file": "data/galatians.json",
       "dataFile": "data/galatians.json",
       "json": "data/galatians.json"
+    },
+    {
+      "id": "ephesians",
+      "order": 10,
+      "bookKo": "에베소서",
+      "bookEn": "Ephesians",
+      "chapterCount": 6,
+      "verseCount": 155,
+      "data": "data/ephesians.json",
+      "path": "data/ephesians.json",
+      "file": "data/ephesians.json",
+      "dataFile": "data/ephesians.json",
+      "json": "data/ephesians.json"
     }
   ]
 }

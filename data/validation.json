@@ -1,18 +1,18 @@
 {
-  "book": "galatians",
-  "bookKo": "갈라디아서",
+  "book": "ephesians",
+  "bookKo": "에베소서",
   "chapterCount": 6,
-  "verseCount": 149,
   "actualChapterCount": 6,
-  "actualVerseCount": 149,
-  "notes": 31,
-  "refs": 30,
-  "uniqueRefs": 30,
-  "missingNotes": [],
+  "verseCount": 155,
+  "actualVerseCount": 155,
+  "notesCount": 33,
+  "bodyNoteRefs": 31,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
   "unusedNotes": [
-    "galatia"
+    "adoption",
+    "ephesus"
   ],
-  "numericRefs": [],
   "jsonSchemaOk": true,
   "designFilesModified": false,
   "ok": true
