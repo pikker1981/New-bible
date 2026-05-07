@@ -9,84 +9,120 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="성경 권 선택">
-      <div class="brand-card">
-        <div class="accent-bar"></div>
-        <div class="kicker">
-          <div class="kicker-line"></div>
-          <div class="kicker-text">GREEK NT · KOREAN</div>
-        </div>
-        <h1>신약<br><span>현대어</span><br>번역.</h1>
-        <p>SBLGNT 기반으로 직역형 현대어와 문학적 현대어를 절충한 권별 번역본입니다.</p>
-      </div>
+  <div class="wrap">
+    <div class="layout">
 
-      <section class="book-panel">
-        <div class="panel-head">
-          <span>BOOKS</span>
-          <strong id="bookCount">0 / 27</strong>
-        </div>
-        <div id="bookList" class="book-list"></div>
-      </section>
+      <aside class="left-rail">
+        <div class="brand-card">
+          <div class="accent-bar"></div>
 
-      <section class="tools-panel">
-        <label for="searchInput">본문 검색</label>
-        <input id="searchInput" type="search" placeholder="예: 하나님의 나라, 베드로" autocomplete="off" />
-        <div id="searchMeta" class="search-meta">검색어를 입력하세요.</div>
-      </section>
-    </aside>
-
-    <main class="reader">
-      <header class="reader-hero">
-        <div>
-          <div class="reader-kicker" id="readerKicker">NEW TESTAMENT · 01</div>
-          <h2 id="bookTitle">마태복음</h2>
-          <p id="bookDesc">권을 선택하면 본문이 표시됩니다.</p>
-        </div>
-        <div class="stat-row">
-          <div class="stat">
-            <div class="stat-n" id="chapterStat">0<span class="u">장</span></div>
-            <div class="stat-l">수록 장</div>
+          <div class="kicker">
+            <div class="kicker-line"></div>
+            <div class="kicker-text">GREEK NT · KOREAN</div>
           </div>
-          <div class="stat">
-            <div class="stat-n" id="verseStat">0</div>
-            <div class="stat-l">수록 절</div>
+
+          <div class="title-block">
+            <div class="big-title">신약<br>현대어<br>번역<span class="accent">.</span></div>
+            <div class="desc">
+              SBLGNT 기반으로 직역형 현대어와 문학적 현대어를 절충한 권별 번역본입니다.
+              인명·지명·용어 설명을 함께 제공합니다.
+            </div>
           </div>
-          <div class="stat">
-            <div class="stat-n"><span class="u">KO</span></div>
-            <div class="stat-l">현대어<br>번역</div>
+
+          <div class="stat-row">
+            <div class="stat">
+              <div class="stat-n" id="totalBookStat">2<span class="u">권</span></div>
+              <div class="stat-l">현재<br>수록</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n">27<span class="u">권</span></div>
+              <div class="stat-l">최종<br>목표</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n"><span class="u">KO</span></div>
+              <div class="stat-l">현대어<br>번역</div>
+            </div>
           </div>
         </div>
-      </header>
 
-      <nav class="chapter-nav" aria-label="장 선택">
-        <button id="prevChapter" type="button">이전 장</button>
-        <div id="chapterButtons" class="chapter-buttons"></div>
-        <button id="nextChapter" type="button">다음 장</button>
-      </nav>
+        <section class="panel">
+          <div class="panel-head">
+            <span>BOOKS</span>
+            <strong id="bookCount">0 / 27</strong>
+          </div>
+          <div id="bookList" class="book-list"></div>
+        </section>
 
-      <section class="content-card">
-        <div class="chapter-title-wrap">
-          <div class="sec-label">SCRIPTURE</div>
-          <h3 id="chapterTitle">1장</h3>
-        </div>
-        <div id="verses" class="verses"></div>
-      </section>
-    </main>
+        <section class="panel">
+          <label class="panel-label" for="searchInput">SEARCH</label>
+          <input id="searchInput" class="search-input" type="search" placeholder="예: 하나님의 나라, 베드로" autocomplete="off" />
+          <div id="searchMeta" class="search-meta">검색어를 입력하세요.</div>
+        </section>
+      </aside>
 
-    <aside class="note-drawer" aria-label="설명">
-      <div class="note-card">
-        <div class="sec-label">NOTES</div>
-        <h3 id="noteTitle">설명</h3>
-        <div id="noteBody" class="note-body">본문의 각주 표시를 누르면 인명·지명·용어 설명이 여기에 표시됩니다.</div>
-      </div>
+      <main class="reader">
+        <section class="reader-card">
+          <div class="reader-head">
+            <div>
+              <div class="reader-kicker" id="readerKicker">NEW TESTAMENT · 01</div>
+              <h1 id="bookTitle">마태복음</h1>
+              <p id="bookDesc">권을 선택하면 본문이 표시됩니다.</p>
+            </div>
+            <div class="mini-stats">
+              <div>
+                <strong id="chapterStat">0장</strong>
+                <span>CHAPTERS</span>
+              </div>
+              <div>
+                <strong id="verseStat">0</strong>
+                <span>VERSES</span>
+              </div>
+            </div>
+          </div>
 
-      <div class="quote-section">
-        <div class="quote-mark">"</div>
-        <div class="q-text">본문은 쉽게 읽히되, 장절 구조와 핵심 용어는 흔들리지 않게 유지합니다.</div>
-        <div class="q-src">— Translation Principle</div>
-      </div>
-    </aside>
+          <div class="chapter-nav">
+            <button id="prevChapter" type="button">이전</button>
+            <div id="chapterButtons" class="chapter-buttons"></div>
+            <button id="nextChapter" type="button">다음</button>
+          </div>
+
+          <div class="chapter-title-wrap">
+            <div class="sec-label">SCRIPTURE</div>
+            <h2 id="chapterTitle">1장</h2>
+          </div>
+
+          <div id="verses" class="verses"></div>
+        </section>
+      </main>
+
+      <aside class="right-rail">
+        <section class="note-card active-note">
+          <div class="sec-label">SELECTED NOTE</div>
+          <h2 id="noteTitle">설명</h2>
+          <div id="noteBody" class="note-body">
+            본문 안의 작은 각주 표시를 누르거나 아래 설명 리스트에서 항목을 선택하면 자세한 설명이 여기에 표시됩니다.
+          </div>
+        </section>
+
+        <section class="note-card note-list-card">
+          <div class="note-list-head">
+            <div>
+              <div class="sec-label">GLOSSARY</div>
+              <h3>설명 리스트</h3>
+            </div>
+            <span id="noteCount">0</span>
+          </div>
+          <div id="noteList" class="note-list"></div>
+        </section>
+
+        <section class="quote-section">
+          <div class="quote-mark">"</div>
+          <div class="q-text">쉽게 읽히되, 장절 구조와 핵심 용어는 흔들리지 않게 유지합니다.</div>
+          <div class="q-src">— Translation Principle</div>
+        </section>
+      </aside>
+
+    </div>
   </div>
 
   <script src="./app.js"></script>

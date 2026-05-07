@@ -1,16 +1,17 @@
 // 신약 현대어 번역 웹앱
-// Matthew + Mark viewer
-// GitHub Pages static app
+// 권 선택 + 장 선택 + 오른쪽 설명 리스트 복구 버전
 
 const state = {
   manifest: null,
   books: {},
   currentBookId: null,
   currentChapter: 1,
-  query: ""
+  query: "",
+  currentNoteId: null
 };
 
 const els = {
+  totalBookStat: document.getElementById("totalBookStat"),
   bookCount: document.getElementById("bookCount"),
   bookList: document.getElementById("bookList"),
   bookTitle: document.getElementById("bookTitle"),
@@ -25,6 +26,8 @@ const els = {
   verses: document.getElementById("verses"),
   noteTitle: document.getElementById("noteTitle"),
   noteBody: document.getElementById("noteBody"),
+  noteList: document.getElementById("noteList"),
+  noteCount: document.getElementById("noteCount"),
   searchInput: document.getElementById("searchInput"),
   searchMeta: document.getElementById("searchMeta")
 };
@@ -51,23 +54,33 @@ function escapeRegExp(value) {
 }
 
 function mdInlineToHTML(text) {
-  let html = escapeHTML(text);
-
+  let html = escapeHTML(text || "");
   html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-
   html = html.replace(/\[\^([^\]]+)\]/g, function (_, noteId) {
     const safeId = escapeHTML(noteId);
     return '<button class="fn" type="button" data-note="' + safeId + '" title="설명 보기">' + safeId + "</button>";
   });
-
   return html;
+}
+
+function plainFromNote(note) {
+  return String(note || "")
+    .replace(/\*\*/g, "")
+    .replace(/<[^>]+>/g, "")
+    .trim();
+}
+
+function noteTitleFromText(noteId, note) {
+  const text = plainFromNote(note);
+  const m = text.match(/^([^—-]+)[—-]/);
+  if (m && m[1]) return m[1].trim();
+  return noteId;
 }
 
 function highlightHTML(html, query) {
   const q = query.trim();
   if (!q) return html;
 
-  // HTML 태그 내부는 건드리지 않기 위해 간단한 텍스트 노드 분리 방식 사용
   const parts = html.split(/(<[^>]+>)/g);
   const pattern = new RegExp("(" + escapeRegExp(q) + ")", "gi");
 
@@ -81,6 +94,9 @@ function renderBookList() {
   if (!state.manifest || !els.bookList) return;
 
   els.bookCount.textContent = state.manifest.updatedBooks + " / " + state.manifest.totalTargetBooks;
+  if (els.totalBookStat) {
+    els.totalBookStat.innerHTML = state.manifest.updatedBooks + '<span class="u">권</span>';
+  }
 
   els.bookList.innerHTML = state.manifest.books.map(function (book) {
     const active = book.id === state.currentBookId ? " active" : "";
@@ -121,6 +137,7 @@ async function selectBook(bookId, chapterNumber) {
 
   state.currentBookId = bookId;
   state.currentChapter = Math.min(Math.max(chapterNumber || 1, 1), book.chapterCount);
+  state.currentNoteId = null;
 
   render();
 }
@@ -136,7 +153,7 @@ function render() {
   els.readerKicker.textContent = "NEW TESTAMENT · " + order;
   els.bookTitle.textContent = book.bookKo;
   els.bookDesc.textContent = book.bookEn + " · " + book.chapterCount + "장 · " + book.verseCount + "절 · 인명·지명·용어 설명 포함";
-  els.chapterStat.innerHTML = book.chapterCount + '<span class="u">장</span>';
+  els.chapterStat.textContent = book.chapterCount + "장";
   els.verseStat.textContent = book.verseCount;
 
   els.chapterButtons.innerHTML = book.chapters.map(function (chapter) {
@@ -165,7 +182,13 @@ function render() {
     }
   };
 
+  renderNoteList();
   renderChapter();
+
+  if (!state.currentNoteId) {
+    const firstNote = Object.keys(book.notes || {})[0];
+    if (firstNote) showNote(firstNote, false);
+  }
 }
 
 function renderChapter() {
@@ -206,21 +229,58 @@ function renderChapter() {
 
   els.verses.querySelectorAll(".fn").forEach(function (button) {
     button.addEventListener("click", function () {
-      showNote(button.dataset.note);
+      showNote(button.dataset.note, true);
     });
   });
 
   updateSearchMeta();
-
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-function showNote(noteId) {
+function renderNoteList() {
+  const book = state.books[state.currentBookId];
+  const notes = book.notes || {};
+  const ids = Object.keys(notes);
+
+  els.noteCount.textContent = ids.length;
+
+  els.noteList.innerHTML = ids.map(function (id) {
+    const title = noteTitleFromText(id, notes[id]);
+    const preview = plainFromNote(notes[id]).slice(0, 76);
+    const active = id === state.currentNoteId ? " active" : "";
+
+    return (
+      '<button class="note-item' + active + '" type="button" data-note="' + escapeHTML(id) + '">' +
+        "<strong>" + escapeHTML(title) + "</strong>" +
+        "<span>" + escapeHTML(preview) + "</span>" +
+      "</button>"
+    );
+  }).join("");
+
+  els.noteList.querySelectorAll(".note-item").forEach(function (button) {
+    button.addEventListener("click", function () {
+      showNote(button.dataset.note, true);
+    });
+  });
+}
+
+function showNote(noteId, scrollToPanel) {
   const book = state.books[state.currentBookId];
   const raw = book && book.notes ? book.notes[noteId] : null;
 
-  els.noteTitle.textContent = noteId || "설명";
+  state.currentNoteId = noteId;
+
+  const title = raw ? noteTitleFromText(noteId, raw) : noteId;
+  els.noteTitle.textContent = title || "설명";
   els.noteBody.innerHTML = raw ? mdInlineToHTML(raw) : "설명을 찾지 못했습니다.";
+
+  els.noteList.querySelectorAll(".note-item").forEach(function (button) {
+    button.classList.toggle("active", button.dataset.note === noteId);
+  });
+
+  if (scrollToPanel && window.innerWidth < 1280) {
+    document.querySelector(".right-rail").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function updateSearchMeta() {
