@@ -1,1 +1,1 @@
-디모데후서 data patch only. 디자인/구조 파일(index.html, styles.css, app.js)은 포함하지 않았습니다.
+14~16번 본문 각주 마커 누락 수정 통합 패치입니다. data/*.json을 교체하세요. 디자인/구조 파일은 포함하지 않았습니다.
