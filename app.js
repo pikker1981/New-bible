@@ -32,9 +32,50 @@ const els = {
 };
 
 async function loadJSON(path) {
+  if (!path || path === "undefined") {
+    throw new Error("데이터 파일 경로가 비어 있습니다. manifest.json의 data/path 값을 확인하세요.");
+  }
   const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) throw new Error(path + " 로딩 실패: HTTP " + response.status);
   return response.json();
+}
+
+async function loadFirstAvailableJSON(paths) {
+  let lastError = null;
+  for (const path of paths) {
+    try {
+      return await loadJSON(path);
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  throw lastError || new Error("JSON 파일을 찾지 못했습니다.");
+}
+
+function normalizeBook(raw, meta) {
+  if (!raw) return raw;
+
+  const chapters = (raw.chapters || []).map((chapter) => ({
+    number: Number(chapter.number ?? chapter.chapter),
+    verses: (chapter.verses || []).map((verse) => ({
+      number: Number(verse.number ?? verse.verse),
+      text: String(verse.text ?? "")
+    }))
+  }));
+
+  const verseCount = Number(raw.verseCount ?? chapters.reduce((sum, chapter) => sum + chapter.verses.length, 0));
+
+  return {
+    id: raw.id || meta.id,
+    order: Number(raw.order ?? meta.order),
+    bookKo: raw.bookKo || raw.book_ko || meta.bookKo,
+    bookEn: raw.bookEn || raw.book || meta.bookEn,
+    source: raw.source || meta.source || "",
+    chapterCount: Number(raw.chapterCount ?? chapters.length),
+    verseCount,
+    chapters,
+    notes: raw.notes || {}
+  };
 }
 
 function escapeHTML(value) {
@@ -106,7 +147,8 @@ async function ensureBook(bookId) {
   if (state.books[bookId]) return state.books[bookId];
   const meta = state.manifest.books.find((book) => book.id === bookId);
   if (!meta) throw new Error("권 정보를 찾지 못했습니다: " + bookId);
-  const book = await loadJSON(meta.data);
+  const path = meta.data || meta.path || meta.file || meta.dataFile || meta.json || ("data/" + bookId + ".json");
+  const book = normalizeBook(await loadJSON(path), meta);
   state.books[bookId] = book;
   return book;
 }
@@ -321,7 +363,7 @@ els.searchInput.addEventListener("input", (event) => {
 
 async function init() {
   try {
-    state.manifest = await loadJSON("./data/manifest.json");
+    state.manifest = await loadFirstAvailableJSON(["./data/manifest.json", "./manifest.json"]);
     if (!state.manifest.books || state.manifest.books.length === 0) {
       throw new Error("manifest.json에 books 정보가 없습니다.");
     }
