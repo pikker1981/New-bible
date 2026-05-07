@@ -1,0 +1,13 @@
+{
+  "id": "ephesians",
+  "order": 10,
+  "bookKo": "에베소서",
+  "bookEn": "Ephesians",
+  "chapterCount": 6,
+  "verseCount": 155,
+  "data": "data/ephesians.json",
+  "path": "data/ephesians.json",
+  "file": "data/ephesians.json",
+  "dataFile": "data/ephesians.json",
+  "json": "data/ephesians.json"
+}
