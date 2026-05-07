@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 8,
+  "updatedBooks": 9,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -107,6 +107,19 @@
       "file": "data/2corinthians.json",
       "dataFile": "data/2corinthians.json",
       "json": "data/2corinthians.json"
+    },
+    {
+      "id": "galatians",
+      "order": 9,
+      "bookKo": "갈라디아서",
+      "bookEn": "Galatians",
+      "chapterCount": 6,
+      "verseCount": 149,
+      "data": "data/galatians.json",
+      "path": "data/galatians.json",
+      "file": "data/galatians.json",
+      "dataFile": "data/galatians.json",
+      "json": "data/galatians.json"
     }
   ]
 }
