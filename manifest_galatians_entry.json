@@ -1,0 +1,13 @@
+{
+  "id": "galatians",
+  "order": 9,
+  "bookKo": "갈라디아서",
+  "bookEn": "Galatians",
+  "chapterCount": 6,
+  "verseCount": 149,
+  "data": "data/galatians.json",
+  "path": "data/galatians.json",
+  "file": "data/galatians.json",
+  "dataFile": "data/galatians.json",
+  "json": "data/galatians.json"
+}
