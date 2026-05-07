@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 3,
+  "updatedBooks": 4,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -14,7 +14,8 @@
       "data": "data/matthew.json",
       "path": "data/matthew.json",
       "file": "data/matthew.json",
-      "dataFile": "data/matthew.json"
+      "dataFile": "data/matthew.json",
+      "json": "data/matthew.json"
     },
     {
       "id": "mark",
@@ -26,7 +27,8 @@
       "data": "data/mark.json",
       "path": "data/mark.json",
       "file": "data/mark.json",
-      "dataFile": "data/mark.json"
+      "dataFile": "data/mark.json",
+      "json": "data/mark.json"
     },
     {
       "id": "luke",
@@ -38,7 +40,21 @@
       "data": "data/luke.json",
       "path": "data/luke.json",
       "file": "data/luke.json",
-      "dataFile": "data/luke.json"
+      "dataFile": "data/luke.json",
+      "json": "data/luke.json"
+    },
+    {
+      "id": "john",
+      "order": 4,
+      "bookKo": "요한복음",
+      "bookEn": "John",
+      "chapterCount": 21,
+      "verseCount": 879,
+      "data": "data/john.json",
+      "path": "data/john.json",
+      "file": "data/john.json",
+      "dataFile": "data/john.json",
+      "json": "data/john.json"
     }
   ]
 }

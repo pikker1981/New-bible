@@ -1,32 +1,94 @@
 {
-  "matthew": {
-    "chapterCount": 28,
-    "declaredChapterCount": 28,
-    "verseCount": 1068,
-    "declaredVerseCount": 1068,
-    "noteCount": 42,
-    "numericFootnoteRefs": [],
-    "missingNoteRefs": [],
-    "missingNoteRefsCount": 0
+  "package": "nt_webapp_john_complete_data_md.zip",
+  "structure": {
+    "docs_folder_removed": true,
+    "markdown_files_location": "data/",
+    "manifest_locations": [
+      "manifest.json",
+      "data/manifest.json"
+    ],
+    "json_files_location": "data/"
   },
-  "mark": {
-    "chapterCount": 16,
-    "declaredChapterCount": 16,
-    "verseCount": 673,
-    "declaredVerseCount": 673,
-    "noteCount": 74,
-    "numericFootnoteRefs": [],
-    "missingNoteRefs": [],
-    "missingNoteRefsCount": 0
+  "books": [
+    {
+      "id": "matthew",
+      "bookKo": "마태복음",
+      "chapterCount": 28,
+      "verseCount": 1068,
+      "data": "data/matthew.json"
+    },
+    {
+      "id": "mark",
+      "bookKo": "마가복음",
+      "chapterCount": 16,
+      "verseCount": 673,
+      "data": "data/mark.json"
+    },
+    {
+      "id": "luke",
+      "bookKo": "누가복음",
+      "chapterCount": 24,
+      "verseCount": 1151,
+      "data": "data/luke.json"
+    },
+    {
+      "id": "john",
+      "bookKo": "요한복음",
+      "chapterCount": 21,
+      "verseCount": 879,
+      "data": "data/john.json"
+    }
+  ],
+  "checks": {
+    "matthew": {
+      "declaredChapterCount": 28,
+      "actualChapterCount": 28,
+      "declaredVerseCount": 1068,
+      "actualVerseCount": 1068,
+      "chapterSequenceOk": true,
+      "verseSequenceOk": false,
+      "badChapters": [
+        17,
+        18,
+        23
+      ],
+      "ok": false
+    },
+    "mark": {
+      "declaredChapterCount": 16,
+      "actualChapterCount": 16,
+      "declaredVerseCount": 673,
+      "actualVerseCount": 673,
+      "chapterSequenceOk": true,
+      "verseSequenceOk": false,
+      "badChapters": [
+        7,
+        9,
+        11,
+        15
+      ],
+      "ok": false
+    },
+    "luke": {
+      "declaredChapterCount": 24,
+      "actualChapterCount": 24,
+      "declaredVerseCount": 1151,
+      "actualVerseCount": 1151,
+      "chapterSequenceOk": true,
+      "verseSequenceOk": true,
+      "badChapters": [],
+      "ok": true
+    },
+    "john": {
+      "declaredChapterCount": 21,
+      "actualChapterCount": 21,
+      "declaredVerseCount": 879,
+      "actualVerseCount": 879,
+      "chapterSequenceOk": true,
+      "verseSequenceOk": true,
+      "badChapters": [],
+      "ok": true
+    }
   },
-  "luke": {
-    "chapterCount": 24,
-    "declaredChapterCount": 24,
-    "verseCount": 1151,
-    "declaredVerseCount": 1151,
-    "noteCount": 50,
-    "numericFootnoteRefs": [],
-    "missingNoteRefs": [],
-    "missingNoteRefsCount": 0
-  }
+  "ok": false
 }
