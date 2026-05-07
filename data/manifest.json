@@ -1,0 +1,26 @@
+{
+  "title": "신약 현대어 번역",
+  "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
+  "updatedBooks": 2,
+  "totalTargetBooks": 27,
+  "books": [
+    {
+      "id": "matthew",
+      "order": 1,
+      "bookKo": "마태복음",
+      "bookEn": "Matthew",
+      "chapterCount": 28,
+      "verseCount": 1068,
+      "data": "data/matthew.json"
+    },
+    {
+      "id": "mark",
+      "order": 2,
+      "bookKo": "마가복음",
+      "bookEn": "Mark",
+      "chapterCount": 15,
+      "verseCount": 673,
+      "data": "data/mark.json"
+    }
+  ]
+}
