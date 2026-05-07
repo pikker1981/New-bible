@@ -1,29 +1,28 @@
 {
-  "bookId": "titus",
-  "bookKo": "디도서",
-  "bookEn": "Titus",
-  "sourceXml": "Titus.xml",
-  "declaredChapterCount": 3,
-  "actualChapterCount": 3,
-  "declaredVerseCount": 46,
-  "actualVerseCount": 46,
-  "expectedChapterVerseCounts": {
-    "1": 16,
-    "2": 15,
-    "3": 15
+  "bookId": "philemon",
+  "bookKo": "빌레몬서",
+  "sourceXml": "Phlm.xml",
+  "declaredChapterCount": 1,
+  "actualChapterCount": 1,
+  "declaredVerseCount": 25,
+  "actualVerseCount": 25,
+  "xmlVerseCount": 25,
+  "chapterVerseCounts": {
+    "1": 25
   },
-  "actualChapterVerseCounts": {
-    "1": 16,
-    "2": 15,
-    "3": 15
+  "xmlChapterVerseCounts": {
+    "1": 25
   },
   "chapterSequenceOk": true,
   "verseSequenceOk": true,
+  "notesCount": 17,
+  "annotatedBodyNoteMarkerCount": 17,
+  "jsonBodyNoteMarkerCount": 17,
   "missingNotes": [],
   "unusedNotes": [],
+  "jsonMissingNotes": [],
+  "jsonUnusedNotes": [],
   "numericFootnotes": [],
-  "noteMarkerCount": 15,
-  "notesCount": 15,
   "jsonSchemaOk": true,
   "designFilesModified": false,
   "ok": true

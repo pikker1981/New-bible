@@ -1,0 +1,13 @@
+{
+  "id": "philemon",
+  "order": 18,
+  "bookKo": "빌레몬서",
+  "bookEn": "Philemon",
+  "chapterCount": 1,
+  "verseCount": 25,
+  "data": "data/philemon.json",
+  "path": "data/philemon.json",
+  "file": "data/philemon.json",
+  "dataFile": "data/philemon.json",
+  "json": "data/philemon.json"
+}
