@@ -1,0 +1,13 @@
+{
+  "id": "2corinthians",
+  "order": 8,
+  "bookKo": "고린도후서",
+  "bookEn": "2 Corinthians",
+  "chapterCount": 13,
+  "verseCount": 256,
+  "data": "data/2corinthians.json",
+  "path": "data/2corinthians.json",
+  "file": "data/2corinthians.json",
+  "dataFile": "data/2corinthians.json",
+  "json": "data/2corinthians.json"
+}

@@ -1,56 +1,18 @@
 {
-  "package": "1corinthians_data_patch_only.zip",
-  "structure": {
-    "design_files_included": false,
-    "markdown_files_location": "data/",
-    "json_files_location": "data/",
-    "manifest_locations": [
-      "manifest.json",
-      "data/manifest.json"
-    ]
-  },
-  "book": {
-    "id": "1corinthians",
-    "bookKo": "고린도전서",
-    "chapterCount": 16,
-    "verseCount": 437,
-    "data": "data/1corinthians.json"
-  },
-  "checks": {
-    "declaredChapterCount": 16,
-    "actualChapterCount": 16,
-    "declaredVerseCount": 437,
-    "actualVerseCount": 437,
-    "expectedChapterVerseCounts": {
-      "1": 31,
-      "2": 16,
-      "3": 23,
-      "4": 21,
-      "5": 13,
-      "6": 20,
-      "7": 40,
-      "8": 13,
-      "9": 27,
-      "10": 33,
-      "11": 34,
-      "12": 31,
-      "13": 13,
-      "14": 40,
-      "15": 58,
-      "16": 24
-    },
-    "chapterSequenceOk": true,
-    "verseSequenceOk": true,
-    "badChapters": [],
-    "notesCount": 37,
-    "refsCount": 37,
-    "uniqueRefsCount": 37,
-    "missingNotes": [],
-    "numericRefs": [],
-    "unusedNotes": [],
-    "jsonSchemaOk": true,
-    "designFilesModified": false,
-    "ok": true
-  },
+  "book": "2corinthians",
+  "bookKo": "고린도후서",
+  "chapterCountDeclared": 13,
+  "chapterCountActual": 13,
+  "verseCountDeclared": 256,
+  "verseCountActual": 256,
+  "notesCount": 39,
+  "noteRefsCount": 39,
+  "uniqueNoteRefsCount": 39,
+  "missingNoteDefinitions": [],
+  "numericNoteRefs": [],
+  "unusedNotes": [],
+  "badChapterSequences": [],
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
   "ok": true
 }
