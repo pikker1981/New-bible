@@ -1,0 +1,13 @@
+{
+  "id": "romans",
+  "order": 6,
+  "bookKo": "로마서",
+  "bookEn": "Romans",
+  "chapterCount": 16,
+  "verseCount": 433,
+  "data": "data/romans.json",
+  "path": "data/romans.json",
+  "file": "data/romans.json",
+  "dataFile": "data/romans.json",
+  "json": "data/romans.json"
+}

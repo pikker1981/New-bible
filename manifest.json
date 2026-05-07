@@ -1,7 +1,7 @@
 {
   "title": "신약 현대어 번역",
   "description": "SBLGNT 기반 직역형 현대어와 문학적 현대어를 절충한 한국어 번역 웹앱",
-  "updatedBooks": 5,
+  "updatedBooks": 6,
   "totalTargetBooks": 27,
   "books": [
     {
@@ -68,6 +68,19 @@
       "file": "data/acts.json",
       "dataFile": "data/acts.json",
       "json": "data/acts.json"
+    },
+    {
+      "id": "romans",
+      "order": 6,
+      "bookKo": "로마서",
+      "bookEn": "Romans",
+      "chapterCount": 16,
+      "verseCount": 433,
+      "data": "data/romans.json",
+      "path": "data/romans.json",
+      "file": "data/romans.json",
+      "dataFile": "data/romans.json",
+      "json": "data/romans.json"
     }
   ]
 }

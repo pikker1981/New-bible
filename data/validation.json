@@ -1,51 +1,32 @@
 {
-  "book": "Acts",
-  "bookKo": "사도행전",
-  "chapterCount": 28,
-  "verseCount": 1004,
+  "book": "Romans",
+  "bookKo": "로마서",
+  "chapterCount": 16,
+  "verseCount": 433,
   "chapterVerseCounts": {
-    "1": 26,
-    "2": 47,
-    "3": 26,
-    "4": 37,
-    "5": 42,
-    "6": 15,
-    "7": 60,
-    "8": 40,
-    "9": 43,
-    "10": 48,
-    "11": 30,
-    "12": 25,
-    "13": 52,
-    "14": 28,
-    "15": 40,
-    "16": 40,
-    "17": 34,
-    "18": 28,
-    "19": 40,
-    "20": 38,
-    "21": 40,
-    "22": 30,
-    "23": 35,
-    "24": 26,
-    "25": 27,
-    "26": 32,
-    "27": 44,
-    "28": 31
+    "1": 32,
+    "2": 29,
+    "3": 31,
+    "4": 25,
+    "5": 21,
+    "6": 23,
+    "7": 25,
+    "8": 39,
+    "9": 33,
+    "10": 21,
+    "11": 36,
+    "12": 21,
+    "13": 14,
+    "14": 23,
+    "15": 33,
+    "16": 27
   },
-  "noteCount": 37,
-  "footnoteRefCount": 74,
-  "uniqueFootnoteRefCount": 37,
+  "noteCount": 35,
+  "footnoteRefCount": 35,
+  "uniqueFootnoteRefCount": 35,
   "missingNoteDefinitions": [],
   "numericFootnoteIds": [],
-  "missingVerseNumbersWithinGeneratedText": {
-    "15": [
-      34
-    ],
-    "24": [
-      7
-    ]
-  },
+  "missingVerseNumbersWithinGeneratedText": {},
   "schemaChecks": {
     "usesNumberKeys": true,
     "hasNotesObject": true,
@@ -53,48 +34,7 @@
     "refsHaveDefinitions": true,
     "noNumericFootnotes": true
   },
-  "sessionLimitations": [
-    "이 세션에는 기존 matthew.json, mark.json, luke.json, john.json 실제 파일이 없어 ZIP에는 사도행전 파일과 사도행전 중심 웹앱 셸만 포함했다. 기존 저장소에 병합할 때는 기존 data 폴더에 acts.json과 MD 파일을 추가하고 manifest 항목을 병합해야 한다."
-  ],
-  "books": [
-    {
-      "id": "acts",
-      "bookKo": "사도행전",
-      "chapterCount": 28,
-      "verseCount": 1004,
-      "data": "data/acts.json"
-    }
-  ],
-  "package": "nt_webapp_acts_restored_original_design.zip",
-  "structure": {
-    "design_files_restored_from_upload": true,
-    "index_html_unchanged": true,
-    "styles_css_unchanged": true,
-    "app_js_unchanged": true,
-    "docs_folder_removed": true,
-    "markdown_files_location": "data/",
-    "manifest_locations": [
-      "manifest.json",
-      "data/manifest.json"
-    ],
-    "json_files_location": "data/"
-  },
-  "checks": {
-    "acts": {
-      "declaredChapterCount": 28,
-      "actualChapterCount": 28,
-      "declaredVerseCount": 1004,
-      "actualVerseCount": 1004,
-      "chapterSequenceOk": true,
-      "verseSequenceOk": false,
-      "badChapters": [
-        15,
-        24
-      ],
-      "notesCount": 37,
-      "ok": true
-    }
-  },
-  "acts_added_ok": true,
+  "designFilesTouched": false,
+  "badChapters": [],
   "ok": true
 }
