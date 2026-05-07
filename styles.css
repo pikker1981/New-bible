@@ -1,5 +1,7 @@
 :root{
   --accent:#C0392B;
+  --accent-soft:#F8E7E3;
+  --accent-softer:#FDF0EE;
   --ink:#111111;
   --muted:#999999;
   --pale:#FAFAFA;
@@ -82,10 +84,10 @@ button:disabled{opacity:.35;cursor:not-allowed}
   transition:.15s ease;
 }
 .book-btn:hover{border-color:var(--accent);transform:translateY(-1px)}
-.book-btn.active{background:#111;border-color:#111;color:#fff}
+.book-btn.active{background:var(--book-accent,var(--accent));border-color:var(--book-accent,var(--accent));color:#fff}
 .book-btn span{font-size:14px;font-weight:800;letter-spacing:-.02em}
 .book-btn small{font-size:10px;color:#aaa}
-.book-btn.active small{color:#f2c6bf}
+.book-btn.active small{color:rgba(255,255,255,.72)}
 .search-input{
   width:100%;
   margin-top:10px;
@@ -169,7 +171,7 @@ button:disabled{opacity:.35;cursor:not-allowed}
 }
 .fn{
   border:0;
-  background:#F8E7E3;
+  background:var(--accent-soft);
   color:var(--accent);
   font-size:10px;
   font-weight:850;
@@ -179,7 +181,9 @@ button:disabled{opacity:.35;cursor:not-allowed}
   cursor:pointer;
 }
 .fn:hover{background:var(--accent);color:#fff}
-mark{background:#FFF2A8;padding:0 2px}
+mark{padding:0 2px}
+.search-mark{background:#FFF2A8}
+.user-mark{background:#FFF176;border-radius:3px;box-shadow:0 0 0 2px rgba(255,241,118,.35)}
 .note-card{padding:24px}
 .active-note h2{font-size:24px;letter-spacing:-.03em;margin-top:10px}
 .note-body{margin-top:14px;font-size:14px;color:#555;line-height:1.85;word-break:keep-all}
@@ -202,8 +206,8 @@ mark{background:#FFF2A8;padding:0 2px}
   padding:11px 12px;
   transition:.15s ease;
 }
-.note-item:hover{border-color:var(--accent);background:#fffafa}
-.note-item.active{border-color:var(--accent);background:#FDF0EE}
+.note-item:hover{border-color:var(--accent);background:color-mix(in srgb, var(--accent) 4%, #fff)}
+.note-item.active{border-color:var(--accent);background:var(--accent-softer)}
 .note-item strong{display:block;font-size:13px;line-height:1.35;letter-spacing:-.02em;color:#222}
 .note-item span{
   display:block;
@@ -255,4 +259,43 @@ mark{background:#FFF2A8;padding:0 2px}
   .verse-text{font-size:16px;line-height:1.9}
   .right-rail{display:block}
   .note-list{max-height:720px}
+}
+
+
+.mark-menu{
+  position:absolute;
+  z-index:9999;
+  transform:translateX(-50%);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .12s ease, transform .12s ease;
+}
+.mark-menu.show{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateX(-50%) translateY(-2px);
+}
+.mark-menu-btn{
+  width:34px;
+  height:34px;
+  border:1px solid var(--accent);
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:15px;
+  font-weight:900;
+  line-height:1;
+  cursor:pointer;
+  box-shadow:0 8px 22px rgba(0,0,0,.18);
+}
+.mark-menu-btn:hover{
+  transform:translateY(-1px);
+  filter:brightness(.96);
+}
+.mark-flash{
+  animation:markFlash .9s ease;
+}
+@keyframes markFlash{
+  0%{background:rgba(255,241,118,.55)}
+  100%{background:transparent}
 }
