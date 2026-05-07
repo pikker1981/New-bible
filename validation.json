@@ -1,14 +1,17 @@
 {
-  "bookId": "2thessalonians",
-  "bookKo": "데살로니가후서",
-  "declaredChapterCount": 3,
-  "actualChapterCount": 3,
-  "declaredVerseCount": 47,
-  "actualVerseCount": 47,
+  "bookId": "1timothy",
+  "bookKo": "디모데전서",
+  "declaredChapterCount": 6,
+  "actualChapterCount": 6,
+  "declaredVerseCount": 113,
+  "actualVerseCount": 113,
   "chapterVerseCounts": {
-    "1": 12,
-    "2": 17,
-    "3": 18
+    "1": 20,
+    "2": 15,
+    "3": 16,
+    "4": 16,
+    "5": 25,
+    "6": 21
   },
   "chapterSequenceOk": true,
   "verseSequenceOk": true,
