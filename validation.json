@@ -1,102 +1,59 @@
 {
-  "package": "nt_webapp_john_complete_luke_notes_fixed.zip",
-  "fix": "누가복음 data/luke.json에 notes 객체와 단어형 각주 참조 복원",
-  "structure": {
-    "docs_folder_removed": true,
-    "markdown_files_location": "data/",
-    "manifest_locations": [
-      "manifest.json",
-      "data/manifest.json"
+  "book": "Acts",
+  "bookKo": "사도행전",
+  "chapterCount": 28,
+  "verseCount": 1004,
+  "chapterVerseCounts": {
+    "1": 26,
+    "2": 47,
+    "3": 26,
+    "4": 37,
+    "5": 42,
+    "6": 15,
+    "7": 60,
+    "8": 40,
+    "9": 43,
+    "10": 48,
+    "11": 30,
+    "12": 25,
+    "13": 52,
+    "14": 28,
+    "15": 40,
+    "16": 40,
+    "17": 34,
+    "18": 28,
+    "19": 40,
+    "20": 38,
+    "21": 40,
+    "22": 30,
+    "23": 35,
+    "24": 26,
+    "25": 27,
+    "26": 32,
+    "27": 44,
+    "28": 31
+  },
+  "noteCount": 37,
+  "footnoteRefCount": 74,
+  "uniqueFootnoteRefCount": 37,
+  "missingNoteDefinitions": [],
+  "numericFootnoteIds": [],
+  "missingVerseNumbersWithinGeneratedText": {
+    "15": [
+      34
     ],
-    "json_files_location": "data/"
+    "24": [
+      7
+    ]
   },
-  "books": [
-    {
-      "id": "matthew",
-      "bookKo": "마태복음",
-      "chapterCount": 28,
-      "verseCount": 1068,
-      "notesCount": 42,
-      "data": "data/matthew.json"
-    },
-    {
-      "id": "mark",
-      "bookKo": "마가복음",
-      "chapterCount": 16,
-      "verseCount": 673,
-      "notesCount": 74,
-      "data": "data/mark.json"
-    },
-    {
-      "id": "luke",
-      "bookKo": "누가복음",
-      "chapterCount": 24,
-      "verseCount": 1151,
-      "notesCount": 50,
-      "data": "data/luke.json"
-    },
-    {
-      "id": "john",
-      "bookKo": "요한복음",
-      "chapterCount": 21,
-      "verseCount": 879,
-      "notesCount": 67,
-      "data": "data/john.json"
-    }
-  ],
-  "checks": {
-    "matthew": {
-      "declaredChapterCount": 28,
-      "actualChapterCount": 28,
-      "declaredVerseCount": 1068,
-      "actualVerseCount": 1068,
-      "notesCount": 42,
-      "footnoteRefsCount": 42,
-      "uniqueFootnoteRefsCount": 42,
-      "numericFootnoteRefsCount": 0,
-      "missingFootnoteDefinitionsCount": 0,
-      "missingFootnoteDefinitions": [],
-      "ok": true
-    },
-    "mark": {
-      "declaredChapterCount": 16,
-      "actualChapterCount": 16,
-      "declaredVerseCount": 673,
-      "actualVerseCount": 673,
-      "notesCount": 74,
-      "footnoteRefsCount": 72,
-      "uniqueFootnoteRefsCount": 72,
-      "numericFootnoteRefsCount": 0,
-      "missingFootnoteDefinitionsCount": 0,
-      "missingFootnoteDefinitions": [],
-      "ok": true
-    },
-    "luke": {
-      "declaredChapterCount": 24,
-      "actualChapterCount": 24,
-      "declaredVerseCount": 1151,
-      "actualVerseCount": 1151,
-      "notesCount": 50,
-      "footnoteRefsCount": 49,
-      "uniqueFootnoteRefsCount": 49,
-      "numericFootnoteRefsCount": 0,
-      "missingFootnoteDefinitionsCount": 0,
-      "missingFootnoteDefinitions": [],
-      "ok": true
-    },
-    "john": {
-      "declaredChapterCount": 21,
-      "actualChapterCount": 21,
-      "declaredVerseCount": 879,
-      "actualVerseCount": 879,
-      "notesCount": 67,
-      "footnoteRefsCount": 48,
-      "uniqueFootnoteRefsCount": 48,
-      "numericFootnoteRefsCount": 0,
-      "missingFootnoteDefinitionsCount": 0,
-      "missingFootnoteDefinitions": [],
-      "ok": true
-    }
+  "schemaChecks": {
+    "usesNumberKeys": true,
+    "hasNotesObject": true,
+    "hasRequiredManifestAliases": true,
+    "refsHaveDefinitions": true,
+    "noNumericFootnotes": true
   },
-  "ok": true
+  "sessionLimitations": [
+    "이 세션에는 기존 matthew.json, mark.json, luke.json, john.json 실제 파일이 없어 ZIP에는 사도행전 파일과 사도행전 중심 웹앱 셸만 포함했다. 기존 저장소에 병합할 때는 기존 data 폴더에 acts.json과 MD 파일을 추가하고 manifest 항목을 병합해야 한다."
+  ]
 }
