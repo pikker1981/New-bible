@@ -3,69 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="마태복음 현대어 번역 웹앱" />
-  <title>마태복음 · 현대어 번역</title>
+  <title>신약 현대어 번역</title>
+  <meta name="description" content="신약 성서 그리스어 원문 기반 현대어 한국어 번역 웹앱" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <div class="app-shell">
-    <aside class="sidebar" aria-label="마태복음 탐색 메뉴">
-      <div class="accent-bar"></div>
-      <div class="brand-block">
-        <div class="kicker"><span class="kicker-line"></span><span>GOSPEL READER · 01</span></div>
-        <h1>마태<br>복음<span>.</span></h1>
-        <p>직역형 현대어와 문학적 현대어를 섞은 쉬운 한국어 번역</p>
+    <aside class="sidebar" aria-label="성경 권 선택">
+      <div class="brand-card">
+        <div class="accent-bar"></div>
+        <div class="kicker">
+          <div class="kicker-line"></div>
+          <div class="kicker-text">GREEK NT · KOREAN</div>
+        </div>
+        <h1>신약<br><span>현대어</span><br>번역.</h1>
+        <p>SBLGNT 기반으로 직역형 현대어와 문학적 현대어를 절충한 권별 번역본입니다.</p>
       </div>
 
-      <div class="stat-row" aria-label="문서 통계">
-        <div class="stat"><strong id="statChapters">28</strong><span>CHAPTERS</span></div>
-        <div class="stat"><strong id="statVerses">0</strong><span>VERSES</span></div>
-        <div class="stat"><strong id="statNotes">0</strong><span>NOTES</span></div>
-      </div>
+      <section class="book-panel">
+        <div class="panel-head">
+          <span>BOOKS</span>
+          <strong id="bookCount">0 / 27</strong>
+        </div>
+        <div id="bookList" class="book-list"></div>
+      </section>
 
-      <div class="control-section">
-        <label class="search-label" for="searchInput">SEARCH</label>
-        <input id="searchInput" class="search-input" type="search" placeholder="예: 하늘나라, 베드로, 갈릴리" autocomplete="off" />
-      </div>
-
-      <nav class="chapter-nav" id="chapterNav" aria-label="장 바로가기"></nav>
-
-      <div class="footer-card">
-        <span>MATTHEW SERIES</span>
-        <strong>KO·NT</strong>
-      </div>
+      <section class="tools-panel">
+        <label for="searchInput">본문 검색</label>
+        <input id="searchInput" type="search" placeholder="예: 하나님의 나라, 베드로" autocomplete="off" />
+        <div id="searchMeta" class="search-meta">검색어를 입력하세요.</div>
+      </section>
     </aside>
 
     <main class="reader">
       <header class="reader-hero">
         <div>
-          <div class="kicker"><span class="kicker-line"></span><span>한국어 번역 본문</span></div>
-          <h2 id="readerTitle">마태복음</h2>
-          <p id="readerDesc">본문의 인명·지명·용어 표시는 클릭하면 간단 설명을 볼 수 있습니다.</p>
+          <div class="reader-kicker" id="readerKicker">NEW TESTAMENT · 01</div>
+          <h2 id="bookTitle">마태복음</h2>
+          <p id="bookDesc">권을 선택하면 본문이 표시됩니다.</p>
         </div>
-        <div class="reader-actions">
-          <button class="btn" id="prevChapter" type="button">이전 장</button>
-          <button class="btn primary" id="nextChapter" type="button">다음 장</button>
+        <div class="stat-row">
+          <div class="stat">
+            <div class="stat-n" id="chapterStat">0<span class="u">장</span></div>
+            <div class="stat-l">수록 장</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n" id="verseStat">0</div>
+            <div class="stat-l">수록 절</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n"><span class="u">KO</span></div>
+            <div class="stat-l">현대어<br>번역</div>
+          </div>
         </div>
       </header>
 
-      <section class="quote-section" id="featuredVerse" aria-label="대표 구절"></section>
-      <section class="verse-list" id="verseList" aria-live="polite"></section>
+      <nav class="chapter-nav" aria-label="장 선택">
+        <button id="prevChapter" type="button">이전 장</button>
+        <div id="chapterButtons" class="chapter-buttons"></div>
+        <button id="nextChapter" type="button">다음 장</button>
+      </nav>
+
+      <section class="content-card">
+        <div class="chapter-title-wrap">
+          <div class="sec-label">SCRIPTURE</div>
+          <h3 id="chapterTitle">1장</h3>
+        </div>
+        <div id="verses" class="verses"></div>
+      </section>
     </main>
 
-    <aside class="note-panel" aria-label="설명 패널">
-      <div class="accent-bar"></div>
-      <div class="note-panel-head">
-        <div class="kicker"><span class="kicker-line"></span><span>NOTES</span></div>
-        <h3>간단 설명</h3>
-        <p>인명, 지명, 시대 용어를 짧게 확인합니다.</p>
+    <aside class="note-drawer" aria-label="설명">
+      <div class="note-card">
+        <div class="sec-label">NOTES</div>
+        <h3 id="noteTitle">설명</h3>
+        <div id="noteBody" class="note-body">본문의 각주 표시를 누르면 인명·지명·용어 설명이 여기에 표시됩니다.</div>
       </div>
-      <div id="noteContent" class="note-content empty">본문의 붉은 표시를 누르면 설명이 여기에 표시됩니다.</div>
-      <div class="note-list" id="noteList"></div>
+
+      <div class="quote-section">
+        <div class="quote-mark">"</div>
+        <div class="q-text">본문은 쉽게 읽히되, 장절 구조와 핵심 용어는 흔들리지 않게 유지합니다.</div>
+        <div class="q-src">— Translation Principle</div>
+      </div>
     </aside>
   </div>
 
-  <script src="app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
