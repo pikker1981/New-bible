@@ -4,7 +4,7 @@
   "bookKo": "마가복음",
   "bookEn": "Mark",
   "source": "02_Mark_Korean_annotated.md",
-  "chapterCount": 15,
+  "chapterCount": 16,
   "verseCount": 673,
   "chapters": [
     {
@@ -2691,7 +2691,12 @@
         {
           "number": 47,
           "text": "막달라 마리아와 요세의 어머니 마리아는 예수께서 어디에 모셔졌는지 보고 있었다."
-        },
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "verses": [
         {
           "number": 1,
           "text": "안식일이 지나자, 막달라 마리아와 야고보의 어머니 마리아와 살로메는 예수께 바르려고 향료를 샀다."
