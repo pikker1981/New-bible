@@ -1,0 +1,13 @@
+{
+  "id": "2timothy",
+  "order": 16,
+  "bookKo": "디모데후서",
+  "bookEn": "2 Timothy",
+  "chapterCount": 4,
+  "verseCount": 83,
+  "data": "data/2timothy.json",
+  "path": "data/2timothy.json",
+  "file": "data/2timothy.json",
+  "dataFile": "data/2timothy.json",
+  "json": "data/2timothy.json"
+}

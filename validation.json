@@ -1,17 +1,22 @@
 {
-  "bookId": "1timothy",
-  "bookKo": "디모데전서",
-  "declaredChapterCount": 6,
-  "actualChapterCount": 6,
-  "declaredVerseCount": 113,
-  "actualVerseCount": 113,
+  "bookId": "2timothy",
+  "bookKo": "디모데후서",
+  "declaredChapterCount": 4,
+  "actualChapterCount": 4,
+  "declaredVerseCount": 83,
+  "actualVerseCount": 83,
+  "xmlVerseCount": 83,
   "chapterVerseCounts": {
-    "1": 20,
-    "2": 15,
-    "3": 16,
-    "4": 16,
-    "5": 25,
-    "6": 21
+    "1": 18,
+    "2": 26,
+    "3": 17,
+    "4": 22
+  },
+  "xmlChapterVerseCounts": {
+    "1": 18,
+    "2": 26,
+    "3": 17,
+    "4": 22
   },
   "chapterSequenceOk": true,
   "verseSequenceOk": true,
