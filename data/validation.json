@@ -1,40 +1,56 @@
 {
-  "book": "Romans",
-  "bookKo": "로마서",
-  "chapterCount": 16,
-  "verseCount": 433,
-  "chapterVerseCounts": {
-    "1": 32,
-    "2": 29,
-    "3": 31,
-    "4": 25,
-    "5": 21,
-    "6": 23,
-    "7": 25,
-    "8": 39,
-    "9": 33,
-    "10": 21,
-    "11": 36,
-    "12": 21,
-    "13": 14,
-    "14": 23,
-    "15": 33,
-    "16": 27
+  "package": "1corinthians_data_patch_only.zip",
+  "structure": {
+    "design_files_included": false,
+    "markdown_files_location": "data/",
+    "json_files_location": "data/",
+    "manifest_locations": [
+      "manifest.json",
+      "data/manifest.json"
+    ]
   },
-  "noteCount": 35,
-  "footnoteRefCount": 35,
-  "uniqueFootnoteRefCount": 35,
-  "missingNoteDefinitions": [],
-  "numericFootnoteIds": [],
-  "missingVerseNumbersWithinGeneratedText": {},
-  "schemaChecks": {
-    "usesNumberKeys": true,
-    "hasNotesObject": true,
-    "hasRequiredManifestAliases": true,
-    "refsHaveDefinitions": true,
-    "noNumericFootnotes": true
+  "book": {
+    "id": "1corinthians",
+    "bookKo": "고린도전서",
+    "chapterCount": 16,
+    "verseCount": 437,
+    "data": "data/1corinthians.json"
   },
-  "designFilesTouched": false,
-  "badChapters": [],
+  "checks": {
+    "declaredChapterCount": 16,
+    "actualChapterCount": 16,
+    "declaredVerseCount": 437,
+    "actualVerseCount": 437,
+    "expectedChapterVerseCounts": {
+      "1": 31,
+      "2": 16,
+      "3": 23,
+      "4": 21,
+      "5": 13,
+      "6": 20,
+      "7": 40,
+      "8": 13,
+      "9": 27,
+      "10": 33,
+      "11": 34,
+      "12": 31,
+      "13": 13,
+      "14": 40,
+      "15": 58,
+      "16": 24
+    },
+    "chapterSequenceOk": true,
+    "verseSequenceOk": true,
+    "badChapters": [],
+    "notesCount": 37,
+    "refsCount": 37,
+    "uniqueRefsCount": 37,
+    "missingNotes": [],
+    "numericRefs": [],
+    "unusedNotes": [],
+    "jsonSchemaOk": true,
+    "designFilesModified": false,
+    "ok": true
+  },
   "ok": true
 }
