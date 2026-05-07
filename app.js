@@ -50,7 +50,7 @@ function escapeHTML(value) {
 }
 
 function escapeRegExp(value) {
-  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return String(value).replace(/[.*+?^${}()|[\]\]/g, "\$&");
 }
 
 function mdInlineToHTML(text) {
@@ -195,6 +195,13 @@ function renderChapter() {
   const book = state.books[state.currentBookId];
   if (!book) return;
 
+  const query = state.query.trim();
+
+  if (query) {
+    renderSearchResults(book, query);
+    return;
+  }
+
   const chapter = book.chapters.find(function (item) {
     return item.number === state.currentChapter;
   });
@@ -206,11 +213,8 @@ function renderChapter() {
 
   els.chapterTitle.textContent = book.bookKo + " " + chapter.number + "장";
 
-  const query = state.query.trim();
-
   els.verses.innerHTML = chapter.verses.map(function (verse) {
-    let html = mdInlineToHTML(verse.text);
-    html = highlightHTML(html, query);
+    const html = mdInlineToHTML(verse.text);
 
     return (
       '<article class="verse" id="v-' + chapter.number + "-" + verse.number + '">' +
@@ -227,14 +231,68 @@ function renderChapter() {
   els.prevChapter.disabled = state.currentChapter === 1;
   els.nextChapter.disabled = state.currentChapter === book.chapterCount;
 
+  bindFootnoteButtons();
+  updateSearchMeta();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderSearchResults(book, query) {
+  const results = [];
+
+  book.chapters.forEach(function (chapter) {
+    chapter.verses.forEach(function (verse) {
+      if (verse.text.includes(query)) {
+        results.push({
+          chapter: chapter.number,
+          verse: verse.number,
+          text: verse.text
+        });
+      }
+    });
+  });
+
+  els.chapterTitle.textContent = "검색 결과";
+
+  els.chapterButtons.querySelectorAll("button").forEach(function (button) {
+    button.classList.remove("active");
+  });
+
+  els.prevChapter.disabled = true;
+  els.nextChapter.disabled = true;
+
+  if (results.length === 0) {
+    els.verses.innerHTML =
+      '<div class="search-result-head"><strong>' + escapeHTML(query) + '</strong> 검색 결과가 없습니다.</div>' +
+      '<p class="empty">띄어쓰기나 표현을 조금 바꿔 다시 검색해 보세요.</p>';
+    updateSearchMeta();
+    return;
+  }
+
+  els.verses.innerHTML =
+    '<div class="search-result-head"><strong>' + escapeHTML(query) + '</strong> 검색 결과 ' + results.length + '개</div>' +
+    results.map(function (item) {
+      let html = mdInlineToHTML(item.text);
+      html = highlightHTML(html, query);
+
+      return (
+        '<article class="search-hit" id="search-' + item.chapter + '-' + item.verse + '">' +
+          '<div class="search-ref">' + book.bookKo + '<br>' + item.chapter + ':' + item.verse + '</div>' +
+          '<div class="verse-text">' + html + '</div>' +
+        '</article>'
+      );
+    }).join("");
+
+  bindFootnoteButtons();
+  updateSearchMeta();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function bindFootnoteButtons() {
   els.verses.querySelectorAll(".fn").forEach(function (button) {
     button.addEventListener("click", function () {
       showNote(button.dataset.note, true);
     });
   });
-
-  updateSearchMeta();
-  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderNoteList() {
@@ -300,7 +358,7 @@ function updateSearchMeta() {
     });
   });
 
-  els.searchMeta.textContent = book.bookKo + "에서 " + count + "개 절이 검색어를 포함합니다. 현재 장에는 노란색으로 표시됩니다.";
+  els.searchMeta.textContent = book.bookKo + " 전체에서 " + count + "개 절이 검색어를 포함합니다.";
 }
 
 if (els.searchInput) {
