@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 16,
+  "updatedBooks": 17,
   "books": [
     {
       "id": "matthew",
@@ -208,6 +208,19 @@
       "file": "data/2timothy.json",
       "dataFile": "data/2timothy.json",
       "json": "data/2timothy.json"
+    },
+    {
+      "id": "titus",
+      "order": 17,
+      "bookKo": "디도서",
+      "bookEn": "Titus",
+      "chapterCount": 3,
+      "verseCount": 46,
+      "data": "data/titus.json",
+      "path": "data/titus.json",
+      "file": "data/titus.json",
+      "dataFile": "data/titus.json",
+      "json": "data/titus.json"
     }
   ]
 }

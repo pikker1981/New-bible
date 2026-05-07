@@ -1,0 +1,13 @@
+{
+  "id": "titus",
+  "order": 17,
+  "bookKo": "디도서",
+  "bookEn": "Titus",
+  "chapterCount": 3,
+  "verseCount": 46,
+  "data": "data/titus.json",
+  "path": "data/titus.json",
+  "file": "data/titus.json",
+  "dataFile": "data/titus.json",
+  "json": "data/titus.json"
+}
