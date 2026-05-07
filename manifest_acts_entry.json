@@ -1,0 +1,13 @@
+{
+  "id": "acts",
+  "order": 5,
+  "bookKo": "사도행전",
+  "bookEn": "Acts",
+  "chapterCount": 28,
+  "verseCount": 1004,
+  "data": "data/acts.json",
+  "path": "data/acts.json",
+  "file": "data/acts.json",
+  "dataFile": "data/acts.json",
+  "json": "data/acts.json"
+}
