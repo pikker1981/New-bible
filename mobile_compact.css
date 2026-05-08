@@ -1,0 +1,222 @@
+/* Mobile compact layout patch
+   - Keeps existing HTML/app.js behavior
+   - Reduces page height on phones/tablets by turning side lists into compact scroll areas
+*/
+
+@media (max-width: 900px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .left-rail,
+  .right-rail,
+  .reader {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    position: static !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .brand-card {
+    padding: 18px;
+  }
+
+  .brand-card .title-block {
+    display: grid;
+    gap: 8px;
+  }
+
+  .brand-card .big-title {
+    font-size: clamp(28px, 9vw, 42px);
+    line-height: 0.95;
+  }
+
+  .brand-card .desc {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .stat-row {
+    display: none;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .panel-head,
+  .note-list-head {
+    margin-bottom: 10px;
+  }
+
+  /* 핵심: 27권 세로 목록을 모바일에서는 가로 칩 목록으로 전환 */
+  .book-list {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px;
+    max-height: none !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-bottom: 6px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .book-list::-webkit-scrollbar,
+  .chapter-buttons::-webkit-scrollbar,
+  .note-list::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+  }
+
+  .book-btn {
+    flex: 0 0 auto;
+    min-width: 132px;
+    max-width: 172px;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  .book-btn span,
+  .book-btn small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .search-input {
+    min-height: 44px;
+    font-size: 16px; /* iOS 자동 확대 방지 */
+  }
+
+  .reader-card {
+    padding: 18px;
+  }
+
+  .reader-head {
+    gap: 14px;
+  }
+
+  .reader-head h1 {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  .mini-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .chapter-nav {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .chapter-buttons {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    max-height: none !important;
+    padding-bottom: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chapter-buttons button {
+    flex: 0 0 auto;
+  }
+
+  .verse,
+  .search-hit {
+    gap: 10px;
+  }
+
+  .verse-num,
+  .search-ref {
+    min-width: 42px;
+  }
+
+  .verse-text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  /* 우측 설명 영역은 모바일에서 높이 제한: 페이지가 끝없이 길어지는 것 방지 */
+  .right-rail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .note-card {
+    padding: 16px;
+  }
+
+  .note-list {
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .note-body {
+    max-height: 220px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .quote-section {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .brand-card .desc {
+    display: none;
+  }
+
+  .brand-card {
+    padding: 14px;
+  }
+
+  .reader-card,
+  .panel,
+  .note-card {
+    border-radius: 18px;
+  }
+
+  .book-btn {
+    min-width: 118px;
+  }
+
+  .note-list {
+    max-height: 220px;
+  }
+
+  .note-body {
+    max-height: 180px;
+  }
+}

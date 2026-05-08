@@ -1,0 +1,23 @@
+{
+  "patch": "mobile_compact_layout",
+  "modified_files": [
+    "index.html"
+  ],
+  "added_files": [
+    "mobile_compact.css"
+  ],
+  "app_js_modified": false,
+  "manifest_modified": false,
+  "data_json_modified": false,
+  "behavior": {
+    "mobile_books_list": "horizontal scroll chips",
+    "mobile_chapter_buttons": "horizontal scroll",
+    "mobile_note_list": "height-limited internal scroll",
+    "mobile_note_body": "height-limited internal scroll",
+    "desktop_layout": "unchanged by media query"
+  },
+  "breakpoints": [
+    "max-width: 900px",
+    "max-width: 520px"
+  ]
+}
