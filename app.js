@@ -1,3 +1,7 @@
+const APP_BUILD_ID = "20260508-mobile-popup-android-v2";
+console.info("NT webapp build:", APP_BUILD_ID);
+document.documentElement.dataset.appBuild = APP_BUILD_ID;
+
 const BOOK_ACCENT_PALETTE = [
   "#C0392B", "#2563EB", "#16A34A", "#7C3AED", "#D97706",
   "#DC2626", "#0891B2", "#4F46E5", "#65A30D", "#9333EA",
