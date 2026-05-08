@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "2peter",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -585,5 +585,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

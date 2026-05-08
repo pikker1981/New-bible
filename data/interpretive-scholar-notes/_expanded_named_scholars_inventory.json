@@ -1,0 +1,215 @@
+{
+  "version": "20260508-expanded-named-scholars-v17",
+  "generatedAt": "2026-05-08",
+  "policy": "원문 장문 번역/복제 없이, 검증 가능한 출처를 바탕으로 한국어 요약·의역만 수록합니다.",
+  "items": 215,
+  "totalScholarCards": 4466,
+  "newlyAddedCards": 1852,
+  "newlyAddedByScholar": {
+    "N. T. Wright": 181,
+    "Thomas R. Schreiner": 163,
+    "Paula Fredriksen": 160,
+    "D. A. Carson": 113,
+    "Richard Bauckham": 113,
+    "Scot McKnight": 99,
+    "Mitzi J. Smith": 89,
+    "Amy-Jill Levine": 88,
+    "Elisabeth Schüssler Fiorenza": 88,
+    "John Dominic Crossan": 84,
+    "Craig Blomberg": 83,
+    "Marcus Borg": 83,
+    "Obery M. Hendricks Jr.": 83,
+    "John M. G. Barclay": 80,
+    "Richard A. Horsley": 74,
+    "Warren Carter": 69,
+    "Joel B. Green": 47,
+    "Sharon H. Ringe": 42,
+    "Andreas J. Köstenberger": 39,
+    "Brian K. Blount": 33,
+    "Tat-siong Benny Liew": 31,
+    "Adele Reinhartz": 10
+  },
+  "newlyAddedByBook": {
+    "1corinthians": 69,
+    "1john": 22,
+    "1peter": 1,
+    "1thessalonians": 8,
+    "1timothy": 12,
+    "2corinthians": 36,
+    "2john": 3,
+    "2peter": 0,
+    "2thessalonians": 12,
+    "2timothy": 13,
+    "3john": 3,
+    "acts": 40,
+    "colossians": 9,
+    "ephesians": 18,
+    "galatians": 28,
+    "hebrews": 15,
+    "james": 8,
+    "john": 156,
+    "jude": 0,
+    "luke": 469,
+    "mark": 129,
+    "matthew": 561,
+    "philemon": 8,
+    "philippians": 4,
+    "revelation": 154,
+    "romans": 66,
+    "titus": 8
+  },
+  "allScholarCountsTop": {
+    "Adam Clarke": 430,
+    "Albert Barnes": 430,
+    "Tyndale Open Study Notes 편집진": 430,
+    "N. T. Wright": 326,
+    "Matthew Henry": 215,
+    "unfoldingWord Translation Notes 편집진": 215,
+    "Walter Brueggemann": 211,
+    "John Calvin": 182,
+    "Thomas R. Schreiner": 163,
+    "Paula Fredriksen": 160,
+    "D. A. Carson": 113,
+    "Richard Bauckham": 113,
+    "Elisabeth Schüssler Fiorenza": 105,
+    "Scot McKnight": 99,
+    "Erin Vearncombe, Brandon Scott, Hal Taussig / Westar Institute": 93,
+    "Mitzi J. Smith": 89,
+    "Amy-Jill Levine": 88,
+    "John Dominic Crossan": 84,
+    "Craig Blomberg": 83,
+    "Marcus Borg": 83,
+    "Obery M. Hendricks Jr.": 83,
+    "John M. G. Barclay": 80,
+    "Laura Salah Nasrallah": 77,
+    "Richard A. Horsley": 74,
+    "Warren Carter": 69,
+    "Lisa M. Bowens": 48,
+    "Joel B. Green": 47,
+    "Angela N. Parker": 43,
+    "Sharon H. Ringe": 42,
+    "Andreas J. Köstenberger": 39,
+    "Brian K. Blount": 33,
+    "Tat-siong Benny Liew": 31,
+    "Yii-Jan Lin": 27,
+    "Katherine A. Shaner": 25,
+    "Adele Reinhartz": 10,
+    "Jennifer A. Quigley": 10,
+    "Brittany E. Wilson": 9,
+    "Candida R. Moss": 7
+  },
+  "missingSummaryKo": [],
+  "missingSummaryCount": 0,
+  "sources": {
+    "Carson": {
+      "title": "The Gospel According to John",
+      "url": "https://www.tiu.edu/divinity/books/the-gospel-according-to-john-the-pillar-new-testament-commentary-pntc/",
+      "year": 1991
+    },
+    "Schreiner": {
+      "title": "New Testament Theology: Magnifying God in Christ",
+      "url": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+      "year": 2008
+    },
+    "Blomberg": {
+      "title": "The Historical Reliability of the Gospels",
+      "url": "https://www.amazon.com/Historical-Reliability-Gospels-Craig-Blomberg/dp/0830828079",
+      "year": 2007
+    },
+    "Kostenberger": {
+      "title": "A Theology of John's Gospel and Letters",
+      "url": "https://books.google.com/books/about/A_Theology_of_John_s_Gospel_and_Letters.html?id=_JbuQ2zA8eEC",
+      "year": 2009
+    },
+    "Barclay": {
+      "title": "Paul and the Gift",
+      "url": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+      "year": 2015
+    },
+    "Fredriksen": {
+      "title": "Jesus of Nazareth, King of the Jews",
+      "url": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+      "year": 1999
+    },
+    "Bauckham": {
+      "title": "Jesus and the Eyewitnesses",
+      "url": "https://books.google.com/books/about/Jesus_and_the_Eyewitnesses.html?id=zcVVp_YD4w4C",
+      "year": 2006
+    },
+    "Wright": {
+      "title": "Jesus and the Victory of God",
+      "url": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+      "year": 1996
+    },
+    "McKnight": {
+      "title": "The King Jesus Gospel",
+      "url": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+      "year": 2011
+    },
+    "Green": {
+      "title": "The Gospel of Luke",
+      "url": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+      "year": 1997
+    },
+    "Crossan": {
+      "title": "The Historical Jesus / Jesus: A Revolutionary Biography",
+      "url": "https://www.harpercollins.com/products/jesus-john-dominic-crossan",
+      "year": 1994
+    },
+    "Fiorenza": {
+      "title": "In Memory of Her",
+      "url": "https://www.crossroadpublishing.com/product/in-memory-of-her/",
+      "year": 1983
+    },
+    "Borg": {
+      "title": "Meeting Jesus Again for the First Time",
+      "url": "https://www.harpercollins.com/products/meeting-jesus-again-for-the-first-time-marcus-j-borg",
+      "year": 1994
+    },
+    "Levine": {
+      "title": "Short Stories by Jesus / The Misunderstood Jew",
+      "url": "https://www.harpercollins.com/products/short-stories-by-jesus-amy-jill-levine",
+      "year": 2014
+    },
+    "Hendricks": {
+      "title": "The Politics of Jesus",
+      "url": "https://books.google.com/books/about/The_Politics_of_Jesus.html?id=g4L1bUzVwSMC",
+      "year": 2006
+    },
+    "Carter": {
+      "title": "Matthew and Empire / Matthew and the Margins",
+      "url": "https://www.bloomsbury.com/uk/matthew-and-empire-9781563383427/",
+      "year": 2001
+    },
+    "Horsley": {
+      "title": "Hearing the Whole Story: The Politics of Plot in Mark's Gospel",
+      "url": "https://books.google.com/books/about/Hearing_the_Whole_Story.html?id=I3FinIB5NrwC",
+      "year": 2001
+    },
+    "Liew": {
+      "title": "Politics of Parousia: Reading Mark Inter(con)textually",
+      "url": "https://books.google.com/books/about/Politics_of_Parousia.html?hl=es&id=KqIJpfxrpowC",
+      "year": 1999
+    },
+    "Blount": {
+      "title": "Go Preach!: Mark's Kingdom Message and the Black Church Today",
+      "url": "https://www.amazon.com/Go-Preach-Kingdom-Message-Liberation/dp/1570751714",
+      "year": 1998
+    },
+    "Ringe": {
+      "title": "Luke / Wisdom’s Friends",
+      "url": "https://archive.org/details/luke0000ring",
+      "year": 1995
+    },
+    "Smith": {
+      "title": "Womanist Sass and Talk Back",
+      "url": "https://www.logos.com/product/194454/womanist-sass-and-talk-back-social-injustice-intersectionality-and-biblical-interpretation",
+      "year": 2018
+    },
+    "Reinhartz": {
+      "title": "Cast Out of the Covenant",
+      "url": "https://www.lexingtonbooks.com/9781978701175/cast-out-of-the-covenant/",
+      "year": 2018
+    }
+  }
+}

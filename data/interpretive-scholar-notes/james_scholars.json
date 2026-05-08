@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "james",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -107,6 +107,20 @@
               "caution": "현대 저작권 자료이므로 원문을 수록하지 않았다. 본문별 직접 주석이 아니라 역사적 예수·하나님 나라 해석 방법론의 관련 관점이다.",
               "claimOriginal": "「차별하지 말라」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Wright의 역사적 예수·하나님 나라 렌즈는 복음서와 사도행전 본문을 개인 경건만이 아니라 1세기 유대 세계와 하나님의 통치 선포 안에서 읽도록 돕는다.",
               "summaryKo": "Wright의 관점은 예수와 바울의 메시지를 1세기 유대 세계와 하나님 나라의 선포 안에서 읽게 한다. 따라서 본문을 개인 경건이나 추상 교리로만 보지 않고, 이스라엘의 이야기와 하나님의 통치라는 큰 틀 안에 놓게 한다."
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「차별하지 말라」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「차별하지 말라」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -308,6 +322,20 @@
               "caution": "현대 저작권 자료이므로 원문을 수록하지 않았다. 본문별 직접 주석이 아니라 역사적 예수·하나님 나라 해석 방법론의 관련 관점이다.",
               "claimOriginal": "「행함 없는 믿음」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Wright의 역사적 예수·하나님 나라 렌즈는 복음서와 사도행전 본문을 개인 경건만이 아니라 1세기 유대 세계와 하나님의 통치 선포 안에서 읽도록 돕는다.",
               "summaryKo": "Wright의 관점은 예수와 바울의 메시지를 1세기 유대 세계와 하나님 나라의 선포 안에서 읽게 한다. 따라서 본문을 개인 경건이나 추상 교리로만 보지 않고, 이스라엘의 이야기와 하나님의 통치라는 큰 틀 안에 놓게 한다."
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「행함 없는 믿음」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「행함 없는 믿음」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -482,6 +510,20 @@
               "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
               "claimOriginal": "「혀의 위험」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「혀의 위험」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「혀의 위험」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -656,6 +698,20 @@
               "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
               "claimOriginal": "「위로부터 난 지혜」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「위로부터 난 지혜」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「위로부터 난 지혜」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -830,6 +886,34 @@
               "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
               "claimOriginal": "「세상과 벗됨」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「세상과 벗됨」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「세상과 벗됨」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「세상과 벗됨」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「세상과 벗됨」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -1018,6 +1102,34 @@
               "caution": "경제 언어가 두드러진 본문에 적용하는 방법론이다. 모든 비유를 경제 환원적으로 읽으면 안 된다.",
               "claimOriginal": "「부자들에 대한 경고」에 나타나는 빚, 선물, 품삯, 보상, 소유, 후원 언어를 단순 비유가 아니라 고대 지중해의 종교-경제적 상상력 안에서 읽도록 돕는다. Quigley의 최근 연구는 초기 그리스도인들이 경제 언어로 하나님과 인간의 관계를 어떻게 상상했는지 묻는다.",
               "summaryKo": "Quigley의 관점은 초기 기독교의 신학 언어가 빚, 회계, 선물, 보상 같은 경제 언어와 분리되지 않았음을 보여준다. 그래서 은혜, 책임, 품삯, 재물 본문을 영적 의미와 물질적 현실이 얽힌 언어로 읽게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「부자들에 대한 경고」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「부자들에 대한 경고」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「부자들에 대한 경고」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「부자들에 대한 경고」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
             }
           ]
         },
@@ -1189,5 +1301,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

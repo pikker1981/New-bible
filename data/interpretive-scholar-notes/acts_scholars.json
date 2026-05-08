@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "acts",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -136,6 +136,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「베드로의 오순절 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「베드로의 오순절 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「베드로의 오순절 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「베드로의 오순절 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「베드로의 오순절 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「베드로의 오순절 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「베드로의 오순절 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「베드로의 오순절 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「베드로의 오순절 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -338,6 +394,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「솔로몬 행각에서의 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「솔로몬 행각에서의 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「솔로몬 행각에서의 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「솔로몬 행각에서의 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「솔로몬 행각에서의 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「솔로몬 행각에서의 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「솔로몬 행각에서의 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「솔로몬 행각에서의 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「솔로몬 행각에서의 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -540,6 +652,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「스데반의 변론」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「스데반의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「스데반의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「스데반의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「스데반의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「스데반의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「스데반의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「스데반의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「스데반의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -742,6 +910,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「고넬료 집에서의 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「고넬료 집에서의 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「고넬료 집에서의 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「고넬료 집에서의 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「고넬료 집에서의 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「고넬료 집에서의 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「고넬료 집에서의 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「고넬료 집에서의 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「고넬료 집에서의 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -944,6 +1168,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「비시디아 안디옥 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「비시디아 안디옥 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「비시디아 안디옥 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「비시디아 안디옥 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「비시디아 안디옥 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「비시디아 안디옥 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「비시디아 안디옥 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「비시디아 안디옥 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「비시디아 안디옥 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -1146,6 +1426,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「아테네 아레오바고 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「아테네 아레오바고 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「아테네 아레오바고 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「아테네 아레오바고 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「아테네 아레오바고 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「아테네 아레오바고 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「아테네 아레오바고 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「아테네 아레오바고 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「아테네 아레오바고 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -1348,6 +1684,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「밀레도 고별 설교」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「밀레도 고별 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「밀레도 고별 설교」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「밀레도 고별 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「밀레도 고별 설교」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「밀레도 고별 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「밀레도 고별 설교」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「밀레도 고별 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「밀레도 고별 설교」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -1550,6 +1942,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「바울의 첫 변론」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「바울의 첫 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「바울의 첫 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「바울의 첫 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「바울의 첫 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「바울의 첫 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「바울의 첫 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「바울의 첫 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「바울의 첫 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -1752,6 +2200,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「벨릭스 앞의 변론」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「벨릭스 앞의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「벨릭스 앞의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「벨릭스 앞의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「벨릭스 앞의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「벨릭스 앞의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「벨릭스 앞의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「벨릭스 앞의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「벨릭스 앞의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -1940,6 +2444,62 @@
               "caution": "역사적 재구성의 관련 관점이다. 정경 본문 자체의 직접 주석과 구분해야 한다.",
               "claimOriginal": "「아그립바 앞의 변론」을/를 훗날 제도화된 기독교의 틀로 곧장 읽기보다, 1~2세기 예수 운동들의 다양성과 사회적 실험 속에서 읽도록 돕는다. 이 최근 연구 흐름은 초기 공동체를 단일한 완성 체계가 아니라 형성 중인 여러 운동으로 보게 한다.",
               "summaryKo": "이 관점은 초기 예수 운동을 단일하고 완성된 제도 종교가 아니라 다양한 공동체와 기억 전승의 흐름으로 읽게 한다. 따라서 본문을 후대 정통 교리로 평평하게 만들기보다 형성 과정의 다양성과 긴장을 보게 한다."
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「아그립바 앞의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「아그립바 앞의 변론」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「아그립바 앞의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「아그립바 앞의 변론」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Scot McKnight",
+              "tradition": "복음주의-중도 / 복음·제자도 신학",
+              "relationType": "methodological",
+              "summaryKo": "McKnight식 읽기는 「아그립바 앞의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "claim": "McKnight식 읽기는 「아그립바 앞의 변론」을 단순한 개인 구원 공식이 아니라 예수 이야기 전체와 하나님 나라 복음의 맥락에서 이해한다. 본문은 믿음 고백과 공동체적 제자도, 그리고 예수를 따르는 삶의 형태를 함께 묻는 장면으로 정리된다.",
+              "sourceTitle": "The King Jesus Gospel",
+              "sourceUrl": "https://books.google.com/books/about/The_King_Jesus_Gospel.html?hl=fr&id=wueKuQAACAAJ",
+              "publicationYear": 2011,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의-중도 / 복음·제자도 신학"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「아그립바 앞의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「아그립바 앞의 변론」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -2097,5 +2657,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

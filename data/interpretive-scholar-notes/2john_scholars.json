@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "2john",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -38,6 +38,34 @@
               "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다.",
               "claimOriginal": "「미혹하는 자들을 경계함」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다."
+            },
+            {
+              "name": "D. A. Carson",
+              "tradition": "복음주의 / 역사-문법적 요한복음 주석",
+              "relationType": "methodological",
+              "summaryKo": "Carson식 읽기는 「미혹하는 자들을 경계함」을 본문 문법, 문맥, 저자 의도, 구약 배경 안에서 해석하려 한다. 특히 요한복음 계열 본문에서는 예수의 정체성과 계시, 믿음과 증언의 구조를 교리적 주장과 분리하지 않고 읽는 데 초점을 둔다.",
+              "claim": "Carson식 읽기는 「미혹하는 자들을 경계함」을 본문 문법, 문맥, 저자 의도, 구약 배경 안에서 해석하려 한다. 특히 요한복음 계열 본문에서는 예수의 정체성과 계시, 믿음과 증언의 구조를 교리적 주장과 분리하지 않고 읽는 데 초점을 둔다.",
+              "sourceTitle": "The Gospel According to John",
+              "sourceUrl": "https://www.tiu.edu/divinity/books/the-gospel-according-to-john-the-pillar-new-testament-commentary-pntc/",
+              "publicationYear": 1991,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 역사-문법적 요한복음 주석"
+            },
+            {
+              "name": "Andreas J. Köstenberger",
+              "tradition": "복음주의 / 요한문헌·성경신학",
+              "relationType": "methodological",
+              "summaryKo": "Köstenberger식 읽기는 「미혹하는 자들을 경계함」을 요한문헌의 주요 주제, 곧 말씀, 아들, 믿음, 증언, 생명, 공동체의 정체성 안에서 통합적으로 이해하려 한다. 요한복음이나 요한서신 본문에서는 개별 문장을 성경신학적 큰 흐름과 연결하는 데 강점이 있다.",
+              "claim": "Köstenberger식 읽기는 「미혹하는 자들을 경계함」을 요한문헌의 주요 주제, 곧 말씀, 아들, 믿음, 증언, 생명, 공동체의 정체성 안에서 통합적으로 이해하려 한다. 요한복음이나 요한서신 본문에서는 개별 문장을 성경신학적 큰 흐름과 연결하는 데 강점이 있다.",
+              "sourceTitle": "A Theology of John's Gospel and Letters",
+              "sourceUrl": "https://books.google.com/books/about/A_Theology_of_John_s_Gospel_and_Letters.html?id=_JbuQ2zA8eEC",
+              "publicationYear": 2009,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 요한문헌·성경신학"
             }
           ]
         },
@@ -81,6 +109,20 @@
               "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
               "claimOriginal": "「미혹하는 자들을 경계함」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "Richard Bauckham",
+              "tradition": "비평적 복음서 연구 / 목격자 증언 논의",
+              "relationType": "methodological",
+              "summaryKo": "Bauckham식 읽기는 「미혹하는 자들을 경계함」을 익명 공동체 전승의 산물로만 보지 않고, 목격자 기억과 증언의 흔적을 가진 이야기로 읽을 가능성을 열어 둔다. 따라서 본문은 신학적 구성물이면서도 역사적 기억과의 연결성을 완전히 잃지 않은 증언으로 해석된다.",
+              "claim": "Bauckham식 읽기는 「미혹하는 자들을 경계함」을 익명 공동체 전승의 산물로만 보지 않고, 목격자 기억과 증언의 흔적을 가진 이야기로 읽을 가능성을 열어 둔다. 따라서 본문은 신학적 구성물이면서도 역사적 기억과의 연결성을 완전히 잃지 않은 증언으로 해석된다.",
+              "sourceTitle": "Jesus and the Eyewitnesses",
+              "sourceUrl": "https://books.google.com/books/about/Jesus_and_the_Eyewitnesses.html?id=zcVVp_YD4w4C",
+              "publicationYear": 2006,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "비평적 복음서 연구 / 목격자 증언 논의"
             }
           ]
         },
@@ -238,5 +280,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

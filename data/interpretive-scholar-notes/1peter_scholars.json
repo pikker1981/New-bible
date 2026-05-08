@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "1peter",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -325,6 +325,20 @@
               "caution": "초기 기독교와 로마 세계의 노예제 배경 렌즈다. 본문을 현대 노예제 폐지 담론으로 곧장 환원하지 않도록 주의해야 한다.",
               "claimOriginal": "「부당한 고난과 그리스도의 본」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
               "summaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다."
+            },
+            {
+              "name": "Brian K. Blount",
+              "tradition": "아프리카계 미국인 해석학 / 마가·요한계시록과 저항",
+              "relationType": "related",
+              "summaryKo": "Blount식 읽기는 「부당한 고난과 그리스도의 본」을 흑인 교회의 설교적·해방적 경험과 연결해 읽는다. 하나님 나라와 묵시적 언어는 먼 미래의 위로만이 아니라 억압적 현실 속에서 지금 저항하고 증언하게 하는 긴박한 메시지로 이해된다.",
+              "claim": "Blount식 읽기는 「부당한 고난과 그리스도의 본」을 흑인 교회의 설교적·해방적 경험과 연결해 읽는다. 하나님 나라와 묵시적 언어는 먼 미래의 위로만이 아니라 억압적 현실 속에서 지금 저항하고 증언하게 하는 긴박한 메시지로 이해된다.",
+              "sourceTitle": "Go Preach!: Mark's Kingdom Message and the Black Church Today",
+              "sourceUrl": "https://www.amazon.com/Go-Preach-Kingdom-Message-Liberation/dp/1570751714",
+              "publicationYear": 1998,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "아프리카계 미국인 해석학 / 마가·요한계시록과 저항"
             }
           ]
         },
@@ -465,5 +479,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

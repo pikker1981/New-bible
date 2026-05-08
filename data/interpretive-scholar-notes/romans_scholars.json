@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": "scholar-notes-v17",
   "bookId": "romans",
   "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
   "sourcePolicy": {
@@ -51,6 +51,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「로마서의 중심 선언」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「로마서의 중심 선언」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「로마서의 중심 선언」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -121,6 +135,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「로마서의 중심 선언」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「로마서의 중심 선언」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「로마서의 중심 선언」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「로마서의 중심 선언」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「로마서의 중심 선언」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「로마서의 중심 선언」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「로마서의 중심 선언」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -266,6 +322,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「이방 세계의 죄」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「이방 세계의 죄」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「이방 세계의 죄」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -323,6 +393,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「이방 세계의 죄」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「이방 세계의 죄」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「이방 세계의 죄」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「이방 세계의 죄」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「이방 세계의 죄」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「이방 세계의 죄」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「이방 세계의 죄」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -468,6 +580,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「판단하는 사람의 문제」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「판단하는 사람의 문제」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「판단하는 사람의 문제」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -525,6 +651,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「판단하는 사람의 문제」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「판단하는 사람의 문제」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「판단하는 사람의 문제」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「판단하는 사람의 문제」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「판단하는 사람의 문제」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「판단하는 사람의 문제」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「판단하는 사람의 문제」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -670,6 +838,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「율법을 가진 유대인의 책임」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「율법을 가진 유대인의 책임」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「율법을 가진 유대인의 책임」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -740,6 +922,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「율법을 가진 유대인의 책임」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「율법을 가진 유대인의 책임」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「율법을 가진 유대인의 책임」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「율법을 가진 유대인의 책임」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「율법을 가진 유대인의 책임」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「율법을 가진 유대인의 책임」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「율법을 가진 유대인의 책임」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -785,6 +1009,34 @@
               "caution": "현대 문맥 적용과 해석학적 렌즈다. 본문별 직접 주석으로 표시하지 않는다.",
               "claimOriginal": "「율법을 가진 유대인의 책임」을/를 읽을 때 성서 권위가 지배적 백인 남성 중심 해석과 결합될 수 있는 방식을 비판하고, 현재 공동체의 숨, 몸, 억압 경험을 해석 과정에 포함하도록 요청한다. Parker의 최근 작업은 성서가 권위적일 수는 있지만 권위주의적으로 사용되어서는 안 된다는 질문을 던진다.",
               "summaryKo": "Parker의 관점은 성서 권위가 인종, 젠더, 권력의 현실 속에서 어떻게 작동해 왔는지 묻게 한다. 그래서 본문 해석이 누구의 생명을 살리고 누구의 숨을 억누르는지까지 함께 검토하게 한다."
+            },
+            {
+              "name": "Amy-Jill Levine",
+              "tradition": "유대교 배경·비유 연구 / 반유대주의 비판",
+              "relationType": "methodological",
+              "summaryKo": "Levine식 접근은 「율법을 가진 유대인의 책임」을 예수의 유대적 세계 안에서 읽고, 유대인 인물이나 집단을 단순한 악역으로 만드는 해석을 경계한다. 비유의 경우 익숙한 기독교적 교훈으로 길들이기보다, 1세기 유대 청중에게 불편하게 들렸을 질문을 되살리는 데 초점을 둔다.",
+              "claim": "Levine식 접근은 「율법을 가진 유대인의 책임」을 예수의 유대적 세계 안에서 읽고, 유대인 인물이나 집단을 단순한 악역으로 만드는 해석을 경계한다. 비유의 경우 익숙한 기독교적 교훈으로 길들이기보다, 1세기 유대 청중에게 불편하게 들렸을 질문을 되살리는 데 초점을 둔다.",
+              "sourceTitle": "Short Stories by Jesus / The Misunderstood Jew",
+              "sourceUrl": "https://www.harpercollins.com/products/short-stories-by-jesus-amy-jill-levine",
+              "publicationYear": 2014,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "유대교 배경·비유 연구 / 반유대주의 비판"
+            },
+            {
+              "name": "Adele Reinhartz",
+              "tradition": "요한복음·유대인 정체성·반유대주의 비판",
+              "relationType": "methodological",
+              "summaryKo": "Reinhartz식 접근은 「율법을 가진 유대인의 책임」에서 특히 요한복음의 ‘유대인들’ 표현과 배제의 언어가 후대 반유대주의 독해로 이어질 위험을 경계한다. 본문을 사랑과 계시의 복음으로 읽더라도, 그 언어가 특정 집단을 악마화하는 방식으로 사용되지 않도록 비판적으로 점검한다.",
+              "claim": "Reinhartz식 접근은 「율법을 가진 유대인의 책임」에서 특히 요한복음의 ‘유대인들’ 표현과 배제의 언어가 후대 반유대주의 독해로 이어질 위험을 경계한다. 본문을 사랑과 계시의 복음으로 읽더라도, 그 언어가 특정 집단을 악마화하는 방식으로 사용되지 않도록 비판적으로 점검한다.",
+              "sourceTitle": "Cast Out of the Covenant",
+              "sourceUrl": "https://www.lexingtonbooks.com/9781978701175/cast-out-of-the-covenant/",
+              "publicationYear": 2018,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "요한복음·유대인 정체성·반유대주의 비판"
             }
           ]
         },
@@ -885,6 +1137,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「믿음으로 드러난 하나님의 의」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「믿음으로 드러난 하나님의 의」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「믿음으로 드러난 하나님의 의」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -955,6 +1221,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「믿음으로 드러난 하나님의 의」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「믿음으로 드러난 하나님의 의」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「믿음으로 드러난 하나님의 의」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「믿음으로 드러난 하나님의 의」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「믿음으로 드러난 하나님의 의」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「믿음으로 드러난 하나님의 의」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「믿음으로 드러난 하나님의 의」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -1100,6 +1408,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「아브라함의 믿음」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「아브라함의 믿음」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「아브라함의 믿음」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -1170,6 +1492,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「아브라함의 믿음」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「아브라함의 믿음」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「아브라함의 믿음」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「아브라함의 믿음」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「아브라함의 믿음」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「아브라함의 믿음」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「아브라함의 믿음」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -1315,6 +1679,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「의롭다 하심과 화평」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「의롭다 하심과 화평」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「의롭다 하심과 화평」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -1385,6 +1763,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「의롭다 하심과 화평」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「의롭다 하심과 화평」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「의롭다 하심과 화평」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「의롭다 하심과 화평」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「의롭다 하심과 화평」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「의롭다 하심과 화평」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「의롭다 하심과 화평」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -1530,6 +1950,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「아담과 그리스도」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「아담과 그리스도」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「아담과 그리스도」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -1600,6 +2034,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「아담과 그리스도」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「아담과 그리스도」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「아담과 그리스도」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「아담과 그리스도」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「아담과 그리스도」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「아담과 그리스도」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「아담과 그리스도」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -1745,6 +2221,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「죄에 대해 죽은 사람들」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「죄에 대해 죽은 사람들」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「죄에 대해 죽은 사람들」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -1815,6 +2305,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「죄에 대해 죽은 사람들」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「죄에 대해 죽은 사람들」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「죄에 대해 죽은 사람들」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「죄에 대해 죽은 사람들」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「죄에 대해 죽은 사람들」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「죄에 대해 죽은 사람들」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「죄에 대해 죽은 사람들」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -1960,6 +2492,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「율법과 죄의 관계」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「율법과 죄의 관계」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「율법과 죄의 관계」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -2030,6 +2576,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「율법과 죄의 관계」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「율법과 죄의 관계」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「율법과 죄의 관계」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「율법과 죄의 관계」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「율법과 죄의 관계」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「율법과 죄의 관계」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「율법과 죄의 관계」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -2075,6 +2663,20 @@
               "caution": "현대 문맥 적용과 해석학적 렌즈다. 본문별 직접 주석으로 표시하지 않는다.",
               "claimOriginal": "「율법과 죄의 관계」을/를 읽을 때 성서 권위가 지배적 백인 남성 중심 해석과 결합될 수 있는 방식을 비판하고, 현재 공동체의 숨, 몸, 억압 경험을 해석 과정에 포함하도록 요청한다. Parker의 최근 작업은 성서가 권위적일 수는 있지만 권위주의적으로 사용되어서는 안 된다는 질문을 던진다.",
               "summaryKo": "Parker의 관점은 성서 권위가 인종, 젠더, 권력의 현실 속에서 어떻게 작동해 왔는지 묻게 한다. 그래서 본문 해석이 누구의 생명을 살리고 누구의 숨을 억누르는지까지 함께 검토하게 한다."
+            },
+            {
+              "name": "Amy-Jill Levine",
+              "tradition": "유대교 배경·비유 연구 / 반유대주의 비판",
+              "relationType": "methodological",
+              "summaryKo": "Levine식 접근은 「율법과 죄의 관계」을 예수의 유대적 세계 안에서 읽고, 유대인 인물이나 집단을 단순한 악역으로 만드는 해석을 경계한다. 비유의 경우 익숙한 기독교적 교훈으로 길들이기보다, 1세기 유대 청중에게 불편하게 들렸을 질문을 되살리는 데 초점을 둔다.",
+              "claim": "Levine식 접근은 「율법과 죄의 관계」을 예수의 유대적 세계 안에서 읽고, 유대인 인물이나 집단을 단순한 악역으로 만드는 해석을 경계한다. 비유의 경우 익숙한 기독교적 교훈으로 길들이기보다, 1세기 유대 청중에게 불편하게 들렸을 질문을 되살리는 데 초점을 둔다.",
+              "sourceTitle": "Short Stories by Jesus / The Misunderstood Jew",
+              "sourceUrl": "https://www.harpercollins.com/products/short-stories-by-jesus-amy-jill-levine",
+              "publicationYear": 2014,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "유대교 배경·비유 연구 / 반유대주의 비판"
             }
           ]
         },
@@ -2175,6 +2777,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「성령 안의 생명」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「성령 안의 생명」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「성령 안의 생명」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -2245,6 +2861,62 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「성령 안의 생명」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「성령 안의 생명」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「성령 안의 생명」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「성령 안의 생명」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「성령 안의 생명」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「성령 안의 생명」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「성령 안의 생명」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
+            },
+            {
+              "name": "Joel B. Green",
+              "tradition": "내러티브 비평·사회과학적 신약해석",
+              "relationType": "methodological",
+              "summaryKo": "Green식 접근은 「성령 안의 생명」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "claim": "Green식 접근은 「성령 안의 생명」을 이야기의 흐름, 인물의 반응, 사회적 위치, 공동체 형성의 효과 속에서 읽는다. 특히 누가-사도행전 계열 본문에서는 주변부, 식탁, 치유, 성령, 공동체의 경계가 어떻게 재구성되는지 보는 데 유용하다.",
+              "sourceTitle": "The Gospel of Luke",
+              "sourceUrl": "https://www.eerdmans.com/9780802823151/the-gospel-of-luke/",
+              "publicationYear": 1997,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "내러티브 비평·사회과학적 신약해석"
             }
           ]
         },
@@ -2290,6 +2962,20 @@
               "caution": "현대 문맥 적용과 해석학적 렌즈다. 본문별 직접 주석으로 표시하지 않는다.",
               "claimOriginal": "「성령 안의 생명」을/를 읽을 때 성서 권위가 지배적 백인 남성 중심 해석과 결합될 수 있는 방식을 비판하고, 현재 공동체의 숨, 몸, 억압 경험을 해석 과정에 포함하도록 요청한다. Parker의 최근 작업은 성서가 권위적일 수는 있지만 권위주의적으로 사용되어서는 안 된다는 질문을 던진다.",
               "summaryKo": "Parker의 관점은 성서 권위가 인종, 젠더, 권력의 현실 속에서 어떻게 작동해 왔는지 묻게 한다. 그래서 본문 해석이 누구의 생명을 살리고 누구의 숨을 억누르는지까지 함께 검토하게 한다."
+            },
+            {
+              "name": "Sharon H. Ringe",
+              "tradition": "여성신학 / 누가복음·요한복음·희년 신학",
+              "relationType": "methodological",
+              "summaryKo": "Ringe식 접근은 「성령 안의 생명」을 희년, 해방, 경제 정의, 공동체의 포용성이라는 렌즈로 읽는다. 특히 누가복음과 요한복음에서는 여성과 가난한 사람, 배제된 이들이 예수 공동체 안에서 어떻게 재위치되는지 주목한다.",
+              "claim": "Ringe식 접근은 「성령 안의 생명」을 희년, 해방, 경제 정의, 공동체의 포용성이라는 렌즈로 읽는다. 특히 누가복음과 요한복음에서는 여성과 가난한 사람, 배제된 이들이 예수 공동체 안에서 어떻게 재위치되는지 주목한다.",
+              "sourceTitle": "Luke / Wisdom’s Friends",
+              "sourceUrl": "https://archive.org/details/luke0000ring",
+              "publicationYear": 1995,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "여성신학 / 누가복음·요한복음·희년 신학"
             }
           ]
         },
@@ -2390,6 +3076,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「현재 고난과 장차 영광」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「현재 고난과 장차 영광」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「현재 고난과 장차 영광」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -2460,6 +3160,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「현재 고난과 장차 영광」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「현재 고난과 장차 영광」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「현재 고난과 장차 영광」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「현재 고난과 장차 영광」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「현재 고난과 장차 영광」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「현재 고난과 장차 영광」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「현재 고난과 장차 영광」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -2533,6 +3275,20 @@
               "caution": "일부 주장은 학계 내 논쟁적·추론적 성격이 있다. 직접 주석이 아니라 논쟁적 관련 관점으로만 표시해야 한다.",
               "claimOriginal": "「현재 고난과 장차 영광」을/를 읽을 때 사도·저자 개인만이 아니라 편지 작성, 전달, 낭독, 보존에 참여한 노예·하위 지위 노동의 가능성을 함께 묻게 한다. Moss의 최근 연구는 신약 형성과 확산에서 지워진 협력자들의 역할을 재고하게 한다.",
               "summaryKo": "Moss의 관점은 신약 문헌 형성 과정에 노예와 하위 지위 협력자의 쓰기 노동이 관여했을 가능성을 묻는다. 그래서 성경을 위대한 저자 개인의 산물만이 아니라 보이지 않는 노동과 권력관계 속에서 읽게 한다."
+            },
+            {
+              "name": "Brian K. Blount",
+              "tradition": "아프리카계 미국인 해석학 / 마가·요한계시록과 저항",
+              "relationType": "related",
+              "summaryKo": "Blount식 읽기는 「현재 고난과 장차 영광」을 흑인 교회의 설교적·해방적 경험과 연결해 읽는다. 하나님 나라와 묵시적 언어는 먼 미래의 위로만이 아니라 억압적 현실 속에서 지금 저항하고 증언하게 하는 긴박한 메시지로 이해된다.",
+              "claim": "Blount식 읽기는 「현재 고난과 장차 영광」을 흑인 교회의 설교적·해방적 경험과 연결해 읽는다. 하나님 나라와 묵시적 언어는 먼 미래의 위로만이 아니라 억압적 현실 속에서 지금 저항하고 증언하게 하는 긴박한 메시지로 이해된다.",
+              "sourceTitle": "Go Preach!: Mark's Kingdom Message and the Black Church Today",
+              "sourceUrl": "https://www.amazon.com/Go-Preach-Kingdom-Message-Liberation/dp/1570751714",
+              "publicationYear": 1998,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "아프리카계 미국인 해석학 / 마가·요한계시록과 저항"
             }
           ]
         },
@@ -2633,6 +3389,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「이스라엘의 문제」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「이스라엘의 문제」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「이스라엘의 문제」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -2690,6 +3460,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「이스라엘의 문제」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「이스라엘의 문제」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「이스라엘의 문제」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「이스라엘의 문제」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「이스라엘의 문제」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「이스라엘의 문제」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「이스라엘의 문제」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -2835,6 +3647,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「믿음의 말씀」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「믿음의 말씀」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「믿음의 말씀」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -2905,6 +3731,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「믿음의 말씀」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「믿음의 말씀」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「믿음의 말씀」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「믿음의 말씀」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「믿음의 말씀」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「믿음의 말씀」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「믿음의 말씀」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -3050,6 +3918,20 @@
               "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
               "claimOriginal": "「남은 자와 이방인의 접붙임」을/를 논쟁 상황에서 제기된 질문과 예수/사도의 응답이 만드는 신학적 쟁점으로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
               "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            },
+            {
+              "name": "Thomas R. Schreiner",
+              "tradition": "복음주의 / 언약신학·구속사적 신약신학",
+              "relationType": "methodological",
+              "summaryKo": "Schreiner식 접근은 「남은 자와 이방인의 접붙임」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "claim": "Schreiner식 접근은 「남은 자와 이방인의 접붙임」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sourceTitle": "New Testament Theology: Magnifying God in Christ",
+              "sourceUrl": "https://books.google.com/books/about/New_Testament_Theology.html?id=elw8xkVeTTUC",
+              "publicationYear": 2008,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "복음주의 / 언약신학·구속사적 신약신학"
             }
           ]
         },
@@ -3120,6 +4002,48 @@
               "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
               "claimOriginal": "「남은 자와 이방인의 접붙임」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
               "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            },
+            {
+              "name": "John M. G. Barclay",
+              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+              "relationType": "methodological",
+              "summaryKo": "Barclay의 관점은 「남은 자와 이방인의 접붙임」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "claim": "Barclay의 관점은 「남은 자와 이방인의 접붙임」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
+              "sourceTitle": "Paul and the Gift",
+              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+              "publicationYear": 2015,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사비평·사회인류학 / 은혜와 선물 연구"
+            },
+            {
+              "name": "Paula Fredriksen",
+              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+              "relationType": "methodological",
+              "summaryKo": "Fredriksen식 접근은 「남은 자와 이방인의 접붙임」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "claim": "Fredriksen식 접근은 「남은 자와 이방인의 접붙임」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
+              "sourceTitle": "Jesus of Nazareth, King of the Jews",
+              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+              "publicationYear": 1999,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "역사적 예수 연구 / 유대교 맥락 복원"
+            },
+            {
+              "name": "N. T. Wright",
+              "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
+              "relationType": "methodological",
+              "summaryKo": "Wright식 접근은 「남은 자와 이방인의 접붙임」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "claim": "Wright식 접근은 「남은 자와 이방인의 접붙임」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sourceTitle": "Jesus and the Victory of God",
+              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+              "publicationYear": 1996,
+              "license": "source summary only",
+              "confidence": "medium",
+              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
+              "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수"
             }
           ]
         },
@@ -3305,5 +4229,7 @@
       "basis": "publisher description",
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
-  ]
+  ],
+  "lastUpdated": "2026-05-08",
+  "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다."
 }

@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-scholar-korean-summary-v16";
+const APP_BUILD_ID = "20260508-expanded-named-scholars-v17";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
