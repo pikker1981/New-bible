@@ -63,7 +63,8 @@ const state = {
   currentContextId: null,
   pendingMark: null,
   searchRunId: 0,
-  globalSearchResultCount: 0
+  globalSearchResultCount: 0,
+  motionReady: false
 };
 
 const $ = (id) => document.getElementById(id);
@@ -399,6 +400,24 @@ async function ensureAllBooks() {
   return metas.map((meta) => state.books[meta.id]).filter(Boolean);
 }
 
+const READER_MOTION_MS = 560;
+
+function restartElementAnimation(element, className) {
+  if (!element) return;
+  element.classList.remove(className);
+  void element.offsetWidth;
+  element.classList.add(className);
+  window.setTimeout(() => element.classList.remove(className), READER_MOTION_MS);
+}
+
+function animateReaderTransition(type) {
+  const readerCard = document.querySelector(".reader-card");
+  const chapterTitle = document.querySelector(".chapter-title-wrap");
+  restartElementAnimation(readerCard, type === "book" ? "reader-book-switch" : "reader-chapter-switch");
+  restartElementAnimation(chapterTitle, "chapter-title-enter");
+  restartElementAnimation(els.verses, "verses-enter");
+}
+
 async function selectBook(bookId, chapterNumber) {
   const book = await ensureBook(bookId);
   await ensureContext(bookId);
@@ -432,11 +451,14 @@ function render() {
 
   els.chapterButtons.querySelectorAll("button").forEach((button) => {
     button.addEventListener("click", () => {
-      state.currentChapter = Number(button.dataset.chapter);
+      const nextChapter = Number(button.dataset.chapter);
+      if (nextChapter === state.currentChapter) return;
+      state.currentChapter = nextChapter;
       state.query = "";
       els.searchInput.value = "";
       hideMarkMenu();
       renderChapter();
+      animateReaderTransition("chapter");
     });
   });
 
@@ -447,6 +469,7 @@ function render() {
       els.searchInput.value = "";
       hideMarkMenu();
       renderChapter();
+      animateReaderTransition("chapter");
     }
   };
 
@@ -457,6 +480,7 @@ function render() {
       els.searchInput.value = "";
       hideMarkMenu();
       renderChapter();
+      animateReaderTransition("chapter");
     }
   };
 
@@ -465,6 +489,12 @@ function render() {
   renderContextList();
   setupResponsiveNoteLayout();
   renderChapter();
+
+  if (state.motionReady) {
+    animateReaderTransition("book");
+  } else {
+    state.motionReady = true;
+  }
 
   const firstNote = Object.keys(book.notes || {})[0];
   if (firstNote) showNote(firstNote, false);

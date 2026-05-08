@@ -9,6 +9,8 @@
   --line-soft:#F0F0F0;
   --paper:#FFFFFF;
   --bg:#F7F4EF;
+  --ease-out:cubic-bezier(.2,.8,.2,1);
+  --ease-spring:cubic-bezier(.18,.89,.32,1.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -81,10 +83,22 @@ button:disabled{opacity:.35;cursor:not-allowed}
   justify-content:space-between;
   align-items:center;
   cursor:pointer;
-  transition:.15s ease;
+  position:relative;
+  overflow:hidden;
+  transition:background-color .26s var(--ease-out), border-color .26s var(--ease-out), color .26s var(--ease-out), transform .22s var(--ease-out), box-shadow .26s var(--ease-out);
 }
-.book-btn:hover{border-color:var(--accent);transform:translateY(-1px)}
-.book-btn.active{background:var(--book-accent,var(--accent));border-color:var(--book-accent,var(--accent));color:#fff}
+.book-btn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.38), transparent);
+  transform:translateX(-115%);
+  transition:transform .46s var(--ease-out);
+  pointer-events:none;
+}
+.book-btn:hover{border-color:var(--book-accent,var(--accent));transform:translateY(-1px);box-shadow:0 8px 18px rgba(17,17,17,.06)}
+.book-btn:hover::before{transform:translateX(115%)}
+.book-btn.active{background:var(--book-accent,var(--accent));border-color:var(--book-accent,var(--accent));color:#fff;box-shadow:0 10px 24px color-mix(in srgb, var(--book-accent,var(--accent)) 22%, transparent)}
 .book-btn span{font-size:14px;font-weight:800;letter-spacing:-.02em}
 .book-btn small{font-size:10px;color:#aaa}
 .book-btn.active small{color:rgba(255,255,255,.72)}
@@ -139,8 +153,12 @@ button:disabled{opacity:.35;cursor:not-allowed}
   font-size:12px;
   font-weight:800;
   cursor:pointer;
+  position:relative;
+  overflow:hidden;
+  transition:background-color .22s var(--ease-out), border-color .22s var(--ease-out), color .22s var(--ease-out), transform .2s var(--ease-out), box-shadow .24s var(--ease-out);
 }
-.chapter-nav button:hover,.chapter-buttons button:hover{border-color:var(--accent);color:var(--accent)}
+.chapter-nav button:hover,.chapter-buttons button:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:0 7px 16px rgba(17,17,17,.05)}
+.chapter-nav button:active,.chapter-buttons button:active{transform:translateY(0) scale(.98)}
 .chapter-buttons{
   display:flex;
   flex-wrap:wrap;
@@ -148,7 +166,7 @@ button:disabled{opacity:.35;cursor:not-allowed}
   overflow:visible;
 }
 .chapter-buttons button{min-width:38px;padding:0 9px;flex:0 0 auto}
-.chapter-buttons button.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.chapter-buttons button.active{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 8px 18px color-mix(in srgb, var(--accent) 24%, transparent);animation:activeChapterPop .32s var(--ease-spring)}
 .chapter-title-wrap{
   display:flex;
   justify-content:space-between;
@@ -265,6 +283,62 @@ mark{padding:0 2px}
   padding:11px 0;
 }
 .error-box{border-color:#f2c3bd;background:#fff7f5;color:#5d1910}
+
+
+.reader-card.reader-book-switch{
+  animation:readerBookSwitch .48s var(--ease-out);
+}
+.reader-card.reader-chapter-switch{
+  animation:readerChapterSwitch .34s var(--ease-out);
+}
+.chapter-title-wrap.chapter-title-enter{
+  animation:chapterTitleEnter .36s var(--ease-out);
+}
+.verses.verses-enter .verse,
+.verses.verses-enter .search-hit{
+  animation:verseFadeUp .42s var(--ease-out) both;
+}
+.verses.verses-enter .verse:nth-child(1),
+.verses.verses-enter .search-hit:nth-child(1){animation-delay:.01s}
+.verses.verses-enter .verse:nth-child(2),
+.verses.verses-enter .search-hit:nth-child(2){animation-delay:.025s}
+.verses.verses-enter .verse:nth-child(3),
+.verses.verses-enter .search-hit:nth-child(3){animation-delay:.04s}
+.verses.verses-enter .verse:nth-child(4),
+.verses.verses-enter .search-hit:nth-child(4){animation-delay:.055s}
+.verses.verses-enter .verse:nth-child(5),
+.verses.verses-enter .search-hit:nth-child(5){animation-delay:.07s}
+.verses.verses-enter .verse:nth-child(n+6),
+.verses.verses-enter .search-hit:nth-child(n+6){animation-delay:.085s}
+@keyframes readerBookSwitch{
+  0%{opacity:.82;transform:translateY(8px) scale(.995)}
+  100%{opacity:1;transform:translateY(0) scale(1)}
+}
+@keyframes readerChapterSwitch{
+  0%{opacity:.9;transform:translateY(5px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@keyframes chapterTitleEnter{
+  0%{opacity:.35;transform:translateX(-8px)}
+  100%{opacity:1;transform:translateX(0)}
+}
+@keyframes verseFadeUp{
+  0%{opacity:0;transform:translateY(9px)}
+  100%{opacity:1;transform:translateY(0)}
+}
+@keyframes activeChapterPop{
+  0%{transform:scale(.94)}
+  70%{transform:scale(1.045)}
+  100%{transform:scale(1)}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+  }
+}
 
 @media (max-width:1280px){
   .layout{grid-template-columns:300px minmax(0,1fr)}
