@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-all-books-section-intros-v10";
+const APP_BUILD_ID = "20260508-interpretive-views-v11";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -170,19 +170,162 @@ function renderSectionIntro(item) {
     discourse: "강론",
     sign: "표적",
     passion: "수난",
-    resurrection: "부활"
+    resurrection: "부활",
+    argument: "논쟁",
+    warning: "경고",
+    teaching: "가르침",
+    vision: "환상",
+    defense: "변론",
+    household: "가정 규범",
+    discipline: "교정",
+    exposition: "해설",
+    appeal: "호소",
+    conflict: "갈등"
   };
   const type = typeLabelMap[item.type] || item.typeLabel || "안내";
   const title = item.title || "본문 안내";
   const intro = item.intro || item.summary || "";
+  const hasViews = Boolean(item.interpretiveViews);
 
   return (
     '<aside class="section-intro-card" data-intro-id="' + escapeHTML(item.id || "") + '">' +
-    '<div class="section-intro-meta">' + escapeHTML(type) + '</div>' +
-    '<strong>' + escapeHTML(title) + '</strong>' +
-    '<p>' + escapeHTML(intro) + '</p>' +
+      '<div class="section-intro-topline">' +
+        '<div class="section-intro-meta">' + escapeHTML(type) + '</div>' +
+        (hasViews ? '<button class="section-intro-view-btn" type="button" data-intro-view="' + escapeHTML(item.id || "") + '">해석 관점</button>' : '') +
+      '</div>' +
+      '<strong>' + escapeHTML(title) + '</strong>' +
+      '<p>' + escapeHTML(intro) + '</p>' +
     '</aside>'
   );
+}
+
+function getSectionIntroById(introId) {
+  const intros = state.sectionIntros[state.currentBookId] || [];
+  return intros.find((item) => item.id === introId) || null;
+}
+
+function renderPointList(points) {
+  if (!Array.isArray(points) || points.length === 0) return "";
+  return '<ul>' + points.map((point) => '<li>' + escapeHTML(point) + '</li>').join("") + '</ul>';
+}
+
+function renderInterpretiveViewBlock(view, fallbackLabel) {
+  if (!view) return "";
+  const label = view.label || fallbackLabel;
+  const lens = view.lens ? '<span>' + escapeHTML(view.lens) + '</span>' : '';
+  return (
+    '<section class="interpretive-view-card">' +
+      '<h4>' + escapeHTML(label) + lens + '</h4>' +
+      renderPointList(view.points || []) +
+    '</section>'
+  );
+}
+
+function renderInterpretiveViewsContent(item) {
+  const views = item?.interpretiveViews || {};
+  const note = views.note || "아래 관점들은 정답 경쟁이 아니라, 본문을 읽는 대표적 해석 렌즈입니다.";
+  const agreement = views.agreement || [];
+  const tension = views.tension || [];
+
+  return (
+    '<div class="interpretive-popup-body">' +
+      '<p class="interpretive-popup-note">' + escapeHTML(note) + '</p>' +
+      '<div class="interpretive-view-grid">' +
+        renderInterpretiveViewBlock(views.conservative, "보수적 시선") +
+        renderInterpretiveViewBlock(views.moderate, "중도적 시선") +
+        renderInterpretiveViewBlock(views.progressive, "진보적 시선") +
+      '</div>' +
+      '<div class="interpretive-summary-grid">' +
+        '<section><h4>공통 지점</h4>' + renderPointList(agreement) + '</section>' +
+        '<section><h4>충돌 지점</h4>' + renderPointList(tension) + '</section>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function getInterpretivePopup() {
+  let popup = document.getElementById("interpretivePopup");
+  if (popup) return popup;
+
+  popup = document.createElement("div");
+  popup.id = "interpretivePopup";
+  popup.className = "interpretive-popup";
+  popup.setAttribute("aria-hidden", "true");
+  popup.innerHTML =
+    '<div class="interpretive-popup-backdrop" data-interpretive-close="true"></div>' +
+    '<section class="interpretive-popup-sheet" role="dialog" aria-modal="true" aria-labelledby="interpretivePopupTitle" tabindex="-1">' +
+      '<div class="interpretive-popup-head">' +
+        '<div>' +
+          '<div class="interpretive-popup-kicker">INTERPRETATION</div>' +
+          '<h2 id="interpretivePopupTitle">해석 관점</h2>' +
+        '</div>' +
+        '<button class="interpretive-popup-close" type="button" data-interpretive-close="true" aria-label="해석 관점 닫기">닫기</button>' +
+      '</div>' +
+      '<div id="interpretivePopupContent" class="interpretive-popup-content"></div>' +
+    '</section>';
+
+  document.body.appendChild(popup);
+  popup.querySelectorAll('[data-interpretive-close="true"]').forEach((item) => {
+    item.addEventListener("click", closeInterpretivePopup);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && popup.classList.contains("show")) closeInterpretivePopup();
+  });
+
+  return popup;
+}
+
+function showInterpretiveView(introId) {
+  const item = getSectionIntroById(introId);
+  if (!item || !item.interpretiveViews) return;
+
+  const title = item.title || "해석 관점";
+  const body = renderInterpretiveViewsContent(item);
+
+  if (showMobileInfoPopup({
+    kicker: "INTERPRETATION · 해석 관점",
+    title,
+    body
+  })) {
+    return;
+  }
+
+  const popup = getInterpretivePopup();
+  const titleEl = popup.querySelector("#interpretivePopupTitle");
+  const contentEl = popup.querySelector("#interpretivePopupContent");
+  const sheet = popup.querySelector(".interpretive-popup-sheet");
+
+  if (titleEl) titleEl.textContent = title;
+  if (contentEl) contentEl.innerHTML = body;
+
+  popup.setAttribute("aria-hidden", "false");
+  popup.classList.add("show");
+  document.body.classList.add("interpretive-popup-open");
+  hideMarkMenu();
+
+  requestAnimationFrame(() => {
+    if (sheet) sheet.focus({ preventScroll: true });
+  });
+}
+
+function closeInterpretivePopup() {
+  const popup = document.getElementById("interpretivePopup");
+  if (!popup) return;
+  popup.classList.remove("show");
+  popup.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("interpretive-popup-open");
+}
+
+function bindSectionIntroButtons() {
+  els.verses.querySelectorAll(".section-intro-view-btn").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      showInterpretiveView(button.dataset.introView);
+    });
+  });
 }
 
 function escapeHTML(value) {
@@ -612,6 +755,7 @@ function renderChapter() {
 
   bindFootnoteButtons();
   bindContextButtons();
+  bindSectionIntroButtons();
   bindChapterBottomNav();
   updateSearchMeta();
   renderHighlightList();

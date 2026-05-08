@@ -1099,3 +1099,187 @@ body.mobile-popup-open{overflow:hidden;touch-action:none}
 @media (prefers-reduced-motion: reduce){
   .section-intro-card{animation:none}
 }
+
+/* Interpretive view buttons and popups */
+.section-intro-topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+.section-intro-view-btn{
+  border:1px solid color-mix(in srgb, var(--accent) 28%, var(--line));
+  background:#fff;
+  color:var(--accent);
+  min-height:28px;
+  padding:0 11px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:-.01em;
+  cursor:pointer;
+  transition:transform .16s ease,border-color .16s ease,background .16s ease,color .16s ease,box-shadow .16s ease;
+  flex:0 0 auto;
+}
+.section-intro-view-btn:hover{
+  transform:translateY(-1px);
+  border-color:var(--accent);
+  background:var(--accent);
+  color:#fff;
+  box-shadow:0 8px 18px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.interpretive-popup{
+  position:fixed;
+  inset:0;
+  z-index:10020;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .18s ease;
+}
+.interpretive-popup.show{
+  opacity:1;
+  pointer-events:auto;
+}
+.interpretive-popup-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(17,17,17,.38);
+  backdrop-filter:blur(3px);
+}
+.interpretive-popup-sheet{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:min(920px,calc(100vw - 40px));
+  max-height:min(78vh,760px);
+  transform:translate(-50%,-48%) scale(.985);
+  overflow:auto;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:28px;
+  box-shadow:0 34px 90px rgba(17,17,17,.24);
+  padding:26px;
+  outline:none;
+  transition:transform .22s var(--ease-out);
+}
+.interpretive-popup.show .interpretive-popup-sheet{
+  transform:translate(-50%,-50%) scale(1);
+}
+.interpretive-popup-head{
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  align-items:flex-start;
+  padding-bottom:18px;
+  border-bottom:1px solid var(--line-soft);
+  margin-bottom:18px;
+}
+.interpretive-popup-kicker{
+  color:var(--accent);
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.18em;
+}
+.interpretive-popup-head h2{
+  margin-top:8px;
+  font-size:30px;
+  line-height:1.15;
+  letter-spacing:-.045em;
+}
+.interpretive-popup-close{
+  border:1px solid var(--line);
+  background:#fff;
+  color:#555;
+  min-height:34px;
+  padding:0 13px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:850;
+  cursor:pointer;
+}
+.interpretive-popup-close:hover{border-color:var(--accent);color:var(--accent)}
+.interpretive-popup-note{
+  padding:12px 14px;
+  border:1px solid color-mix(in srgb, var(--accent) 16%, var(--line));
+  border-radius:18px;
+  background:color-mix(in srgb, var(--accent) 5%, #fff);
+  color:#666;
+  font-size:13px;
+  line-height:1.65;
+  word-break:keep-all;
+}
+.interpretive-view-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-top:14px;
+}
+.interpretive-view-card,
+.interpretive-summary-grid section{
+  border:1px solid var(--line-soft);
+  background:#fff;
+  border-radius:20px;
+  padding:15px;
+}
+.interpretive-view-card h4,
+.interpretive-summary-grid h4{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  color:#111;
+  font-size:14px;
+  line-height:1.35;
+  letter-spacing:-.02em;
+  margin:0 0 10px;
+}
+.interpretive-view-card h4 span{
+  color:var(--accent);
+  font-size:10px;
+  font-weight:850;
+  letter-spacing:-.01em;
+}
+.interpretive-popup-body ul{
+  margin:0;
+  padding-left:17px;
+  color:#555;
+  font-size:13px;
+  line-height:1.7;
+  word-break:keep-all;
+}
+.interpretive-popup-body li + li{margin-top:6px}
+.interpretive-summary-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:12px;
+}
+.interpretive-summary-grid section{background:#FAFAFA}
+body.interpretive-popup-open{overflow:hidden}
+
+@media (max-width:860px){
+  .section-intro-topline{align-items:flex-start}
+  .section-intro-view-btn{min-height:27px;padding:0 10px;font-size:9.5px}
+  .mobile-info-body .interpretive-popup-note{
+    font-size:12.5px;
+    line-height:1.65;
+    border-radius:16px;
+  }
+  .mobile-info-body .interpretive-view-grid,
+  .mobile-info-body .interpretive-summary-grid{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .mobile-info-body .interpretive-view-card,
+  .mobile-info-body .interpretive-summary-grid section{
+    border-radius:18px;
+    padding:14px;
+  }
+  .mobile-info-body .interpretive-popup-body ul{font-size:12.5px;line-height:1.7}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .section-intro-view-btn,
+  .interpretive-popup,
+  .interpretive-popup-sheet{transition:none}
+}
