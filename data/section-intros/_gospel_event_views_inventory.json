@@ -1,0 +1,177 @@
+{
+  "version": "20260508-gospel-event-views-v20",
+  "description": "복음서 주요 사건·표적·부활 장면까지 해석 관점과 상세/신학자별 팝업을 확장한 인벤토리입니다.",
+  "totalSectionFiles": 27,
+  "totalSections": 586,
+  "sectionsWithInterpretiveViews": 449,
+  "gospelEventSignResurrectionViews": 234,
+  "addedEventInterpretiveViews": 234,
+  "addedByBook": {
+    "matthew": 67,
+    "mark": 64,
+    "luke": 70,
+    "john": 33
+  },
+  "addedByCategory": {
+    "genealogy_birth": 16,
+    "john_baptist": 8,
+    "baptism": 3,
+    "temptation": 3,
+    "mission_start": 5,
+    "calling_discipleship": 18,
+    "healing": 25,
+    "outsider": 6,
+    "nature_sign": 14,
+    "exorcism": 7,
+    "controversy": 35,
+    "generic": 18,
+    "status_children": 9,
+    "entry_temple": 6,
+    "temple": 4,
+    "passion_start": 3,
+    "passion_anointing": 4,
+    "last_supper": 3,
+    "gethsemane_arrest": 7,
+    "trial_denial": 13,
+    "crucifixion_death_burial": 12,
+    "resurrection": 12,
+    "prologue": 3
+  },
+  "byBook": {
+    "1corinthians": {
+      "sections": 19,
+      "interpretiveViews": 15,
+      "eventSignResurrectionViews": 0
+    },
+    "1john": {
+      "sections": 9,
+      "interpretiveViews": 7,
+      "eventSignResurrectionViews": 0
+    },
+    "1peter": {
+      "sections": 9,
+      "interpretiveViews": 2,
+      "eventSignResurrectionViews": 0
+    },
+    "1thessalonians": {
+      "sections": 7,
+      "interpretiveViews": 2,
+      "eventSignResurrectionViews": 0
+    },
+    "1timothy": {
+      "sections": 9,
+      "interpretiveViews": 3,
+      "eventSignResurrectionViews": 0
+    },
+    "2corinthians": {
+      "sections": 15,
+      "interpretiveViews": 9,
+      "eventSignResurrectionViews": 0
+    },
+    "2john": {
+      "sections": 2,
+      "interpretiveViews": 1,
+      "eventSignResurrectionViews": 0
+    },
+    "2peter": {
+      "sections": 5,
+      "interpretiveViews": 3,
+      "eventSignResurrectionViews": 0
+    },
+    "2thessalonians": {
+      "sections": 5,
+      "interpretiveViews": 3,
+      "eventSignResurrectionViews": 0
+    },
+    "2timothy": {
+      "sections": 8,
+      "interpretiveViews": 3,
+      "eventSignResurrectionViews": 0
+    },
+    "3john": {
+      "sections": 3,
+      "interpretiveViews": 1,
+      "eventSignResurrectionViews": 0
+    },
+    "acts": {
+      "sections": 46,
+      "interpretiveViews": 10,
+      "eventSignResurrectionViews": 0
+    },
+    "colossians": {
+      "sections": 8,
+      "interpretiveViews": 2,
+      "eventSignResurrectionViews": 0
+    },
+    "ephesians": {
+      "sections": 11,
+      "interpretiveViews": 4,
+      "eventSignResurrectionViews": 0
+    },
+    "galatians": {
+      "sections": 12,
+      "interpretiveViews": 6,
+      "eventSignResurrectionViews": 0
+    },
+    "hebrews": {
+      "sections": 16,
+      "interpretiveViews": 13,
+      "eventSignResurrectionViews": 0
+    },
+    "james": {
+      "sections": 10,
+      "interpretiveViews": 6,
+      "eventSignResurrectionViews": 0
+    },
+    "john": {
+      "sections": 42,
+      "interpretiveViews": 42,
+      "eventSignResurrectionViews": 33
+    },
+    "jude": {
+      "sections": 4,
+      "interpretiveViews": 1,
+      "eventSignResurrectionViews": 0
+    },
+    "luke": {
+      "sections": 99,
+      "interpretiveViews": 99,
+      "eventSignResurrectionViews": 70
+    },
+    "mark": {
+      "sections": 72,
+      "interpretiveViews": 72,
+      "eventSignResurrectionViews": 64
+    },
+    "matthew": {
+      "sections": 104,
+      "interpretiveViews": 104,
+      "eventSignResurrectionViews": 67
+    },
+    "philemon": {
+      "sections": 4,
+      "interpretiveViews": 2,
+      "eventSignResurrectionViews": 0
+    },
+    "philippians": {
+      "sections": 8,
+      "interpretiveViews": 1,
+      "eventSignResurrectionViews": 0
+    },
+    "revelation": {
+      "sections": 30,
+      "interpretiveViews": 21,
+      "eventSignResurrectionViews": 0
+    },
+    "romans": {
+      "sections": 23,
+      "interpretiveViews": 15,
+      "eventSignResurrectionViews": 0
+    },
+    "titus": {
+      "sections": 6,
+      "interpretiveViews": 2,
+      "eventSignResurrectionViews": 0
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "version": "20260508-gospel-event-views-v20",
+  "description": "복음서 주요 사건에 추가된 학자별 실제 해석 요약 데이터 인벤토리입니다.",
+  "addedScholarIntroItems": 234,
+  "addedScholarCards": 3041,
+  "policy": "원문 장문 인용 없이 출처 기반 한국어 요약/의역만 수록했습니다."
+}
