@@ -73,6 +73,7 @@ const els = {
   bookCount: $("bookCount"),
   bookList: $("bookList"),
   bookTitle: $("bookTitle"),
+  bookEnglishTitle: $("bookEnglishTitle"),
   bookDesc: $("bookDesc"),
   readerKicker: $("readerKicker"),
   chapterStat: $("chapterStat"),
@@ -419,7 +420,8 @@ function render() {
   const order = String(book.order).padStart(2, "0");
   els.readerKicker.textContent = "NEW TESTAMENT · " + order;
   els.bookTitle.textContent = book.bookKo;
-  els.bookDesc.textContent = book.bookEn + " · " + book.chapterCount + "장 · " + book.verseCount + "절 · 인명·지명·용어 설명 포함";
+  if (els.bookEnglishTitle) els.bookEnglishTitle.textContent = book.bookEn || "";
+  els.bookDesc.textContent = book.chapterCount + "장 · " + book.verseCount + "절 · 인명·지명·용어·시대 배경 설명 포함";
   els.chapterStat.textContent = book.chapterCount + "장";
   els.verseStat.textContent = book.verseCount;
 
@@ -1451,6 +1453,7 @@ async function init() {
   } catch (error) {
     console.error(error);
     els.bookTitle.textContent = "로딩 실패";
+    if (els.bookEnglishTitle) els.bookEnglishTitle.textContent = "Loading failed";
     els.bookDesc.textContent = "데이터 파일 경로를 확인하세요.";
     els.verses.innerHTML =
       '<div class="error-box">' +
