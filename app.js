@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-expanded-named-scholars-v17";
+const APP_BUILD_ID = "20260508-interpretive-detail-click-fix-v18";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -522,7 +522,11 @@ function scrollInterpretiveDetailIntoView(scope) {
   if (panel) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
+let interpretiveDetailDelegationBound = false;
+
 function bindInterpretiveDetailDelegation() {
+  if (interpretiveDetailDelegationBound) return;
+  interpretiveDetailDelegationBound = true;
   document.addEventListener("click", (event) => {
     const detailButton = event.target.closest("[data-interpretive-detail]");
     if (detailButton) {
@@ -537,7 +541,7 @@ function bindInterpretiveDetailDelegation() {
       event.preventDefault();
       event.stopPropagation();
       const body = closeButton.closest(".interpretive-popup-body");
-      const activeIntro = body?.querySelector(".interpretive-detail-btn")?.dataset.introId;
+      const activeIntro = body?.querySelector("[data-intro-id]")?.dataset.introId;
       if (activeIntro) refreshInterpretivePopupContent(activeIntro, null);
     }
   });
@@ -2343,6 +2347,7 @@ async function init() {
     bindHighlightTabs();
     bindMobileHighlightToggle();
     bindContextTabs();
+    bindInterpretiveDetailDelegation();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
     console.error(error);
