@@ -1,0 +1,175 @@
+{
+  "schema": "nt-context-inventory-v2-rich",
+  "updatedAt": "2026-05-08",
+  "totalBooks": 27,
+  "totalEntries": 249,
+  "books": [
+    {
+      "bookId": "matthew",
+      "bookKo": "마태복음",
+      "entries": 18,
+      "file": "data/context/matthew_context.json"
+    },
+    {
+      "bookId": "mark",
+      "bookKo": "마가복음",
+      "entries": 14,
+      "file": "data/context/mark_context.json"
+    },
+    {
+      "bookId": "luke",
+      "bookKo": "누가복음",
+      "entries": 16,
+      "file": "data/context/luke_context.json"
+    },
+    {
+      "bookId": "john",
+      "bookKo": "요한복음",
+      "entries": 15,
+      "file": "data/context/john_context.json"
+    },
+    {
+      "bookId": "acts",
+      "bookKo": "사도행전",
+      "entries": 18,
+      "file": "data/context/acts_context.json"
+    },
+    {
+      "bookId": "romans",
+      "bookKo": "로마서",
+      "entries": 12,
+      "file": "data/context/romans_context.json"
+    },
+    {
+      "bookId": "1corinthians",
+      "bookKo": "고린도전서",
+      "entries": 12,
+      "file": "data/context/1corinthians_context.json"
+    },
+    {
+      "bookId": "2corinthians",
+      "bookKo": "고린도후서",
+      "entries": 10,
+      "file": "data/context/2corinthians_context.json"
+    },
+    {
+      "bookId": "galatians",
+      "bookKo": "갈라디아서",
+      "entries": 8,
+      "file": "data/context/galatians_context.json"
+    },
+    {
+      "bookId": "ephesians",
+      "bookKo": "에베소서",
+      "entries": 9,
+      "file": "data/context/ephesians_context.json"
+    },
+    {
+      "bookId": "philippians",
+      "bookKo": "빌립보서",
+      "entries": 8,
+      "file": "data/context/philippians_context.json"
+    },
+    {
+      "bookId": "colossians",
+      "bookKo": "골로새서",
+      "entries": 8,
+      "file": "data/context/colossians_context.json"
+    },
+    {
+      "bookId": "1thessalonians",
+      "bookKo": "데살로니가전서",
+      "entries": 7,
+      "file": "data/context/1thessalonians_context.json"
+    },
+    {
+      "bookId": "2thessalonians",
+      "bookKo": "데살로니가후서",
+      "entries": 6,
+      "file": "data/context/2thessalonians_context.json"
+    },
+    {
+      "bookId": "1timothy",
+      "bookKo": "디모데전서",
+      "entries": 7,
+      "file": "data/context/1timothy_context.json"
+    },
+    {
+      "bookId": "2timothy",
+      "bookKo": "디모데후서",
+      "entries": 6,
+      "file": "data/context/2timothy_context.json"
+    },
+    {
+      "bookId": "titus",
+      "bookKo": "디도서",
+      "entries": 7,
+      "file": "data/context/titus_context.json"
+    },
+    {
+      "bookId": "philemon",
+      "bookKo": "빌레몬서",
+      "entries": 6,
+      "file": "data/context/philemon_context.json"
+    },
+    {
+      "bookId": "hebrews",
+      "bookKo": "히브리서",
+      "entries": 7,
+      "file": "data/context/hebrews_context.json"
+    },
+    {
+      "bookId": "james",
+      "bookKo": "야고보서",
+      "entries": 7,
+      "file": "data/context/james_context.json"
+    },
+    {
+      "bookId": "1peter",
+      "bookKo": "베드로전서",
+      "entries": 8,
+      "file": "data/context/1peter_context.json"
+    },
+    {
+      "bookId": "2peter",
+      "bookKo": "베드로후서",
+      "entries": 6,
+      "file": "data/context/2peter_context.json"
+    },
+    {
+      "bookId": "1john",
+      "bookKo": "요한일서",
+      "entries": 6,
+      "file": "data/context/1john_context.json"
+    },
+    {
+      "bookId": "2john",
+      "bookKo": "요한이서",
+      "entries": 5,
+      "file": "data/context/2john_context.json"
+    },
+    {
+      "bookId": "3john",
+      "bookKo": "요한삼서",
+      "entries": 5,
+      "file": "data/context/3john_context.json"
+    },
+    {
+      "bookId": "jude",
+      "bookKo": "유다서",
+      "entries": 6,
+      "file": "data/context/jude_context.json"
+    },
+    {
+      "bookId": "revelation",
+      "bookKo": "요한계시록",
+      "entries": 12,
+      "file": "data/context/revelation_context.json"
+    }
+  ],
+  "qualityPolicy": {
+    "displayModel": "무엇인가 / 당시 상황 / 본문에서의 의미 / 현대 독자의 오독 주의 / 추가 설명 / 출처·근거",
+    "certainty": "high=본문·역사 배경에서 넓게 합의된 항목, medium=학계 논의가 있거나 재구성 주의가 필요한 항목, low=현재 사용하지 않음",
+    "separation": "본문 의미와 현대 적용을 섞지 않고, 먼저 1세기 유대교·그레코-로마·로마 제국 배경을 제시한다."
+  }
+}

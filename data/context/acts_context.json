@@ -1,127 +1,478 @@
 {
   "bookId": "acts",
-  "schema": "nt-modern-context-v1",
+  "bookKo": "사도행전",
+  "bookEn": "Acts",
+  "schema": "nt-context-v2-rich",
   "updatedAt": "2026-05-08",
-  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "editorialNote": "각 항목은 인물·지명·문화·역사 배경을 “당시 상황 → 본문 기능 → 현대 오독 주의” 순서로 설명한다. 본문 자체와 학술적 배경 설명을 구분하기 위해 certainty와 basis를 표기한다.",
   "contexts": {
     "jerusalem": {
       "type": "place",
       "label": "예루살렘",
       "aliases": [
-        "예루살렘"
+        "예루살렘",
+        "시온"
       ],
-      "refs": [
-        "1:4",
-        "2:5"
-      ],
-      "summary": "예루살렘은 사도행전 초반 공동체의 출발점입니다.",
-      "ancientContext": "성전과 순례 중심지였던 예루살렘은 유대 신앙의 상징적 중심이었습니다.",
-      "textFunction": "사도행전은 복음이 예루살렘에서 시작해 유대와 사마리아, 땅끝으로 확장되는 구조를 가집니다.",
-      "avoidModernReading": "단순한 도시명으로만 읽으면 중심에서 주변으로 확장되는 서사 구조를 놓칩니다.",
-      "certainty": "high",
-      "basis": "scholarly-consensus",
       "category": [
-        "지명"
+        "지명",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "예루살렘은 성전, 왕권 기억, 예언자 전통, 절기 순례, 심판과 회복 기대가 모이는 상징적 도시입니다.",
+      "ancientContext": "1세기 예루살렘은 유대교의 중심이면서 로마 지배와 지역 엘리트 권력이 만나는 긴장의 장소였습니다. 절기 때에는 순례자들이 몰려 종교적 열기와 정치적 불안이 커졌습니다.",
+      "textFunction": "예루살렘 장면은 예수 운동이 이스라엘 이야기의 중심부와 충돌하고, 동시에 그곳에서 새 출발을 한다는 의미를 갖습니다.",
+      "avoidModernReading": "현대 관광지나 단순 수도 개념으로 보면 예루살렘이 가진 성전·왕권·예언의 무게를 놓칩니다.",
+      "body": "예루살렘은 지리 이상의 의미를 갖습니다. 복음서에서는 예수의 죽음이 향하는 장소이고, 사도행전에서는 복음이 시작되어 세계로 뻗어가는 출발점입니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "jerusalem",
+      "refs": [
+        "1:4-8",
+        "2:5-47",
+        "6:7",
+        "15:1-35"
       ],
       "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
         {
           "title": "SBL Bible Odyssey",
           "type": "academic-public",
           "url": "https://www.bibleodyssey.org/",
-          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
         },
         {
-          "title": "NET Bible Full Notes Edition",
+          "title": "NET Bible Notes / Full Notes Edition",
           "type": "study-notes",
-          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
-          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
         },
         {
-          "title": "BibleProject — Ancient historical context",
-          "type": "educational",
-          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
-          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
         }
       ]
     },
-    "pentecost": {
-      "type": "culture",
-      "label": "오순절",
+    "temple": {
+      "type": "place",
+      "label": "성전",
       "aliases": [
-        "오순절",
-        "성령"
+        "성전",
+        "예루살렘 성전",
+        "주님의 집"
       ],
-      "refs": [
-        "2:1-13"
-      ],
-      "summary": "오순절은 유대 절기 중 하나로, 신약에서는 성령 강림 사건과 연결됩니다.",
-      "ancientContext": "흩어진 유대인들이 예루살렘에 모이는 순례 절기였기 때문에 여러 지역 언어와 민족성이 한자리에 나타납니다.",
-      "textFunction": "사도행전 2장은 성령 사건을 국제적·공동체적 장면으로 보여줍니다.",
-      "avoidModernReading": "개인의 신비 체험으로만 읽으면 흩어진 민족과 언어를 넘어서는 공동체 형성 의미를 놓칩니다.",
-      "certainty": "high",
-      "basis": "scholarly-consensus",
       "category": [
+        "지명",
+        "역사",
         "문화"
       ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "예루살렘 성전은 1세기 유대교의 예배, 제사, 절기 순례, 공동체 정체성의 중심 공간이었습니다.",
+      "ancientContext": "성전은 개인 경건을 위한 건물만이 아니라, 제사장 체계·희생 제사·정결 규례·민족적 기억이 결합된 제도였습니다. 헤롯 대왕이 확장한 성전은 종교 공간인 동시에 유대 지역의 정치적 긴장과 로마 지배의 현실을 드러내는 장소였습니다.",
+      "textFunction": "성전이 등장하는 본문은 하나님 임재, 제도 종교, 권위 충돌, 심판 예고, 새 공동체의 정체성을 함께 보여줍니다.",
+      "avoidModernReading": "현대 교회 건물이나 예배당 개념으로만 읽으면 성전이 가진 제사·정결·정치·민족 정체성의 밀도를 놓칩니다.",
+      "body": "성전 배경을 볼 때 핵심은 “거룩한 공간”과 “권력의 공간”이 겹쳐 있었다는 점입니다. 예수와 사도들의 성전 관련 행동은 단순한 종교 비판이 아니라, 이스라엘의 중심 상징을 둘러싼 하나님 나라 선포로 읽어야 합니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "temple",
+      "refs": [
+        "2:46",
+        "3:1-10",
+        "5:12-42"
+      ],
       "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
         {
           "title": "SBL Bible Odyssey",
           "type": "academic-public",
           "url": "https://www.bibleodyssey.org/",
-          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
         },
         {
-          "title": "NET Bible Full Notes Edition",
+          "title": "NET Bible Notes / Full Notes Edition",
           "type": "study-notes",
-          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
-          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
         },
         {
-          "title": "BibleProject — Ancient historical context",
-          "type": "educational",
-          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
-          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
         }
       ]
     },
-    "paul-acts": {
-      "type": "person",
-      "label": "바울",
+    "diaspora": {
+      "type": "history",
+      "label": "디아스포라 유대인",
       "aliases": [
-        "사울",
-        "바울"
+        "흩어진",
+        "디아스포라",
+        "유대인들",
+        "각 나라"
       ],
-      "refs": [
-        "9:1-19",
-        "13:9"
-      ],
-      "summary": "바울은 초기 그리스도 운동의 핵심 선교자로 사도행전 후반의 중심 인물입니다.",
-      "ancientContext": "그는 유대적 배경과 로마 세계 안의 이동성을 함께 가진 인물로 서술됩니다.",
-      "textFunction": "사도행전은 바울을 통해 복음이 도시와 회당, 법정과 제국 세계로 확장되는 모습을 보여줍니다.",
-      "avoidModernReading": "개인 회심담으로만 읽으면 사도행전의 지리적·사회적 확장 구조를 놓치게 됩니다.",
-      "certainty": "high",
-      "basis": "scholarly-consensus",
       "category": [
-        "인물"
+        "역사",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "디아스포라 유대인은 팔레스타인 밖 여러 도시에서 회당과 공동체를 이루며 살던 유대인을 가리킵니다.",
+      "ancientContext": "바벨론 포로 이후와 헬레니즘·로마 시대를 거치며 많은 유대인 공동체가 지중해 도시 곳곳에 형성되었습니다. 이들은 현지 언어와 제국 질서 속에 살면서도 토라와 절기, 회당을 통해 정체성을 유지했습니다.",
+      "textFunction": "사도행전과 바울 서신에서 복음이 회당을 통해 여러 도시로 확산되는 배경을 설명합니다.",
+      "avoidModernReading": "유대인을 한 지역에만 사는 단일 집단으로 보면 신약의 도시 선교와 유대-이방인 논쟁을 이해하기 어렵습니다.",
+      "body": "디아스포라 배경을 알면 왜 바울이 새로운 도시에 갈 때 회당을 먼저 찾는지, 왜 헬라어와 구약 인용이 함께 등장하는지 더 자연스럽게 보입니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "diaspora",
+      "refs": [
+        "2:5-11",
+        "6:1",
+        "13:5",
+        "17:1-4"
       ],
       "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
         {
           "title": "SBL Bible Odyssey",
           "type": "academic-public",
           "url": "https://www.bibleodyssey.org/",
-          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
         },
         {
-          "title": "NET Bible Full Notes Edition",
+          "title": "NET Bible Notes / Full Notes Edition",
           "type": "study-notes",
-          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
-          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
         },
         {
-          "title": "BibleProject — Ancient historical context",
-          "type": "educational",
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "synagogue": {
+      "type": "place",
+      "label": "회당",
+      "aliases": [
+        "회당"
+      ],
+      "category": [
+        "지명",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "회당은 유대인 공동체가 성경을 읽고 가르침을 듣고 공동체 생활을 조직하던 지역 중심 공간이었습니다.",
+      "ancientContext": "제2성전기와 1세기 디아스포라 유대 사회에서 회당은 제사를 드리는 성전과 달리, 토라 낭독·해석·교육·공동체 결정이 이루어지는 장소였습니다. 갈릴리와 디아스포라 도시의 회당은 예수와 바울이 사람들을 만나는 주요 접점이 됩니다.",
+      "textFunction": "회당 장면은 복음이 먼저 유대 공동체 내부에서 선포되고 논쟁되었다는 사실을 보여줍니다.",
+      "avoidModernReading": "현대 교회 예배당처럼 동일시하면 회당의 교육·법정·지역 공동체 기능을 놓치게 됩니다.",
+      "body": "회당은 “종교 시설”이면서 동시에 지역 커뮤니티 허브였습니다. 회당에서의 논쟁은 예수가 외부 종교를 공격한 장면이라기보다, 유대교 내부에서 성경 해석과 권위가 충돌한 장면으로 보는 편이 더 정확합니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "synagogue",
+      "refs": [
+        "9:20",
+        "13:5",
+        "17:1-4",
+        "18:4",
+        "19:8"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
           "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
-          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "samaritans": {
+      "type": "culture",
+      "label": "사마리아인",
+      "aliases": [
+        "사마리아인",
+        "사마리아",
+        "사마리아 여자"
+      ],
+      "category": [
+        "지명",
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "사마리아인과 유대인은 공통된 전통을 공유하면서도 성전, 성산, 정체성 문제에서 오래된 긴장을 가진 집단이었습니다.",
+      "ancientContext": "사마리아는 단순한 지리적 중간 지대가 아니라 종교적 경계와 상호 불신을 떠올리게 하는 이름이었습니다. 그리심산과 예루살렘 성전 문제, 혈통과 예배 장소 문제가 갈등의 배경입니다.",
+      "textFunction": "사마리아 관련 장면은 하나님 나라가 유대 내부 경계뿐 아니라 유대-사마리아 경계도 넘어간다는 것을 보여줍니다.",
+      "avoidModernReading": "현대의 일반적 지역감정 정도로 읽으면 예배 장소와 정체성 갈등의 종교적 깊이를 놓칩니다.",
+      "body": "사마리아 본문은 “착한 외부인” 이야기로만 단순화하기 쉽습니다. 그러나 당대 독자에게는 신학적으로 불편한 타자가 하나님의 은혜와 증언의 자리로 들어오는 충격이 있었습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "samaritans",
+      "refs": [
+        "8:4-25"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "gentiles": {
+      "type": "culture",
+      "label": "이방인",
+      "aliases": [
+        "이방인",
+        "민족들",
+        "헬라인",
+        "그리스인"
+      ],
+      "category": [
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "이방인은 유대인이 아닌 민족들을 가리키며, 신약에서는 하나님 백성의 경계가 어떻게 확장되는지를 보여주는 핵심 범주입니다.",
+      "ancientContext": "1세기 유대 사회에서 이방인 문제는 단순한 민족 다양성의 문제가 아니라, 우상 숭배·정결·할례·식탁 교제·토라 준수와 연결된 신학적 문제였습니다.",
+      "textFunction": "이방인 수용은 복음이 유대적 뿌리를 버린다는 뜻이 아니라, 아브라함에게 주어진 약속이 여러 민족으로 확장된다는 주장으로 작동합니다.",
+      "avoidModernReading": "현대 다문화주의 구호로만 읽으면 당시 할례·음식법·우상 제물·식탁 교제의 실제 긴장을 놓칩니다.",
+      "body": "신약의 이방인 논쟁은 “누가 하나님의 백성인가”라는 질문입니다. 이것은 현대의 포용 담론과 겹치는 지점이 있지만, 1세기에는 언약·율법·정결·예배 관행의 문제였습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "gentiles",
+      "refs": [
+        "10:1-48",
+        "11:1-18",
+        "15:1-35"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "antioch": {
+      "type": "place",
+      "label": "안디옥",
+      "aliases": [
+        "안디옥"
+      ],
+      "category": [
+        "지명",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "안디옥은 로마 제국 동부의 큰 도시 중 하나로, 유대인과 이방인이 함께 있는 초기 그리스도 운동의 중요한 선교 거점입니다.",
+      "ancientContext": "시리아 안디옥은 다문화 도시였고, 디아스포라 유대 공동체와 헬레니즘 도시 문화가 공존했습니다. “그리스도인”이라는 명칭이 등장하는 장소로도 중요합니다.",
+      "textFunction": "안디옥은 복음이 예루살렘 중심을 넘어 이방 세계로 조직적으로 확장되는 전환점을 보여줍니다.",
+      "avoidModernReading": "단순한 선교 본부로만 보면 유대인-이방인 공동체가 실제로 형성된 사회적 실험의 의미를 놓칩니다.",
+      "body": "안디옥은 초기 교회가 처음부터 단일 문화 공동체가 아니었음을 보여줍니다. 이곳에서 식탁 교제와 이방인 수용 문제는 실제 공동체 운영 문제가 됩니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "antioch",
+      "refs": [
+        "11:19-30",
+        "13:1-3",
+        "15:35"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
         }
       ]
     },
@@ -129,41 +480,734 @@
       "type": "history",
       "label": "로마 시민권",
       "aliases": [
+        "로마 시민",
         "시민권",
         "로마 사람"
       ],
-      "refs": [
-        "16:37",
-        "22:25-29"
-      ],
-      "summary": "로마 시민권은 제국 안에서 법적 보호와 특권을 제공하는 지위였습니다.",
-      "ancientContext": "시민권자는 부당한 처벌이나 재판 절차에서 일정한 권리를 주장할 수 있었습니다.",
-      "textFunction": "사도행전에서 바울의 시민권은 복음이 로마 법질서 안에서 이동하는 장면을 만듭니다.",
-      "avoidModernReading": "현대 여권이나 국적 개념으로만 읽으면 고대 제국 법적 지위의 차이를 놓치게 됩니다.",
-      "certainty": "high",
-      "basis": "scholarly-consensus",
       "category": [
         "역사"
       ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "로마 시민권은 법적 보호, 항소권, 형벌 방식, 사회적 지위와 연결된 중요한 신분이었습니다.",
+      "ancientContext": "제국 내 모든 사람이 로마 시민은 아니었습니다. 시민권자는 특정 재판 절차와 체벌 제한 등 특권을 가질 수 있었고, 지방 관리들과의 관계에서도 중요한 카드가 되었습니다.",
+      "textFunction": "바울의 시민권 장면은 복음 선교가 제국의 법질서와 충돌하면서도 그 제도를 전략적으로 활용했다는 점을 보여줍니다.",
+      "avoidModernReading": "현대 국적 개념과 동일시하면 1세기 시민권의 법적 특권과 계층성을 놓칩니다.",
+      "body": "시민권은 선교를 편하게 만든 배경 장치가 아니라, 바울이 지방 권력의 부당한 폭력을 제어하고 로마로 가는 길을 여는 법적 수단입니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "roman-citizenship",
+      "refs": [
+        "16:37-39",
+        "22:25-29",
+        "25:10-12"
+      ],
       "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
         {
           "title": "SBL Bible Odyssey",
           "type": "academic-public",
           "url": "https://www.bibleodyssey.org/",
-          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
         },
         {
-          "title": "NET Bible Full Notes Edition",
+          "title": "NET Bible Notes / Full Notes Edition",
           "type": "study-notes",
-          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
-          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
         },
         {
-          "title": "BibleProject — Ancient historical context",
-          "type": "educational",
-          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
-          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
         }
+      ]
+    },
+    "philippi": {
+      "type": "place",
+      "label": "빌립보",
+      "aliases": [
+        "빌립보",
+        "마케도니아"
+      ],
+      "category": [
+        "지명",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "빌립보는 로마 식민도시로, 시민권과 제국 정체성의 자부심이 강한 지역이었습니다.",
+      "ancientContext": "퇴역 군인 정착과 로마식 제도가 도시의 정체성에 영향을 주었습니다. 바울과 실라가 감옥에 갇히고 시민권을 언급하는 장면은 이 도시 배경과 잘 맞습니다.",
+      "textFunction": "빌립보 배경은 “하늘 시민권”과 “예수는 주님”이라는 고백이 로마적 명예와 충성을 상대화하는 힘을 보여줍니다.",
+      "avoidModernReading": "빌립보서를 개인적 기쁨의 편지로만 읽으면 제국 충성 도시에서 다른 주님을 고백하는 긴장을 놓칩니다.",
+      "body": "빌립보의 시민권 자부심은 바울이 말하는 시민권 언어를 강하게 만듭니다. 바울은 로마 시민권을 부정하지 않지만, 그보다 높은 소속을 제시합니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "philippi",
+      "refs": [
+        "16:11-40"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "areopagus": {
+      "type": "place",
+      "label": "아레오바고",
+      "aliases": [
+        "아레오바고",
+        "아테네",
+        "철학자"
+      ],
+      "category": [
+        "지명",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "아레오바고는 아테네의 공적 토론과 판단의 상징적 공간으로, 철학적·종교적 논의가 이루어지던 장소로 묘사됩니다.",
+      "ancientContext": "아테네는 고대 철학과 도시 종교의 상징적 중심이었고, 다양한 신상과 사상들이 공존했습니다. 바울의 연설은 유대 성경의 언어를 이방 철학 청중에게 번역해 말하는 장면입니다.",
+      "textFunction": "아레오바고 장면은 복음이 회당 밖 지성 문화와 만날 때 어떻게 창조주 하나님, 우상 비판, 부활 선포를 제시하는지 보여줍니다.",
+      "avoidModernReading": "현대 대학 강연처럼만 읽으면 도시 종교와 공적 신앙 논쟁의 무게를 놓칩니다.",
+      "body": "바울은 아테네 청중을 조롱하지 않고 그들의 종교적 탐색을 접점으로 삼습니다. 그러나 동시에 하나님을 인간 손으로 만든 신전과 우상 안에 가둘 수 없다고 말합니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "areopagus",
+      "refs": [
+        "17:16-34"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "corinth": {
+      "type": "place",
+      "label": "고린도",
+      "aliases": [
+        "고린도",
+        "아가야"
+      ],
+      "category": [
+        "지명",
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "고린도는 무역, 항구, 사회적 이동성, 후원 문화, 수사적 명예 경쟁이 강한 로마 식민도시였습니다.",
+      "ancientContext": "고린도는 경제적으로 활발하고 다양한 계층과 민족이 섞인 도시였습니다. 도시의 명예 경쟁, 연회 문화, 후원자 과시, 성적 관습, 법정 이용 등이 교회 문제와 연결됩니다.",
+      "textFunction": "고린도전후서는 복음이 도시의 지위 경쟁과 후원 문화, 성적 윤리, 식탁 불평등을 어떻게 도전하는지 보여줍니다.",
+      "avoidModernReading": "고린도를 단순히 타락한 도시로만 낙인찍으면 바울이 다루는 구체적 사회 구조를 놓칩니다.",
+      "body": "고린도 교회의 문제는 “신앙이 약해서”만 생긴 것이 아닙니다. 도시의 명예 경쟁과 계층 차이가 교회 안으로 들어왔기 때문에 성찬, 은사, 지도자 선호, 법정 분쟁이 발생했습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "corinth",
+      "refs": [
+        "18:1-18"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "artemis-ephesus": {
+      "type": "place",
+      "label": "에베소와 아르테미스",
+      "aliases": [
+        "에베소",
+        "아르테미스",
+        "은장색",
+        "신전"
+      ],
+      "category": [
+        "지명",
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "에베소는 아르테미스 신전과 관련 산업으로 유명한 도시였고, 종교와 경제가 강하게 결합되어 있었습니다.",
+      "ancientContext": "도시 신전은 예배 장소이면서 관광, 상업, 도시 자부심, 정치적 정체성의 중심이었습니다. 우상 제작자들의 반발은 신앙 문제가 경제적 이해와 연결되어 있음을 보여줍니다.",
+      "textFunction": "에베소 장면은 복음이 도시 경제와 우상 숭배 구조를 건드릴 때 어떤 사회적 반응이 일어나는지 보여줍니다.",
+      "avoidModernReading": "종교 간 논쟁으로만 읽으면 신전 산업, 도시 명예, 생계 위협이라는 현실을 놓칩니다.",
+      "body": "에베소 소동은 “사람들이 왜 그렇게 화냈는가”를 설명해 줍니다. 복음이 개인의 마음만 바꾸는 것이 아니라 도시의 소비와 숭배 구조를 흔들 수 있었기 때문입니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "artemis-ephesus",
+      "refs": [
+        "19:23-41"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "sea-travel": {
+      "type": "history",
+      "label": "고대 해상 여행",
+      "aliases": [
+        "배",
+        "항해",
+        "바다",
+        "풍랑",
+        "난파"
+      ],
+      "category": [
+        "역사",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "고대 지중해 항해는 계절, 바람, 항구, 선박 상태에 크게 좌우되었고 상당한 위험을 동반했습니다.",
+      "ancientContext": "상업선은 승객선과 달리 화물 운송이 중심이었고, 겨울 항해는 위험했습니다. 항해 결정은 선주, 선장, 백부장, 상업적 압박 사이에서 이루어질 수 있었습니다.",
+      "textFunction": "사도행전의 항해 장면은 바울의 로마행이 우연한 이동이 아니라 제국 세계의 실제 교통망과 위험 속에서 진행되었음을 보여줍니다.",
+      "avoidModernReading": "현대 여행 일정처럼 읽으면 고대 항해의 불확실성과 공동 생존의 긴장을 놓칩니다.",
+      "body": "항해 본문은 지루한 이동 기록이 아닙니다. 제국의 길이 복음을 운반하지만, 그 길은 통제 가능한 고속도로가 아니라 자연과 경제 압박이 얽힌 위험한 세계였습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "sea-travel",
+      "refs": [
+        "27:1-44",
+        "28:1-16"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "house-church": {
+      "type": "place",
+      "label": "가정교회",
+      "aliases": [
+        "집에서 모이는 교회",
+        "집",
+        "가정교회",
+        "그 집"
+      ],
+      "category": [
+        "지명",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "초기 그리스도인 공동체는 별도 교회 건물이 아니라 주로 후원자의 집이나 가정 공간에서 모였습니다.",
+      "ancientContext": "고대 집은 사적 공간만이 아니라 경제·사회·종교 활동이 일어나는 장소였습니다. 집의 주인, 노예, 가족, 손님, 후원 관계가 모두 공동체 모임에 영향을 주었습니다.",
+      "textFunction": "가정교회 배경은 바울 서신의 인사말, 여성 후원자, 부자와 가난한 자의 긴장, 성찬 문제를 이해하는 데 중요합니다.",
+      "avoidModernReading": "현대의 독립된 교회 건물과 프로그램 조직을 전제하면 초기 공동체의 규모와 사회적 친밀성을 오해합니다.",
+      "body": "가정교회는 따뜻한 소그룹 이미지로만 보면 부족합니다. 집의 크기와 주인의 지위가 모임의 권력 관계를 만들 수 있었고, 바울은 그런 현실 속에서 한 몸과 평등의 실천을 요구합니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "house-church",
+      "refs": [
+        "12:12",
+        "16:15",
+        "18:7",
+        "20:20"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "persecution": {
+      "type": "history",
+      "label": "박해와 고난",
+      "aliases": [
+        "박해",
+        "고난",
+        "환난",
+        "시련",
+        "핍박"
+      ],
+      "category": [
+        "역사",
+        "문화"
+      ],
+      "certainty": "medium",
+      "basis": "historical-background",
+      "summary": "신약의 박해는 지역·시기·문서에 따라 강도가 다르며, 사회적 배제부터 법적 처벌과 폭력까지 넓은 범위를 가질 수 있습니다.",
+      "ancientContext": "초기 그리스도인들은 유대 회당 내부 논쟁, 도시 공동체의 의심, 가정 내부 갈등, 제국 충성 요구 등 여러 층위의 압박을 경험했습니다. 모든 본문을 전국적 제국 박해로 일반화하면 부정확합니다.",
+      "textFunction": "고난 권면은 피해를 미화하는 것이 아니라, 소수 공동체가 정체성을 잃지 않고 선을 행하도록 격려하는 기능을 합니다.",
+      "avoidModernReading": "현대의 불편함을 곧장 박해로 부르거나, 반대로 실제 사회적 폭력을 영성화하는 것 모두 피해야 합니다.",
+      "body": "박해라는 단어는 조심해서 읽어야 합니다. 어떤 본문은 법정과 폭력을 가리키지만, 어떤 본문은 이웃과 가족, 도시 공동체에서 받는 수치와 배제를 가리킬 수 있습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "persecution",
+      "refs": [
+        "4:1-22",
+        "5:17-42",
+        "7:54-60",
+        "12:1-5",
+        "14:19"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "apostle": {
+      "type": "person",
+      "label": "사도",
+      "aliases": [
+        "사도",
+        "보냄받은 사람",
+        "보내심"
+      ],
+      "category": [
+        "인물",
+        "문화"
+      ],
+      "certainty": "high",
+      "basis": "biblical-text",
+      "summary": "사도는 단순한 종교 지도자 직함이 아니라, 그리스도의 권위를 받아 파송된 증인과 사명자를 가리킵니다.",
+      "ancientContext": "고대 세계에서 파송자는 보낸 이의 권위를 대표했습니다. 바울은 자신의 사도직을 변호하며 공동체에 대한 권위와 섬김의 관계를 설명합니다.",
+      "textFunction": "사도직 논쟁은 복음의 출처, 공동체 권위, 고난을 통한 참된 사역의 기준을 드러냅니다.",
+      "avoidModernReading": "현대 조직 직함이나 종교적 계급으로만 읽으면 파송과 증언의 기능을 놓칩니다.",
+      "body": "사도라는 말은 “높은 직급”보다 “보냄받음”이 먼저입니다. 그래서 신약의 사도권은 특권보다 증언, 고난, 책임과 연결됩니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "apostle",
+      "refs": [
+        "1:15-26",
+        "2:42",
+        "4:33"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "idolatry": {
+      "type": "culture",
+      "label": "우상 숭배",
+      "aliases": [
+        "우상",
+        "제물",
+        "신전",
+        "우상의 제물",
+        "아르테미스"
+      ],
+      "category": [
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "historical-background",
+      "summary": "우상 숭배는 고대 도시의 종교 행사, 식사, 직업 조합, 가족 의례, 정치 충성과 얽혀 있던 실제 생활 문제였습니다.",
+      "ancientContext": "그레코-로마 도시는 신전, 제사, 축제, 황제 숭배, 조합 모임이 일상 경제와 연결되었습니다. 우상 제물 문제는 단순히 개인 신념이 아니라 사회적 관계와 생계 문제였습니다.",
+      "textFunction": "신약의 우상 비판은 다른 종교를 조롱하는 말이 아니라, 인간이 궁극적 충성을 어디에 두는지 묻는 공동체 윤리입니다.",
+      "avoidModernReading": "단순히 조각상 숭배 금지로만 읽으면 도시 경제와 인간관계 안에 들어온 충성 구조를 놓칩니다.",
+      "body": "우상 문제는 고대 도시 생활과 분리할 수 없습니다. 시장에서 파는 고기, 친구의 잔치, 직업 조합의 회식, 황제 제의가 서로 연결되어 있었기 때문에 신자들은 사회적 고립을 감수해야 할 때가 있었습니다.",
+      "readingQuestions": [
+        "이 단어가 당시 독자에게 어떤 사회적 기억을 불러왔는가?",
+        "본문은 그 관습을 유지하는가, 뒤집는가, 재정의하는가?",
+        "현대 독자가 자기 시대의 전제를 투사하고 있지는 않은가?"
+      ],
+      "id": "idolatry",
+      "refs": [
+        "14:8-18",
+        "17:16-31",
+        "19:23-41"
+      ],
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ]
+    },
+    "acts-pentecost": {
+      "type": "culture",
+      "label": "오순절",
+      "aliases": [
+        "오순절",
+        "성령",
+        "각 나라 말"
+      ],
+      "refs": [
+        "2:1-41"
+      ],
+      "category": [
+        "문화",
+        "역사"
+      ],
+      "certainty": "high",
+      "basis": "biblical-text",
+      "summary": "오순절은 유대 절기 배경 속에서 성령 강림과 여러 언어의 증언이 일어나는 장면입니다.",
+      "ancientContext": "오순절은 수확 절기와 순례 절기로 알려졌고, 예루살렘에는 여러 지역에서 온 유대인들이 모일 수 있었습니다. 사도행전은 이 절기 배경을 통해 디아스포라와 열방 언어를 연결합니다.",
+      "textFunction": "성령 강림은 사적 체험이 아니라, 예루살렘에서 시작된 증언이 여러 민족과 언어로 확장되는 출발점입니다.",
+      "avoidModernReading": "개인적 은사 체험으로만 읽으면 사도행전 2장의 절기·디아스포라·선교 확장 구조를 놓칩니다.",
+      "body": "오순절 장면에서 중요한 것은 “말을 이상하게 했다”가 아니라 “각 사람이 자기 언어로 하나님의 큰 일을 들었다”입니다. 바벨 흩어짐의 반전과 열방 선교의 시작을 함께 봐야 합니다.",
+      "sources": [
+        {
+          "title": "BibleProject — What Kind of Culture Shaped the Bible?",
+          "type": "educational-context",
+          "url": "https://bibleproject.com/articles/what-kind-of-culture-shaped-the-bible/",
+          "note": "고대 저자들의 문화적 전제, 집단주의, 명예-수치 문화, 정결 관념을 고려해 읽는 원칙 참고"
+        },
+        {
+          "title": "BibleProject — The Bible Wasn’t Written in English",
+          "type": "interpretive-method",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "성경을 원어·고대 문화·문맥 안에서 읽어야 한다는 해석 원칙 참고"
+        },
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경에 대한 학술 대중 자료 참고"
+        },
+        {
+          "title": "NET Bible Notes / Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://netbible.org/",
+          "note": "번역상 쟁점, 역사·문화 배경, 문맥 설명을 분리해 제시하는 주석 모델 참고"
+        },
+        {
+          "title": "Craig S. Keener, The IVP Bible Background Commentary: New Testament",
+          "type": "reference-work",
+          "note": "제2성전기 유대교와 그레코-로마 세계의 관습·제도·사회 배경 참고"
+        },
+        {
+          "title": "N. T. Wright & Michael F. Bird, The New Testament in Its World",
+          "type": "reference-work",
+          "note": "신약 각 문서의 역사적 위치, 로마 제국 세계, 초기 그리스도 운동 배경 참고"
+        }
+      ],
+      "readingQuestions": [
+        "이 설명은 본문을 당시 세계 안에서 읽는 데 어떤 전제를 제공하는가?",
+        "현대적 오독 가능성은 무엇인가?"
       ]
     }
   }
