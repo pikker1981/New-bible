@@ -1,0 +1,22 @@
+{
+  "book_id": "1corinthians",
+  "bookKo": "고린도전서",
+  "bookEn": "1 Corinthians",
+  "source_file": "1corinthians.json",
+  "chapterCount_declared": 16,
+  "chapterCount_actual": 16,
+  "verseCount_declared": 437,
+  "verseCount_actual": 437,
+  "notes_count": 37,
+  "body_footnote_markers_count": 37,
+  "unique_body_footnote_markers_count": 37,
+  "numeric_footnote_markers": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_error_patterns_found": [],
+  "mechanical_cleanup_changed_items_count": 0,
+  "mechanical_cleanup_changed_items": [],
+  "json_schema_basic": true,
+  "design_files_modified": false,
+  "status": "pass"
+}
