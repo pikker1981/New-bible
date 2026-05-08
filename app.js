@@ -42,7 +42,9 @@ const state = {
   query: "",
   currentNoteId: null,
   highlights: loadHighlights(),
-  pendingMark: null
+  pendingMark: null,
+  searchRunId: 0,
+  globalSearchResultCount: 0
 };
 
 const $ = (id) => document.getElementById(id);
@@ -203,8 +205,10 @@ function applyUserHighlights(html, bookId, chapter, verse) {
 
 function renderBookList() {
   const books = state.manifest.books || [];
-  els.bookCount.textContent = state.manifest.updatedBooks + " / " + state.manifest.totalTargetBooks;
-  els.totalBookStat.innerHTML = state.manifest.updatedBooks + '<span class="u">권</span>';
+  const totalTargetBooks = state.manifest.totalTargetBooks || 27;
+  const updatedBooks = state.manifest.updatedBooks || books.length;
+  els.bookCount.textContent = updatedBooks + " / " + totalTargetBooks;
+  els.totalBookStat.innerHTML = updatedBooks + '<span class="u">권</span>';
 
   els.bookList.innerHTML = books.map((book) => {
     const active = book.id === state.currentBookId ? " active" : "";
@@ -230,6 +234,12 @@ async function ensureBook(bookId) {
   const book = await loadJSON(meta.data);
   state.books[bookId] = book;
   return book;
+}
+
+async function ensureAllBooks() {
+  const metas = state.manifest?.books || [];
+  await Promise.all(metas.map((meta) => ensureBook(meta.id)));
+  return metas.map((meta) => state.books[meta.id]).filter(Boolean);
 }
 
 async function selectBook(bookId, chapterNumber) {
@@ -304,7 +314,7 @@ function renderChapter() {
 
   const query = state.query.trim();
   if (query) {
-    renderSearchResults(book, query);
+    renderGlobalSearchResults(query);
     return;
   }
 
@@ -337,45 +347,114 @@ function renderChapter() {
   updateSearchMeta();
 }
 
-function renderSearchResults(book, query) {
-  const results = [];
-  book.chapters.forEach((chapter) => {
-    chapter.verses.forEach((verse) => {
-      if (verse.text.includes(query)) {
-        results.push({ chapter: chapter.number, verse: verse.number, text: verse.text });
-      }
-    });
-  });
+async function renderGlobalSearchResults(query) {
+  const currentRunId = state.searchRunId + 1;
+  state.searchRunId = currentRunId;
 
-  els.chapterTitle.textContent = "검색 결과";
-  els.chapterButtons.querySelectorAll("button").forEach((button) => button.classList.remove("active"));
-  els.prevChapter.disabled = true;
-  els.nextChapter.disabled = true;
-
-  if (results.length === 0) {
-    els.verses.innerHTML =
-      '<div class="search-result-head"><strong>' + escapeHTML(query) + '</strong> 검색 결과가 없습니다.</div>' +
-      '<p class="empty">띄어쓰기나 표현을 조금 바꿔 다시 검색해 보세요.</p>';
-    updateSearchMeta();
+  const normalizedQuery = query.trim();
+  if (!normalizedQuery) {
+    state.globalSearchResultCount = 0;
+    renderChapter();
     return;
   }
 
+  els.chapterTitle.textContent = "전체 검색 결과";
+  els.chapterButtons.querySelectorAll("button").forEach((button) => button.classList.remove("active"));
+  els.prevChapter.disabled = true;
+  els.nextChapter.disabled = true;
   els.verses.innerHTML =
-    '<div class="search-result-head"><strong>' + escapeHTML(query) + '</strong> 검색 결과 ' + results.length + '개</div>' +
-    results.map((item) => {
-      let html = mdInlineToHTML(item.text);
-      html = applyUserHighlights(html, book.id, item.chapter, item.verse);
-      html = highlightHTML(html, query);
-      return (
-        '<article class="search-hit" id="search-' + item.chapter + '-' + item.verse + '">' +
-        '<div class="search-ref">' + book.bookKo + '<br>' + item.chapter + ':' + item.verse + '</div>' +
-        '<div class="verse-text">' + html + '</div>' +
-        '</article>'
-      );
-    }).join("");
+    '<div class="search-result-head"><strong>' + escapeHTML(normalizedQuery) + '</strong> 전체 27권에서 검색 중입니다...</div>';
+  els.searchMeta.textContent = "전체 27권에서 검색 중입니다.";
 
-  bindFootnoteButtons();
-  updateSearchMeta();
+  try {
+    const books = await ensureAllBooks();
+    if (currentRunId !== state.searchRunId || normalizedQuery !== state.query.trim()) return;
+
+    const results = [];
+    books
+      .slice()
+      .sort((a, b) => Number(a.order || 0) - Number(b.order || 0))
+      .forEach((book) => {
+        (book.chapters || []).forEach((chapter) => {
+          (chapter.verses || []).forEach((verse) => {
+            const plainText = String(verse.text || "").replace(/\[\^[^\]]+\]/g, "");
+            if (plainText.includes(normalizedQuery) || String(verse.text || "").includes(normalizedQuery)) {
+              results.push({
+                bookId: book.id,
+                bookKo: book.bookKo,
+                bookOrder: book.order,
+                chapter: chapter.number,
+                verse: verse.number,
+                text: verse.text
+              });
+            }
+          });
+        });
+      });
+
+    state.globalSearchResultCount = results.length;
+
+    if (results.length === 0) {
+      els.verses.innerHTML =
+        '<div class="search-result-head"><strong>' + escapeHTML(normalizedQuery) + '</strong> 전체 27권 검색 결과가 없습니다.</div>' +
+        '<p class="empty">띄어쓰기나 표현을 조금 바꿔 다시 검색해 보세요.</p>';
+      updateSearchMeta();
+      return;
+    }
+
+    els.verses.innerHTML =
+      '<div class="search-result-head"><strong>' + escapeHTML(normalizedQuery) + '</strong> 전체 27권 검색 결과 ' + results.length + '개</div>' +
+      results.map((item) => {
+        let html = mdInlineToHTML(item.text);
+        html = applyUserHighlights(html, item.bookId, item.chapter, item.verse);
+        html = highlightHTML(html, normalizedQuery);
+        const bookLabel = String(item.bookOrder || "").padStart(2, "0") + " " + escapeHTML(item.bookKo);
+        return (
+          '<article class="search-hit" id="search-' + item.bookId + '-' + item.chapter + '-' + item.verse + '" data-book="' + escapeHTML(item.bookId) + '" data-chapter="' + item.chapter + '" data-verse="' + item.verse + '">' +
+          '<div class="search-ref" role="button" tabindex="0" data-book="' + escapeHTML(item.bookId) + '" data-chapter="' + item.chapter + '" data-verse="' + item.verse + '" title="해당 장으로 이동">' + bookLabel + '<br>' + item.chapter + ':' + item.verse + '</div>' +
+          '<div class="verse-text">' + html + '</div>' +
+          '</article>'
+        );
+      }).join("");
+
+    function openSearchHit(targetEl) {
+      const bookId = targetEl.dataset.book;
+      const chapter = Number(targetEl.dataset.chapter);
+      const verse = Number(targetEl.dataset.verse);
+      state.query = "";
+      els.searchInput.value = "";
+      hideMarkMenu();
+      selectBook(bookId, chapter).then(() => {
+        requestAnimationFrame(() => {
+          const target = document.getElementById("v-" + chapter + "-" + verse);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "center" });
+            target.classList.add("mark-flash");
+          }
+        });
+      });
+    }
+
+    els.verses.querySelectorAll(".search-ref").forEach((item) => {
+      item.addEventListener("click", () => openSearchHit(item));
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openSearchHit(item);
+        }
+      });
+    });
+
+    bindFootnoteButtons();
+    updateSearchMeta();
+  } catch (error) {
+    console.error(error);
+    els.verses.innerHTML =
+      '<div class="error-box"><strong>전체 검색 데이터를 불러오지 못했습니다.</strong><br>' +
+      escapeHTML(error.message) +
+      '</div>';
+    els.searchMeta.textContent = "전체 검색 로딩 실패";
+  }
 }
 
 function bindFootnoteButtons() {
@@ -432,15 +511,8 @@ function updateSearchMeta() {
     return;
   }
 
-  const book = state.books[state.currentBookId];
-  let count = 0;
-  book.chapters.forEach((chapter) => {
-    chapter.verses.forEach((verse) => {
-      if (verse.text.includes(query)) count += 1;
-    });
-  });
-
-  els.searchMeta.textContent = book.bookKo + " 전체에서 " + count + "개 절이 검색어를 포함합니다.";
+  const totalBooks = state.manifest?.books?.length || 0;
+  els.searchMeta.textContent = "전체 " + totalBooks + "권에서 " + state.globalSearchResultCount + "개 절이 검색어를 포함합니다.";
 }
 
 function getElementFromNode(node) {
@@ -450,9 +522,19 @@ function getElementFromNode(node) {
 
 function parseVerseMeta(article) {
   if (!article || !article.id) return null;
+
+  if (article.dataset && article.dataset.book && article.dataset.chapter && article.dataset.verse) {
+    return {
+      bookId: article.dataset.book,
+      chapter: Number(article.dataset.chapter),
+      verse: Number(article.dataset.verse)
+    };
+  }
+
   const match = article.id.match(/^(?:v|search)-(\d+)-(\d+)$/);
   if (!match) return null;
   return {
+    bookId: state.currentBookId,
     chapter: Number(match[1]),
     verse: Number(match[2])
   };
@@ -487,7 +569,7 @@ function getSelectionContext() {
   if (!rect || rect.width === 0) return null;
 
   return {
-    bookId: state.currentBookId,
+    bookId: meta.bookId || state.currentBookId,
     chapter: meta.chapter,
     verse: meta.verse,
     text,
