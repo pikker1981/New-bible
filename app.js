@@ -57,6 +57,10 @@ const state = {
   currentNoteId: null,
   highlights: loadHighlights(),
   highlightView: "all",
+  contexts: {},
+  contextStatus: {},
+  contextView: "all",
+  currentContextId: null,
   pendingMark: null,
   searchRunId: 0,
   globalSearchResultCount: 0
@@ -87,13 +91,27 @@ const els = {
   highlightCount: $("highlightCount"),
   highlightList: $("highlightList"),
   highlightAllTab: $("highlightAllTab"),
-  highlightCurrentTab: $("highlightCurrentTab")
+  highlightCurrentTab: $("highlightCurrentTab"),
+  contextCount: $("contextCount"),
+  contextList: $("contextList"),
+  contextBody: $("contextBody"),
+  contextTabs: document.querySelectorAll("[data-context-view]")
 };
 
 async function loadJSON(path) {
   const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) throw new Error(path + " 로딩 실패: HTTP " + response.status);
   return response.json();
+}
+
+async function tryLoadJSON(path) {
+  try {
+    const response = await fetch(path, { cache: "no-store" });
+    if (!response.ok) return null;
+    return await response.json();
+  } catch (_) {
+    return null;
+  }
 }
 
 function escapeHTML(value) {
@@ -176,6 +194,12 @@ function applyBookAccent(bookId) {
 
 function mdInlineToHTML(text) {
   let html = escapeHTML(text);
+  html = html.replace(/\{\{ctx:([^}|]+)(?:\|([^}]+))?\}\}/g, function (_, contextId, label) {
+    const safeId = escapeHTML(String(contextId || "").trim());
+    const safeLabel = label ? escapeHTML(String(label).trim()) : "맥락";
+    const isInlineLabel = Boolean(label);
+    return '<button class="ctx-link' + (isInlineLabel ? ' text-label' : '') + '" type="button" data-context="' + safeId + '" title="당시 배경 보기">' + safeLabel + '</button>';
+  });
   html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/\[\^([^\]]+)\]/g, function (_, noteId) {
     const safeId = escapeHTML(noteId);
@@ -185,7 +209,11 @@ function mdInlineToHTML(text) {
 }
 
 function plainFromNote(note) {
-  return String(note || "").replace(/\*\*/g, "").replace(/<[^>]+>/g, "").trim();
+  return String(note || "")
+    .replace(/\{\{ctx:[^}]+\}\}/g, "")
+    .replace(/\*\*/g, "")
+    .replace(/<[^>]+>/g, "")
+    .trim();
 }
 
 function noteTitleFromText(noteId, note) {
@@ -324,6 +352,7 @@ async function ensureAllBooks() {
 
 async function selectBook(bookId, chapterNumber) {
   const book = await ensureBook(bookId);
+  await ensureContext(bookId);
   state.currentBookId = bookId;
   state.currentChapter = Math.min(Math.max(chapterNumber || 1, 1), book.chapterCount);
   state.currentNoteId = null;
@@ -383,6 +412,7 @@ function render() {
 
   renderNoteList();
   renderHighlightList();
+  renderContextList();
   setupResponsiveNoteLayout();
   renderChapter();
 
@@ -426,8 +456,10 @@ function renderChapter() {
   els.nextChapter.disabled = state.currentChapter === book.chapterCount;
 
   bindFootnoteButtons();
+  bindContextButtons();
   updateSearchMeta();
   renderHighlightList();
+  renderContextList();
 }
 
 async function renderGlobalSearchResults(query) {
@@ -529,6 +561,7 @@ async function renderGlobalSearchResults(query) {
     });
 
     bindFootnoteButtons();
+    bindContextButtons();
     updateSearchMeta();
   } catch (error) {
     console.error(error);
@@ -713,6 +746,268 @@ function bindHighlightTabs() {
       renderHighlightList();
     });
   }
+}
+
+
+function normalizeContextPayload(payload, bookId) {
+  if (!payload) return { bookId, contexts: {} };
+
+  if (Array.isArray(payload)) {
+    const contexts = {};
+    payload.forEach((item) => {
+      const id = item?.id || item?.key || item?.contextId;
+      if (id) contexts[id] = item;
+    });
+    return { bookId, contexts };
+  }
+
+  if (Array.isArray(payload.contexts)) {
+    const contexts = {};
+    payload.contexts.forEach((item) => {
+      const id = item?.id || item?.key || item?.contextId;
+      if (id) contexts[id] = item;
+    });
+    return { ...payload, bookId: payload.bookId || bookId, contexts };
+  }
+
+  return {
+    ...payload,
+    bookId: payload.bookId || bookId,
+    contexts: payload.contexts || {}
+  };
+}
+
+async function ensureContext(bookId) {
+  if (state.contextStatus[bookId] === "loaded" || state.contextStatus[bookId] === "empty") {
+    return state.contexts[bookId] || { bookId, contexts: {} };
+  }
+
+  state.contextStatus[bookId] = "loading";
+  const paths = [
+    "./data/context/" + bookId + "_context.json",
+    "./data/context/" + bookId + ".json",
+    "./data/" + bookId + "_context.json"
+  ];
+
+  for (const path of paths) {
+    const payload = await tryLoadJSON(path);
+    if (payload) {
+      const normalized = normalizeContextPayload(payload, bookId);
+      state.contexts[bookId] = normalized;
+      state.contextStatus[bookId] = "loaded";
+      return normalized;
+    }
+  }
+
+  state.contexts[bookId] = { bookId, contexts: {} };
+  state.contextStatus[bookId] = "empty";
+  return state.contexts[bookId];
+}
+
+function getCurrentContextPayload() {
+  return state.contexts[state.currentBookId] || { bookId: state.currentBookId, contexts: {} };
+}
+
+function contextTypeLabel(type) {
+  const value = String(type || "").toLowerCase();
+  const map = {
+    person: "인물",
+    people: "인물",
+    place: "지명",
+    location: "지명",
+    culture: "문화",
+    custom: "문화",
+    history: "역사",
+    historical: "역사"
+  };
+  return map[value] || String(type || "기타");
+}
+
+function contextTypeValue(item) {
+  if (!item) return "other";
+  if (item.type) return String(item.type).toLowerCase();
+  const categories = Array.isArray(item.category) ? item.category : Array.isArray(item.categories) ? item.categories : [];
+  const joined = categories.join(" ");
+  if (/인물|person|people/i.test(joined)) return "person";
+  if (/지명|place|location/i.test(joined)) return "place";
+  if (/문화|culture|custom/i.test(joined)) return "culture";
+  if (/역사|history|historical/i.test(joined)) return "history";
+  return "other";
+}
+
+function certaintyLabel(value) {
+  const text = String(value || "").toLowerCase();
+  if (text === "high" || text === "높음") return "확실성 높음";
+  if (text === "medium" || text === "중간") return "확실성 중간";
+  if (text === "low" || text === "낮음") return "확실성 낮음";
+  return value ? "확실성 " + value : "확실성 미표기";
+}
+
+function sourceTypeLabel(value) {
+  const text = String(value || "").toLowerCase();
+  const map = {
+    "text": "본문 근거",
+    "biblical-text": "본문 근거",
+    "historical-background": "역사 배경",
+    "scholarly-consensus": "학술 합의",
+    "scholarly-inference": "학술 추론",
+    "traditional-interpretation": "전통 해석"
+  };
+  return map[text] || value || "근거 미표기";
+}
+
+function plainContextText(item) {
+  return [item?.summary, item?.ancientContext, item?.body, item?.description, item?.text]
+    .filter(Boolean)
+    .join(" ")
+    .replace(/\*\*/g, "")
+    .trim();
+}
+
+function getContextItems() {
+  const payload = getCurrentContextPayload();
+  const contexts = payload.contexts || {};
+  return Object.entries(contexts).map(([id, item]) => ({
+    id,
+    ...item,
+    typeValue: contextTypeValue(item),
+    typeLabel: contextTypeLabel(item?.type || contextTypeValue(item))
+  })).sort((a, b) => {
+    const order = { person: 1, place: 2, culture: 3, history: 4, other: 5 };
+    const ao = order[a.typeValue] || 9;
+    const bo = order[b.typeValue] || 9;
+    if (ao !== bo) return ao - bo;
+    return String(a.label || a.title || a.id).localeCompare(String(b.label || b.title || b.id), "ko");
+  });
+}
+
+function renderContextList() {
+  if (!els.contextList || !els.contextCount) return;
+
+  const status = state.contextStatus[state.currentBookId];
+  const allItems = getContextItems();
+  const items = state.contextView === "all"
+    ? allItems
+    : allItems.filter((item) => item.typeValue === state.contextView);
+
+  els.contextCount.textContent = items.length;
+  els.contextTabs?.forEach((tab) => {
+    const active = tab.dataset.contextView === state.contextView;
+    tab.classList.toggle("active", active);
+    tab.setAttribute("aria-selected", String(active));
+  });
+
+  if (status === "loading") {
+    els.contextList.innerHTML = '<div class="context-empty">컨텍스트 데이터를 불러오는 중입니다.</div>';
+    return;
+  }
+
+  if (allItems.length === 0) {
+    els.contextList.innerHTML = '<div class="context-empty">현재 권의 컨텍스트 데이터가 없습니다.<br><code>data/context/' + escapeHTML(state.currentBookId || "book") + '_context.json</code> 파일을 추가하면 자동으로 표시됩니다.</div>';
+    if (els.contextBody) {
+      els.contextBody.innerHTML = "본문의 컨텍스트 표시를 누르거나, 권별 컨텍스트 JSON을 추가하면 당시 인물·지명·문화·역사 설명이 여기에 표시됩니다.";
+    }
+    return;
+  }
+
+  if (items.length === 0) {
+    els.contextList.innerHTML = '<div class="context-empty">이 분류에 해당하는 컨텍스트가 없습니다.</div>';
+    return;
+  }
+
+  els.contextList.innerHTML = items.map((item) => {
+    const title = item.label || item.title || item.id;
+    const refs = Array.isArray(item.refs) ? item.refs.join(", ") : (item.ref || "");
+    const preview = plainContextText(item).slice(0, 150);
+    const active = item.id === state.currentContextId ? " active" : "";
+    return (
+      '<button class="context-item' + active + '" type="button" data-context="' + escapeHTML(item.id) + '">' +
+        '<span class="context-type">' + escapeHTML(item.typeLabel) + '</span>' +
+        '<strong>' + escapeHTML(title) + '</strong>' +
+        (refs ? '<em>' + escapeHTML(refs) + '</em>' : '') +
+        '<small>' + escapeHTML(preview || "설명 내용 없음") + '</small>' +
+      '</button>'
+    );
+  }).join("");
+
+  els.contextList.querySelectorAll(".context-item").forEach((button) => {
+    button.addEventListener("click", () => showContext(button.dataset.context, true));
+  });
+}
+
+function renderContextParagraph(title, body) {
+  if (!body) return "";
+  return '<div class="context-section"><h4>' + escapeHTML(title) + '</h4><p>' + mdInlineToHTML(body) + '</p></div>';
+}
+
+function renderContextSources(sources) {
+  if (!Array.isArray(sources) || sources.length === 0) return "";
+  return '<div class="context-section context-sources"><h4>출처/근거</h4>' +
+    sources.map((source) => {
+      if (typeof source === "string") return '<p>' + escapeHTML(source) + '</p>';
+      const title = source.title || source.name || source.url || "출처";
+      const note = source.note ? ' — ' + source.note : '';
+      return '<p><strong>' + escapeHTML(title) + '</strong>' + escapeHTML(note) + '</p>';
+    }).join("") +
+    '</div>';
+}
+
+function showContext(contextId, scrollToPanel) {
+  const item = getContextItems().find((entry) => entry.id === contextId);
+  state.currentContextId = contextId;
+
+  if (!els.contextBody) return;
+
+  if (!item) {
+    els.contextBody.innerHTML = "컨텍스트 항목을 찾지 못했습니다.";
+    renderContextList();
+    return;
+  }
+
+  const title = item.label || item.title || item.id;
+  const refs = Array.isArray(item.refs) ? item.refs.join(", ") : (item.ref || "");
+  const categories = Array.isArray(item.category) ? item.category : Array.isArray(item.categories) ? item.categories : [];
+  const meta = [
+    item.typeLabel,
+    refs,
+    certaintyLabel(item.certainty),
+    sourceTypeLabel(item.basis || item.sourceType)
+  ].filter(Boolean);
+
+  els.contextBody.innerHTML =
+    '<div class="context-selected-head">' +
+      '<span>' + escapeHTML(meta.join(" · ")) + '</span>' +
+      '<h3>' + escapeHTML(title) + '</h3>' +
+      (categories.length ? '<div class="context-chips">' + categories.map((cat) => '<b>' + escapeHTML(cat) + '</b>').join("") + '</div>' : '') +
+    '</div>' +
+    renderContextParagraph("무엇인가", item.summary || item.definition || item.description) +
+    renderContextParagraph("당시 상황", item.ancientContext || item.ancient_context) +
+    renderContextParagraph("본문에서의 의미", item.textFunction || item.inText || item.biblicalContext || item.biblical_context) +
+    renderContextParagraph("현대 독자의 오독 주의", item.avoidModernReading || item.avoid_modern_reading || item.warning) +
+    (item.body || item.text ? renderContextParagraph("추가 설명", item.body || item.text) : "") +
+    renderContextSources(item.sources);
+
+  renderContextList();
+
+  if (scrollToPanel && window.innerWidth < 1280) {
+    const rail = document.querySelector(".right-rail");
+    if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function bindContextButtons() {
+  els.verses.querySelectorAll(".ctx-link").forEach((button) => {
+    button.addEventListener("click", () => showContext(button.dataset.context, true));
+  });
+}
+
+function bindContextTabs() {
+  els.contextTabs?.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      state.contextView = tab.dataset.contextView || "all";
+      renderContextList();
+    });
+  });
 }
 
 function showNote(noteId, scrollToPanel) {
@@ -1012,6 +1307,7 @@ async function init() {
     bindSelectionMarker();
     bindResponsiveNoteLayout();
     bindHighlightTabs();
+    bindContextTabs();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
     console.error(error);

@@ -101,6 +101,22 @@
           <div id="highlightList" class="highlight-list"></div>
         </section>
 
+        <section class="note-card context-card">
+          <div class="note-list-head">
+            <div><div class="sec-label">CONTEXT</div><h3>시대 배경</h3></div>
+            <span id="contextCount">0</span>
+          </div>
+          <div class="context-tabs" role="tablist" aria-label="컨텍스트 분류">
+            <button class="context-tab active" type="button" role="tab" aria-selected="true" data-context-view="all">전체</button>
+            <button class="context-tab" type="button" role="tab" aria-selected="false" data-context-view="person">인물</button>
+            <button class="context-tab" type="button" role="tab" aria-selected="false" data-context-view="place">지명</button>
+            <button class="context-tab" type="button" role="tab" aria-selected="false" data-context-view="culture">문화</button>
+            <button class="context-tab" type="button" role="tab" aria-selected="false" data-context-view="history">역사</button>
+          </div>
+          <div id="contextBody" class="context-body">본문의 컨텍스트 표시를 누르거나, 권별 컨텍스트 JSON을 추가하면 당시 인물·지명·문화·역사 설명이 여기에 표시됩니다.</div>
+          <div id="contextList" class="context-list"></div>
+        </section>
+
         <section class="quote-section">
           <div class="quote-mark">"</div>
           <div class="q-text">쉽게 읽히되, 장절 구조와 핵심 용어는 흔들리지 않게 유지합니다.</div>
