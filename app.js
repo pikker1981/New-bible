@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-bottom-chapter-nav-v7";
+const APP_BUILD_ID = "20260508-mobile-bottom-arrow-nav-v8";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -673,18 +673,26 @@ function renderChapterBottomNav(book, chapter) {
   const next = current + 1;
   const hasPrevious = previous >= 1;
   const hasNext = next <= Number(book.chapterCount || 0);
-  const prevLabel = hasPrevious ? book.bookKo + " " + previous + "장" : "이전 장 없음";
-  const nextLabel = hasNext ? book.bookKo + " " + next + "장" : "다음 장 없음";
+  const prevFullLabel = hasPrevious ? book.bookKo + " " + previous + "장" : "이전 장 없음";
+  const nextFullLabel = hasNext ? book.bookKo + " " + next + "장" : "다음 장 없음";
+  const prevMobileLabel = hasPrevious ? previous + "장" : "처음";
+  const nextMobileLabel = hasNext ? next + "장" : "마지막";
 
   return (
     '<nav class="chapter-bottom-nav" aria-label="장 하단 이동">' +
-      '<button class="chapter-bottom-btn prev" type="button" data-bottom-chapter="' + previous + '" ' + (hasPrevious ? "" : "disabled") + '>' +
-        '<span class="chapter-bottom-kicker">이전 장</span>' +
-        '<strong>' + escapeHTML(prevLabel) + '</strong>' +
+      '<button class="chapter-bottom-btn prev" type="button" data-bottom-chapter="' + previous + '" aria-label="' + escapeHTML(prevFullLabel) + '으로 이동" ' + (hasPrevious ? "" : "disabled") + '>' +
+        '<span class="chapter-bottom-arrow" aria-hidden="true">←</span>' +
+        '<span class="chapter-bottom-copy">' +
+          '<span class="chapter-bottom-kicker">이전</span>' +
+          '<strong><span class="chapter-bottom-full-label">' + escapeHTML(prevFullLabel) + '</span><span class="chapter-bottom-mobile-label">' + escapeHTML(prevMobileLabel) + '</span></strong>' +
+        '</span>' +
       '</button>' +
-      '<button class="chapter-bottom-btn next" type="button" data-bottom-chapter="' + next + '" ' + (hasNext ? "" : "disabled") + '>' +
-        '<span class="chapter-bottom-kicker">다음 장</span>' +
-        '<strong>' + escapeHTML(nextLabel) + '</strong>' +
+      '<button class="chapter-bottom-btn next" type="button" data-bottom-chapter="' + next + '" aria-label="' + escapeHTML(nextFullLabel) + '으로 이동" ' + (hasNext ? "" : "disabled") + '>' +
+        '<span class="chapter-bottom-copy">' +
+          '<span class="chapter-bottom-kicker">다음</span>' +
+          '<strong><span class="chapter-bottom-full-label">' + escapeHTML(nextFullLabel) + '</span><span class="chapter-bottom-mobile-label">' + escapeHTML(nextMobileLabel) + '</span></strong>' +
+        '</span>' +
+        '<span class="chapter-bottom-arrow" aria-hidden="true">→</span>' +
       '</button>' +
     '</nav>'
   );
