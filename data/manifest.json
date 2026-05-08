@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 26,
+  "updatedBooks": 27,
   "books": [
     {
       "id": "matthew",
@@ -338,6 +338,19 @@
       "file": "data/jude.json",
       "dataFile": "data/jude.json",
       "json": "data/jude.json"
+    },
+    {
+      "id": "revelation",
+      "order": 27,
+      "bookKo": "요한계시록",
+      "bookEn": "Revelation",
+      "chapterCount": 22,
+      "verseCount": 405,
+      "data": "data/revelation.json",
+      "path": "data/revelation.json",
+      "file": "data/revelation.json",
+      "dataFile": "data/revelation.json",
+      "json": "data/revelation.json"
     }
   ]
 }
