@@ -1,0 +1,21 @@
+{
+  "book_id": "1peter",
+  "bookKo": "베드로전서",
+  "chapter_count": 5,
+  "declared_chapter_count": 5,
+  "verse_count": 105,
+  "declared_verse_count": 105,
+  "notes_count": 35,
+  "body_note_marker_count": 35,
+  "unique_body_note_marker_count": 35,
+  "numeric_note_markers": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_polite_suffix_errors": [],
+  "non_korean_script_or_replacement_char_hits": [],
+  "manual_fixes": [],
+  "mechanical_rewrite_count": 0,
+  "json_schema_status": "pass",
+  "design_files_modified": false,
+  "status": "pass"
+}

@@ -1,0 +1,27 @@
+{
+  "book": "야고보서",
+  "id": "james",
+  "chapterCount": 5,
+  "declaredChapterCount": 5,
+  "verseCount": 108,
+  "declaredVerseCount": 108,
+  "notesCount": 24,
+  "bodyFootnoteMarkerCount": 24,
+  "uniqueBodyFootnoteMarkerCount": 24,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicatePoliteEndingErrors": [],
+  "nonKoreanScriptResiduals": [],
+  "manualFixes": [
+    {
+      "chapter": 5,
+      "verse": 20,
+      "before": "그는 알아 두십시오. 죄인을 그릇된 길에서 돌아서게 하는 사람은 그의 생명을 죽음에서 구원하고, 많은 죄를 덮을 것입니다.",
+      "after": "그 사람은 알아 두십시오. 죄인을 그릇된 길에서 돌아서게 하는 사람은 그의 생명을 죽음에서 구원하고, 많은 죄를 덮을 것입니다."
+    }
+  ],
+  "jsonSchemaOk": true,
+  "designFilesTouched": false,
+  "status": "pass"
+}
