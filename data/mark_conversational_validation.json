@@ -1,0 +1,20 @@
+{
+  "book": "마가복음",
+  "id": "mark",
+  "chapterCount": 16,
+  "declaredChapterCount": 16,
+  "verseCount": 673,
+  "declaredVerseCount": 673,
+  "notesCount": 74,
+  "bodyNoteMarkerCount": 72,
+  "numericNoteMarkers": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [
+    "gospel",
+    "mark-16-ending"
+  ],
+  "jsonSchema": "ok",
+  "designFilesModified": false,
+  "status": "pass",
+  "note": "unusedNoteDefinitions may include glossary entries carried over from the source but not directly referenced in the body."
+}
