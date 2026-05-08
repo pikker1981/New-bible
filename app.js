@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-interpretive-details-v12";
+const APP_BUILD_ID = "20260508-scholar-views-infra-v13";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -65,6 +65,8 @@ const state = {
   contextStatus: {},
   sectionIntros: {},
   sectionIntroStatus: {},
+  scholarNotes: {},
+  scholarNoteStatus: {},
   contextView: "all",
   currentContextId: null,
   pendingMark: null,
@@ -163,6 +165,62 @@ function getSectionIntros(bookId, chapter, verse) {
     .filter((item) => Number(item.chapter) === Number(chapter) && Number(item.verse) === Number(verse));
 }
 
+function normalizeScholarNotesData(raw) {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw;
+  if (Array.isArray(raw.items)) return raw.items;
+  if (raw.items && typeof raw.items === "object") return Object.values(raw.items);
+  if (raw.scholarNotes && typeof raw.scholarNotes === "object") return Object.values(raw.scholarNotes);
+  return [];
+}
+
+async function ensureScholarNotes(bookId) {
+  if (state.scholarNoteStatus[bookId] === "loaded") return state.scholarNotes[bookId] || [];
+
+  const paths = [
+    "./data/interpretive-scholar-notes/" + bookId + "_scholars.json",
+    "./data/interpretive-scholar-notes/" + bookId + ".json",
+    "./data/" + bookId + "_scholar_notes.json"
+  ];
+
+  for (const path of paths) {
+    const data = await tryLoadJSON(path);
+    if (data) {
+      state.scholarNotes[bookId] = normalizeScholarNotesData(data);
+      state.scholarNoteStatus[bookId] = "loaded";
+      return state.scholarNotes[bookId];
+    }
+  }
+
+  state.scholarNotes[bookId] = [];
+  state.scholarNoteStatus[bookId] = "loaded";
+  return [];
+}
+
+function getScholarNoteEntryForIntro(item) {
+  if (!item) return null;
+  const notes = state.scholarNotes[state.currentBookId] || [];
+  return notes.find((entry) => {
+    if (!entry) return false;
+    if (item.id && entry.introId === item.id) return true;
+    if (item.id && entry.id === item.id) return true;
+    return Number(entry.chapter) === Number(item.chapter) &&
+      Number(entry.verse) === Number(item.verse) &&
+      (!entry.title || !item.title || entry.title === item.title);
+  }) || null;
+}
+
+function getScholarEntriesForKey(item, scholarKey) {
+  const entry = getScholarNoteEntryForIntro(item);
+  if (!entry) return [];
+  const views = entry.views || {};
+  const section = views[scholarKey] || entry[scholarKey] || {};
+  if (Array.isArray(section)) return section;
+  if (Array.isArray(section.scholars)) return section.scholars;
+  if (Array.isArray(section.items)) return section.items;
+  return [];
+}
+
 function renderSectionIntro(item) {
   const typeLabelMap = {
     event: "주요 사건",
@@ -225,6 +283,17 @@ function renderInterpretiveDetailButton(item, detailKey) {
   return '<button class="interpretive-detail-btn" type="button" data-interpretive-detail="' + escapeHTML(detailKey) + '" data-intro-id="' + escapeHTML(item.id || "") + '">자세히</button>';
 }
 
+function renderInterpretiveScholarButton(item, scholarKey) {
+  return '<button class="interpretive-scholar-btn" type="button" data-interpretive-detail="scholars:' + escapeHTML(scholarKey) + '" data-intro-id="' + escapeHTML(item.id || "") + '">신학자별</button>';
+}
+
+function renderInterpretiveCardActions(item, detailKey) {
+  return '<div class="interpretive-card-actions">' +
+    renderInterpretiveDetailButton(item, detailKey) +
+    renderInterpretiveScholarButton(item, detailKey) +
+  '</div>';
+}
+
 function renderInterpretiveViewBlock(item, viewKey, fallbackLabel) {
   const views = item?.interpretiveViews || {};
   const view = views[viewKey];
@@ -235,7 +304,7 @@ function renderInterpretiveViewBlock(item, viewKey, fallbackLabel) {
     '<section class="interpretive-view-card" data-detail-card="' + escapeHTML(viewKey) + '">' +
       '<div class="interpretive-card-head">' +
         '<h4>' + escapeHTML(label) + lens + '</h4>' +
-        renderInterpretiveDetailButton(item, viewKey) +
+        renderInterpretiveCardActions(item, viewKey) +
       '</div>' +
       renderPointList(view.points || []) +
     '</section>'
@@ -247,7 +316,7 @@ function renderInterpretiveSummaryBlock(item, title, points, detailKey) {
     '<section data-detail-card="' + escapeHTML(detailKey) + '">' +
       '<div class="interpretive-card-head">' +
         '<h4>' + escapeHTML(title) + '</h4>' +
-        renderInterpretiveDetailButton(item, detailKey) +
+        renderInterpretiveCardActions(item, detailKey) +
       '</div>' +
       renderPointList(points) +
     '</section>'
@@ -312,6 +381,86 @@ function renderInterpretiveDetailPanel(item, detailKey) {
   );
 }
 
+function scholarKeyLabel(scholarKey) {
+  return {
+    conservative: "보수적 시선",
+    moderate: "중도적 시선",
+    progressive: "진보적 시선",
+    agreement: "공통 지점",
+    tension: "충돌 지점"
+  }[scholarKey] || "신학자별 보기";
+}
+
+function scholarRelationLabel(value) {
+  return {
+    direct: "직접 주석",
+    methodology: "방법론 적용",
+    related: "관련 관점",
+    background: "배경 참고"
+  }[value] || "검증 필요";
+}
+
+function scholarConfidenceLabel(value) {
+  return { high: "높음", medium: "중간", low: "낮음" }[value] || "미확인";
+}
+
+function renderScholarSourceLine(scholar) {
+  const parts = [];
+  if (scholar.sourceTitle || scholar.source) parts.push(escapeHTML(scholar.sourceTitle || scholar.source));
+  if (scholar.work) parts.push(escapeHTML(scholar.work));
+  if (scholar.license) parts.push("라이선스: " + escapeHTML(scholar.license));
+  if (!parts.length) return "";
+  const source = parts.join(" · ");
+  const url = scholar.sourceUrl || scholar.url;
+  if (url) return '<a href="' + escapeHTML(url) + '" target="_blank" rel="noopener noreferrer">' + source + '</a>';
+  return source;
+}
+
+function renderInterpretiveScholarPanel(item, scholarKey) {
+  const key = String(scholarKey || "").replace(/^scholars:/, "");
+  const scholars = getScholarEntriesForKey(item, key);
+  const title = scholarKeyLabel(key);
+  const note = "직접 주석 / 방법론 적용 / 관련 관점을 구분해 표시합니다. 출처가 확인되지 않은 주장은 이 영역에 넣지 않습니다.";
+
+  return (
+    '<section class="interpretive-detail-panel interpretive-scholar-panel" data-detail-panel="scholars:' + escapeHTML(key) + '">' +
+      '<div class="interpretive-detail-panel-head">' +
+        '<div>' +
+          '<div class="interpretive-detail-kicker">SCHOLARS</div>' +
+          '<h3>' + escapeHTML(title) + '<span>신학자별 보기</span></h3>' +
+        '</div>' +
+        '<button class="interpretive-detail-close" type="button" data-interpretive-detail-close="true">접기</button>' +
+      '</div>' +
+      '<p class="interpretive-scholar-note">' + escapeHTML(note) + '</p>' +
+      (scholars.length ? '<div class="interpretive-scholar-list">' + scholars.map((scholar) => {
+        const relation = scholarRelationLabel(scholar.relationType || scholar.relation || scholar.type);
+        const confidence = scholarConfidenceLabel(scholar.confidence);
+        const claim = scholar.claim || scholar.summary || scholar.note || "";
+        const sourceLine = renderScholarSourceLine(scholar);
+        return (
+          '<article class="interpretive-scholar-card">' +
+            '<div class="interpretive-scholar-head">' +
+              '<strong>' + escapeHTML(scholar.name || "이름 미상") + '</strong>' +
+              '<span>' + escapeHTML(relation) + '</span>' +
+            '</div>' +
+            (scholar.tradition || scholar.field ? '<div class="interpretive-scholar-tradition">' + escapeHTML(scholar.tradition || scholar.field) + '</div>' : '') +
+            (claim ? '<p>' + escapeHTML(claim) + '</p>' : '<p>검증된 요약이 아직 입력되지 않았습니다.</p>') +
+            '<div class="interpretive-scholar-meta">확실성: ' + escapeHTML(confidence) + (sourceLine ? ' · 출처: ' + sourceLine : ' · 출처: 미입력') + '</div>' +
+            (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeHTML(scholar.caution || scholar.warning) + '</div>' : '') +
+          '</article>'
+        );
+      }).join("") + '</div>' :
+      '<div class="interpretive-scholar-empty">이 항목에는 아직 검증된 신학자별 자료가 없습니다. 공개 라이선스 자료와 출처 확인이 끝난 주장만 추가하세요.</div>') +
+    '</section>'
+  );
+}
+
+function renderActiveInterpretivePanel(item, activeDetailKey) {
+  if (!activeDetailKey) return "";
+  if (String(activeDetailKey).startsWith("scholars:")) return renderInterpretiveScholarPanel(item, activeDetailKey);
+  return renderInterpretiveDetailPanel(item, activeDetailKey);
+}
+
 function renderInterpretiveViewsContent(item, activeDetailKey) {
   const views = item?.interpretiveViews || {};
   const note = views.note || "아래 관점들은 정답 경쟁이 아니라, 본문을 읽는 대표적 해석 렌즈입니다.";
@@ -330,7 +479,7 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
         renderInterpretiveSummaryBlock(item, "공통 지점", agreement, "agreement") +
         renderInterpretiveSummaryBlock(item, "충돌 지점", tension, "tension") +
       '</div>' +
-      (activeDetailKey ? renderInterpretiveDetailPanel(item, activeDetailKey) : '') +
+      renderActiveInterpretivePanel(item, activeDetailKey) +
     '</div>'
   );
 }
@@ -359,7 +508,7 @@ function refreshInterpretivePopupContent(introId, detailKey) {
 
 function markActiveInterpretiveDetailButton(scope, detailKey) {
   if (!scope) return;
-  scope.querySelectorAll(".interpretive-detail-btn").forEach((button) => {
+  scope.querySelectorAll("[data-interpretive-detail]").forEach((button) => {
     button.classList.toggle("active", button.dataset.interpretiveDetail === detailKey);
   });
 }
@@ -371,7 +520,7 @@ function scrollInterpretiveDetailIntoView(scope) {
 
 function bindInterpretiveDetailDelegation() {
   document.addEventListener("click", (event) => {
-    const detailButton = event.target.closest(".interpretive-detail-btn");
+    const detailButton = event.target.closest("[data-interpretive-detail]");
     if (detailButton) {
       event.preventDefault();
       event.stopPropagation();
@@ -785,6 +934,7 @@ async function selectBook(bookId, chapterNumber) {
   const book = await ensureBook(bookId);
   await ensureContext(bookId);
   await ensureSectionIntros(bookId);
+  await ensureScholarNotes(bookId);
   state.currentBookId = bookId;
   state.currentChapter = Math.min(Math.max(chapterNumber || 1, 1), book.chapterCount);
   state.currentNoteId = null;
