@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-mobile-popup-android-v2";
+const APP_BUILD_ID = "20260508-mobile-popup-hide-panels-v3";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 

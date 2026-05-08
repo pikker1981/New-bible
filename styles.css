@@ -652,6 +652,20 @@ mark{padding:0 2px}
   .context-list{max-height:420px}
 }
 
+
+
+/* Mobile: note/context detail cards are replaced by bottom popup sheets. */
+@media (max-width:900px){
+  .active-note,
+  .context-card{
+    display:none!important;
+  }
+
+  .mobile-note-slot .active-note{
+    display:none!important;
+  }
+}
+
 /* Mobile note/context bottom popup */
 .mobile-info-popup{
   position:fixed;
