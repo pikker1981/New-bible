@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-interpretive-views-v11";
+const APP_BUILD_ID = "20260508-interpretive-details-v12";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -209,38 +209,185 @@ function renderPointList(points) {
   return '<ul>' + points.map((point) => '<li>' + escapeHTML(point) + '</li>').join("") + '</ul>';
 }
 
-function renderInterpretiveViewBlock(view, fallbackLabel) {
+function hasInterpretiveDetail(item, detailKey) {
+  const views = item?.interpretiveViews || {};
+  if (["conservative", "moderate", "progressive"].includes(detailKey)) {
+    const view = views[detailKey];
+    return Boolean(view && (Array.isArray(view.details) || Array.isArray(view.detailPoints) || view.detail || view.detailText));
+  }
+  if (detailKey === "agreement") return Boolean(Array.isArray(views.agreementDetails) || views.agreementDetail);
+  if (detailKey === "tension") return Boolean(Array.isArray(views.tensionDetails) || views.tensionDetail);
+  return false;
+}
+
+function renderInterpretiveDetailButton(item, detailKey) {
+  if (!hasInterpretiveDetail(item, detailKey)) return "";
+  return '<button class="interpretive-detail-btn" type="button" data-interpretive-detail="' + escapeHTML(detailKey) + '" data-intro-id="' + escapeHTML(item.id || "") + '">자세히</button>';
+}
+
+function renderInterpretiveViewBlock(item, viewKey, fallbackLabel) {
+  const views = item?.interpretiveViews || {};
+  const view = views[viewKey];
   if (!view) return "";
   const label = view.label || fallbackLabel;
   const lens = view.lens ? '<span>' + escapeHTML(view.lens) + '</span>' : '';
   return (
-    '<section class="interpretive-view-card">' +
-      '<h4>' + escapeHTML(label) + lens + '</h4>' +
+    '<section class="interpretive-view-card" data-detail-card="' + escapeHTML(viewKey) + '">' +
+      '<div class="interpretive-card-head">' +
+        '<h4>' + escapeHTML(label) + lens + '</h4>' +
+        renderInterpretiveDetailButton(item, viewKey) +
+      '</div>' +
       renderPointList(view.points || []) +
     '</section>'
   );
 }
 
-function renderInterpretiveViewsContent(item) {
+function renderInterpretiveSummaryBlock(item, title, points, detailKey) {
+  return (
+    '<section data-detail-card="' + escapeHTML(detailKey) + '">' +
+      '<div class="interpretive-card-head">' +
+        '<h4>' + escapeHTML(title) + '</h4>' +
+        renderInterpretiveDetailButton(item, detailKey) +
+      '</div>' +
+      renderPointList(points) +
+    '</section>'
+  );
+}
+
+function normalizeDetailParagraphs(value) {
+  if (!value) return [];
+  if (Array.isArray(value)) return value.filter(Boolean).map(String);
+  return [String(value)];
+}
+
+function getInterpretiveDetailPayload(item, detailKey) {
+  const views = item?.interpretiveViews || {};
+  if (["conservative", "moderate", "progressive"].includes(detailKey)) {
+    const view = views[detailKey] || {};
+    const title = view.label || { conservative: "보수적 시선", moderate: "중도적 시선", progressive: "진보적 시선" }[detailKey];
+    const lens = view.lens || "";
+    const details = normalizeDetailParagraphs(view.details || view.detailPoints || view.detail || view.detailText);
+    return { title, lens, details, points: view.points || [] };
+  }
+
+  if (detailKey === "agreement") {
+    return {
+      title: "공통 지점",
+      lens: "관점들이 함께 붙드는 최소 합의",
+      details: normalizeDetailParagraphs(views.agreementDetails || views.agreementDetail),
+      points: views.agreement || []
+    };
+  }
+
+  if (detailKey === "tension") {
+    return {
+      title: "충돌 지점",
+      lens: "해석이 갈리는 실제 쟁점",
+      details: normalizeDetailParagraphs(views.tensionDetails || views.tensionDetail),
+      points: views.tension || []
+    };
+  }
+
+  return null;
+}
+
+function renderInterpretiveDetailPanel(item, detailKey) {
+  const payload = getInterpretiveDetailPayload(item, detailKey);
+  if (!payload || payload.details.length === 0) return "";
+  const lens = payload.lens ? '<span>' + escapeHTML(payload.lens) + '</span>' : '';
+  return (
+    '<section class="interpretive-detail-panel" data-detail-panel="' + escapeHTML(detailKey) + '">' +
+      '<div class="interpretive-detail-panel-head">' +
+        '<div>' +
+          '<div class="interpretive-detail-kicker">DETAIL</div>' +
+          '<h3>' + escapeHTML(payload.title) + lens + '</h3>' +
+        '</div>' +
+        '<button class="interpretive-detail-close" type="button" data-interpretive-detail-close="true">접기</button>' +
+      '</div>' +
+      '<div class="interpretive-detail-copy">' +
+        payload.details.map((detail) => '<p>' + escapeHTML(detail) + '</p>').join("") +
+      '</div>' +
+      (payload.points.length ? '<div class="interpretive-detail-recap"><strong>요점</strong>' + renderPointList(payload.points) + '</div>' : '') +
+    '</section>'
+  );
+}
+
+function renderInterpretiveViewsContent(item, activeDetailKey) {
   const views = item?.interpretiveViews || {};
   const note = views.note || "아래 관점들은 정답 경쟁이 아니라, 본문을 읽는 대표적 해석 렌즈입니다.";
   const agreement = views.agreement || [];
   const tension = views.tension || [];
 
   return (
-    '<div class="interpretive-popup-body">' +
+    '<div class="interpretive-popup-body" data-active-detail="' + escapeHTML(activeDetailKey || "") + '">' +
       '<p class="interpretive-popup-note">' + escapeHTML(note) + '</p>' +
       '<div class="interpretive-view-grid">' +
-        renderInterpretiveViewBlock(views.conservative, "보수적 시선") +
-        renderInterpretiveViewBlock(views.moderate, "중도적 시선") +
-        renderInterpretiveViewBlock(views.progressive, "진보적 시선") +
+        renderInterpretiveViewBlock(item, "conservative", "보수적 시선") +
+        renderInterpretiveViewBlock(item, "moderate", "중도적 시선") +
+        renderInterpretiveViewBlock(item, "progressive", "진보적 시선") +
       '</div>' +
       '<div class="interpretive-summary-grid">' +
-        '<section><h4>공통 지점</h4>' + renderPointList(agreement) + '</section>' +
-        '<section><h4>충돌 지점</h4>' + renderPointList(tension) + '</section>' +
+        renderInterpretiveSummaryBlock(item, "공통 지점", agreement, "agreement") +
+        renderInterpretiveSummaryBlock(item, "충돌 지점", tension, "tension") +
       '</div>' +
+      (activeDetailKey ? renderInterpretiveDetailPanel(item, activeDetailKey) : '') +
     '</div>'
   );
+}
+
+function refreshInterpretivePopupContent(introId, detailKey) {
+  const item = getSectionIntroById(introId);
+  if (!item || !item.interpretiveViews) return;
+
+  const desktopPopup = document.getElementById("interpretivePopup");
+  const desktopContent = desktopPopup?.querySelector("#interpretivePopupContent");
+  if (desktopContent && desktopPopup.classList.contains("show")) {
+    desktopContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
+    markActiveInterpretiveDetailButton(desktopContent, detailKey);
+    scrollInterpretiveDetailIntoView(desktopContent);
+    return;
+  }
+
+  const mobilePopup = document.getElementById("mobileInfoPopup");
+  const mobileContent = mobilePopup?.querySelector("#mobileInfoBody");
+  if (mobileContent && mobilePopup.classList.contains("show")) {
+    mobileContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
+    markActiveInterpretiveDetailButton(mobileContent, detailKey);
+    scrollInterpretiveDetailIntoView(mobileContent);
+  }
+}
+
+function markActiveInterpretiveDetailButton(scope, detailKey) {
+  if (!scope) return;
+  scope.querySelectorAll(".interpretive-detail-btn").forEach((button) => {
+    button.classList.toggle("active", button.dataset.interpretiveDetail === detailKey);
+  });
+}
+
+function scrollInterpretiveDetailIntoView(scope) {
+  const panel = scope?.querySelector(".interpretive-detail-panel");
+  if (panel) panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function bindInterpretiveDetailDelegation() {
+  document.addEventListener("click", (event) => {
+    const detailButton = event.target.closest(".interpretive-detail-btn");
+    if (detailButton) {
+      event.preventDefault();
+      event.stopPropagation();
+      refreshInterpretivePopupContent(detailButton.dataset.introId, detailButton.dataset.interpretiveDetail);
+      return;
+    }
+
+    const closeButton = event.target.closest("[data-interpretive-detail-close]");
+    if (closeButton) {
+      event.preventDefault();
+      event.stopPropagation();
+      const body = closeButton.closest(".interpretive-popup-body");
+      const activeIntro = body?.querySelector(".interpretive-detail-btn")?.dataset.introId;
+      if (activeIntro) refreshInterpretivePopupContent(activeIntro, null);
+    }
+  });
 }
 
 function getInterpretivePopup() {
@@ -288,6 +435,8 @@ function showInterpretiveView(introId) {
     title,
     body
   })) {
+    const mobilePopup = document.getElementById("mobileInfoPopup");
+    markActiveInterpretiveDetailButton(mobilePopup?.querySelector("#mobileInfoBody"), null);
     return;
   }
 
@@ -297,7 +446,10 @@ function showInterpretiveView(introId) {
   const sheet = popup.querySelector(".interpretive-popup-sheet");
 
   if (titleEl) titleEl.textContent = title;
-  if (contentEl) contentEl.innerHTML = body;
+  if (contentEl) {
+    contentEl.innerHTML = body;
+    markActiveInterpretiveDetailButton(contentEl, null);
+  }
 
   popup.setAttribute("aria-hidden", "false");
   popup.classList.add("show");
