@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 25,
+  "updatedBooks": 26,
   "books": [
     {
       "id": "matthew",
@@ -325,12 +325,19 @@
       "file": "data/3john.json",
       "dataFile": "data/3john.json",
       "json": "data/3john.json"
+    },
+    {
+      "id": "jude",
+      "order": 26,
+      "bookKo": "유다서",
+      "bookEn": "Jude",
+      "chapterCount": 1,
+      "verseCount": 25,
+      "data": "data/jude.json",
+      "path": "data/jude.json",
+      "file": "data/jude.json",
+      "dataFile": "data/jude.json",
+      "json": "data/jude.json"
     }
-  ],
-  "lastUpdatedBook": "2john",
-  "lastUpdatedOrder": 24,
-  "latestUpdatedBook": "3john",
-  "latestUpdatedOrder": 25,
-  "latestUpdatedBookKo": "요한삼서",
-  "latestUpdatedBookEn": "3 John"
+  ]
 }
