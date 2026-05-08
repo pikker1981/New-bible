@@ -1,0 +1,15 @@
+{
+  "task": "desktop book abbreviation square black patch",
+  "js_syntax_ok": true,
+  "js_syntax_stderr": "",
+  "css_file": "mobile_books_dropdown_select_fixed.css",
+  "changed_css_rules": {
+    "desktop_book_abbr_border_radius": "0 square corners",
+    "desktop_book_abbr_background": "#111827",
+    "desktop_book_abbr_color": "#ffffff",
+    "desktop_book_abbr_color_mix_removed": true
+  },
+  "app_logic_changed": false,
+  "index_structure_changed": false,
+  "manifest_changed": false
+}

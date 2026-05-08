@@ -888,8 +888,8 @@
   .book-btn .book-abbr {
     min-width: 34px;
     height: 28px;
-    padding: 0 6px;
-    border-radius: 999px;
+    padding: 0 7px;
+    border-radius: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -898,13 +898,16 @@
     letter-spacing: -0.02em;
     line-height: 1;
     white-space: nowrap;
-    background: color-mix(in srgb, var(--book-accent, var(--accent)) 12%, #ffffff);
-    color: var(--book-accent, var(--accent));
+    background: #111827;
+    color: #ffffff;
+    border: 1px solid #111827;
+    box-shadow: none;
     flex: 0 0 auto;
   }
 
   .book-btn.active .book-abbr {
-    background: rgba(255, 255, 255, 0.18);
+    background: #111827;
     color: #ffffff;
+    border-color: #111827;
   }
 }
