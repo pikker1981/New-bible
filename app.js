@@ -86,6 +86,7 @@ const els = {
   noteBody: $("noteBody"),
   noteList: $("noteList"),
   noteCount: $("noteCount"),
+  noteListToggle: $("noteListToggle"),
   searchInput: $("searchInput"),
   searchMeta: $("searchMeta"),
   highlightCount: $("highlightCount"),
@@ -141,6 +142,53 @@ function loadHighlights() {
 
 function saveHighlights() {
   localStorage.setItem(storageKey(), JSON.stringify(state.highlights));
+}
+
+function noteListCollapseStorageKey() {
+  return "nt-modern-ko-note-list-collapsed-v1";
+}
+
+function loadNoteListCollapsed() {
+  try {
+    return localStorage.getItem(noteListCollapseStorageKey()) === "true";
+  } catch (_) {
+    return false;
+  }
+}
+
+function saveNoteListCollapsed(value) {
+  try {
+    localStorage.setItem(noteListCollapseStorageKey(), String(Boolean(value)));
+  } catch (_) {
+    // localStorage를 사용할 수 없는 환경에서는 현재 화면 상태만 유지합니다.
+  }
+}
+
+function setNoteListCollapsed(collapsed, persist = true) {
+  const card = document.querySelector(".note-list-card");
+  if (!card || !els.noteListToggle) return;
+
+  const nextCollapsed = Boolean(collapsed);
+  card.classList.toggle("is-collapsed", nextCollapsed);
+  els.noteListToggle.setAttribute("aria-expanded", String(!nextCollapsed));
+  els.noteListToggle.textContent = nextCollapsed ? "펼치기" : "접기";
+  els.noteListToggle.title = nextCollapsed ? "설명 리스트 펼치기" : "설명 리스트 접기";
+
+  if (persist) saveNoteListCollapsed(nextCollapsed);
+}
+
+function syncNoteListCollapsedState() {
+  setNoteListCollapsed(loadNoteListCollapsed(), false);
+}
+
+function bindNoteListToggle() {
+  if (!els.noteListToggle) return;
+  els.noteListToggle.addEventListener("click", () => {
+    const card = document.querySelector(".note-list-card");
+    const collapsed = card?.classList.contains("is-collapsed") || false;
+    setNoteListCollapsed(!collapsed);
+  });
+  syncNoteListCollapsedState();
 }
 
 function highlightKey(bookId, chapter, verse) {
@@ -1373,6 +1421,7 @@ function setupResponsiveNoteLayout() {
   }
 
   syncMobileGlossaryCount();
+  syncNoteListCollapsedState();
 }
 
 function bindResponsiveNoteLayout() {
@@ -1394,6 +1443,7 @@ async function init() {
       throw new Error("manifest.json에 books 정보가 없습니다.");
     }
     bindSelectionMarker();
+    bindNoteListToggle();
     bindResponsiveNoteLayout();
     bindHighlightTabs();
     bindContextTabs();

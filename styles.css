@@ -190,6 +190,22 @@ mark{padding:0 2px}
 .note-body strong{color:#111}
 .note-list-card{padding-bottom:14px}
 .note-list-head h3{font-size:22px;letter-spacing:-.03em;margin-top:8px}
+.note-list-actions{display:flex;align-items:center;gap:8px}
+.note-list-toggle{
+  min-height:28px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:#777;
+  padding:0 9px;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:-.02em;
+  cursor:pointer;
+}
+.note-list-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.note-list-card.is-collapsed{padding-bottom:24px}
+.note-list-card.is-collapsed .note-list-head{margin-bottom:0}
+.note-list-card.is-collapsed .note-list{display:none}
 .note-list{
   display:flex;
   flex-direction:column;
@@ -259,6 +275,9 @@ mark{padding:0 2px}
   .verse-text{font-size:16px;line-height:1.9}
   .right-rail{display:block}
   .note-list{max-height:720px}
+  .note-list-toggle{display:none}
+  .note-list-card.is-collapsed .note-list{display:flex}
+  .note-list-card.is-collapsed .note-list-head{margin-bottom:14px}
 }
 
 
