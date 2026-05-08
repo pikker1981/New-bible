@@ -1,0 +1,39 @@
+{
+  "book": "고린도후서",
+  "id": "2corinthians",
+  "source_file": "2corinthians.json",
+  "chapterCount_declared": 13,
+  "chapterCount_actual": 13,
+  "verseCount_declared": 256,
+  "verseCount_actual": 256,
+  "notes_count": 39,
+  "body_footnote_marker_count": 39,
+  "unique_body_footnote_marker_count": 39,
+  "numeric_footnote_markers": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_error_patterns_checked": [
+    "습니습니다",
+    "습니다습니다",
+    "습니까습니까",
+    "십시십시오",
+    "으십시오십시오",
+    "십시오십시오",
+    "였습니습니다",
+    "했습니습니다",
+    "있었습니습니다",
+    "없었습니습니다"
+  ],
+  "duplicate_honorific_errors_remaining": [],
+  "mechanical_duplicate_fixes_applied": 0,
+  "json_schema_basic": {
+    "has_id": true,
+    "has_chapters": true,
+    "has_notes": true,
+    "all_chapters_have_number_and_verses": true,
+    "all_verses_have_number_and_text": true
+  },
+  "design_files_modified": false,
+  "status": "pass",
+  "created_at": "2026-05-08T02:01:11"
+}
