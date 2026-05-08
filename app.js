@@ -56,6 +56,7 @@ const state = {
   query: "",
   currentNoteId: null,
   highlights: loadHighlights(),
+  highlightView: "all",
   pendingMark: null,
   searchRunId: 0,
   globalSearchResultCount: 0
@@ -82,7 +83,11 @@ const els = {
   noteList: $("noteList"),
   noteCount: $("noteCount"),
   searchInput: $("searchInput"),
-  searchMeta: $("searchMeta")
+  searchMeta: $("searchMeta"),
+  highlightCount: $("highlightCount"),
+  highlightList: $("highlightList"),
+  highlightAllTab: $("highlightAllTab"),
+  highlightCurrentTab: $("highlightCurrentTab")
 };
 
 async function loadJSON(path) {
@@ -377,6 +382,7 @@ function render() {
   };
 
   renderNoteList();
+  renderHighlightList();
   setupResponsiveNoteLayout();
   renderChapter();
 
@@ -421,6 +427,7 @@ function renderChapter() {
 
   bindFootnoteButtons();
   updateSearchMeta();
+  renderHighlightList();
 }
 
 async function renderGlobalSearchResults(query) {
@@ -561,6 +568,151 @@ function renderNoteList() {
   els.noteList.querySelectorAll(".note-item").forEach((button) => {
     button.addEventListener("click", () => showNote(button.dataset.note, true));
   });
+}
+
+
+function findVerseText(bookId, chapterNumber, verseNumber) {
+  const book = state.books[bookId];
+  const chapter = book?.chapters?.find((item) => Number(item.number) === Number(chapterNumber));
+  const verse = chapter?.verses?.find((item) => Number(item.number) === Number(verseNumber));
+  return verse ? String(verse.text || "").replace(/\[\^[^\]]+\]/g, "").trim() : "";
+}
+
+function getHighlightItems() {
+  const metas = state.manifest?.books || [];
+  const metaById = new Map(metas.map((book) => [book.id, book]));
+  const items = [];
+
+  Object.entries(state.highlights || {}).forEach(([key, texts]) => {
+    const parts = key.split(":");
+    if (parts.length < 3 || !Array.isArray(texts)) return;
+
+    const bookId = parts[0];
+    const chapter = Number(parts[1]);
+    const verse = Number(parts[2]);
+    const meta = metaById.get(bookId) || state.books[bookId] || { id: bookId, bookKo: bookId, order: 999 };
+
+    texts.forEach((text) => {
+      const clean = normalizeHighlightText(text);
+      if (!clean) return;
+      items.push({
+        key,
+        bookId,
+        bookKo: meta.bookKo || meta.bookEn || bookId,
+        bookOrder: Number(meta.order || 999),
+        chapter,
+        verse,
+        text: clean,
+        fullVerseText: findVerseText(bookId, chapter, verse),
+        color: getBookAccent(meta)
+      });
+    });
+  });
+
+  return items.sort((a, b) => {
+    if (a.bookOrder !== b.bookOrder) return a.bookOrder - b.bookOrder;
+    if (a.chapter !== b.chapter) return a.chapter - b.chapter;
+    if (a.verse !== b.verse) return a.verse - b.verse;
+    return a.text.localeCompare(b.text, "ko");
+  });
+}
+
+function renderHighlightList() {
+  if (!els.highlightList || !els.highlightCount) return;
+
+  const allItems = getHighlightItems();
+  const items = state.highlightView === "current"
+    ? allItems.filter((item) => item.bookId === state.currentBookId)
+    : allItems;
+
+  els.highlightCount.textContent = items.length;
+
+  if (els.highlightAllTab) {
+    els.highlightAllTab.classList.toggle("active", state.highlightView === "all");
+    els.highlightAllTab.setAttribute("aria-selected", String(state.highlightView === "all"));
+  }
+  if (els.highlightCurrentTab) {
+    els.highlightCurrentTab.classList.toggle("active", state.highlightView === "current");
+    els.highlightCurrentTab.setAttribute("aria-selected", String(state.highlightView === "current"));
+  }
+
+  if (items.length === 0) {
+    const emptyText = state.highlightView === "current"
+      ? "현재 권에 마킹된 텍스트가 없습니다."
+      : "아직 마킹된 텍스트가 없습니다.";
+    els.highlightList.innerHTML = '<div class="highlight-empty">' + escapeHTML(emptyText) + '</div>';
+    return;
+  }
+
+  els.highlightList.innerHTML = items.map((item, index) => {
+    const ref = item.bookKo + " " + item.chapter + ":" + item.verse;
+    const excerpt = item.fullVerseText || "본문 데이터를 아직 불러오지 않았습니다. 클릭하면 해당 장으로 이동합니다.";
+    return (
+      '<article class="highlight-item" tabindex="0" role="button" data-index="' + index + '" style="--book-accent:' + escapeHTML(item.color) + '">' +
+        '<div class="highlight-ref">' + escapeHTML(ref) + '</div>' +
+        '<div class="highlight-picked">' + escapeHTML(item.text) + '</div>' +
+        '<div class="highlight-excerpt">' + escapeHTML(excerpt) + '</div>' +
+        '<button class="highlight-remove" type="button" data-index="' + index + '" aria-label="마킹 삭제">삭제</button>' +
+      '</article>'
+    );
+  }).join("");
+
+  function openItem(item) {
+    openHighlightItem(item.bookId, item.chapter, item.verse);
+  }
+
+  els.highlightList.querySelectorAll(".highlight-item").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      if (event.target.closest(".highlight-remove")) return;
+      openItem(items[Number(card.dataset.index)]);
+    });
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openItem(items[Number(card.dataset.index)]);
+      }
+    });
+  });
+
+  els.highlightList.querySelectorAll(".highlight-remove").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const item = items[Number(button.dataset.index)];
+      if (!item) return;
+      removeVerseHighlight(item.bookId, item.chapter, item.verse, item.text);
+      renderChapter();
+      renderHighlightList();
+    });
+  });
+}
+
+async function openHighlightItem(bookId, chapter, verse) {
+  state.query = "";
+  if (els.searchInput) els.searchInput.value = "";
+  hideMarkMenu();
+  await selectBook(bookId, Number(chapter));
+  requestAnimationFrame(() => {
+    const target = document.getElementById("v-" + chapter + "-" + verse);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
+      target.classList.add("mark-flash");
+    }
+  });
+}
+
+function bindHighlightTabs() {
+  if (els.highlightAllTab) {
+    els.highlightAllTab.addEventListener("click", () => {
+      state.highlightView = "all";
+      renderHighlightList();
+    });
+  }
+  if (els.highlightCurrentTab) {
+    els.highlightCurrentTab.addEventListener("click", () => {
+      state.highlightView = "current";
+      renderHighlightList();
+    });
+  }
 }
 
 function showNote(noteId, scrollToPanel) {
@@ -720,8 +872,9 @@ function applyPendingMarkAction() {
 
   if (changed) {
     renderChapter();
+    renderHighlightList();
     const target = document.getElementById("v-" + context.chapter + "-" + context.verse) ||
-      document.getElementById("search-" + context.chapter + "-" + context.verse);
+      document.getElementById("search-" + context.bookId + "-" + context.chapter + "-" + context.verse);
     if (target) target.classList.add(context.mode === "delete" ? "mark-remove-flash" : "mark-flash");
   }
 }
@@ -858,6 +1011,7 @@ async function init() {
     }
     bindSelectionMarker();
     bindResponsiveNoteLayout();
+    bindHighlightTabs();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
     console.error(error);
