@@ -1,0 +1,21 @@
+{
+  "book": "2 Timothy",
+  "bookKo": "디모데후서",
+  "id": "2timothy",
+  "chapterCount": 4,
+  "actualChapterCount": 4,
+  "verseCount": 83,
+  "actualVerseCount": 83,
+  "notesCount": 40,
+  "bodyFootnoteMarkerCount": 40,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicateHonorificErrors": [],
+  "nonKoreanScriptInBody": [],
+  "mechanicalTransformCount": 0,
+  "manualFixes": [],
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
+  "status": "pass"
+}
