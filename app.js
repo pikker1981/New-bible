@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-mobile-highlight-button-v4";
+const APP_BUILD_ID = "20260508-mobile-mark-menu-bottom-dock-v6";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -1487,20 +1487,56 @@ function getMarkMenu() {
   return menu;
 }
 
+function shouldUseMobileMarkMenu() {
+  return Boolean(
+    isMobileReaderLayout() ||
+    window.matchMedia?.("(pointer: coarse)")?.matches ||
+    window.matchMedia?.("(hover: none)")?.matches ||
+    navigator.maxTouchPoints > 0
+  );
+}
+
 function showMarkMenu(context) {
   const menu = getMarkMenu();
   const button = menu.querySelector(".mark-menu-btn");
   state.pendingMark = context;
 
   const isDelete = context.mode === "delete";
+  const isMobile = shouldUseMobileMarkMenu();
   button.textContent = isDelete ? "d" : "m";
   button.title = isDelete ? "형광펜 마킹 취소" : "형광펜 마킹";
   menu.classList.toggle("delete-mode", isDelete);
+  menu.classList.toggle("mobile-below", isMobile);
+  menu.classList.toggle("mobile-bottom-dock", isMobile);
 
-  const top = window.scrollY + context.rect.top - 42;
-  const left = window.scrollX + context.rect.left + context.rect.width / 2;
+  if (isMobile) {
+    // Android Chrome can report a wide viewport or unstable selection rects.
+    // For touch devices, dock the mark button at the lower screen area so it never appears above the selected text.
+    menu.style.position = "fixed";
+    menu.style.top = "auto";
+    menu.style.left = "50%";
+    menu.style.bottom = "calc(22px + env(safe-area-inset-bottom, 0px))";
+    menu.classList.add("show");
+    return;
+  }
 
-  menu.style.top = Math.max(window.scrollY + 8, top) + "px";
+  menu.style.position = "absolute";
+  menu.style.bottom = "auto";
+
+  const viewportPadding = 8;
+  const menuSize = 42;
+  const aboveGap = 42;
+  const preferredTop = window.scrollY + context.rect.top - aboveGap;
+  const maxTop = window.scrollY + window.innerHeight - menuSize - viewportPadding;
+  const minTop = window.scrollY + viewportPadding;
+  const top = Math.min(Math.max(minTop, preferredTop), maxTop);
+
+  const preferredLeft = window.scrollX + context.rect.left + context.rect.width / 2;
+  const minLeft = window.scrollX + 28;
+  const maxLeft = window.scrollX + window.innerWidth - 28;
+  const left = Math.min(Math.max(minLeft, preferredLeft), maxLeft);
+
+  menu.style.top = top + "px";
   menu.style.left = left + "px";
   menu.classList.add("show");
 }
