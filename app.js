@@ -239,8 +239,66 @@ function renderBookList() {
   }).join("");
 
   els.bookList.querySelectorAll(".book-btn").forEach((button) => {
-    button.addEventListener("click", () => selectBook(button.dataset.book, 1));
+    button.addEventListener("click", () => {
+      closeMobileBookList();
+      selectBook(button.dataset.book, 1);
+    });
   });
+
+  syncMobileBookToggle();
+}
+
+function getCurrentBookMeta() {
+  const books = state.manifest?.books || [];
+  return books.find((book) => book.id === state.currentBookId) || books[0] || null;
+}
+
+function ensureMobileBookToggle() {
+  let toggle = document.getElementById("mobileBookToggle");
+  if (toggle) return toggle;
+
+  if (!els.bookList || !els.bookList.parentElement) return null;
+
+  toggle = document.createElement("button");
+  toggle.id = "mobileBookToggle";
+  toggle.className = "mobile-book-toggle";
+  toggle.type = "button";
+  toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-controls", "bookList");
+  toggle.innerHTML = '<span class="mobile-book-toggle-label">BOOK</span><strong>Matthew</strong>';
+
+  toggle.addEventListener("click", () => {
+    const willOpen = !els.bookList.classList.contains("mobile-open");
+    els.bookList.classList.toggle("mobile-open", willOpen);
+    toggle.setAttribute("aria-expanded", String(willOpen));
+    if (willOpen) {
+      const active = els.bookList.querySelector(".book-btn.active");
+      if (active) active.scrollIntoView({ block: "nearest" });
+    }
+  });
+
+  els.bookList.insertAdjacentElement("beforebegin", toggle);
+  return toggle;
+}
+
+function syncMobileBookToggle() {
+  const toggle = ensureMobileBookToggle();
+  if (!toggle) return;
+
+  const current = getCurrentBookMeta();
+  const label = current ? (current.bookEn || current.bookKo || current.id) : "Select book";
+  const sub = current ? String(current.order || "").padStart(2, "0") + " · " + (current.bookKo || "") : "";
+
+  toggle.innerHTML =
+    '<span class="mobile-book-toggle-label">BOOKS</span>' +
+    '<strong>' + escapeHTML(label) + '</strong>' +
+    '<small>' + escapeHTML(sub) + '</small>';
+}
+
+function closeMobileBookList() {
+  const toggle = document.getElementById("mobileBookToggle");
+  if (els.bookList) els.bookList.classList.remove("mobile-open");
+  if (toggle) toggle.setAttribute("aria-expanded", "false");
 }
 
 async function ensureBook(bookId) {
@@ -489,7 +547,7 @@ function renderNoteList() {
   syncMobileGlossaryCount();
   els.noteList.innerHTML = ids.map((id) => {
     const title = noteTitleFromText(id, notes[id]);
-    const preview = plainFromNote(notes[id]).slice(0, 76);
+    const preview = plainFromNote(notes[id]).slice(0, 180);
     const active = id === state.currentNoteId ? " active" : "";
     return (
       '<button class="note-item' + active + '" type="button" data-note="' + escapeHTML(id) + '">' +

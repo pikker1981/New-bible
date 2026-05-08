@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "updated_files": [
+    "app.js",
+    "index.html",
+    "mobile_books_dropdown_notes_fixed.css",
+    "data/manifest.json"
+  ],
+  "mobile_books": "dropdown scroll list with English book names",
+  "mobile_glossary": "word and description preview restored; wrapping enabled",
+  "search": "27-book global search retained",
+  "desktop": "unchanged by media queries except shared JS safe additions"
+}
