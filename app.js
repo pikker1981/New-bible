@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-gospel-event-views-v20";
+const APP_BUILD_ID = "20260508-scholar-dedup-representative-v21";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -420,6 +420,24 @@ function renderScholarSourceLine(scholar) {
   return source;
 }
 
+
+function renderSameViewScholars(scholar) {
+  const related = Array.isArray(scholar.sameViewScholars) ? scholar.sameViewScholars : [];
+  if (!related.length) return "";
+  const names = related
+    .map((item) => item && item.name ? String(item.name).trim() : "")
+    .filter(Boolean)
+    .slice(0, 8);
+  const extraCount = Math.max(0, related.length - names.length);
+  if (!names.length) return "";
+  return (
+    '<div class="interpretive-scholar-related">' +
+      '<span>동일 요지 참고</span>' +
+      '<strong>' + escapeHTML(names.join(", ") + (extraCount ? " 외 " + extraCount + "명" : "")) + '</strong>' +
+    '</div>'
+  );
+}
+
 function renderInterpretiveScholarPanel(item, scholarKey) {
   const key = String(scholarKey || "").replace(/^scholars:/, "");
   const scholars = getScholarEntriesForKey(item, key);
@@ -450,6 +468,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
             (scholar.tradition || scholar.field ? '<div class="interpretive-scholar-tradition">' + escapeHTML(scholar.tradition || scholar.field) + '</div>' : '') +
             (claim ? '<p>' + escapeHTML(claim) + '</p>' : '<p>검증된 요약이 아직 입력되지 않았습니다.</p>') +
             '<div class="interpretive-scholar-meta">확실성: ' + escapeHTML(confidence) + (sourceLine ? ' · 출처: ' + sourceLine : ' · 출처: 미입력') + '</div>' +
+            renderSameViewScholars(scholar) +
             (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeHTML(scholar.caution || scholar.warning) + '</div>' : '') +
           '</article>'
         );
