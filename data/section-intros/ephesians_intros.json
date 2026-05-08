@@ -1,0 +1,106 @@
+{
+  "bookId": "ephesians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "인사",
+      "intro": "에베소서는 교회의 정체성과 삶을 우주적 그리스도론 안에서 설명한다. 첫 인사는 은혜와 평화라는 편지의 기본 분위기를 세운다.",
+      "typeLabel": "서신",
+      "id": "ephesians-1-1-인사"
+    },
+    {
+      "chapter": 1,
+      "verse": 3,
+      "type": "praise",
+      "title": "그리스도 안의 복",
+      "intro": "긴 찬양문은 선택, 구속, 상속, 성령의 인치심을 한 흐름으로 노래한다. 신자의 정체성은 개인 성취가 아니라 그리스도 안에서 받은 은혜에 근거한다.",
+      "typeLabel": "찬양",
+      "id": "ephesians-1-3-그리스도-안의-복"
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "type": "prayer",
+      "title": "지혜와 계시를 구하는 기도",
+      "intro": "바울은 독자들이 하나님을 더 깊이 알고 부르심의 소망과 능력을 깨닫기를 기도한다. 기도는 교리 설명과 삶의 변화를 연결한다.",
+      "typeLabel": "기도",
+      "id": "ephesians-1-15-지혜와-계시를-구하는-기도"
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "type": "teaching",
+      "title": "죽음에서 생명으로",
+      "intro": "죄와 죽음 가운데 있던 사람들이 은혜로 살아났다는 복음의 핵심이 제시된다. 구원은 자랑할 업적이 아니라 하나님의 선물이다.",
+      "typeLabel": "가르침",
+      "id": "ephesians-2-1-죽음에서-생명으로"
+    },
+    {
+      "chapter": 2,
+      "verse": 11,
+      "type": "teaching",
+      "title": "한 새 사람",
+      "intro": "그리스도는 유대인과 이방인 사이의 담을 허무신다. 교회는 화해된 사람들이 함께 지어져 가는 하나님의 거처로 묘사된다.",
+      "typeLabel": "가르침",
+      "id": "ephesians-2-11-한-새-사람"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "teaching",
+      "title": "감추어진 비밀",
+      "intro": "바울은 이방인들이 그리스도 안에서 함께 상속자가 되었다는 비밀을 설명한다. 이는 단순한 포용이 아니라 하나님의 오래된 계획의 드러남이다.",
+      "typeLabel": "가르침",
+      "id": "ephesians-3-1-감추어진-비밀"
+    },
+    {
+      "chapter": 3,
+      "verse": 14,
+      "type": "prayer",
+      "title": "사랑을 알게 하는 기도",
+      "intro": "바울은 독자들이 그리스도의 사랑의 넓이와 길이와 높이와 깊이를 알게 되기를 기도한다. 신학은 공동체 안에 뿌리내린 사랑으로 완성된다.",
+      "typeLabel": "기도",
+      "id": "ephesians-3-14-사랑을-알게-하는-기도"
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "부르심에 합당한 삶",
+      "intro": "편지는 교리에서 권면으로 전환된다. 하나 됨은 감정적 일치가 아니라 성령 안에서 지켜야 할 공동체의 실제 과제다.",
+      "typeLabel": "권면",
+      "id": "ephesians-4-1-부르심에-합당한-삶"
+    },
+    {
+      "chapter": 4,
+      "verse": 17,
+      "type": "exhortation",
+      "title": "옛 사람과 새 사람",
+      "intro": "이방인처럼 살던 옛 방식을 벗고 새 사람을 입으라는 권면이 이어진다. 언어, 분노, 노동, 용서가 구체적 실천 영역으로 제시된다.",
+      "typeLabel": "권면",
+      "id": "ephesians-4-17-옛-사람과-새-사람"
+    },
+    {
+      "chapter": 5,
+      "verse": 21,
+      "type": "household",
+      "title": "그리스도 안의 가정 질서",
+      "intro": "가정 규범은 당시 로마 세계의 질서 언어를 사용하지만, 그리스도의 사랑과 자기희생으로 재해석된다. 권위보다 상호 책임과 섬김이 강조된다.",
+      "typeLabel": "가정 규범",
+      "id": "ephesians-5-21-그리스도-안의-가정-질서"
+    },
+    {
+      "chapter": 6,
+      "verse": 10,
+      "type": "exhortation",
+      "title": "하나님의 전신갑주",
+      "intro": "마지막 권면은 신자의 싸움이 사람을 향한 것이 아니라 악의 권세를 향한 것임을 밝힌다. 무기 이미지는 폭력보다 진리, 의, 믿음, 말씀, 기도로 구성된다.",
+      "typeLabel": "권면",
+      "id": "ephesians-6-10-하나님의-전신갑주"
+    }
+  ]
+}

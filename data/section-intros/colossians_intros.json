@@ -1,0 +1,79 @@
+{
+  "bookId": "colossians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "인사와 감사",
+      "intro": "골로새서는 그리스도의 충만함과 교회의 새 삶을 강조한다. 바울은 먼저 그들의 믿음과 사랑, 소망에 감사한다.",
+      "typeLabel": "서신",
+      "id": "colossians-1-1-인사와-감사"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "type": "prayer",
+      "title": "하나님 뜻을 아는 지식",
+      "intro": "바울은 골로새 신자들이 지혜와 영적 이해로 충만해져 주님께 합당히 살기를 기도한다. 바른 지식은 열매 맺는 삶으로 이어져야 한다.",
+      "typeLabel": "기도",
+      "id": "colossians-1-9-하나님-뜻을-아는-지식"
+    },
+    {
+      "chapter": 1,
+      "verse": 15,
+      "type": "praise",
+      "title": "그리스도 찬가",
+      "intro": "그리스도는 보이지 않는 하나님의 형상이자 모든 창조와 새 창조의 중심으로 선포된다. 이 단락은 골로새서 전체의 그리스도론적 기초다.",
+      "typeLabel": "찬양",
+      "id": "colossians-1-15-그리스도-찬가"
+    },
+    {
+      "chapter": 1,
+      "verse": 24,
+      "type": "ministry",
+      "title": "바울의 사역",
+      "intro": "바울은 자신의 고난을 교회를 위한 사역 안에서 해석한다. 감추어졌던 비밀은 이방인 가운데 계신 그리스도라는 소망으로 드러난다.",
+      "typeLabel": "사역",
+      "id": "colossians-1-24-바울의-사역"
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "type": "warning",
+      "title": "헛된 철학에 대한 경고",
+      "intro": "바울은 그리스도 안에 충만함이 있으므로 다른 영적 체계에 사로잡히지 말라고 경고한다. 문제는 지식 탐구 자체가 아니라 그리스도를 대체하는 체계다.",
+      "typeLabel": "경고",
+      "id": "colossians-2-6-헛된-철학에-대한-경고"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "위의 것을 찾으라",
+      "intro": "그리스도와 함께 살아난 사람은 옛 삶의 방식을 벗고 새 사람을 입어야 한다. 권면은 정체성에서 출발한다.",
+      "typeLabel": "권면",
+      "id": "colossians-3-1-위의-것을-찾으라"
+    },
+    {
+      "chapter": 3,
+      "verse": 18,
+      "type": "household",
+      "title": "가정과 일상의 질서",
+      "intro": "부부, 부모와 자녀, 종과 주인의 관계를 다룬다. 당시 가정 질서 언어 안에서도 그리스도께 하듯 행하라는 기준이 모든 관계를 재해석한다.",
+      "typeLabel": "가정 규범",
+      "id": "colossians-3-18-가정과-일상의-질서"
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "type": "letter",
+      "title": "기도와 마지막 문안",
+      "intro": "바울은 기도와 지혜로운 말, 외부 사람들을 향한 태도를 권한다. 마지막 문안은 골로새 교회가 넓은 선교 네트워크 안에 있음을 보여 준다.",
+      "typeLabel": "서신",
+      "id": "colossians-4-2-기도와-마지막-문안"
+    }
+  ]
+}

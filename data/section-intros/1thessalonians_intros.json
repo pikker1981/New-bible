@@ -1,0 +1,70 @@
+{
+  "bookId": "1thessalonians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "인사와 감사",
+      "intro": "데살로니가전서는 바울의 초기 편지 가운데 하나로, 박해 속 신생 교회를 격려한다. 시작부터 믿음의 역사, 사랑의 수고, 소망의 인내가 강조된다.",
+      "typeLabel": "서신",
+      "id": "1thessalonians-1-1-인사와-감사"
+    },
+    {
+      "chapter": 1,
+      "verse": 9,
+      "type": "reflection",
+      "title": "우상에서 하나님께로",
+      "intro": "데살로니가 신자들의 회심은 우상을 버리고 살아 계신 하나님을 섬기는 변화로 요약된다. 복음은 사적 신념이 아니라 충성의 대상을 바꾸는 사건이다.",
+      "typeLabel": "성찰",
+      "id": "1thessalonians-1-9-우상에서-하나님께로"
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "type": "defense",
+      "title": "바울의 사역 방식",
+      "intro": "바울은 자신이 탐욕이나 아첨으로 사역하지 않았다고 말한다. 복음 전도자의 진정성은 권위 행사보다 부모 같은 돌봄으로 드러난다.",
+      "typeLabel": "변론",
+      "id": "1thessalonians-2-1-바울의-사역-방식"
+    },
+    {
+      "chapter": 2,
+      "verse": 17,
+      "type": "letter",
+      "title": "다시 만나고 싶은 마음",
+      "intro": "바울은 교회와 떨어져 있는 고통과 재회를 향한 열망을 표현한다. 서신은 차가운 교리문이 아니라 실제 애정과 책임의 언어다.",
+      "typeLabel": "서신",
+      "id": "1thessalonians-2-17-다시-만나고-싶은-마음"
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "거룩한 삶에 대한 권면",
+      "intro": "바울은 성적 거룩함, 형제 사랑, 조용히 일하는 삶을 권한다. 새 신자 공동체가 주변 사회 안에서 어떻게 살아야 하는지를 다룬다.",
+      "typeLabel": "권면",
+      "id": "1thessalonians-4-1-거룩한-삶에-대한-권면"
+    },
+    {
+      "chapter": 4,
+      "verse": 13,
+      "type": "teaching",
+      "title": "죽은 자와 주님의 오심",
+      "intro": "교회는 죽은 신자들의 운명에 대해 걱정했다. 바울은 주님의 오심과 부활 소망으로 슬픔을 절망과 구별한다.",
+      "typeLabel": "가르침",
+      "id": "1thessalonians-4-13-죽은-자와-주님의-오심"
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "깨어 있는 삶",
+      "intro": "주의 날은 예측 가능한 일정이 아니라 깨어 있음의 삶을 요구한다. 바울은 종말 기대를 계산보다 믿음, 사랑, 소망의 실천으로 연결한다.",
+      "typeLabel": "권면",
+      "id": "1thessalonians-5-1-깨어-있는-삶"
+    }
+  ]
+}

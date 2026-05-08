@@ -1,0 +1,79 @@
+{
+  "bookId": "philippians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "인사와 감사",
+      "intro": "빌립보서는 감옥에서 쓴 기쁨의 편지다. 바울은 빌립보 교회를 복음에 함께 참여한 동역자로 기억하며 감사한다.",
+      "typeLabel": "서신",
+      "id": "philippians-1-1-인사와-감사"
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "type": "reflection",
+      "title": "감옥 속의 복음 진전",
+      "intro": "바울은 자신의 투옥이 복음을 막지 못하고 오히려 퍼지게 했다고 해석한다. 상황보다 복음의 전진이 편지의 시야를 결정한다.",
+      "typeLabel": "성찰",
+      "id": "philippians-1-12-감옥-속의-복음-진전"
+    },
+    {
+      "chapter": 1,
+      "verse": 27,
+      "type": "exhortation",
+      "title": "복음에 합당한 시민 생활",
+      "intro": "빌립보는 로마 식민 도시였고 시민권 의식이 강했다. 바울은 그 언어를 복음에 합당한 공동체적 삶으로 전환한다.",
+      "typeLabel": "권면",
+      "id": "philippians-1-27-복음에-합당한-시민-생활"
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "그리스도의 마음",
+      "intro": "공동체 안의 다툼과 허영을 넘어 같은 마음을 품으라는 권면이다. 이어지는 그리스도 찬가는 겸손과 낮아짐의 기준을 제시한다.",
+      "typeLabel": "권면",
+      "id": "philippians-2-1-그리스도의-마음"
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "type": "praise",
+      "title": "그리스도 찬가",
+      "intro": "그리스도의 낮아지심과 높아지심을 노래하는 핵심 단락이다. 권력 상승의 논리가 아니라 자기 비움과 순종이 하나님의 길로 제시된다.",
+      "typeLabel": "찬양",
+      "id": "philippians-2-5-그리스도-찬가"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "warning",
+      "title": "참된 의와 경고",
+      "intro": "바울은 자기 종교적 이력을 자랑할 수 있었지만 그리스도를 얻기 위해 모든 것을 배설물처럼 여긴다고 말한다. 의의 근거가 완전히 전환된다.",
+      "typeLabel": "경고",
+      "id": "philippians-3-1-참된-의와-경고"
+    },
+    {
+      "chapter": 4,
+      "verse": 2,
+      "type": "exhortation",
+      "title": "화해와 기쁨",
+      "intro": "유오디아와 순두게의 갈등은 실제 공동체 문제를 보여 준다. 바울은 기쁨, 관용, 기도, 생각의 훈련을 통해 공동체를 세우라고 권한다.",
+      "typeLabel": "권면",
+      "id": "philippians-4-2-화해와-기쁨"
+    },
+    {
+      "chapter": 4,
+      "verse": 10,
+      "type": "letter",
+      "title": "선물에 대한 감사",
+      "intro": "바울은 빌립보 교회의 도움에 감사하면서도 자족의 비밀을 말한다. 후원은 단순한 돈이 아니라 복음 동역의 열매로 이해된다.",
+      "typeLabel": "서신",
+      "id": "philippians-4-10-선물에-대한-감사"
+    }
+  ]
+}

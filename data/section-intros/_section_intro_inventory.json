@@ -1,0 +1,141 @@
+{
+  "version": "20260508-all-books-section-intros-v10",
+  "files": [
+    {
+      "file": "1corinthians_intros.json",
+      "bookId": "1corinthians",
+      "count": 19
+    },
+    {
+      "file": "1john_intros.json",
+      "bookId": "1john",
+      "count": 9
+    },
+    {
+      "file": "1peter_intros.json",
+      "bookId": "1peter",
+      "count": 9
+    },
+    {
+      "file": "1thessalonians_intros.json",
+      "bookId": "1thessalonians",
+      "count": 7
+    },
+    {
+      "file": "1timothy_intros.json",
+      "bookId": "1timothy",
+      "count": 9
+    },
+    {
+      "file": "2corinthians_intros.json",
+      "bookId": "2corinthians",
+      "count": 15
+    },
+    {
+      "file": "2john_intros.json",
+      "bookId": "2john",
+      "count": 2
+    },
+    {
+      "file": "2peter_intros.json",
+      "bookId": "2peter",
+      "count": 5
+    },
+    {
+      "file": "2thessalonians_intros.json",
+      "bookId": "2thessalonians",
+      "count": 5
+    },
+    {
+      "file": "2timothy_intros.json",
+      "bookId": "2timothy",
+      "count": 8
+    },
+    {
+      "file": "3john_intros.json",
+      "bookId": "3john",
+      "count": 3
+    },
+    {
+      "file": "acts_intros.json",
+      "bookId": "acts",
+      "count": 46
+    },
+    {
+      "file": "colossians_intros.json",
+      "bookId": "colossians",
+      "count": 8
+    },
+    {
+      "file": "ephesians_intros.json",
+      "bookId": "ephesians",
+      "count": 11
+    },
+    {
+      "file": "galatians_intros.json",
+      "bookId": "galatians",
+      "count": 12
+    },
+    {
+      "file": "hebrews_intros.json",
+      "bookId": "hebrews",
+      "count": 16
+    },
+    {
+      "file": "james_intros.json",
+      "bookId": "james",
+      "count": 10
+    },
+    {
+      "file": "john_intros.json",
+      "bookId": "john",
+      "count": 42
+    },
+    {
+      "file": "jude_intros.json",
+      "bookId": "jude",
+      "count": 4
+    },
+    {
+      "file": "luke_intros.json",
+      "bookId": "luke",
+      "count": 99
+    },
+    {
+      "file": "mark_intros.json",
+      "bookId": "mark",
+      "count": 72
+    },
+    {
+      "file": "matthew_intros.json",
+      "bookId": "matthew",
+      "count": 104
+    },
+    {
+      "file": "philemon_intros.json",
+      "bookId": "philemon",
+      "count": 4
+    },
+    {
+      "file": "philippians_intros.json",
+      "bookId": "philippians",
+      "count": 8
+    },
+    {
+      "file": "revelation_intros.json",
+      "bookId": "revelation",
+      "count": 30
+    },
+    {
+      "file": "romans_intros.json",
+      "bookId": "romans",
+      "count": 23
+    },
+    {
+      "file": "titus_intros.json",
+      "bookId": "titus",
+      "count": 6
+    }
+  ],
+  "totalSections": 586
+}

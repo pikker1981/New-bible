@@ -1,0 +1,43 @@
+{
+  "bookId": "philemon",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "빌레몬에게 보내는 개인 편지",
+      "intro": "빌레몬서는 매우 짧지만 노예제 사회 안에서 복음이 관계를 어떻게 바꾸는지 보여 준다. 바울은 명령보다 사랑에 근거한 호소를 선택한다.",
+      "typeLabel": "서신",
+      "id": "philemon-1-1-빌레몬에게-보내는-개인-편지"
+    },
+    {
+      "chapter": 1,
+      "verse": 8,
+      "type": "appeal",
+      "title": "오네시모를 위한 호소",
+      "intro": "바울은 도망친 것으로 보이는 오네시모를 단순한 노예가 아니라 사랑받는 형제로 받아들이라고 요청한다. 복음은 법적 지위보다 깊은 가족적 관계를 만든다.",
+      "typeLabel": "호소",
+      "id": "philemon-1-8-오네시모를-위한-호소"
+    },
+    {
+      "chapter": 1,
+      "verse": 17,
+      "type": "appeal",
+      "title": "나를 맞듯이 그를 맞으라",
+      "intro": "바울은 오네시모의 빚이나 손해를 자신이 감당하겠다고 말한다. 대속과 화해의 언어가 실제 인간관계 안에 적용된다.",
+      "typeLabel": "호소",
+      "id": "philemon-1-17-나를-맞듯이-그를-맞으라"
+    },
+    {
+      "chapter": 1,
+      "verse": 23,
+      "type": "letter",
+      "title": "마지막 문안",
+      "intro": "짧은 편지는 여러 동역자의 문안으로 끝난다. 개인 문제도 고립된 사적 사건이 아니라 교회 네트워크 안에서 다뤄진다.",
+      "typeLabel": "서신",
+      "id": "philemon-1-23-마지막-문안"
+    }
+  ]
+}

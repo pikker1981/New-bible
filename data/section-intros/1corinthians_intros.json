@@ -1,0 +1,178 @@
+{
+  "bookId": "1corinthians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "인사와 부르심",
+      "intro": "고린도전서는 문제 많은 교회에 보내졌지만, 바울은 먼저 그들이 그리스도 안에서 부름받은 공동체임을 확인한다. 책 전체의 권면은 이 정체성에서 출발한다.",
+      "typeLabel": "서신",
+      "id": "1corinthians-1-1-인사와-부르심"
+    },
+    {
+      "chapter": 1,
+      "verse": 10,
+      "type": "exhortation",
+      "title": "분열에 대한 호소",
+      "intro": "고린도 교회는 지도자 이름을 중심으로 갈라지고 있었다. 바울은 십자가가 인간적 지혜와 경쟁 논리를 무너뜨린다고 말한다.",
+      "typeLabel": "권면",
+      "id": "1corinthians-1-10-분열에-대한-호소"
+    },
+    {
+      "chapter": 1,
+      "verse": 18,
+      "type": "argument",
+      "title": "십자가의 어리석음과 능력",
+      "intro": "십자가는 세상의 지혜 기준으로는 어리석어 보이지만 하나님의 능력이다. 고린도의 명예 경쟁 문화 속에서 이 메시지는 공동체의 가치 체계를 뒤집는다.",
+      "typeLabel": "논증",
+      "id": "1corinthians-1-18-십자가의-어리석음과-능력"
+    },
+    {
+      "chapter": 2,
+      "verse": 6,
+      "type": "argument",
+      "title": "성령이 알게 하는 지혜",
+      "intro": "바울은 하나님의 지혜가 세상의 지배자들이 이해하지 못한 방식으로 드러났다고 말한다. 성령은 단순한 감정 체험이 아니라 십자가의 의미를 분별하게 하는 분이다.",
+      "typeLabel": "논증",
+      "id": "1corinthians-2-6-성령이-알게-하는-지혜"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "미성숙한 공동체",
+      "intro": "시기와 분쟁은 고린도 교회의 영적 미성숙을 드러낸다. 바울과 아볼로는 경쟁 대상이 아니라 하나님이 쓰시는 일꾼이다.",
+      "typeLabel": "권면",
+      "id": "1corinthians-3-1-미성숙한-공동체"
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "type": "discipline",
+      "title": "공동체 안의 음행 문제",
+      "intro": "바울은 개인 윤리 문제를 공동체 전체의 거룩함과 연결해 다룬다. 당시 도시 문화의 관용을 교회가 그대로 받아들일 수 없다는 점이 강조된다.",
+      "typeLabel": "교정",
+      "id": "1corinthians-5-1-공동체-안의-음행-문제"
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "type": "discipline",
+      "title": "신자들 사이의 소송",
+      "intro": "고린도 신자들이 세상 법정에서 서로 다투는 문제를 다룬다. 바울은 공동체가 장차 세상을 판단할 사람들이라면 지금의 분쟁도 다르게 다루어야 한다고 말한다.",
+      "typeLabel": "교정",
+      "id": "1corinthians-6-1-신자들-사이의-소송"
+    },
+    {
+      "chapter": 6,
+      "verse": 12,
+      "type": "teaching",
+      "title": "몸과 성",
+      "intro": "바울은 몸을 낮은 영역으로 보는 사고를 거부한다. 신자의 몸은 그리스도와 연결되고 성령의 성전이기에 성적 행위도 신학적 의미를 가진다.",
+      "typeLabel": "가르침",
+      "id": "1corinthians-6-12-몸과-성"
+    },
+    {
+      "chapter": 7,
+      "verse": 1,
+      "type": "teaching",
+      "title": "혼인과 독신",
+      "intro": "고린도 교회의 질문에 답하면서 결혼, 독신, 부부 관계, 소명에 대해 말한다. 바울의 답은 임박한 때와 현실적 책임을 함께 고려한다.",
+      "typeLabel": "가르침",
+      "id": "1corinthians-7-1-혼인과-독신"
+    },
+    {
+      "chapter": 8,
+      "verse": 1,
+      "type": "teaching",
+      "title": "우상 제물과 지식",
+      "intro": "지식이 있다고 해서 모든 행동이 유익한 것은 아니다. 바울은 우상 제물 문제를 약한 형제를 향한 사랑의 기준으로 다룬다.",
+      "typeLabel": "가르침",
+      "id": "1corinthians-8-1-우상-제물과-지식"
+    },
+    {
+      "chapter": 9,
+      "verse": 1,
+      "type": "argument",
+      "title": "사도의 권리와 포기",
+      "intro": "바울은 사도로서 권리가 있지만 복음을 위해 그 권리를 포기했다고 말한다. 자유는 자기 이익을 극대화하는 힘이 아니라 섬김을 위한 힘이다.",
+      "typeLabel": "논증",
+      "id": "1corinthians-9-1-사도의-권리와-포기"
+    },
+    {
+      "chapter": 10,
+      "verse": 1,
+      "type": "warning",
+      "title": "광야 세대의 경고",
+      "intro": "이스라엘의 광야 이야기는 고린도 교회가 우상 숭배와 방종을 경계하도록 하는 거울이 된다. 성례 경험이 자동 안전을 보장하지 않는다.",
+      "typeLabel": "경고",
+      "id": "1corinthians-10-1-광야-세대의-경고"
+    },
+    {
+      "chapter": 11,
+      "verse": 2,
+      "type": "discipline",
+      "title": "예배 질서와 머리 문제",
+      "intro": "바울은 예배 안의 남녀 관계와 공적 표지를 다룬다. 이 본문은 고린도 사회의 명예, 성별 관습, 예배 질서가 얽힌 까다로운 단락이다.",
+      "typeLabel": "교정",
+      "id": "1corinthians-11-2-예배-질서와-머리-문제"
+    },
+    {
+      "chapter": 11,
+      "verse": 17,
+      "type": "discipline",
+      "title": "주님의 만찬 문제",
+      "intro": "고린도 교회의 만찬은 부유한 사람과 가난한 사람의 격차를 드러냈다. 바울은 식탁의 불의가 주님의 몸을 분별하지 못하는 일이라고 비판한다.",
+      "typeLabel": "교정",
+      "id": "1corinthians-11-17-주님의-만찬-문제"
+    },
+    {
+      "chapter": 12,
+      "verse": 1,
+      "type": "teaching",
+      "title": "성령의 은사와 한 몸",
+      "intro": "다양한 은사는 경쟁의 근거가 아니라 한 몸을 세우는 선물이다. 바울은 은사보다 공동체 전체의 유익을 기준으로 삼는다.",
+      "typeLabel": "가르침",
+      "id": "1corinthians-12-1-성령의-은사와-한-몸"
+    },
+    {
+      "chapter": 13,
+      "verse": 1,
+      "type": "teaching",
+      "title": "사랑의 길",
+      "intro": "사랑장은 결혼식 낭독문을 넘어 은사 경쟁에 대한 가장 강력한 교정이다. 사랑이 없으면 뛰어난 영적 능력도 공동체를 세우지 못한다.",
+      "typeLabel": "가르침",
+      "id": "1corinthians-13-1-사랑의-길"
+    },
+    {
+      "chapter": 14,
+      "verse": 1,
+      "type": "discipline",
+      "title": "예언과 방언의 질서",
+      "intro": "바울은 예배에서 알아들을 수 있는 말과 공동체의 덕 세움을 강조한다. 영적 열정은 질서와 이해 가능성을 배제하지 않는다.",
+      "typeLabel": "교정",
+      "id": "1corinthians-14-1-예언과-방언의-질서"
+    },
+    {
+      "chapter": 15,
+      "verse": 1,
+      "type": "argument",
+      "title": "부활의 복음",
+      "intro": "고린도 일부는 죽은 자의 부활을 부정했다. 바울은 그리스도의 부활과 신자의 장래 부활이 복음의 핵심으로 연결되어 있음을 논증한다.",
+      "typeLabel": "논증",
+      "id": "1corinthians-15-1-부활의-복음"
+    },
+    {
+      "chapter": 16,
+      "verse": 1,
+      "type": "letter",
+      "title": "연보와 마지막 권면",
+      "intro": "예루살렘 성도를 위한 연보는 교회들 사이의 실제 연대를 보여 준다. 마지막 문안은 고린도 교회가 더 넓은 교회 네트워크 안에 있음을 드러낸다.",
+      "typeLabel": "서신",
+      "id": "1corinthians-16-1-연보와-마지막-권면"
+    }
+  ]
+}

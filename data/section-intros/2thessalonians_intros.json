@@ -1,0 +1,52 @@
+{
+  "bookId": "2thessalonians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "박해 속의 인사와 감사",
+      "intro": "데살로니가후서는 환난 속에서도 자라나는 믿음과 사랑을 먼저 언급한다. 공동체의 인내는 하나님의 공의와 장래 소망 안에서 해석된다.",
+      "typeLabel": "서신",
+      "id": "2thessalonians-1-1-박해-속의-인사와-감사"
+    },
+    {
+      "chapter": 1,
+      "verse": 5,
+      "type": "teaching",
+      "title": "공의로운 심판과 안식",
+      "intro": "바울은 박해받는 신자들에게 하나님의 공의로운 심판과 안식을 말한다. 이 위로는 복수심이 아니라 하나님의 최종 판단에 대한 신뢰다.",
+      "typeLabel": "가르침",
+      "id": "2thessalonians-1-5-공의로운-심판과-안식"
+    },
+    {
+      "chapter": 2,
+      "verse": 1,
+      "type": "warning",
+      "title": "주의 날에 대한 혼란",
+      "intro": "주의 날이 이미 왔다는 주장 때문에 공동체가 흔들렸다. 바울은 종말론적 열광을 바로잡고 속지 말라고 경고한다.",
+      "typeLabel": "경고",
+      "id": "2thessalonians-2-1-주의-날에-대한-혼란"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "기도와 굳건함",
+      "intro": "바울은 말씀의 확산을 위해 기도를 요청하고, 주님께서 신자들을 굳건하게 하실 것을 확신한다. 종말의 혼란 속에서도 신실한 일상이 요구된다.",
+      "typeLabel": "권면",
+      "id": "2thessalonians-3-1-기도와-굳건함"
+    },
+    {
+      "chapter": 3,
+      "verse": 6,
+      "type": "discipline",
+      "title": "무질서한 사람들에 대한 권면",
+      "intro": "일하지 않고 무질서하게 사는 사람들을 다룬다. 바울은 종말 기대가 책임 회피로 변질되지 않도록 공동체적 교정을 요청한다.",
+      "typeLabel": "교정",
+      "id": "2thessalonians-3-6-무질서한-사람들에-대한-권면"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "bookId": "2corinthians",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "위로의 하나님",
+      "intro": "고린도후서는 바울의 사도직과 고린도 교회와의 복잡한 관계 속에서 쓰였다. 첫 단락은 고난과 위로가 사역의 핵심 언어임을 보여 준다.",
+      "typeLabel": "서신",
+      "id": "2corinthians-1-1-위로의-하나님"
+    },
+    {
+      "chapter": 1,
+      "verse": 12,
+      "type": "defense",
+      "title": "바울의 방문 계획 해명",
+      "intro": "바울은 계획 변경이 변덕이 아니라 진실성과 하나님의 신실하심 안에서 이해되어야 한다고 설명한다. 관계 회복을 위한 변론이 시작된다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-1-12-바울의-방문-계획-해명"
+    },
+    {
+      "chapter": 2,
+      "verse": 5,
+      "type": "exhortation",
+      "title": "징계받은 사람을 용서하라",
+      "intro": "공동체의 징계는 파괴가 아니라 회복을 목표로 해야 한다. 바울은 지나친 슬픔에 빠지지 않도록 용서와 위로를 권한다.",
+      "typeLabel": "권면",
+      "id": "2corinthians-2-5-징계받은-사람을-용서하라"
+    },
+    {
+      "chapter": 2,
+      "verse": 14,
+      "type": "defense",
+      "title": "그리스도의 향기",
+      "intro": "바울은 자신의 사역을 승리 행렬과 향기의 이미지로 설명한다. 사도의 참됨은 화려함이 아니라 그리스도를 드러내는 방식으로 평가된다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-2-14-그리스도의-향기"
+    },
+    {
+      "chapter": 3,
+      "verse": 1,
+      "type": "argument",
+      "title": "새 언약의 일꾼",
+      "intro": "바울은 추천서가 아니라 변화된 공동체 자체가 사역의 증거라고 말한다. 새 언약은 돌판이 아니라 성령으로 사람 안에 새겨진다.",
+      "typeLabel": "논증",
+      "id": "2corinthians-3-1-새-언약의-일꾼"
+    },
+    {
+      "chapter": 4,
+      "verse": 1,
+      "type": "defense",
+      "title": "질그릇에 담긴 보배",
+      "intro": "사도의 약함은 복음의 실패가 아니라 하나님의 능력을 드러내는 자리다. 바울은 고난을 사역의 결함이 아니라 십자가적 증언으로 해석한다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-4-1-질그릇에-담긴-보배"
+    },
+    {
+      "chapter": 5,
+      "verse": 1,
+      "type": "teaching",
+      "title": "새 창조와 화해의 직분",
+      "intro": "바울은 장막과 집의 비유로 죽음과 소망을 말한다. 그리스도 안의 새 창조는 하나님과 화해한 사람들이 화해를 전하는 사명을 포함한다.",
+      "typeLabel": "가르침",
+      "id": "2corinthians-5-1-새-창조와-화해의-직분"
+    },
+    {
+      "chapter": 6,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "지금은 은혜의 때",
+      "intro": "바울은 고린도 교회가 하나님의 은혜를 헛되이 받지 말라고 권한다. 사도의 고난 목록은 사역의 진정성을 역설적으로 보여 준다.",
+      "typeLabel": "권면",
+      "id": "2corinthians-6-1-지금은-은혜의-때"
+    },
+    {
+      "chapter": 7,
+      "verse": 2,
+      "type": "defense",
+      "title": "회개와 기쁨",
+      "intro": "바울은 고린도 교회의 슬픔이 파괴적 절망이 아니라 하나님 뜻에 따른 회개로 이어졌음을 기뻐한다. 관계의 상처가 회복의 길로 전환된다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-7-2-회개와-기쁨"
+    },
+    {
+      "chapter": 8,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "마케도니아 교회의 연보",
+      "intro": "가난한 마케도니아 교회의 후함은 은혜의 실제 모습을 보여 준다. 바울은 연보를 재정 문제가 아니라 그리스도의 은혜를 닮는 일로 설명한다.",
+      "typeLabel": "권면",
+      "id": "2corinthians-8-1-마케도니아-교회의-연보"
+    },
+    {
+      "chapter": 9,
+      "verse": 1,
+      "type": "exhortation",
+      "title": "즐겨 내는 사람",
+      "intro": "바울은 억지가 아니라 자원함에서 나오는 나눔을 강조한다. 헌금은 공급, 감사, 공동체 연대를 낳는 은혜의 순환으로 묘사된다.",
+      "typeLabel": "권면",
+      "id": "2corinthians-9-1-즐겨-내는-사람"
+    },
+    {
+      "chapter": 10,
+      "verse": 1,
+      "type": "defense",
+      "title": "사도권 변론의 시작",
+      "intro": "후반부는 바울이 자신을 비판하는 사람들에게 강하게 응답하는 단락이다. 외적 인상보다 그리스도께 속한 권위와 순종이 기준이 된다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-10-1-사도권-변론의-시작"
+    },
+    {
+      "chapter": 11,
+      "verse": 1,
+      "type": "defense",
+      "title": "어리석은 자랑",
+      "intro": "바울은 경쟁자들의 자랑 방식에 맞서 역설적 자랑을 한다. 그의 자랑은 능력이 아니라 고난과 약함 속에서 드러난 사도직이다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-11-1-어리석은-자랑"
+    },
+    {
+      "chapter": 12,
+      "verse": 1,
+      "type": "defense",
+      "title": "약함 안의 능력",
+      "intro": "바울은 신비 체험보다 육체의 가시와 약함을 강조한다. 그리스도의 능력은 인간적 강함의 과시가 아니라 약함 가운데 머문다.",
+      "typeLabel": "변론",
+      "id": "2corinthians-12-1-약함-안의-능력"
+    },
+    {
+      "chapter": 13,
+      "verse": 1,
+      "type": "letter",
+      "title": "마지막 권고와 인사",
+      "intro": "바울은 세 번째 방문을 앞두고 공동체가 스스로를 시험하라고 권한다. 편지는 징계의 가능성과 회복의 소망을 함께 안고 끝난다.",
+      "typeLabel": "서신",
+      "id": "2corinthians-13-1-마지막-권고와-인사"
+    }
+  ]
+}

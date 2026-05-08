@@ -1,0 +1,25 @@
+{
+  "bookId": "2john",
+  "version": "20260508-all-books-section-intros-v10",
+  "description": "신약 각 권 주요 단락 시작 절 안내문",
+  "sections": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "type": "letter",
+      "title": "택하심 받은 부녀에게",
+      "intro": "요한이서는 진리와 사랑 안에서 한 공동체 또는 그 대표에게 보내는 짧은 편지다. 사랑과 계명, 진리 안에 머무름이 핵심이다.",
+      "typeLabel": "서신",
+      "id": "2john-1-1-택하심-받은-부녀에게"
+    },
+    {
+      "chapter": 1,
+      "verse": 7,
+      "type": "warning",
+      "title": "미혹하는 자들을 경계함",
+      "intro": "예수 그리스도께서 육체로 오심을 부인하는 가르침을 경계한다. 환대의 미덕도 진리를 무너뜨리는 가르침을 돕는 방식이 되어서는 안 된다.",
+      "typeLabel": "경고",
+      "id": "2john-1-7-미혹하는-자들을-경계함"
+    }
+  ]
+}
