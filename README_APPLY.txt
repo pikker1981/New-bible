@@ -1,16 +1,6 @@
-# 3 John data patch only
+# Jude data patch
 
-Apply these files to your project root.
-
-Files included:
-- data/3john.json
-- data/25_3John_Korean_working_1.md
-- data/25_3John_Korean_working_full.md
-- data/25_3John_Korean_annotated.md
-- data/manifest.json
-- data/validation.json
-- manifest.json
-- validation.json
-- manifest_3john_entry.json
+Apply these files to the project root, preserving paths.
 
 No design or structure files are included.
+Do not replace index.html, styles.css, or app.js.
