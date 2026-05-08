@@ -62,6 +62,8 @@ const state = {
   contextView: "all",
   currentContextId: null,
   pendingMark: null,
+  lastPointerPosition: null,
+  selectionProbeTimer: null,
   searchRunId: 0,
   globalSearchResultCount: 0,
   motionReady: false
@@ -657,7 +659,12 @@ async function renderGlobalSearchResults(query) {
 
 function bindFootnoteButtons() {
   els.verses.querySelectorAll(".fn").forEach((button) => {
-    button.addEventListener("click", () => showNote(button.dataset.note, true));
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      showNote(button.dataset.note, true);
+    });
   });
 }
 
@@ -1121,6 +1128,79 @@ function renderContextSources(sources) {
     '</div>';
 }
 
+
+function isMobilePopupPreferred() {
+  return isMobileReaderLayout();
+}
+
+function getMobileInfoPopup() {
+  let popup = document.getElementById("mobileInfoPopup");
+  if (popup) return popup;
+
+  popup = document.createElement("div");
+  popup.id = "mobileInfoPopup";
+  popup.className = "mobile-info-popup";
+  popup.setAttribute("aria-hidden", "true");
+  popup.innerHTML =
+    '<div class="mobile-info-backdrop" data-popup-close="true"></div>' +
+    '<section class="mobile-info-sheet" role="dialog" aria-modal="true" aria-labelledby="mobileInfoTitle" tabindex="-1">' +
+      '<div class="mobile-info-grip" aria-hidden="true"></div>' +
+      '<div class="mobile-info-head">' +
+        '<div>' +
+          '<div id="mobileInfoKicker" class="mobile-info-kicker">NOTE</div>' +
+          '<h2 id="mobileInfoTitle">설명</h2>' +
+        '</div>' +
+        '<button id="mobileInfoClose" class="mobile-info-close" type="button" aria-label="팝업 닫기">닫기</button>' +
+      '</div>' +
+      '<div id="mobileInfoBody" class="mobile-info-body"></div>' +
+    '</section>';
+
+  document.body.appendChild(popup);
+
+  popup.querySelectorAll('[data-popup-close="true"], #mobileInfoClose').forEach((item) => {
+    item.addEventListener("click", closeMobileInfoPopup);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && popup.classList.contains("show")) closeMobileInfoPopup();
+  });
+
+  return popup;
+}
+
+function showMobileInfoPopup(options) {
+  if (!isMobilePopupPreferred()) return false;
+
+  const popup = getMobileInfoPopup();
+  const kicker = popup.querySelector("#mobileInfoKicker");
+  const title = popup.querySelector("#mobileInfoTitle");
+  const body = popup.querySelector("#mobileInfoBody");
+  const sheet = popup.querySelector(".mobile-info-sheet");
+
+  if (kicker) kicker.textContent = options.kicker || "NOTE";
+  if (title) title.textContent = options.title || "설명";
+  if (body) body.innerHTML = options.body || "내용을 찾지 못했습니다.";
+
+  popup.setAttribute("aria-hidden", "false");
+  popup.classList.add("show");
+  document.body.classList.add("mobile-popup-open");
+  hideMarkMenu();
+
+  requestAnimationFrame(() => {
+    if (sheet) sheet.focus({ preventScroll: true });
+  });
+
+  return true;
+}
+
+function closeMobileInfoPopup() {
+  const popup = document.getElementById("mobileInfoPopup");
+  if (!popup) return;
+  popup.classList.remove("show");
+  popup.setAttribute("aria-hidden", "true");
+  document.body.classList.remove("mobile-popup-open");
+}
+
 function showContext(contextId, scrollToPanel) {
   const item = getContextItems().find((entry) => entry.id === contextId);
   state.currentContextId = contextId;
@@ -1158,15 +1238,30 @@ function showContext(contextId, scrollToPanel) {
 
   renderContextList();
 
-  if (scrollToPanel && window.innerWidth < 1280) {
-    const rail = document.querySelector(".right-rail");
-    if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (scrollToPanel) {
+    if (showMobileInfoPopup({
+      kicker: "CONTEXT · 시대 배경",
+      title,
+      body: els.contextBody.innerHTML
+    })) {
+      return;
+    }
+
+    if (window.innerWidth < 1280) {
+      const rail = document.querySelector(".right-rail");
+      if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 }
 
 function bindContextButtons() {
   els.verses.querySelectorAll(".ctx-link").forEach((button) => {
-    button.addEventListener("click", () => showContext(button.dataset.context, true));
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      showContext(button.dataset.context, true);
+    });
   });
 }
 
@@ -1191,12 +1286,18 @@ function showNote(noteId, scrollToPanel) {
     button.classList.toggle("active", button.dataset.note === noteId);
   });
 
-  if (scrollToPanel && window.innerWidth < 1280) {
+  if (scrollToPanel) {
     if (isMobileReaderLayout()) {
       closeMobileGlossary();
-      const note = document.querySelector(".active-note");
-      if (note) note.scrollIntoView({ behavior: "smooth", block: "start" });
-    } else {
+      showMobileInfoPopup({
+        kicker: "SELECTED NOTE · 설명",
+        title: els.noteTitle.textContent,
+        body: els.noteBody.innerHTML
+      });
+      return;
+    }
+
+    if (window.innerWidth < 1280) {
       const rail = document.querySelector(".right-rail");
       if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
     }
@@ -1265,8 +1366,25 @@ function getSelectionContext() {
   const mode = isSameExistingMark || hasVerseHighlight(markBookId, meta.chapter, meta.verse, text) ? "delete" : "mark";
 
   const range = selection.getRangeAt(0);
-  const rect = range.getBoundingClientRect();
-  if (!rect || rect.width === 0) return null;
+  let rect = range.getBoundingClientRect();
+  const rects = range.getClientRects ? Array.from(range.getClientRects()) : [];
+
+  if ((!rect || (rect.width === 0 && rect.height === 0)) && rects.length) {
+    rect = rects[0];
+  }
+
+  if (!rect || (rect.width === 0 && rect.height === 0)) {
+    const point = state.lastPointerPosition;
+    if (!point) return null;
+    rect = {
+      top: point.clientY,
+      left: point.clientX,
+      width: 1,
+      height: 1,
+      right: point.clientX + 1,
+      bottom: point.clientY + 1
+    };
+  }
 
   return {
     bookId: markBookId,
@@ -1343,25 +1461,83 @@ function applyPendingMarkAction() {
   }
 }
 
+function rememberPointerPosition(event) {
+  const point = event?.changedTouches?.[0] || event?.touches?.[0] || event;
+  if (!point || typeof point.clientX !== "number" || typeof point.clientY !== "number") return;
+
+  state.lastPointerPosition = {
+    clientX: point.clientX,
+    clientY: point.clientY,
+    time: Date.now()
+  };
+}
+
+function probeSelectionForMarkMenu() {
+  clearTimeout(state.selectionProbeTimer);
+  const context = getSelectionContext();
+  if (context) showMarkMenu(context);
+  else hideMarkMenu();
+}
+
+function scheduleSelectionProbe(delays) {
+  const list = Array.isArray(delays) ? delays : [Number(delays) || 0];
+  clearTimeout(state.selectionProbeTimer);
+
+  list.forEach((delay) => {
+    window.setTimeout(() => {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed) {
+        if (delay >= 240) hideMarkMenu();
+        return;
+      }
+
+      const context = getSelectionContext();
+      if (context) showMarkMenu(context);
+    }, delay);
+  });
+}
+
 function bindSelectionMarker() {
   document.addEventListener("selectionchange", () => {
     const selection = window.getSelection();
-    if (!selection || selection.isCollapsed) hideMarkMenu();
+    if (!selection || selection.isCollapsed) {
+      hideMarkMenu();
+      return;
+    }
+
+    scheduleSelectionProbe([80, 220, 520]);
   });
 
-  document.addEventListener("mouseup", () => {
-    setTimeout(() => {
-      const context = getSelectionContext();
-      if (context) showMarkMenu(context);
-      else hideMarkMenu();
-    }, 0);
+  document.addEventListener("pointerdown", (event) => {
+    rememberPointerPosition(event);
+  }, { passive: true });
+
+  document.addEventListener("pointerup", (event) => {
+    rememberPointerPosition(event);
+    scheduleSelectionProbe([0, 120, 320, 700]);
+  }, { passive: true });
+
+  document.addEventListener("mouseup", (event) => {
+    rememberPointerPosition(event);
+    scheduleSelectionProbe([0, 120]);
   });
 
-  document.addEventListener("touchend", () => {
-    setTimeout(() => {
-      const context = getSelectionContext();
-      if (context) showMarkMenu(context);
-    }, 80);
+  document.addEventListener("touchstart", (event) => {
+    rememberPointerPosition(event);
+  }, { passive: true });
+
+  document.addEventListener("touchend", (event) => {
+    rememberPointerPosition(event);
+    scheduleSelectionProbe([80, 240, 520, 900]);
+  }, { passive: true });
+
+  document.addEventListener("contextmenu", (event) => {
+    rememberPointerPosition(event);
+    scheduleSelectionProbe([120, 360, 720]);
+  });
+
+  document.addEventListener("keyup", () => {
+    scheduleSelectionProbe([0, 80]);
   });
 
   document.addEventListener("scroll", () => hideMarkMenu(), true);
@@ -1458,7 +1634,10 @@ function setupResponsiveNoteLayout() {
 
 function bindResponsiveNoteLayout() {
   setupResponsiveNoteLayout();
-  window.addEventListener("resize", () => setupResponsiveNoteLayout());
+  window.addEventListener("resize", () => {
+    setupResponsiveNoteLayout();
+    if (!isMobileReaderLayout()) closeMobileInfoPopup();
+  });
   window.addEventListener("orientationchange", () => setTimeout(setupResponsiveNoteLayout, 120));
 }
 
