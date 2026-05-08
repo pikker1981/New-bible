@@ -1,0 +1,23 @@
+{
+  "book_id": "1thessalonians",
+  "bookKo": "데살로니가전서",
+  "bookEn": "1 Thessalonians",
+  "source_file": "1thessalonians.json",
+  "chapter_count_actual": 5,
+  "chapter_count_declared": 5,
+  "verse_count_actual": 89,
+  "verse_count_declared": 89,
+  "notes_count": 12,
+  "body_footnote_marker_count": 12,
+  "unique_body_footnote_marker_count": 12,
+  "numeric_footnotes": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_error_patterns": [],
+  "non_korean_script_occurrences": [],
+  "manual_fixes": [],
+  "mechanical_rewrite_count": 0,
+  "json_schema_ok": true,
+  "design_files_modified": false,
+  "status": "pass"
+}
