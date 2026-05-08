@@ -1039,3 +1039,63 @@ body.mobile-popup-open{overflow:hidden;touch-action:none}
   }
 }
 
+
+/* Gospel section introduction cards */
+.section-intro-card{
+  margin:18px 0 8px 60px;
+  padding:16px 18px 16px 20px;
+  border:1px solid color-mix(in srgb, var(--accent) 18%, var(--line));
+  border-left:4px solid var(--accent);
+  background:linear-gradient(135deg, color-mix(in srgb, var(--accent) 7%, #fff), #fff 72%);
+  box-shadow:0 10px 26px rgba(17,17,17,.035);
+  animation:sectionIntroEnter .42s var(--ease-out);
+}
+.section-intro-meta{
+  display:inline-flex;
+  align-items:center;
+  min-height:22px;
+  padding:3px 8px;
+  border-radius:999px;
+  background:var(--accent);
+  color:#fff;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.12em;
+  line-height:1;
+}
+.section-intro-card strong{
+  display:block;
+  margin-top:10px;
+  color:#111;
+  font-size:16px;
+  font-weight:850;
+  letter-spacing:-.025em;
+  line-height:1.35;
+}
+.section-intro-card p{
+  margin-top:6px;
+  color:#666;
+  font-size:13px;
+  line-height:1.7;
+  word-break:keep-all;
+}
+@keyframes sectionIntroEnter{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@media (max-width:860px){
+  .section-intro-card{
+    margin:16px 0 8px;
+    padding:14px 15px;
+    border-radius:18px;
+    border-left-width:3px;
+  }
+  .section-intro-meta{font-size:8px;min-height:20px;padding:3px 7px}
+  .section-intro-card strong{font-size:15px;margin-top:9px}
+  .section-intro-card p{font-size:12.5px;line-height:1.65}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .section-intro-card{animation:none}
+}

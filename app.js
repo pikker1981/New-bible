@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-mobile-bottom-arrow-nav-v8";
+const APP_BUILD_ID = "20260508-gospel-section-intros-v9";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -63,6 +63,8 @@ const state = {
   highlightView: "all",
   contexts: {},
   contextStatus: {},
+  sectionIntros: {},
+  sectionIntroStatus: {},
   contextView: "all",
   currentContextId: null,
   pendingMark: null,
@@ -123,6 +125,64 @@ async function tryLoadJSON(path) {
   } catch (_) {
     return null;
   }
+}
+
+function normalizeSectionIntroData(raw) {
+  if (!raw) return [];
+  if (Array.isArray(raw)) return raw;
+  if (Array.isArray(raw.sections)) return raw.sections;
+  if (raw.sections && typeof raw.sections === "object") return Object.values(raw.sections);
+  return [];
+}
+
+async function ensureSectionIntros(bookId) {
+  if (state.sectionIntroStatus[bookId] === "loaded") return state.sectionIntros[bookId] || [];
+
+  const paths = [
+    "./data/section-intros/" + bookId + "_intros.json",
+    "./data/section-intros/" + bookId + ".json",
+    "./data/" + bookId + "_section_intros.json"
+  ];
+
+  for (const path of paths) {
+    const data = await tryLoadJSON(path);
+    if (data) {
+      state.sectionIntros[bookId] = normalizeSectionIntroData(data);
+      state.sectionIntroStatus[bookId] = "loaded";
+      return state.sectionIntros[bookId];
+    }
+  }
+
+  state.sectionIntros[bookId] = [];
+  state.sectionIntroStatus[bookId] = "loaded";
+  return [];
+}
+
+function getSectionIntros(bookId, chapter, verse) {
+  return (state.sectionIntros[bookId] || [])
+    .filter((item) => Number(item.chapter) === Number(chapter) && Number(item.verse) === Number(verse));
+}
+
+function renderSectionIntro(item) {
+  const typeLabelMap = {
+    event: "주요 사건",
+    parable: "비유",
+    discourse: "강론",
+    sign: "표적",
+    passion: "수난",
+    resurrection: "부활"
+  };
+  const type = typeLabelMap[item.type] || item.typeLabel || "안내";
+  const title = item.title || "본문 안내";
+  const intro = item.intro || item.summary || "";
+
+  return (
+    '<aside class="section-intro-card" data-intro-id="' + escapeHTML(item.id || "") + '">' +
+    '<div class="section-intro-meta">' + escapeHTML(type) + '</div>' +
+    '<strong>' + escapeHTML(title) + '</strong>' +
+    '<p>' + escapeHTML(intro) + '</p>' +
+    '</aside>'
+  );
 }
 
 function escapeHTML(value) {
@@ -429,6 +489,7 @@ function animateReaderTransition(type) {
 async function selectBook(bookId, chapterNumber) {
   const book = await ensureBook(bookId);
   await ensureContext(bookId);
+  await ensureSectionIntros(bookId);
   state.currentBookId = bookId;
   state.currentChapter = Math.min(Math.max(chapterNumber || 1, 1), book.chapterCount);
   state.currentNoteId = null;
@@ -529,7 +590,12 @@ function renderChapter() {
     let html = mdInlineToHTML(verse.text);
     html = applyContextLinks(html, book.id, chapter.number, verse.number);
     html = applyUserHighlights(html, book.id, chapter.number, verse.number);
+    const sectionIntroHtml = getSectionIntros(book.id, chapter.number, verse.number)
+      .map(renderSectionIntro)
+      .join("");
+
     return (
+      sectionIntroHtml +
       '<article class="verse" id="v-' + chapter.number + "-" + verse.number + '">' +
       '<div class="verse-num">' + verse.number + "</div>" +
       '<div class="verse-text">' + html + "</div>" +
