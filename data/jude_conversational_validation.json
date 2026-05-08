@@ -1,0 +1,21 @@
+{
+  "book_id": "jude",
+  "bookKo": "유다서",
+  "chapter_count": 1,
+  "declared_chapterCount": 1,
+  "verse_count": 25,
+  "declared_verseCount": 25,
+  "notes_count": 25,
+  "body_footnote_marker_count": 25,
+  "unique_body_footnote_marker_count": 25,
+  "numeric_footnotes": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_errors": [],
+  "foreign_script_residuals": [],
+  "manual_edits": 0,
+  "mechanical_edits": 0,
+  "json_schema_valid": true,
+  "design_files_modified": false,
+  "status": "pass"
+}
