@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 21,
+  "updatedBooks": 22,
   "books": [
     {
       "id": "matthew",
@@ -273,6 +273,19 @@
       "file": "data/1peter.json",
       "dataFile": "data/1peter.json",
       "json": "data/1peter.json"
+    },
+    {
+      "id": "2peter",
+      "order": 22,
+      "bookKo": "베드로후서",
+      "bookEn": "2 Peter",
+      "chapterCount": 3,
+      "verseCount": 61,
+      "data": "data/2peter.json",
+      "path": "data/2peter.json",
+      "file": "data/2peter.json",
+      "dataFile": "data/2peter.json",
+      "json": "data/2peter.json"
     }
   ]
 }
