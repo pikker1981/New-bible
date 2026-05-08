@@ -1,0 +1,13 @@
+{
+  "id": "1john",
+  "order": 23,
+  "bookKo": "요한일서",
+  "bookEn": "1 John",
+  "chapterCount": 5,
+  "verseCount": 105,
+  "data": "data/1john.json",
+  "path": "data/1john.json",
+  "file": "data/1john.json",
+  "dataFile": "data/1john.json",
+  "json": "data/1john.json"
+}
