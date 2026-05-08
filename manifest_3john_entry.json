@@ -1,0 +1,13 @@
+{
+  "id": "3john",
+  "order": 25,
+  "bookKo": "요한삼서",
+  "bookEn": "3 John",
+  "chapterCount": 1,
+  "verseCount": 15,
+  "data": "data/3john.json",
+  "path": "data/3john.json",
+  "file": "data/3john.json",
+  "dataFile": "data/3john.json",
+  "json": "data/3john.json"
+}

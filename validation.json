@@ -1,21 +1,24 @@
 {
-  "id": "2john",
-  "bookKo": "요한이서",
-  "bookEn": "2 John",
-  "order": 24,
-  "sourceXml": "2John.xml",
-  "chapterCount": 1,
-  "verseCount": 13,
+  "id": "3john",
+  "bookKo": "요한삼서",
+  "bookEn": "3 John",
+  "order": 25,
+  "declaredChapterCount": 1,
+  "actualChapterCount": 1,
+  "declaredVerseCount": 15,
+  "actualVerseCount": 15,
   "chapterVerseCounts": {
-    "1": 13
+    "1": 15
   },
-  "notesCount": 16,
-  "annotatedBodyNoteMarkerCount": 16,
-  "jsonBodyNoteMarkerCount": 16,
-  "numericNoteMarkers": [],
-  "missingNoteDefinitions": [],
-  "unusedNoteDefinitions": [],
-  "jsonSchemaValid": true,
+  "chapterSequenceOk": true,
+  "verseSequenceOk": true,
+  "notesCount": 14,
+  "annotatedFootnoteRefsCount": 14,
+  "jsonFootnoteRefsCount": 14,
+  "missingNotes": [],
+  "unusedNotes": [],
+  "numericFootnotes": [],
+  "jsonSchemaOk": true,
   "designFilesModified": false,
-  "passed": true
+  "ok": true
 }
