@@ -699,14 +699,15 @@ function ensureMobileNoteSlot() {
   let slot = document.getElementById("mobileNoteSlot");
   if (slot) return slot;
 
-  const chapterTitleWrap = document.querySelector(".chapter-title-wrap");
-  if (!chapterTitleWrap || !chapterTitleWrap.parentElement) return null;
+  const searchPanel = els.searchInput ? els.searchInput.closest(".panel") : null;
+  const leftRail = document.querySelector(".left-rail");
+  if (!searchPanel || !leftRail) return null;
 
   slot = document.createElement("div");
   slot.id = "mobileNoteSlot";
   slot.className = "mobile-note-slot";
   slot.setAttribute("aria-label", "모바일 선택 설명 영역");
-  chapterTitleWrap.parentElement.insertBefore(slot, chapterTitleWrap);
+  searchPanel.insertAdjacentElement("afterend", slot);
   return slot;
 }
 

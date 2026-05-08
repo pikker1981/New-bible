@@ -1,0 +1,12 @@
+{
+  "changed": "mobile selected note position",
+  "selected_note_mobile_position": "after search panel",
+  "glossary": "collapsible tab retained",
+  "desktop_note_position": "right rail retained",
+  "app_js_syntax_check": "passed externally with node --check",
+  "css_braces_balanced": true,
+  "index_references_css": true,
+  "uses_search_panel_slot": true,
+  "global_search_retained": true,
+  "highlight_retained": true
+}
