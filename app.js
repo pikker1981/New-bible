@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-gospel-section-intros-v9";
+const APP_BUILD_ID = "20260508-all-books-section-intros-v10";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
