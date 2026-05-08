@@ -153,5 +153,8 @@
     "teaching",
     "vision",
     "warning"
-  ]
+  ],
+  "interpretiveDetailsVersion": "20260508-interpretive-details-v12",
+  "interpretiveDetailsItems": 215,
+  "detailFields": "conservative/moderate/progressive.details + agreementDetails + tensionDetails"
 }
