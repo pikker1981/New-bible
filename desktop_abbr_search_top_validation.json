@@ -1,0 +1,24 @@
+{
+  "changed_files": [
+    "app.js",
+    "index.html",
+    "mobile_books_dropdown_select_fixed.css"
+  ],
+  "desktop_book_abbr_labels": {
+    "1corinthians": "고전",
+    "2corinthians": "고후",
+    "1thessalonians": "살전",
+    "2thessalonians": "살후",
+    "1timothy": "딤전",
+    "2timothy": "딤후",
+    "1peter": "벧전",
+    "2peter": "벧후",
+    "1john": "요1",
+    "2john": "요2",
+    "3john": "요3"
+  },
+  "search_panel_position": "left-rail search panel moved before BOOKS panel",
+  "mobile_layout_logic": "kept from previous dropdown/select patch",
+  "syntax_check": "pass",
+  "manifest_books": 27
+}

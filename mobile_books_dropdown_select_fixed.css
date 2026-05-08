@@ -881,3 +881,30 @@
     min-width: 50px;
   }
 }
+
+
+/* Desktop search/order + book abbreviation readability patch */
+@media (min-width: 901px) {
+  .book-btn .book-abbr {
+    min-width: 34px;
+    height: 28px;
+    padding: 0 6px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    white-space: nowrap;
+    background: color-mix(in srgb, var(--book-accent, var(--accent)) 12%, #ffffff);
+    color: var(--book-accent, var(--accent));
+    flex: 0 0 auto;
+  }
+
+  .book-btn.active .book-abbr {
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+  }
+}

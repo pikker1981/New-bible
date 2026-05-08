@@ -10,12 +10,12 @@ const BOOK_ACCENT_PALETTE = [
 
 const BOOK_SHORT_LABELS = {
   matthew: "마", mark: "막", luke: "눅", john: "요", acts: "행",
-  romans: "롬", "1corinthians": "고", "2corinthians": "고",
+  romans: "롬", "1corinthians": "고전", "2corinthians": "고후",
   galatians: "갈", ephesians: "엡", philippians: "빌", colossians: "골",
-  "1thessalonians": "살", "2thessalonians": "살",
-  "1timothy": "딤", "2timothy": "딤", titus: "딛", philemon: "몬",
-  hebrews: "히", james: "약", "1peter": "벧", "2peter": "벧",
-  "1john": "요", "2john": "요", "3john": "요", jude: "유", revelation: "계"
+  "1thessalonians": "살전", "2thessalonians": "살후",
+  "1timothy": "딤전", "2timothy": "딤후", titus: "딛", philemon: "몬",
+  hebrews: "히", james: "약", "1peter": "벧전", "2peter": "벧후",
+  "1john": "요1", "2john": "요2", "3john": "요3", jude: "유", revelation: "계"
 };
 
 function getBookShortLabel(book) {
