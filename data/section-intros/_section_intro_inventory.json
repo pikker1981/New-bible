@@ -137,5 +137,21 @@
       "count": 6
     }
   ],
-  "totalSections": 586
+  "totalSections": 586,
+  "interpretiveViewsVersion": "20260508-interpretive-views-v11",
+  "interpretiveViewCount": 215,
+  "interpretiveViewTargetTypes": [
+    "appeal",
+    "argument",
+    "conflict",
+    "defense",
+    "discipline",
+    "discourse",
+    "exposition",
+    "household",
+    "parable",
+    "teaching",
+    "vision",
+    "warning"
+  ]
 }
