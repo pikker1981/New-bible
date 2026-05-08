@@ -1,0 +1,29 @@
+{
+  "book": "colossians",
+  "bookKo": "골로새서",
+  "chapterCount": 4,
+  "verseCount": 95,
+  "actualChapterCount": 4,
+  "actualVerseCount": 95,
+  "notesCount": 35,
+  "bodyFootnoteMarkerCount": 34,
+  "uniqueBodyFootnoteMarkerCount": 34,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [
+    "luke"
+  ],
+  "duplicateHonorificErrors": [],
+  "nonKoreanScriptInBody": [],
+  "manualCorrections": [
+    {
+      "chapter": 2,
+      "verse": 8,
+      "from": "누가[^luke] 철학과 헛된 속임수로 여러분을 사로잡지 못하게 조심하십시오. 그것은 사람의 전통과 세상의 초보 원리에서 나온 것이지, 그리스도에게서 나온 것이 아닙니다.",
+      "to": "누구도 철학과 헛된 속임수로 여러분을 사로잡지 못하게 조심하십시오. 그것은 사람의 전통과 세상의 초보 원리에서 나온 것이지, 그리스도에게서 나온 것이 아닙니다."
+    }
+  ],
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
+  "status": "PASS"
+}
