@@ -1,0 +1,27 @@
+{
+  "book": {
+    "id": "ephesians",
+    "bookKo": "에베소서",
+    "bookEn": "Ephesians",
+    "order": 10
+  },
+  "chapter_count_expected": 6,
+  "chapter_count_actual": 6,
+  "verse_count_expected": 155,
+  "verse_count_actual": 155,
+  "notes_count": 33,
+  "body_footnote_marker_count": 31,
+  "unique_body_footnote_marker_count": 31,
+  "numeric_footnote_markers": [],
+  "missing_note_definitions": [],
+  "unused_note_definitions": [
+    "adoption",
+    "ephesus"
+  ],
+  "duplicate_polite_ending_errors": {},
+  "markdown_artifacts_in_verses": [],
+  "json_schema_ok": true,
+  "design_files_modified": false,
+  "mechanical_revision_count": 0,
+  "status": "pass"
+}

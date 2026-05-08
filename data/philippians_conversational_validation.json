@@ -1,0 +1,28 @@
+{
+  "book": "빌립보서",
+  "id": "philippians",
+  "chapterCount_declared": 4,
+  "chapterCount_actual": 4,
+  "verseCount_declared": 104,
+  "verseCount_actual": 104,
+  "notes_count": 33,
+  "body_footnote_marker_count": 33,
+  "unique_body_footnote_marker_count": 33,
+  "numeric_footnote_markers": 0,
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_errors": [],
+  "non_korean_script_in_body": [],
+  "manual_fixes": [
+    {
+      "chapter": 4,
+      "verse": 17,
+      "before": "내가 선물을 구한다는 말이 아닙니다. 나는 여러분의 حساب에 더해질 열매를 구합니다.",
+      "after": "내가 선물을 구한다는 말이 아닙니다. 나는 여러분의 장부에 더해질 열매를 구합니다.",
+      "reason": "본문에 섞인 아랍어 오타를 한국어 문맥에 맞게 수정"
+    }
+  ],
+  "json_schema_ok": true,
+  "design_files_modified": false,
+  "status": "pass"
+}
