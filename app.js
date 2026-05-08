@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-mobile-mark-menu-bottom-dock-v6";
+const APP_BUILD_ID = "20260508-bottom-chapter-nav-v7";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -535,7 +535,7 @@ function renderChapter() {
       '<div class="verse-text">' + html + "</div>" +
       "</article>"
     );
-  }).join("");
+  }).join("") + renderChapterBottomNav(book, chapter);
 
   els.chapterButtons.querySelectorAll("button").forEach((button) => {
     button.classList.toggle("active", Number(button.dataset.chapter) === state.currentChapter);
@@ -546,6 +546,7 @@ function renderChapter() {
 
   bindFootnoteButtons();
   bindContextButtons();
+  bindChapterBottomNav();
   updateSearchMeta();
   renderHighlightList();
   renderContextList();
@@ -661,6 +662,59 @@ async function renderGlobalSearchResults(query) {
       '</div>';
     els.searchMeta.textContent = "전체 검색 로딩 실패";
   }
+}
+
+
+function renderChapterBottomNav(book, chapter) {
+  if (!book || !chapter) return "";
+
+  const current = Number(chapter.number || state.currentChapter || 1);
+  const previous = current - 1;
+  const next = current + 1;
+  const hasPrevious = previous >= 1;
+  const hasNext = next <= Number(book.chapterCount || 0);
+  const prevLabel = hasPrevious ? book.bookKo + " " + previous + "장" : "이전 장 없음";
+  const nextLabel = hasNext ? book.bookKo + " " + next + "장" : "다음 장 없음";
+
+  return (
+    '<nav class="chapter-bottom-nav" aria-label="장 하단 이동">' +
+      '<button class="chapter-bottom-btn prev" type="button" data-bottom-chapter="' + previous + '" ' + (hasPrevious ? "" : "disabled") + '>' +
+        '<span class="chapter-bottom-kicker">이전 장</span>' +
+        '<strong>' + escapeHTML(prevLabel) + '</strong>' +
+      '</button>' +
+      '<button class="chapter-bottom-btn next" type="button" data-bottom-chapter="' + next + '" ' + (hasNext ? "" : "disabled") + '>' +
+        '<span class="chapter-bottom-kicker">다음 장</span>' +
+        '<strong>' + escapeHTML(nextLabel) + '</strong>' +
+      '</button>' +
+    '</nav>'
+  );
+}
+
+function goToChapter(chapterNumber, options) {
+  const book = state.books[state.currentBookId];
+  const target = Number(chapterNumber);
+  if (!book || !Number.isFinite(target)) return;
+  if (target < 1 || target > Number(book.chapterCount || 0)) return;
+  if (target === state.currentChapter && !(options && options.force)) return;
+
+  state.currentChapter = target;
+  state.query = "";
+  if (els.searchInput) els.searchInput.value = "";
+  hideMarkMenu();
+  closeMobileInfoPopup();
+  renderChapter();
+  animateReaderTransition("chapter");
+
+  requestAnimationFrame(() => {
+    const targetTitle = document.querySelector(".chapter-title-wrap");
+    if (targetTitle) targetTitle.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function bindChapterBottomNav() {
+  els.verses.querySelectorAll(".chapter-bottom-btn[data-bottom-chapter]").forEach((button) => {
+    button.addEventListener("click", () => goToChapter(Number(button.dataset.bottomChapter)));
+  });
 }
 
 function bindFootnoteButtons() {
