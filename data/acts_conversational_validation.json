@@ -1,0 +1,86 @@
+{
+  "book": "Acts",
+  "bookKo": "사도행전",
+  "chapterCount": 28,
+  "actualChapterCount": 28,
+  "verseCount": 1004,
+  "actualVerseCount": 1004,
+  "chapterVerseCounts": {
+    "1": 26,
+    "2": 47,
+    "3": 26,
+    "4": 37,
+    "5": 42,
+    "6": 15,
+    "7": 60,
+    "8": 40,
+    "9": 43,
+    "10": 48,
+    "11": 30,
+    "12": 25,
+    "13": 52,
+    "14": 28,
+    "15": 40,
+    "16": 40,
+    "17": 34,
+    "18": 28,
+    "19": 40,
+    "20": 38,
+    "21": 40,
+    "22": 30,
+    "23": 35,
+    "24": 26,
+    "25": 27,
+    "26": 32,
+    "27": 44,
+    "28": 31
+  },
+  "notesCount": 37,
+  "bodyFootnoteMarkerCount": 74,
+  "uniqueBodyFootnoteMarkers": 37,
+  "numericFootnoteMarkers": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "schemaOk": true,
+  "designFilesModified": false,
+  "toneRevision": {
+    "target": "부드러운 현대어 존댓말",
+    "normalNarration": "~습니다 / ~있습니다 / ~입니다",
+    "jesusDirectSpeechException": true,
+    "residualPlainEndings": [
+      {
+        "chapter": 4,
+        "verse": 17,
+        "ending": "경고합시다",
+        "text": "다만 이 일이 백성 가운데 더 퍼지지 못하게 하려면, 앞으로는 이 이름으로 아무에게도 말하지 말라고 엄중히 경고합시다.”"
+      },
+      {
+        "chapter": 9,
+        "verse": 5,
+        "ending": "예수다",
+        "text": "사울이 물었습니다. “주님, 누구십니까?” 그러자 그분이 말씀하셨습니다. “나는 네가 박해하는 예수다."
+      },
+      {
+        "chapter": 22,
+        "verse": 8,
+        "ending": "예수다",
+        "text": "그래서 내가 대답했습니다. ‘주님, 당신은 누구십니까?’ 그분이 내게 말씀하셨습니다. ‘나는 네가 박해하는 나사렛 사람 예수다.’"
+      },
+      {
+        "chapter": 23,
+        "verse": 11,
+        "ending": "한다",
+        "text": "그날 밤 주님께서 바울 곁에 서서 말씀하셨습니다. “용기를 내어라. 네가 예루살렘에서 나에 대해 증언한 것처럼, 로마에서도 증언해야 한다.”"
+      },
+      {
+        "chapter": 26,
+        "verse": 15,
+        "ending": "예수다",
+        "text": "제가 물었습니다. ‘주님, 당신은 누구십니까?’ 주님께서 말씀하셨습니다. ‘나는 네가 박해하는 예수다."
+      }
+    ],
+    "residualPlainEndingCount": 5,
+    "note": "남은 평서형 어미는 예수/주님 직접 말씀 또는 자연스러운 청유형 문장으로 보존했습니다."
+  },
+  "status": "pass"
+}
