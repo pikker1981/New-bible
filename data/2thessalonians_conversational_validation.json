@@ -1,0 +1,39 @@
+{
+  "book": "2thessalonians",
+  "bookKo": "데살로니가후서",
+  "chapterCount_expected": 3,
+  "chapterCount_actual": 3,
+  "verseCount_expected": 47,
+  "verseCount_actual": 47,
+  "chapterVerseCounts": [
+    {
+      "chapter": 1,
+      "verses": 12
+    },
+    {
+      "chapter": 2,
+      "verses": 17
+    },
+    {
+      "chapter": 3,
+      "verses": 18
+    }
+  ],
+  "notesCount": 14,
+  "bodyFootnoteMarkers": 14,
+  "uniqueBodyFootnoteMarkers": 14,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicatePoliteEndingPatterns": {
+    "습니습니다": 0,
+    "습니다습니다": 0,
+    "습니까습니까": 0
+  },
+  "nonKoreanScriptInBody": [],
+  "mechanicalRevisionCount": 0,
+  "manualFixes": [],
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
+  "status": "pass"
+}
