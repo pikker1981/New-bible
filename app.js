@@ -231,6 +231,7 @@ function renderBookList() {
     return (
       '<button class="book-btn' + active + '" type="button" data-book="' + book.id + '" style="--book-accent:' + color + '" aria-label="' + escapeHTML(order + ' ' + book.bookKo) + '">' +
       '<span class="book-abbr" aria-hidden="true">' + escapeHTML(getBookShortLabel(book)) + '</span>' +
+      '<span class="book-mobile-name" aria-hidden="true">' + escapeHTML(book.bookEn || book.bookKo || book.id) + '</span>' +
       '<span class="book-full">' + order + ' ' + escapeHTML(book.bookKo) + '</span>' +
       '<small>' + book.chapterCount + '장</small>' +
       '</button>' 

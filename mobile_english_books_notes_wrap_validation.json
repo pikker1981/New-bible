@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "changes": [
+    "mobile book selector now displays English book names instead of one-character Korean abbreviations",
+    "mobile book selector uses two-column roomy grid buttons, not horizontal scroll",
+    "mobile chapter selector remains compact black button grid",
+    "mobile glossary/note list text wraps instead of clipping to the right",
+    "desktop layout preserved"
+  ],
+  "files": [
+    "app.js",
+    "index.html",
+    "mobile_english_books_notes_wrap.css",
+    "data/manifest.json"
+  ],
+  "js_syntax_check": "pass",
+  "node_stderr": ""
+}
