@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 19,
+  "updatedBooks": 20,
   "books": [
     {
       "id": "matthew",
@@ -247,6 +247,19 @@
       "file": "data/hebrews.json",
       "dataFile": "data/hebrews.json",
       "json": "data/hebrews.json"
+    },
+    {
+      "id": "james",
+      "order": 20,
+      "bookKo": "야고보서",
+      "bookEn": "James",
+      "chapterCount": 5,
+      "verseCount": 108,
+      "data": "data/james.json",
+      "path": "data/james.json",
+      "file": "data/james.json",
+      "dataFile": "data/james.json",
+      "json": "data/james.json"
     }
   ]
 }
