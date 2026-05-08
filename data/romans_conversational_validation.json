@@ -1,0 +1,37 @@
+{
+  "book": "Romans",
+  "bookKo": "로마서",
+  "source_file": "romans.json",
+  "chapterCount": 16,
+  "verseCount": 433,
+  "declaredChapterCount": 16,
+  "declaredVerseCount": 433,
+  "notesCount": 35,
+  "bodyFootnoteMarkerCount": 35,
+  "uniqueBodyFootnoteMarkerCount": 35,
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "numericFootnoteMarkers": [],
+  "duplicateVerseNumberChapters": [],
+  "emptyVerses": [
+    [
+      16,
+      24
+    ]
+  ],
+  "knownDuplicateHonorificTyposFound": [],
+  "knownDuplicateHonorificPatternsChecked": [
+    "습니습니다",
+    "습니다습니다",
+    "습니까습니까",
+    "입니입니다",
+    "였습니습니다",
+    "했습니습니다",
+    "받았습니습니다",
+    "없었습니습니다",
+    "빛이었습니습니다"
+  ],
+  "schemaOk": true,
+  "designFilesModified": false,
+  "status": "pass"
+}
