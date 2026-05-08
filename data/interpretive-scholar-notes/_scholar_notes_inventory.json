@@ -1,35 +1,187 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "build": "20260508-scholar-views-seed-v14",
+  "createdFor": "NT modern translation webapp interpretive scholar notes",
   "totalBooks": 27,
-  "totalScholarItems": 0,
+  "totalScholarNoteItems": 215,
+  "sources": {
+    "henry": {
+      "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
+      "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
+      "license": "Public Domain",
+      "tradition": "Reformed / Puritan devotional commentary",
+      "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다."
+    },
+    "calvin": {
+      "sourceTitle": "Calvin's Collected Commentaries",
+      "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
+      "license": "Public Domain",
+      "tradition": "Reformed / classic Protestant commentary",
+      "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다."
+    },
+    "barnes": {
+      "sourceTitle": "Barnes' New Testament Notes",
+      "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+      "license": "Public Domain",
+      "tradition": "Presbyterian / explanatory New Testament notes",
+      "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다."
+    },
+    "clarke": {
+      "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+      "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+      "license": "Public Domain",
+      "tradition": "Methodist / critical and philological commentary",
+      "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다."
+    },
+    "tyndale": {
+      "sourceTitle": "Tyndale Open Study Notes",
+      "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+      "license": "CC BY-SA 4.0",
+      "tradition": "Open study notes / historical and literary background",
+      "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다."
+    },
+    "uw": {
+      "sourceTitle": "unfoldingWord Translation Notes",
+      "sourceUrl": "https://unfoldingword.org/for-translators/content/",
+      "license": "CC BY-SA",
+      "tradition": "Translation notes / meaning, implied information, expression support",
+      "caution": "번역 보조 노트 성격이 강하다. 수정·번역 시 CC BY-SA 조건과 unfoldingWord 상표 정책을 구분해야 한다."
+    },
+    "wright": {
+      "sourceTitle": "N. T. Wright, Jesus and the Victory of God",
+      "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
+      "license": "Source summary only; no source text reproduced",
+      "tradition": "Historical Jesus / New Testament theology",
+      "caution": "현대 저작권 자료이므로 원문을 수록하지 않았다. 본문별 직접 주석이 아니라 역사적 예수·하나님 나라 해석 방법론의 관련 관점이다."
+    },
+    "fiorenza": {
+      "sourceTitle": "Elisabeth Schüssler Fiorenza, In Memory of Her",
+      "sourceUrl": "https://www.ebsco.com/research-starters/literature-and-writing/memory-her-elizabeth-schussler-fiorenza",
+      "license": "Source summary only; no source text reproduced",
+      "tradition": "Feminist critical hermeneutics / early Christian origins",
+      "caution": "본문별 직접 주석이 아니라 여성·권력·초기 기독교 기억 회복이라는 방법론적 관련 관점이다."
+    },
+    "brueggemann": {
+      "sourceTitle": "Walter Brueggemann, The Prophetic Imagination",
+      "sourceUrl": "https://books.google.com/books/about/The_Prophetic_Imagination.html?id=VBUg98Ty6MAC",
+      "license": "Source summary only; no source text reproduced",
+      "tradition": "Prophetic imagination / social-critical theological reading",
+      "caution": "구약 예언 전통과 사회비평적 상상력의 방법론을 관련 관점으로만 연결했다. 본문별 직접 주석으로 표시하지 않는다."
+    }
+  },
   "books": [
-    "1corinthians",
-    "1john",
-    "1peter",
-    "1thessalonians",
-    "1timothy",
-    "2corinthians",
-    "2john",
-    "2peter",
-    "2thessalonians",
-    "2timothy",
-    "3john",
-    "acts",
-    "colossians",
-    "ephesians",
-    "galatians",
-    "hebrews",
-    "james",
-    "john",
-    "jude",
-    "luke",
-    "mark",
-    "matthew",
-    "philemon",
-    "philippians",
-    "revelation",
-    "romans",
-    "titus"
+    {
+      "bookId": "1corinthians",
+      "scholarNoteItems": 15
+    },
+    {
+      "bookId": "1john",
+      "scholarNoteItems": 7
+    },
+    {
+      "bookId": "1peter",
+      "scholarNoteItems": 2
+    },
+    {
+      "bookId": "1thessalonians",
+      "scholarNoteItems": 2
+    },
+    {
+      "bookId": "1timothy",
+      "scholarNoteItems": 3
+    },
+    {
+      "bookId": "2corinthians",
+      "scholarNoteItems": 9
+    },
+    {
+      "bookId": "2john",
+      "scholarNoteItems": 1
+    },
+    {
+      "bookId": "2peter",
+      "scholarNoteItems": 3
+    },
+    {
+      "bookId": "2thessalonians",
+      "scholarNoteItems": 3
+    },
+    {
+      "bookId": "2timothy",
+      "scholarNoteItems": 3
+    },
+    {
+      "bookId": "3john",
+      "scholarNoteItems": 1
+    },
+    {
+      "bookId": "acts",
+      "scholarNoteItems": 10
+    },
+    {
+      "bookId": "colossians",
+      "scholarNoteItems": 2
+    },
+    {
+      "bookId": "ephesians",
+      "scholarNoteItems": 4
+    },
+    {
+      "bookId": "galatians",
+      "scholarNoteItems": 6
+    },
+    {
+      "bookId": "hebrews",
+      "scholarNoteItems": 13
+    },
+    {
+      "bookId": "james",
+      "scholarNoteItems": 6
+    },
+    {
+      "bookId": "john",
+      "scholarNoteItems": 9
+    },
+    {
+      "bookId": "jude",
+      "scholarNoteItems": 1
+    },
+    {
+      "bookId": "luke",
+      "scholarNoteItems": 29
+    },
+    {
+      "bookId": "mark",
+      "scholarNoteItems": 8
+    },
+    {
+      "bookId": "matthew",
+      "scholarNoteItems": 37
+    },
+    {
+      "bookId": "philemon",
+      "scholarNoteItems": 2
+    },
+    {
+      "bookId": "philippians",
+      "scholarNoteItems": 1
+    },
+    {
+      "bookId": "revelation",
+      "scholarNoteItems": 21
+    },
+    {
+      "bookId": "romans",
+      "scholarNoteItems": 15
+    },
+    {
+      "bookId": "titus",
+      "scholarNoteItems": 2
+    }
   ],
-  "policy": "Do not add scholar claims without sourceTitle/sourceUrl or verifiable bibliographic metadata, relationType, and confidence. Distinguish direct commentary from methodology application and related viewpoint."
+  "limits": [
+    "Public-domain and CC resources are linked as direct/background resources.",
+    "Modern scholars are included only as methodology/related lenses; no copyrighted text is reproduced.",
+    "Claims are concise editorial summaries and should be refined passage-by-passage when direct source checks are added."
+  ]
 }

@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-scholar-views-infra-v13";
+const APP_BUILD_ID = "20260508-scholar-korean-summary-v16";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -396,7 +396,9 @@ function scholarRelationLabel(value) {
     direct: "직접 주석",
     methodology: "방법론 적용",
     related: "관련 관점",
-    background: "배경 참고"
+    background: "배경 참고",
+    reception: "수용사/해석사",
+    contextual: "현대 맥락 적용"
   }[value] || "검증 필요";
 }
 
@@ -408,6 +410,8 @@ function renderScholarSourceLine(scholar) {
   const parts = [];
   if (scholar.sourceTitle || scholar.source) parts.push(escapeHTML(scholar.sourceTitle || scholar.source));
   if (scholar.work) parts.push(escapeHTML(scholar.work));
+  const sourceYear = scholar.publicationYear || scholar.year;
+  if (sourceYear) parts.push(escapeHTML(String(sourceYear)));
   if (scholar.license) parts.push("라이선스: " + escapeHTML(scholar.license));
   if (!parts.length) return "";
   const source = parts.join(" · ");
@@ -435,7 +439,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
       (scholars.length ? '<div class="interpretive-scholar-list">' + scholars.map((scholar) => {
         const relation = scholarRelationLabel(scholar.relationType || scholar.relation || scholar.type);
         const confidence = scholarConfidenceLabel(scholar.confidence);
-        const claim = scholar.claim || scholar.summary || scholar.note || "";
+        const claim = scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
         const sourceLine = renderScholarSourceLine(scholar);
         return (
           '<article class="interpretive-scholar-card">' +

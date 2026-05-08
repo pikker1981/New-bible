@@ -1,0 +1,51 @@
+{
+  "buildId": "20260508-scholar-korean-summary-v16",
+  "policy": "현대 학자 자료는 원문을 수록하지 않고, 공개 출처를 바탕으로 한국어 1~2문장 요약/의역만 제공합니다. 공개 도메인·오픈 라이선스 자료도 긴 원문을 복제하지 않습니다.",
+  "stats": {
+    "files": 27,
+    "items": 215,
+    "scholars": 2614,
+    "summaryKo": 2614,
+    "names": {
+      "Matthew Henry": 215,
+      "John Calvin": 182,
+      "Albert Barnes": 430,
+      "Adam Clarke": 430,
+      "Tyndale Open Study Notes 편집진": 430,
+      "N. T. Wright": 145,
+      "Laura Salah Nasrallah": 77,
+      "Walter Brueggemann": 211,
+      "Lisa M. Bowens": 48,
+      "unfoldingWord Translation Notes 편집진": 215,
+      "Elisabeth Schüssler Fiorenza": 17,
+      "Candida R. Moss": 7,
+      "Angela N. Parker": 43,
+      "Katherine A. Shaner": 25,
+      "Jennifer A. Quigley": 10,
+      "Yii-Jan Lin": 27,
+      "Brittany E. Wilson": 9,
+      "Erin Vearncombe, Brandon Scott, Hal Taussig / Westar Institute": 93
+    }
+  },
+  "summaryNames": [
+    "Adam Clarke",
+    "Albert Barnes",
+    "Angela N. Parker",
+    "Brittany E. Wilson",
+    "Candida R. Moss",
+    "Elisabeth Schüssler Fiorenza",
+    "Erin Vearncombe, Brandon Scott, Hal Taussig / Westar Institute",
+    "Jennifer A. Quigley",
+    "John Calvin",
+    "Katherine A. Shaner",
+    "Laura Salah Nasrallah",
+    "Lisa M. Bowens",
+    "Matthew Henry",
+    "N. T. Wright",
+    "Tyndale Open Study Notes 편집진",
+    "Walter Brueggemann",
+    "Yii-Jan Lin",
+    "unfoldingWord Translation Notes 편집진"
+  ],
+  "rendering": "app.js renders scholar.summaryKo before claim."
+}

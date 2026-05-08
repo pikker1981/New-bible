@@ -1,12 +1,498 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "bookId": "colossians",
-  "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Keep empty until a claim has verifiable source/licensing metadata.",
-  "relationTypes": {
-    "direct": "The scholar/commentator directly comments on this passage.",
-    "methodology": "The scholar's broader method is cautiously applied to this passage.",
-    "related": "The scholar provides a related interpretive lens, not a direct comment.",
-    "background": "The source provides historical/cultural background relevant to the passage."
+  "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Public-domain and CC resources are linked with license metadata; modern copyrighted scholars are method-only summaries with no reproduced source text.",
+  "sourcePolicy": {
+    "direct": "Only used for public-domain / openly reusable commentary resources that cover the passage or book.",
+    "methodology": "Used for modern scholars when no source text is reproduced and the claim is limited to a broad interpretive lens.",
+    "related": "Used when the scholar/source gives a related interpretive lens but not a direct comment on the passage.",
+    "background": "Used for study-note or translation-note resources providing background or translation support.",
+    "recentScholarAddendum": "Recent 10-year sources were added as short source-linked summaries only. Copyrighted text is not reproduced."
   },
-  "items": []
+  "relationTypes": {
+    "direct": "The scholar/commentator directly comments on this passage or book in a reusable/public-domain commentary resource.",
+    "methodology": "The scholar's broader method is cautiously applied to this passage without reproducing copyrighted text.",
+    "related": "The scholar provides a related interpretive lens, not a direct comment.",
+    "background": "The source provides historical/cultural/translation background relevant to the passage."
+  },
+  "items": [
+    {
+      "introId": "colossians-2-6-헛된-철학에-대한-경고",
+      "chapter": 2,
+      "verse": 6,
+      "title": "헛된 철학에 대한 경고",
+      "scope": "source-linked-recent-scholar-v2",
+      "editorialNote": "이 항목은 공개 도메인/오픈 라이선스 자료와 현대 저작권 자료의 짧은 방법론 요약을 구분해 연결한 1차 시드 데이터입니다. 직접 인용은 포함하지 않았습니다.",
+      "views": {
+        "conservative": {
+          "scholars": [
+            {
+              "name": "Matthew Henry",
+              "tradition": "Reformed / Puritan devotional commentary",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
+              "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
+              "summaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다."
+            },
+            {
+              "name": "John Calvin",
+              "tradition": "Reformed / classic Protestant commentary",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
+              "sourceTitle": "Calvin's Collected Commentaries",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
+              "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            }
+          ]
+        },
+        "moderate": {
+          "scholars": [
+            {
+              "name": "Albert Barnes",
+              "tradition": "Presbyterian / explanatory New Testament notes",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
+              "sourceTitle": "Barnes' New Testament Notes",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
+              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
+            },
+            {
+              "name": "Adam Clarke",
+              "tradition": "Methodist / critical and philological commentary",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
+              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
+              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+            },
+            {
+              "name": "Tyndale Open Study Notes 편집진",
+              "tradition": "Open study notes / historical and literary background",
+              "relationType": "background",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
+              "sourceTitle": "Tyndale Open Study Notes",
+              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+              "license": "CC BY-SA 4.0",
+              "confidence": "high",
+              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
+              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "Laura Salah Nasrallah",
+              "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
+              "relationType": "background",
+              "claim": "「헛된 철학에 대한 경고」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
+              "sourceTitle": "Archaeology and the Letters of Paul",
+              "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+              "publicationYear": 2019,
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "high",
+              "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
+              "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            }
+          ]
+        },
+        "progressive": {
+          "scholars": [
+            {
+              "name": "Walter Brueggemann",
+              "tradition": "Prophetic imagination / social-critical theological reading",
+              "relationType": "methodology",
+              "claim": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Brueggemann의 예언자적 상상력 렌즈는 이 본문이 지배 질서, 불의, 종교 권력, 사회적 무감각을 어떻게 비판하거나 다른 세계를 상상하게 하는지 묻게 한다.",
+              "sourceTitle": "Walter Brueggemann, The Prophetic Imagination",
+              "sourceUrl": "https://books.google.com/books/about/The_Prophetic_Imagination.html?id=VBUg98Ty6MAC",
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "구약 예언 전통과 사회비평적 상상력의 방법론을 관련 관점으로만 연결했다. 본문별 직접 주석으로 표시하지 않는다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 경고와 소망, 심판 언어, 공동체의 인내라는 축에서 읽도록 돕는다. Brueggemann의 예언자적 상상력 렌즈는 이 본문이 지배 질서, 불의, 종교 권력, 사회적 무감각을 어떻게 비판하거나 다른 세계를 상상하게 하는지 묻게 한다.",
+              "summaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다."
+            },
+            {
+              "name": "Katherine A. Shaner",
+              "tradition": "New Testament / slavery, archaeology, enslaved leadership",
+              "relationType": "background",
+              "claim": "「헛된 철학에 대한 경고」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
+              "sourceTitle": "Enslaved Leadership in Early Christianity",
+              "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+              "publicationYear": 2018,
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "초기 기독교와 로마 세계의 노예제 배경 렌즈다. 본문을 현대 노예제 폐지 담론으로 곧장 환원하지 않도록 주의해야 한다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
+              "summaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다."
+            },
+            {
+              "name": "Angela N. Parker",
+              "tradition": "Womanist New Testament interpretation / biblical authority, race and liberation",
+              "relationType": "methodology",
+              "claim": "「헛된 철학에 대한 경고」을/를 읽을 때 성서 권위가 지배적 백인 남성 중심 해석과 결합될 수 있는 방식을 비판하고, 현재 공동체의 숨, 몸, 억압 경험을 해석 과정에 포함하도록 요청한다. Parker의 최근 작업은 성서가 권위적일 수는 있지만 권위주의적으로 사용되어서는 안 된다는 질문을 던진다.",
+              "sourceTitle": "If God Still Breathes, Why Can't I?: Black Lives Matter and Biblical Authority",
+              "sourceUrl": "https://onscript.study/podcast/angela-parker-if-god-still-breathes-why-cant-i/",
+              "publicationYear": 2021,
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "현대 문맥 적용과 해석학적 렌즈다. 본문별 직접 주석으로 표시하지 않는다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 읽을 때 성서 권위가 지배적 백인 남성 중심 해석과 결합될 수 있는 방식을 비판하고, 현재 공동체의 숨, 몸, 억압 경험을 해석 과정에 포함하도록 요청한다. Parker의 최근 작업은 성서가 권위적일 수는 있지만 권위주의적으로 사용되어서는 안 된다는 질문을 던진다.",
+              "summaryKo": "Parker의 관점은 성서 권위가 인종, 젠더, 권력의 현실 속에서 어떻게 작동해 왔는지 묻게 한다. 그래서 본문 해석이 누구의 생명을 살리고 누구의 숨을 억누르는지까지 함께 검토하게 한다."
+            }
+          ]
+        },
+        "agreement": {
+          "scholars": [
+            {
+              "name": "Tyndale Open Study Notes 편집진",
+              "tradition": "Open study notes / historical and literary background",
+              "relationType": "background",
+              "claim": "「헛된 철학에 대한 경고」을/를 읽을 때 본문 흐름, 배경, 주요 주제의 최소 공통 기반을 확인하는 데 사용할 수 있는 공개 스터디 노트 자료다.",
+              "sourceTitle": "Tyndale Open Study Notes",
+              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+              "license": "CC BY-SA 4.0",
+              "confidence": "high",
+              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」을/를 읽을 때 본문 흐름, 배경, 주요 주제의 최소 공통 기반을 확인하는 데 사용할 수 있는 공개 스터디 노트 자료다.",
+              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "unfoldingWord Translation Notes 편집진",
+              "tradition": "Translation notes / meaning, implied information, expression support",
+              "relationType": "background",
+              "claim": "「헛된 철학에 대한 경고」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
+              "sourceTitle": "unfoldingWord Translation Notes",
+              "sourceUrl": "https://unfoldingword.org/for-translators/content/",
+              "license": "CC BY-SA",
+              "confidence": "high",
+              "caution": "번역 보조 노트 성격이 강하다. 수정·번역 시 CC BY-SA 조건과 unfoldingWord 상표 정책을 구분해야 한다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
+              "summaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다."
+            }
+          ]
+        },
+        "tension": {
+          "scholars": [
+            {
+              "name": "Albert Barnes",
+              "tradition": "Presbyterian / explanatory New Testament notes",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」의 문장·용어·상호참조를 따라 고전적 절별 설명을 제공하므로, 해석 차이가 나는 지점을 본문 세부 표현에서 점검하는 데 유용하다.",
+              "sourceTitle": "Barnes' New Testament Notes",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」의 문장·용어·상호참조를 따라 고전적 절별 설명을 제공하므로, 해석 차이가 나는 지점을 본문 세부 표현에서 점검하는 데 유용하다.",
+              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
+            },
+            {
+              "name": "Adam Clarke",
+              "tradition": "Methodist / critical and philological commentary",
+              "relationType": "direct",
+              "claim": "「헛된 철학에 대한 경고」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
+              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
+              "claimOriginal": "「헛된 철학에 대한 경고」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
+              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "introId": "colossians-3-18-가정과-일상의-질서",
+      "chapter": 3,
+      "verse": 18,
+      "title": "가정과 일상의 질서",
+      "scope": "source-linked-recent-scholar-v2",
+      "editorialNote": "이 항목은 공개 도메인/오픈 라이선스 자료와 현대 저작권 자료의 짧은 방법론 요약을 구분해 연결한 1차 시드 데이터입니다. 직접 인용은 포함하지 않았습니다.",
+      "views": {
+        "conservative": {
+          "scholars": [
+            {
+              "name": "Matthew Henry",
+              "tradition": "Reformed / Puritan devotional commentary",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
+              "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
+              "summaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다."
+            },
+            {
+              "name": "John Calvin",
+              "tradition": "Reformed / classic Protestant commentary",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
+              "sourceTitle": "Calvin's Collected Commentaries",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
+              "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
+            }
+          ]
+        },
+        "moderate": {
+          "scholars": [
+            {
+              "name": "Albert Barnes",
+              "tradition": "Presbyterian / explanatory New Testament notes",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
+              "sourceTitle": "Barnes' New Testament Notes",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
+              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
+            },
+            {
+              "name": "Adam Clarke",
+              "tradition": "Methodist / critical and philological commentary",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
+              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
+              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+            },
+            {
+              "name": "Tyndale Open Study Notes 편집진",
+              "tradition": "Open study notes / historical and literary background",
+              "relationType": "background",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
+              "sourceTitle": "Tyndale Open Study Notes",
+              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+              "license": "CC BY-SA 4.0",
+              "confidence": "high",
+              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
+              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "Laura Salah Nasrallah",
+              "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
+              "relationType": "background",
+              "claim": "「가정과 일상의 질서」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
+              "sourceTitle": "Archaeology and the Letters of Paul",
+              "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+              "publicationYear": 2019,
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "high",
+              "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
+              "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
+            }
+          ]
+        },
+        "progressive": {
+          "scholars": [
+            {
+              "name": "Elisabeth Schüssler Fiorenza",
+              "tradition": "Feminist critical hermeneutics / early Christian origins",
+              "relationType": "methodology",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Schüssler Fiorenza의 여성주의 비평 렌즈는 본문 속 여성, 주변화된 사람, 가정·공동체 권력 구조가 어떻게 기억되거나 지워지는지를 묻게 한다.",
+              "sourceTitle": "Elisabeth Schüssler Fiorenza, In Memory of Her",
+              "sourceUrl": "https://www.ebsco.com/research-starters/literature-and-writing/memory-her-elizabeth-schussler-fiorenza",
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "본문별 직접 주석이 아니라 여성·권력·초기 기독교 기억 회복이라는 방법론적 관련 관점이다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Schüssler Fiorenza의 여성주의 비평 렌즈는 본문 속 여성, 주변화된 사람, 가정·공동체 권력 구조가 어떻게 기억되거나 지워지는지를 묻게 한다.",
+              "summaryKo": "Fiorenza의 관점은 초기 기독교 기억 속에서 여성과 주변화된 이들의 역할이 어떻게 지워지거나 재구성되었는지 묻게 한다. 그래서 본문을 교리 진술만이 아니라 권력, 기억, 해석 주체의 문제와 함께 읽게 한다."
+            },
+            {
+              "name": "Walter Brueggemann",
+              "tradition": "Prophetic imagination / social-critical theological reading",
+              "relationType": "methodology",
+              "claim": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Brueggemann의 예언자적 상상력 렌즈는 이 본문이 지배 질서, 불의, 종교 권력, 사회적 무감각을 어떻게 비판하거나 다른 세계를 상상하게 하는지 묻게 한다.",
+              "sourceTitle": "Walter Brueggemann, The Prophetic Imagination",
+              "sourceUrl": "https://books.google.com/books/about/The_Prophetic_Imagination.html?id=VBUg98Ty6MAC",
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "구약 예언 전통과 사회비평적 상상력의 방법론을 관련 관점으로만 연결했다. 본문별 직접 주석으로 표시하지 않는다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 공동체 질서와 제자도의 실제 적용 문제로 읽도록 돕는다. Brueggemann의 예언자적 상상력 렌즈는 이 본문이 지배 질서, 불의, 종교 권력, 사회적 무감각을 어떻게 비판하거나 다른 세계를 상상하게 하는지 묻게 한다.",
+              "summaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다."
+            },
+            {
+              "name": "Katherine A. Shaner",
+              "tradition": "New Testament / slavery, archaeology, enslaved leadership",
+              "relationType": "background",
+              "claim": "「가정과 일상의 질서」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
+              "sourceTitle": "Enslaved Leadership in Early Christianity",
+              "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+              "publicationYear": 2018,
+              "license": "Source summary only; no source text reproduced",
+              "confidence": "medium",
+              "caution": "초기 기독교와 로마 세계의 노예제 배경 렌즈다. 본문을 현대 노예제 폐지 담론으로 곧장 환원하지 않도록 주의해야 한다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
+              "summaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다."
+            }
+          ]
+        },
+        "agreement": {
+          "scholars": [
+            {
+              "name": "Tyndale Open Study Notes 편집진",
+              "tradition": "Open study notes / historical and literary background",
+              "relationType": "background",
+              "claim": "「가정과 일상의 질서」을/를 읽을 때 본문 흐름, 배경, 주요 주제의 최소 공통 기반을 확인하는 데 사용할 수 있는 공개 스터디 노트 자료다.",
+              "sourceTitle": "Tyndale Open Study Notes",
+              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+              "license": "CC BY-SA 4.0",
+              "confidence": "high",
+              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
+              "claimOriginal": "「가정과 일상의 질서」을/를 읽을 때 본문 흐름, 배경, 주요 주제의 최소 공통 기반을 확인하는 데 사용할 수 있는 공개 스터디 노트 자료다.",
+              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
+            },
+            {
+              "name": "unfoldingWord Translation Notes 편집진",
+              "tradition": "Translation notes / meaning, implied information, expression support",
+              "relationType": "background",
+              "claim": "「가정과 일상의 질서」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
+              "sourceTitle": "unfoldingWord Translation Notes",
+              "sourceUrl": "https://unfoldingword.org/for-translators/content/",
+              "license": "CC BY-SA",
+              "confidence": "high",
+              "caution": "번역 보조 노트 성격이 강하다. 수정·번역 시 CC BY-SA 조건과 unfoldingWord 상표 정책을 구분해야 한다.",
+              "claimOriginal": "「가정과 일상의 질서」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
+              "summaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다."
+            }
+          ]
+        },
+        "tension": {
+          "scholars": [
+            {
+              "name": "Albert Barnes",
+              "tradition": "Presbyterian / explanatory New Testament notes",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」의 문장·용어·상호참조를 따라 고전적 절별 설명을 제공하므로, 해석 차이가 나는 지점을 본문 세부 표현에서 점검하는 데 유용하다.",
+              "sourceTitle": "Barnes' New Testament Notes",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
+              "claimOriginal": "「가정과 일상의 질서」의 문장·용어·상호참조를 따라 고전적 절별 설명을 제공하므로, 해석 차이가 나는 지점을 본문 세부 표현에서 점검하는 데 유용하다.",
+              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
+            },
+            {
+              "name": "Adam Clarke",
+              "tradition": "Methodist / critical and philological commentary",
+              "relationType": "direct",
+              "claim": "「가정과 일상의 질서」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
+              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+              "license": "Public Domain",
+              "confidence": "high",
+              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
+              "claimOriginal": "「가정과 일상의 질서」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
+              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "recentSourceCatalog": [
+    {
+      "scholar": "Yii-Jan Lin",
+      "sourceTitle": "Immigration and Apocalypse: How the Book of Revelation Shaped American Immigration",
+      "publicationYear": 2024,
+      "sourceUrl": "https://yalebooks.yale.edu/book/9780300253184/immigration-and-apocalypse/",
+      "basis": "Yale University Press description and Yale Divinity profile/CV",
+      "use": "Revelation, apocalyptic rhetoric, migration, exclusion, New Jerusalem as political myth"
+    },
+    {
+      "scholar": "Laura Salah Nasrallah",
+      "sourceTitle": "Archaeology and the Letters of Paul",
+      "publicationYear": 2019,
+      "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+      "basis": "Yale Divinity profile",
+      "use": "Pauline letters, archaeology, gender, race, status, power, colonialism, social/economic/religious context"
+    },
+    {
+      "scholar": "Jennifer A. Quigley",
+      "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
+      "publicationYear": 2021,
+      "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
+      "basis": "Yale University Press description and recent reviews",
+      "use": "economic language, debt, gift, exchange, divine-human economy, Philippians/Pauline theo-economics"
+    },
+    {
+      "scholar": "Brittany E. Wilson",
+      "sourceTitle": "The Embodied God: Seeing the Divine in Luke-Acts and the Early Church",
+      "publicationYear": 2021,
+      "sourceUrl": "https://divinity.duke.edu/news/books/embodied-god",
+      "basis": "Duke Divinity book notice and OUP description",
+      "use": "Luke-Acts, embodiment, visibility of God, divine/human bodies, healing and vision narratives"
+    },
+    {
+      "scholar": "Katherine A. Shaner",
+      "sourceTitle": "Enslaved Leadership in Early Christianity",
+      "publicationYear": 2018,
+      "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+      "basis": "OUP description and reviews",
+      "use": "slavery, leadership, unfree status, Pauline assemblies, Philemon, household codes"
+    },
+    {
+      "scholar": "Lisa M. Bowens",
+      "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
+      "publicationYear": 2020,
+      "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
+      "basis": "faculty bibliography and recent reviews/interviews",
+      "use": "Pauline reception, African American interpretive history, resistance and transformation"
+    },
+    {
+      "scholar": "Angela N. Parker",
+      "sourceTitle": "If God Still Breathes, Why Can't I?: Black Lives Matter and Biblical Authority",
+      "publicationYear": 2021,
+      "sourceUrl": "https://onscript.study/podcast/angela-parker-if-god-still-breathes-why-cant-i/",
+      "basis": "publisher/review/podcast descriptions",
+      "use": "womanist biblical authority, whiteness, contextual theology, Black Lives Matter and biblical interpretation"
+    },
+    {
+      "scholar": "Candida R. Moss",
+      "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
+      "publicationYear": 2024,
+      "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
+      "basis": "news/review summaries",
+      "use": "enslaved scribes, messengers, co-laborers, erased labor in New Testament production",
+      "caution": "claims include speculative elements; use as contested related perspective"
+    },
+    {
+      "scholar": "Erin Vearncombe / Brandon Scott / Hal Taussig / Westar Institute",
+      "sourceTitle": "After Jesus Before Christianity",
+      "publicationYear": 2021,
+      "sourceUrl": "https://www.harpercollins.com/products/after-jesus-before-christianity-erin-vearncombebrandon-scotthal-taussig-westar-institute-the",
+      "basis": "publisher description",
+      "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
+    }
+  ]
 }

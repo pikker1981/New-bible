@@ -1,0 +1,125 @@
+{
+  "version": "20260508-recent-scholar-views-v15",
+  "createdAt": "2026-05-09",
+  "sourcePolicy": {
+    "addedAt": "2026-05-09",
+    "policy": "Recent scholars are summarized as short, source-linked scholarly lenses. No copyrighted source text is reproduced. relationType distinguishes direct commentary, methodology, background, reception history, and contextual application.",
+    "sources": [
+      {
+        "scholar": "Yii-Jan Lin",
+        "sourceTitle": "Immigration and Apocalypse: How the Book of Revelation Shaped American Immigration",
+        "publicationYear": 2024,
+        "sourceUrl": "https://yalebooks.yale.edu/book/9780300253184/immigration-and-apocalypse/",
+        "basis": "Yale University Press description and Yale Divinity profile/CV",
+        "use": "Revelation, apocalyptic rhetoric, migration, exclusion, New Jerusalem as political myth"
+      },
+      {
+        "scholar": "Laura Salah Nasrallah",
+        "sourceTitle": "Archaeology and the Letters of Paul",
+        "publicationYear": 2019,
+        "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+        "basis": "Yale Divinity profile",
+        "use": "Pauline letters, archaeology, gender, race, status, power, colonialism, social/economic/religious context"
+      },
+      {
+        "scholar": "Jennifer A. Quigley",
+        "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
+        "publicationYear": 2021,
+        "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
+        "basis": "Yale University Press description and recent reviews",
+        "use": "economic language, debt, gift, exchange, divine-human economy, Philippians/Pauline theo-economics"
+      },
+      {
+        "scholar": "Brittany E. Wilson",
+        "sourceTitle": "The Embodied God: Seeing the Divine in Luke-Acts and the Early Church",
+        "publicationYear": 2021,
+        "sourceUrl": "https://divinity.duke.edu/news/books/embodied-god",
+        "basis": "Duke Divinity book notice and OUP description",
+        "use": "Luke-Acts, embodiment, visibility of God, divine/human bodies, healing and vision narratives"
+      },
+      {
+        "scholar": "Katherine A. Shaner",
+        "sourceTitle": "Enslaved Leadership in Early Christianity",
+        "publicationYear": 2018,
+        "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+        "basis": "OUP description and reviews",
+        "use": "slavery, leadership, unfree status, Pauline assemblies, Philemon, household codes"
+      },
+      {
+        "scholar": "Lisa M. Bowens",
+        "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
+        "publicationYear": 2020,
+        "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
+        "basis": "faculty bibliography and recent reviews/interviews",
+        "use": "Pauline reception, African American interpretive history, resistance and transformation"
+      },
+      {
+        "scholar": "Angela N. Parker",
+        "sourceTitle": "If God Still Breathes, Why Can't I?: Black Lives Matter and Biblical Authority",
+        "publicationYear": 2021,
+        "sourceUrl": "https://onscript.study/podcast/angela-parker-if-god-still-breathes-why-cant-i/",
+        "basis": "publisher/review/podcast descriptions",
+        "use": "womanist biblical authority, whiteness, contextual theology, Black Lives Matter and biblical interpretation"
+      },
+      {
+        "scholar": "Candida R. Moss",
+        "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
+        "publicationYear": 2024,
+        "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
+        "basis": "news/review summaries",
+        "use": "enslaved scribes, messengers, co-laborers, erased labor in New Testament production",
+        "caution": "claims include speculative elements; use as contested related perspective"
+      },
+      {
+        "scholar": "Erin Vearncombe / Brandon Scott / Hal Taussig / Westar Institute",
+        "sourceTitle": "After Jesus Before Christianity",
+        "publicationYear": 2021,
+        "sourceUrl": "https://www.harpercollins.com/products/after-jesus-before-christianity-erin-vearncombebrandon-scotthal-taussig-westar-institute-the",
+        "basis": "publisher description",
+        "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
+      }
+    ]
+  },
+  "addedByScholar": {
+    "Laura Salah Nasrallah": 77,
+    "Lisa M. Bowens": 48,
+    "Candida R. Moss": 7,
+    "Angela N. Parker": 43,
+    "Katherine A. Shaner": 25,
+    "Jennifer A. Quigley": 10,
+    "Yii-Jan Lin": 27,
+    "Brittany E. Wilson": 9,
+    "Erin Vearncombe / Westar": 93
+  },
+  "addedByBook": {
+    "1corinthians": 32,
+    "1john": 0,
+    "1peter": 2,
+    "1thessalonians": 2,
+    "1timothy": 7,
+    "2corinthians": 21,
+    "2john": 0,
+    "2peter": 1,
+    "2thessalonians": 6,
+    "2timothy": 4,
+    "3john": 0,
+    "acts": 29,
+    "colossians": 5,
+    "ephesians": 8,
+    "galatians": 14,
+    "hebrews": 3,
+    "james": 8,
+    "john": 9,
+    "jude": 1,
+    "luke": 36,
+    "mark": 16,
+    "matthew": 47,
+    "philemon": 10,
+    "philippians": 4,
+    "revelation": 22,
+    "romans": 47,
+    "titus": 5
+  },
+  "totalRecentScholarNotesAdded": 339,
+  "notes": "Modern copyrighted sources are represented as short paraphrased interpretive lenses, not copied source text. Yale-related additions include Yii-Jan Lin and Laura Salah Nasrallah, with Jennifer Quigley from Yale University Press also included for theo-economics."
+}
