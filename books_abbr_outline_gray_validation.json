@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "changed": "desktop BOOKS abbreviation badge outline-only gray box; white background retained",
+  "css_file": "mobile_books_abbr_outline_gray.css",
+  "app_file": "app_books_abbr_outline_gray.js",
+  "index_file": "index_books_abbr_outline_gray.html",
+  "logic_changed": false,
+  "desktop_badge_background": "#FFFFFF",
+  "desktop_badge_border": "#4B5563",
+  "desktop_badge_text": "#374151",
+  "active_badge_background": "#FFFFFF",
+  "active_badge_border": "#374151",
+  "required_abbreviations_present": {
+    "고전": true,
+    "고후": true,
+    "살전": true,
+    "살후": true,
+    "딤전": true,
+    "딤후": true,
+    "벧전": true,
+    "벧후": true,
+    "요1": true,
+    "요2": true,
+    "요3": true
+  },
+  "css_override_present": true
+}
