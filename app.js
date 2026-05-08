@@ -439,6 +439,7 @@ function renderChapter() {
   els.chapterTitle.textContent = book.bookKo + " " + chapter.number + "장";
   els.verses.innerHTML = chapter.verses.map((verse) => {
     let html = mdInlineToHTML(verse.text);
+    html = applyContextLinks(html, book.id, chapter.number, verse.number);
     html = applyUserHighlights(html, book.id, chapter.number, verse.number);
     return (
       '<article class="verse" id="v-' + chapter.number + "-" + verse.number + '">' +
@@ -521,6 +522,7 @@ async function renderGlobalSearchResults(query) {
       '<div class="search-result-head"><strong>' + escapeHTML(normalizedQuery) + '</strong> 전체 27권 검색 결과 ' + results.length + '개</div>' +
       results.map((item) => {
         let html = mdInlineToHTML(item.text);
+        html = applyContextLinks(html, item.bookId, item.chapter, item.verse);
         html = applyUserHighlights(html, item.bookId, item.chapter, item.verse);
         html = highlightHTML(html, normalizedQuery);
         const bookLabel = String(item.bookOrder || "").padStart(2, "0") + " " + escapeHTML(item.bookKo);
@@ -879,6 +881,93 @@ function getContextItems() {
     if (ao !== bo) return ao - bo;
     return String(a.label || a.title || a.id).localeCompare(String(b.label || b.title || b.id), "ko");
   });
+}
+
+
+function getContextAliases(item) {
+  const values = [];
+  if (item?.label) values.push(item.label);
+  if (item?.title) values.push(item.title);
+  if (Array.isArray(item?.aliases)) values.push(...item.aliases);
+
+  return [...new Set(values.map((value) => String(value || "").trim()).filter((value) => value.length >= 2))]
+    .sort((a, b) => b.length - a.length);
+}
+
+function refMatchesVerse(ref, book, chapter, verse) {
+  const raw = String(ref || "").trim();
+  if (!raw) return false;
+
+  const bookNames = [book?.id, book?.bookEn, book?.bookKo]
+    .filter(Boolean)
+    .map((value) => String(value).toLowerCase());
+  const lower = raw.toLowerCase();
+
+  let refPart = raw;
+  bookNames.forEach((name) => {
+    if (lower.startsWith(name + " ")) {
+      refPart = raw.slice(name.length).trim();
+    }
+  });
+
+  refPart = refPart.replace(/^\s+|\s+$/g, "");
+  if (refPart === String(chapter) + ":" + String(verse)) return true;
+
+  let match = refPart.match(/^(\d+):(\d+)\s*-\s*(\d+)$/);
+  if (match) {
+    const startChapter = Number(match[1]);
+    const startVerse = Number(match[2]);
+    const endVerse = Number(match[3]);
+    return Number(chapter) === startChapter && Number(verse) >= startVerse && Number(verse) <= endVerse;
+  }
+
+  match = refPart.match(/^(\d+):(\d+)\s*-\s*(\d+):(\d+)$/);
+  if (match) {
+    const startChapter = Number(match[1]);
+    const startVerse = Number(match[2]);
+    const endChapter = Number(match[3]);
+    const endVerse = Number(match[4]);
+    const current = Number(chapter) * 1000 + Number(verse);
+    const start = startChapter * 1000 + startVerse;
+    const end = endChapter * 1000 + endVerse;
+    return current >= start && current <= end;
+  }
+
+  return false;
+}
+
+function contextAppliesToVerse(item, book, chapter, verse) {
+  const refs = Array.isArray(item?.refs) ? item.refs : item?.ref ? [item.ref] : [];
+  if (refs.length === 0) return false;
+  return refs.some((ref) => refMatchesVerse(ref, book, chapter, verse));
+}
+
+function applyContextLinks(html, bookId, chapter, verse) {
+  const payload = state.contexts[bookId];
+  if (!payload || !payload.contexts) return html;
+
+  const book = state.books[bookId] || state.manifest?.books?.find((item) => item.id === bookId) || { id: bookId };
+  const items = Object.entries(payload.contexts)
+    .map(([id, item]) => ({ id, ...item }))
+    .filter((item) => contextAppliesToVerse(item, book, chapter, verse));
+
+  return items.reduce((current, item) => {
+    const aliases = getContextAliases(item);
+    if (aliases.length === 0) return current;
+
+    let next = current;
+    let linked = false;
+    for (const alias of aliases) {
+      if (linked) break;
+      const pattern = new RegExp("(" + escapeRegExp(escapeHTML(alias)) + ")", "g");
+      next = replaceOutsideTags(next, pattern, (match) => {
+        if (linked) return match;
+        linked = true;
+        return '<button class="ctx-link text-label auto-context" type="button" data-context="' + escapeHTML(item.id) + '" title="당시 배경 보기">' + match + '</button>';
+      });
+    }
+    return next;
+  }, html);
 }
 
 function renderContextList() {
