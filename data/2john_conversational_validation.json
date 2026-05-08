@@ -1,0 +1,19 @@
+{
+  "id": "2john",
+  "bookKo": "요한이서",
+  "chapterCount": 1,
+  "verseCount": 13,
+  "actualChapterCount": 1,
+  "actualVerseCount": 13,
+  "notesCount": 16,
+  "bodyFootnoteMarkerCount": 16,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicateHonorificErrors": {},
+  "nonKoreanScriptResidue": [],
+  "mechanicalFixes": 0,
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
+  "status": "pass"
+}
