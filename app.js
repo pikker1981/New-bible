@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-interpretive-detail-click-fix-v18";
+const APP_BUILD_ID = "20260508-scholar-actual-interpretations-v19";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -439,7 +439,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
       (scholars.length ? '<div class="interpretive-scholar-list">' + scholars.map((scholar) => {
         const relation = scholarRelationLabel(scholar.relationType || scholar.relation || scholar.type);
         const confidence = scholarConfidenceLabel(scholar.confidence);
-        const claim = scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
+        const claim = scholar.interpretationKo || scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
         const sourceLine = renderScholarSourceLine(scholar);
         return (
           '<article class="interpretive-scholar-card">' +

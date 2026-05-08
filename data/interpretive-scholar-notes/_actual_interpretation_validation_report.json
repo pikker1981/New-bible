@@ -1,0 +1,9 @@
+{
+  "version": "20260508-scholar-actual-interpretations-v19",
+  "jsonParse": "ok",
+  "scholarCards": 4466,
+  "missingInterpretationKo": 0,
+  "filledFallbackCards": 860,
+  "missingBeforeFallback": 860,
+  "errors": []
+}

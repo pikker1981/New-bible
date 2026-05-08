@@ -1,0 +1,1298 @@
+{
+  "version": "20260508-scholar-actual-interpretations-v19",
+  "updatedScholarCards": 3606,
+  "totalScholarCardsScanned": 3606,
+  "mode": "pericope-applied Korean interpretive summaries, no source text copied",
+  "items": [
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-1-18-십자가의-어리석음과-능력",
+      "title": "십자가의 어리석음과 능력",
+      "category": "passion"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-2-6-성령이-알게-하는-지혜",
+      "title": "성령이 알게 하는 지혜",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-5-1-공동체-안의-음행-문제",
+      "title": "공동체 안의 음행 문제",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-6-1-신자들-사이의-소송",
+      "title": "신자들 사이의 소송",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-6-12-몸과-성",
+      "title": "몸과 성",
+      "category": "paul_community"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-7-1-혼인과-독신",
+      "title": "혼인과 독신",
+      "category": "parable"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-8-1-우상-제물과-지식",
+      "title": "우상 제물과 지식",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-9-1-사도의-권리와-포기",
+      "title": "사도의 권리와 포기",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-10-1-광야-세대의-경고",
+      "title": "광야 세대의 경고",
+      "category": "identity"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-11-2-예배-질서와-머리-문제",
+      "title": "예배 질서와 머리 문제",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-11-17-주님의-만찬-문제",
+      "title": "주님의 만찬 문제",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-12-1-성령의-은사와-한-몸",
+      "title": "성령의 은사와 한 몸",
+      "category": "paul_community"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-13-1-사랑의-길",
+      "title": "사랑의 길",
+      "category": "ethics"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-14-1-예언과-방언의-질서",
+      "title": "예언과 방언의 질서",
+      "category": "general"
+    },
+    {
+      "bookId": "1corinthians",
+      "introId": "1corinthians-15-1-부활의-복음",
+      "title": "부활의 복음",
+      "category": "resurrection"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-1-5-빛-가운데-행함",
+      "title": "빛 가운데 행함",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-2-1-대언자-그리스도와-계명",
+      "title": "대언자 그리스도와 계명",
+      "category": "ethics"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-2-18-적그리스도와-기름부음",
+      "title": "적그리스도와 기름부음",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-3-1-하나님의-자녀",
+      "title": "하나님의 자녀",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-4-1-영들을-분별하라",
+      "title": "영들을 분별하라",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-4-7-하나님은-사랑",
+      "title": "하나님은 사랑",
+      "category": "ethics"
+    },
+    {
+      "bookId": "1john",
+      "introId": "1john-5-1-믿음과-세상을-이김",
+      "title": "믿음과 세상을 이김",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "1peter",
+      "introId": "1peter-2-4-산-돌과-거룩한-제사장",
+      "title": "산 돌과 거룩한 제사장",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "1peter",
+      "introId": "1peter-2-18-부당한-고난과-그리스도의-본",
+      "title": "부당한 고난과 그리스도의 본",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "1thessalonians",
+      "introId": "1thessalonians-2-1-바울의-사역-방식",
+      "title": "바울의 사역 방식",
+      "category": "general"
+    },
+    {
+      "bookId": "1thessalonians",
+      "introId": "1thessalonians-4-13-죽은-자와-주님의-오심",
+      "title": "죽은 자와 주님의 오심",
+      "category": "miracle"
+    },
+    {
+      "bookId": "1timothy",
+      "introId": "1timothy-1-3-다른-교훈을-경계함",
+      "title": "다른 교훈을 경계함",
+      "category": "general"
+    },
+    {
+      "bookId": "1timothy",
+      "introId": "1timothy-4-1-거짓-금욕주의-경계",
+      "title": "거짓 금욕주의 경계",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "1timothy",
+      "introId": "1timothy-6-3-경건과-탐욕",
+      "title": "경건과 탐욕",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-1-12-바울의-방문-계획-해명",
+      "title": "바울의 방문 계획 해명",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-2-14-그리스도의-향기",
+      "title": "그리스도의 향기",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-3-1-새-언약의-일꾼",
+      "title": "새 언약의 일꾼",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-4-1-질그릇에-담긴-보배",
+      "title": "질그릇에 담긴 보배",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-5-1-새-창조와-화해의-직분",
+      "title": "새 창조와 화해의 직분",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-7-2-회개와-기쁨",
+      "title": "회개와 기쁨",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-10-1-사도권-변론의-시작",
+      "title": "사도권 변론의 시작",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-11-1-어리석은-자랑",
+      "title": "어리석은 자랑",
+      "category": "general"
+    },
+    {
+      "bookId": "2corinthians",
+      "introId": "2corinthians-12-1-약함-안의-능력",
+      "title": "약함 안의 능력",
+      "category": "paul_community"
+    },
+    {
+      "bookId": "2john",
+      "introId": "2john-1-7-미혹하는-자들을-경계함",
+      "title": "미혹하는 자들을 경계함",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "2peter",
+      "introId": "2peter-1-16-목격자와-예언의-말씀",
+      "title": "목격자와 예언의 말씀",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "2peter",
+      "introId": "2peter-2-1-거짓-교사들",
+      "title": "거짓 교사들",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "2peter",
+      "introId": "2peter-3-1-주의-날과-조롱하는-자들",
+      "title": "주의 날과 조롱하는 자들",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "2thessalonians",
+      "introId": "2thessalonians-1-5-공의로운-심판과-안식",
+      "title": "공의로운 심판과 안식",
+      "category": "ethics"
+    },
+    {
+      "bookId": "2thessalonians",
+      "introId": "2thessalonians-2-1-주의-날에-대한-혼란",
+      "title": "주의 날에 대한 혼란",
+      "category": "general"
+    },
+    {
+      "bookId": "2thessalonians",
+      "introId": "2thessalonians-3-6-무질서한-사람들에-대한-권면",
+      "title": "무질서한 사람들에 대한 권면",
+      "category": "general"
+    },
+    {
+      "bookId": "2timothy",
+      "introId": "2timothy-2-14-말다툼과-거룩한-그릇",
+      "title": "말다툼과 거룩한 그릇",
+      "category": "general"
+    },
+    {
+      "bookId": "2timothy",
+      "introId": "2timothy-3-1-마지막-때의-사람들",
+      "title": "마지막 때의 사람들",
+      "category": "general"
+    },
+    {
+      "bookId": "2timothy",
+      "introId": "2timothy-3-14-성경의-역할",
+      "title": "성경의 역할",
+      "category": "general"
+    },
+    {
+      "bookId": "3john",
+      "introId": "3john-1-9-디오드레베의-문제",
+      "title": "디오드레베의 문제",
+      "category": "johannine_letters"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-2-14-베드로의-오순절-설교",
+      "title": "베드로의 오순절 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-3-11-솔로몬-행각에서의-설교",
+      "title": "솔로몬 행각에서의 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-7-1-스데반의-변론",
+      "title": "스데반의 변론",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-10-34-고넬료-집에서의-설교",
+      "title": "고넬료 집에서의 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-13-16-비시디아-안디옥-설교",
+      "title": "비시디아 안디옥 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-17-16-아테네-아레오바고-설교",
+      "title": "아테네 아레오바고 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-20-17-밀레도-고별-설교",
+      "title": "밀레도 고별 설교",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-22-1-바울의-첫-변론",
+      "title": "바울의 첫 변론",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-24-1-벨릭스-앞의-변론",
+      "title": "벨릭스 앞의 변론",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "acts",
+      "introId": "acts-26-1-아그립바-앞의-변론",
+      "title": "아그립바 앞의 변론",
+      "category": "acts_mission"
+    },
+    {
+      "bookId": "colossians",
+      "introId": "colossians-2-6-헛된-철학에-대한-경고",
+      "title": "헛된 철학에 대한 경고",
+      "category": "general"
+    },
+    {
+      "bookId": "colossians",
+      "introId": "colossians-3-18-가정과-일상의-질서",
+      "title": "가정과 일상의 질서",
+      "category": "household"
+    },
+    {
+      "bookId": "ephesians",
+      "introId": "ephesians-2-1-죽음에서-생명으로",
+      "title": "죽음에서 생명으로",
+      "category": "passion"
+    },
+    {
+      "bookId": "ephesians",
+      "introId": "ephesians-2-11-한-새-사람",
+      "title": "한 새 사람",
+      "category": "general"
+    },
+    {
+      "bookId": "ephesians",
+      "introId": "ephesians-3-1-감추어진-비밀",
+      "title": "감추어진 비밀",
+      "category": "general"
+    },
+    {
+      "bookId": "ephesians",
+      "introId": "ephesians-5-21-그리스도-안의-가정-질서",
+      "title": "그리스도 안의 가정 질서",
+      "category": "household"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-1-6-복음의-왜곡에-대한-책망",
+      "title": "복음의 왜곡에 대한 책망",
+      "category": "ethics"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-1-11-바울이-받은-계시",
+      "title": "바울이 받은 계시",
+      "category": "general"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-2-1-예루살렘-방문과-인정",
+      "title": "예루살렘 방문과 인정",
+      "category": "controversy"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-3-1-믿음과-율법",
+      "title": "믿음과 율법",
+      "category": "ethics"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-3-23-율법의-역할",
+      "title": "율법의 역할",
+      "category": "ethics"
+    },
+    {
+      "bookId": "galatians",
+      "introId": "galatians-4-21-하갈과-사라의-비유적-논증",
+      "title": "하갈과 사라의 비유적 논증",
+      "category": "parable"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-1-1-아들을-통한-최종-말씀",
+      "title": "아들을 통한 최종 말씀",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-1-5-천사보다-뛰어난-아들",
+      "title": "천사보다 뛰어난 아들",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-2-1-흘러-떠내려가지-말라",
+      "title": "흘러 떠내려가지 말라",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-2-10-고난을-통해-온전하게-된-구원자",
+      "title": "고난을 통해 온전하게 된 구원자",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-3-1-모세보다-큰-예수",
+      "title": "모세보다 큰 예수",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-3-7-광야-세대의-경고",
+      "title": "광야 세대의 경고",
+      "category": "identity"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-4-14-큰-대제사장",
+      "title": "큰 대제사장",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-5-11-성숙으로-나아가라",
+      "title": "성숙으로 나아가라",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-6-13-하나님의-약속과-맹세",
+      "title": "하나님의 약속과 맹세",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-7-1-멜기세덱의-반차",
+      "title": "멜기세덱의 반차",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-8-1-새-언약의-대제사장",
+      "title": "새 언약의 대제사장",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-9-1-성소와-그리스도의-피",
+      "title": "성소와 그리스도의 피",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "hebrews",
+      "introId": "hebrews-11-1-믿음의-사람들",
+      "title": "믿음의 사람들",
+      "category": "hebrews_cult"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-2-1-차별하지-말라",
+      "title": "차별하지 말라",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-2-14-행함-없는-믿음",
+      "title": "행함 없는 믿음",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-3-1-혀의-위험",
+      "title": "혀의 위험",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-3-13-위로부터-난-지혜",
+      "title": "위로부터 난 지혜",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-4-1-세상과-벗됨",
+      "title": "세상과 벗됨",
+      "category": "james_ethics"
+    },
+    {
+      "bookId": "james",
+      "introId": "james-5-1-부자들에-대한-경고",
+      "title": "부자들에 대한 경고",
+      "category": "parable"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-6-22-생명의-빵-담화",
+      "title": "생명의 빵 담화",
+      "category": "john_theology"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-7-37-생수의-초대",
+      "title": "생수의 초대",
+      "category": "general"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-8-12-세상의-빛",
+      "title": "세상의 빛",
+      "category": "john_theology"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-10-1-선한-목자-담화",
+      "title": "선한 목자 담화",
+      "category": "john_theology"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-13-31-새-계명과-이별-담화-",
+      "title": "새 계명과 이별 담화 시작",
+      "category": "ethics"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-14-1-길과-진리와-생명",
+      "title": "길과 진리와 생명",
+      "category": "john_theology"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-15-1-참-포도나무",
+      "title": "참 포도나무",
+      "category": "john_theology"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-16-1-성령과-세상의-미움",
+      "title": "성령과 세상의 미움",
+      "category": "general"
+    },
+    {
+      "bookId": "john",
+      "introId": "john-17-1-예수의-기도",
+      "title": "예수의 기도",
+      "category": "ethics"
+    },
+    {
+      "bookId": "jude",
+      "introId": "jude-1-5-거짓-교사들에-대한-경고",
+      "title": "거짓 교사들에 대한 경고",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-6-20-평지-설교-시작",
+      "title": "평지 설교 시작",
+      "category": "ethics"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-6-27-원수-사랑",
+      "title": "원수 사랑",
+      "category": "ethics"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-6-43-나무와-열매",
+      "title": "나무와 열매",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-6-46-집의-기초-비유",
+      "title": "집의 기초 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-8-4-씨-뿌리는-사람-비유",
+      "title": "씨 뿌리는 사람 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-8-16-등불-비유",
+      "title": "등불 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-10-25-선한-사마리아인-비유",
+      "title": "선한 사마리아인 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-11-1-기도-가르침",
+      "title": "기도 가르침",
+      "category": "ethics"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-12-13-어리석은-부자-비유",
+      "title": "어리석은 부자 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-12-22-걱정하지-말라",
+      "title": "걱정하지 말라",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-12-35-깨어-있는-종들",
+      "title": "깨어 있는 종들",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-13-6-열매-없는-무화과나무-",
+      "title": "열매 없는 무화과나무 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-13-18-겨자씨와-누룩",
+      "title": "겨자씨와 누룩",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-13-22-좁은-문",
+      "title": "좁은 문",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-14-7-잔치-자리-비유",
+      "title": "잔치 자리 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-14-15-큰-잔치-비유",
+      "title": "큰 잔치 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-14-25-제자도의-비용",
+      "title": "제자도의 비용",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-15-1-잃은-것을-찾는-비유들",
+      "title": "잃은 것을 찾는 비유들",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-15-3-잃은-양-비유",
+      "title": "잃은 양 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-15-8-잃은-드라크마-비유",
+      "title": "잃은 드라크마 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-15-11-잃은-아들-비유",
+      "title": "잃은 아들 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-16-1-불의한-청지기-비유",
+      "title": "불의한 청지기 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-16-19-부자와-나사로",
+      "title": "부자와 나사로",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-17-20-하나님-나라와-사람의-",
+      "title": "하나님 나라와 사람의 아들의 날",
+      "category": "general"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-18-1-끈질긴-과부-비유",
+      "title": "끈질긴 과부 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-18-9-바리새인과-세리-비유",
+      "title": "바리새인과 세리 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-19-11-므나-비유",
+      "title": "므나 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-20-9-포도원-농부-비유",
+      "title": "포도원 농부 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "luke",
+      "introId": "luke-21-5-성전과-마지막-때",
+      "title": "성전과 마지막 때",
+      "category": "controversy"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-4-1-비유-가르침-시작",
+      "title": "비유 가르침 시작",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-4-3-씨-뿌리는-사람-비유",
+      "title": "씨 뿌리는 사람 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-4-21-등불-비유",
+      "title": "등불 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-4-26-자라나는-씨-비유",
+      "title": "자라나는 씨 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-4-30-겨자씨-비유",
+      "title": "겨자씨 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-12-1-포도원-농부-비유",
+      "title": "포도원 농부 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-13-1-성전-파괴와-마지막-때",
+      "title": "성전 파괴와 마지막 때",
+      "category": "controversy"
+    },
+    {
+      "bookId": "mark",
+      "introId": "mark-13-28-무화과나무-비유",
+      "title": "무화과나무 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-5-1-산상수훈-시작",
+      "title": "산상수훈 시작",
+      "category": "ethics"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-5-3-복-선언",
+      "title": "복 선언",
+      "category": "ethics"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-5-13-소금과-빛",
+      "title": "소금과 빛",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-5-17-율법과-예언자의-완성",
+      "title": "율법과 예언자의 완성",
+      "category": "ethics"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-5-21-더-깊어진-의로움",
+      "title": "더 깊어진 의로움",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-6-1-드러내기-위한-경건-비",
+      "title": "드러내기 위한 경건 비판",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-6-9-주님의-기도",
+      "title": "주님의 기도",
+      "category": "ethics"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-6-19-보물과-마음",
+      "title": "보물과 마음",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-6-25-걱정에-대한-가르침",
+      "title": "걱정에 대한 가르침",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-7-1-판단과-분별",
+      "title": "판단과 분별",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-7-7-구하고-찾고-두드리라",
+      "title": "구하고 찾고 두드리라",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-7-13-두-길의-선택",
+      "title": "두 길의 선택",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-7-24-반석-위의-집-비유",
+      "title": "반석 위의 집 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-10-1-열두-제자-파송",
+      "title": "열두 제자 파송",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-11-25-수고한-자들을-부르심",
+      "title": "수고한 자들을 부르심",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-1-비유-담화-시작",
+      "title": "비유 담화 시작",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-3-씨-뿌리는-사람의-비유",
+      "title": "씨 뿌리는 사람의 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-24-가라지-비유",
+      "title": "가라지 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-31-겨자씨-비유",
+      "title": "겨자씨 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-33-누룩-비유",
+      "title": "누룩 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-44-밭에-감추어진-보물",
+      "title": "밭에 감추어진 보물",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-45-값진-진주-비유",
+      "title": "값진 진주 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-13-47-그물-비유",
+      "title": "그물 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-18-1-공동체-담화",
+      "title": "공동체 담화",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-18-12-잃은-양-비유",
+      "title": "잃은 양 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-18-15-형제를-얻는-절차",
+      "title": "형제를 얻는 절차",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-18-21-용서하지-않는-종의-비",
+      "title": "용서하지 않는 종의 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-20-1-포도원-일꾼-비유",
+      "title": "포도원 일꾼 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-21-28-두-아들-비유",
+      "title": "두 아들 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-21-33-악한-농부-비유",
+      "title": "악한 농부 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-22-1-혼인-잔치-비유",
+      "title": "혼인 잔치 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-23-1-율법학자와-바리새인에-",
+      "title": "율법학자와 바리새인에 대한 경고",
+      "category": "ethics"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-24-1-올리브산-담화",
+      "title": "올리브산 담화",
+      "category": "general"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-24-32-무화과나무-비유",
+      "title": "무화과나무 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-24-45-신실한-종-비유",
+      "title": "신실한 종 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-25-1-열-처녀-비유",
+      "title": "열 처녀 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "matthew",
+      "introId": "matthew-25-14-달란트-비유",
+      "title": "달란트 비유",
+      "category": "parable"
+    },
+    {
+      "bookId": "philemon",
+      "introId": "philemon-1-8-오네시모를-위한-호소",
+      "title": "오네시모를 위한 호소",
+      "category": "household"
+    },
+    {
+      "bookId": "philemon",
+      "introId": "philemon-1-17-나를-맞듯이-그를-맞으라",
+      "title": "나를 맞듯이 그를 맞으라",
+      "category": "general"
+    },
+    {
+      "bookId": "philippians",
+      "introId": "philippians-3-1-참된-의와-경고",
+      "title": "참된 의와 경고",
+      "category": "general"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-1-1-계시의-서문",
+      "title": "계시의 서문",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-1-9-인자-같은-이의-환상",
+      "title": "인자 같은 이의 환상",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-4-1-하늘-보좌-환상",
+      "title": "하늘 보좌 환상",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-5-1-두루마리와-어린양",
+      "title": "두루마리와 어린양",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-6-1-일곱-봉인의-시작",
+      "title": "일곱 봉인의 시작",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-7-1-인침-받은-백성과-큰-무리",
+      "title": "인침 받은 백성과 큰 무리",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-8-1-일곱-나팔의-시작",
+      "title": "일곱 나팔의 시작",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-10-1-작은-두루마리",
+      "title": "작은 두루마리",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-11-1-두-증인",
+      "title": "두 증인",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-12-1-여자와-용",
+      "title": "여자와 용",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-13-1-짐승들",
+      "title": "짐승들",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-14-1-어린양과-새-노래",
+      "title": "어린양과 새 노래",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-15-1-마지막-재앙과-모세의-노래",
+      "title": "마지막 재앙과 모세의 노래",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-16-1-일곱-대접",
+      "title": "일곱 대접",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-17-1-큰-음녀-바빌론",
+      "title": "큰 음녀 바빌론",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-19-1-어린양의-혼인-잔치",
+      "title": "어린양의 혼인 잔치",
+      "category": "parable"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-19-11-백마-탄-이",
+      "title": "백마 탄 이",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-20-1-천-년-왕국과-최종-심판",
+      "title": "천 년 왕국과 최종 심판",
+      "category": "ethics"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-21-1-새-하늘과-새-땅",
+      "title": "새 하늘과 새 땅",
+      "category": "revelation"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-21-9-새-예루살렘",
+      "title": "새 예루살렘",
+      "category": "controversy"
+    },
+    {
+      "bookId": "revelation",
+      "introId": "revelation-22-1-생명수-강과-생명나무",
+      "title": "생명수 강과 생명나무",
+      "category": "revelation"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-1-16-로마서의-중심-선언",
+      "title": "로마서의 중심 선언",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-1-18-이방-세계의-죄",
+      "title": "이방 세계의 죄",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-2-1-판단하는-사람의-문제",
+      "title": "판단하는 사람의 문제",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-2-17-율법을-가진-유대인의-책임",
+      "title": "율법을 가진 유대인의 책임",
+      "category": "ethics"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-3-21-믿음으로-드러난-하나님의-의",
+      "title": "믿음으로 드러난 하나님의 의",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-4-1-아브라함의-믿음",
+      "title": "아브라함의 믿음",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-5-1-의롭다-하심과-화평",
+      "title": "의롭다 하심과 화평",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-5-12-아담과-그리스도",
+      "title": "아담과 그리스도",
+      "category": "general"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-6-1-죄에-대해-죽은-사람들",
+      "title": "죄에 대해 죽은 사람들",
+      "category": "miracle"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-7-1-율법과-죄의-관계",
+      "title": "율법과 죄의 관계",
+      "category": "ethics"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-8-1-성령-안의-생명",
+      "title": "성령 안의 생명",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-8-18-현재-고난과-장차-영광",
+      "title": "현재 고난과 장차 영광",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-9-1-이스라엘의-문제",
+      "title": "이스라엘의 문제",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-10-1-믿음의-말씀",
+      "title": "믿음의 말씀",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "romans",
+      "introId": "romans-11-1-남은-자와-이방인의-접붙임",
+      "title": "남은 자와 이방인의 접붙임",
+      "category": "paul_grace"
+    },
+    {
+      "bookId": "titus",
+      "introId": "titus-1-10-거짓-교사들에-대한-경고",
+      "title": "거짓 교사들에 대한 경고",
+      "category": "catholic_epistles"
+    },
+    {
+      "bookId": "titus",
+      "introId": "titus-2-11-은혜가-훈련하는-삶",
+      "title": "은혜가 훈련하는 삶",
+      "category": "general"
+    }
+  ]
+}
