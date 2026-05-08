@@ -352,5 +352,6 @@
       "dataFile": "data/revelation.json",
       "json": "data/revelation.json"
     }
-  ]
+  ],
+  "totalTargetBooks": 27
 }
