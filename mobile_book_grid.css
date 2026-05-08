@@ -1,0 +1,274 @@
+/* Mobile book/chapter compact grid patch
+   Purpose: keep desktop layout intact, but on mobile show all books and chapters
+   as compact grid buttons instead of long vertical lists or horizontal scroll chips.
+*/
+
+@media (max-width: 900px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .left-rail,
+  .right-rail,
+  .reader {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    position: static !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .brand-card {
+    padding: 18px;
+  }
+
+  .brand-card .title-block {
+    display: grid;
+    gap: 8px;
+  }
+
+  .brand-card .big-title {
+    font-size: clamp(28px, 9vw, 42px);
+    line-height: 0.95;
+  }
+
+  .brand-card .desc {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .stat-row {
+    display: none;
+  }
+
+  .panel {
+    padding: 14px;
+  }
+
+  .panel-head,
+  .note-list-head {
+    margin-bottom: 10px;
+  }
+
+  /* 모바일 BOOKS: 27권 전체를 한 화면에 가깝게 보이는 짧은 약자 버튼 그리드로 표시 */
+  .book-list {
+    display: grid !important;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 6px;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0;
+  }
+
+  .book-btn {
+    min-width: 0 !important;
+    width: 100%;
+    aspect-ratio: 1 / 0.82;
+    padding: 6px 2px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+    border-color: color-mix(in srgb, var(--book-accent, var(--accent)) 36%, transparent) !important;
+  }
+
+  .book-btn .book-abbr {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--book-accent, var(--accent));
+  }
+
+  .book-btn .book-full,
+  .book-btn small {
+    display: none !important;
+  }
+
+  .book-btn.active {
+    background: var(--book-accent, var(--accent)) !important;
+    color: #fff !important;
+  }
+
+  .book-btn.active .book-abbr {
+    color: #fff !important;
+  }
+
+  .search-input {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .reader-card {
+    padding: 18px;
+  }
+
+  .reader-head {
+    gap: 14px;
+  }
+
+  .reader-head h1 {
+    font-size: clamp(28px, 8vw, 40px);
+  }
+
+  .mini-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  /* 권별 장 선택도 가로 스크롤이 아니라 숫자 버튼 그리드로 전체 표시 */
+  .chapter-nav {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .chapter-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 6px;
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+  }
+
+  .chapter-buttons button {
+    min-width: 0 !important;
+    width: 100%;
+    min-height: 34px;
+    padding: 0 !important;
+    border-radius: 11px !important;
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  #prevChapter,
+  #nextChapter {
+    min-height: 34px;
+    padding: 0 10px !important;
+    white-space: nowrap;
+  }
+
+  .verse,
+  .search-hit {
+    gap: 10px;
+  }
+
+  .verse-num,
+  .search-ref {
+    min-width: 42px;
+  }
+
+  .verse-text {
+    font-size: 16px;
+    line-height: 1.9;
+  }
+
+  .right-rail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .note-card {
+    padding: 16px;
+  }
+
+  .note-list {
+    max-height: 260px;
+    overflow-y: auto;
+    padding-right: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .note-body {
+    max-height: 220px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .quote-section {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .wrap {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .brand-card .desc {
+    display: none;
+  }
+
+  .brand-card {
+    padding: 14px;
+  }
+
+  .reader-card,
+  .panel,
+  .note-card {
+    border-radius: 18px;
+  }
+
+  .book-list {
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .book-btn {
+    border-radius: 10px !important;
+  }
+
+  .book-btn .book-abbr {
+    font-size: 14px;
+  }
+
+  .chapter-buttons {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .chapter-buttons button {
+    min-height: 32px;
+    font-size: 12px;
+  }
+
+  .note-list {
+    max-height: 220px;
+  }
+
+  .note-body {
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 380px) {
+  .book-list {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .chapter-buttons {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}

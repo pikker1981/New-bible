@@ -1,0 +1,10 @@
+{
+  "uses_global_search": true,
+  "book_short_labels_added": true,
+  "book_abbr_markup_added": true,
+  "mobile_book_grid_css": true,
+  "mobile_chapter_grid_css": true,
+  "index_loads_mobile_css": true,
+  "manifest_books": 27,
+  "updatedBooks": 27
+}

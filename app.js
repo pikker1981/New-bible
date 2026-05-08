@@ -8,6 +8,20 @@ const BOOK_ACCENT_PALETTE = [
   "#B7791F", "#1E40AF"
 ];
 
+const BOOK_SHORT_LABELS = {
+  matthew: "마", mark: "막", luke: "눅", john: "요", acts: "행",
+  romans: "롬", "1corinthians": "고", "2corinthians": "고",
+  galatians: "갈", ephesians: "엡", philippians: "빌", colossians: "골",
+  "1thessalonians": "살", "2thessalonians": "살",
+  "1timothy": "딤", "2timothy": "딤", titus: "딛", philemon: "몬",
+  hebrews: "히", james: "약", "1peter": "벧", "2peter": "벧",
+  "1john": "요", "2john": "요", "3john": "요", jude: "유", revelation: "계"
+};
+
+function getBookShortLabel(book) {
+  return BOOK_SHORT_LABELS[book?.id] || String(book?.bookKo || book?.bookEn || "?").trim().charAt(0) || "?";
+}
+
 function hashString(value) {
   let hash = 0;
   const text = String(value || "");
@@ -215,10 +229,11 @@ function renderBookList() {
     const order = String(book.order).padStart(2, "0");
     const color = getBookAccent(book);
     return (
-      '<button class="book-btn' + active + '" type="button" data-book="' + book.id + '" style="--book-accent:' + color + '">' +
-      "<span>" + order + " " + escapeHTML(book.bookKo) + "</span>" +
-      "<small>" + book.chapterCount + "장</small>" +
-      "</button>"
+      '<button class="book-btn' + active + '" type="button" data-book="' + book.id + '" style="--book-accent:' + color + '" aria-label="' + escapeHTML(order + ' ' + book.bookKo) + '">' +
+      '<span class="book-abbr" aria-hidden="true">' + escapeHTML(getBookShortLabel(book)) + '</span>' +
+      '<span class="book-full">' + order + ' ' + escapeHTML(book.bookKo) + '</span>' +
+      '<small>' + book.chapterCount + '장</small>' +
+      '</button>' 
     );
   }).join("");
 
