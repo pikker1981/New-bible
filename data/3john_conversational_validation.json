@@ -1,0 +1,20 @@
+{
+  "book": "3john",
+  "bookKo": "요한삼서",
+  "chapterCount": 1,
+  "declaredChapterCount": 1,
+  "verseCount": 15,
+  "declaredVerseCount": 15,
+  "notesCount": 14,
+  "bodyFootnoteMarkerCount": 14,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicateHonorificErrors": {},
+  "nonKoreanScriptResidue": [],
+  "mechanicalRevisionCount": 0,
+  "manualRevisionCount": 0,
+  "jsonSchema": "ok",
+  "designFilesModified": false,
+  "status": "pass"
+}
