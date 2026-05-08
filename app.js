@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-mobile-popup-hide-panels-v3";
+const APP_BUILD_ID = "20260508-mobile-highlight-button-v4";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -101,6 +101,8 @@ const els = {
   highlightList: $("highlightList"),
   highlightAllTab: $("highlightAllTab"),
   highlightCurrentTab: $("highlightCurrentTab"),
+  mobileHighlightToggle: $("mobileHighlightToggle"),
+  mobileHighlightCount: $("mobileHighlightCount"),
   contextCount: $("contextCount"),
   contextList: $("contextList"),
   contextBody: $("contextBody"),
@@ -743,10 +745,73 @@ function getHighlightItems() {
   });
 }
 
+
+function updateMobileHighlightToggle(count) {
+  const total = Number.isFinite(Number(count)) ? Number(count) : getHighlightItems().length;
+  if (els.mobileHighlightCount) els.mobileHighlightCount.textContent = String(total);
+  if (els.mobileHighlightToggle) {
+    els.mobileHighlightToggle.setAttribute("aria-label", "전체 마킹 리스트 열기, " + total + "개");
+  }
+}
+
+function renderMobileHighlightListBody(items) {
+  if (!items.length) {
+    return '<div class="mobile-highlight-empty">아직 마킹된 텍스트가 없습니다.</div>';
+  }
+
+  return '<div class="mobile-highlight-list">' + items.map((item, index) => {
+    const ref = item.bookKo + " " + item.chapter + ":" + item.verse;
+    const excerpt = item.fullVerseText || "누르면 해당 구절로 이동합니다.";
+    return (
+      '<button class="mobile-highlight-item" type="button" data-index="' + index + '" style="--book-accent:' + escapeHTML(item.color) + '">' +
+        '<span class="mobile-highlight-ref">' + escapeHTML(ref) + '</span>' +
+        '<strong>' + escapeHTML(item.text) + '</strong>' +
+        '<em>' + escapeHTML(excerpt) + '</em>' +
+      '</button>'
+    );
+  }).join("") + '</div>';
+}
+
+function showMobileHighlightList() {
+  const items = getHighlightItems();
+  updateMobileHighlightToggle(items.length);
+
+  const opened = showMobileInfoPopup({
+    kicker: "HIGHLIGHTS · 마킹 모음",
+    title: "전체 마킹 리스트",
+    body: renderMobileHighlightListBody(items)
+  });
+
+  if (!opened) return;
+
+  if (els.mobileHighlightToggle) els.mobileHighlightToggle.setAttribute("aria-expanded", "true");
+
+  const popup = document.getElementById("mobileInfoPopup");
+  popup?.querySelectorAll(".mobile-highlight-item").forEach((button) => {
+    button.addEventListener("click", () => {
+      const item = items[Number(button.dataset.index)];
+      if (!item) return;
+      closeMobileInfoPopup();
+      openHighlightItem(item.bookId, item.chapter, item.verse);
+    });
+  });
+}
+
+function bindMobileHighlightToggle() {
+  if (!els.mobileHighlightToggle) return;
+  els.mobileHighlightToggle.addEventListener("click", () => {
+    hideMarkMenu();
+    window.getSelection()?.removeAllRanges();
+    showMobileHighlightList();
+  });
+  updateMobileHighlightToggle();
+}
+
 function renderHighlightList() {
   if (!els.highlightList || !els.highlightCount) return;
 
   const allItems = getHighlightItems();
+  updateMobileHighlightToggle(allItems.length);
   const items = state.highlightView === "current"
     ? allItems.filter((item) => item.bookId === state.currentBookId)
     : allItems;
@@ -1203,6 +1268,7 @@ function closeMobileInfoPopup() {
   popup.classList.remove("show");
   popup.setAttribute("aria-hidden", "true");
   document.body.classList.remove("mobile-popup-open");
+  if (els.mobileHighlightToggle) els.mobileHighlightToggle.setAttribute("aria-expanded", "false");
 }
 
 function showContext(contextId, scrollToPanel) {
@@ -1661,6 +1727,7 @@ async function init() {
     bindNoteListToggle();
     bindResponsiveNoteLayout();
     bindHighlightTabs();
+    bindMobileHighlightToggle();
     bindContextTabs();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {

@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>신약 현대어 번역</title>
   <meta name="description" content="신약 성서 그리스어 원문 기반 현대어 한국어 번역 웹앱">
-  <meta name="app-build" content="20260508-mobile-popup-android-v2">
+  <meta name="app-build" content="20260508-mobile-highlight-button-v4">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="./styles.css?v=20260508-mobile-popup-hide-panels-v3">
-  <link rel="stylesheet" href="./mobile_books_abbr_outline_gray.css?v=20260508-mobile-popup-android-v2">
+  <link rel="stylesheet" href="./styles.css?v=20260508-mobile-highlight-button-v4">
+  <link rel="stylesheet" href="./mobile_books_abbr_outline_gray.css?v=20260508-mobile-highlight-button-v4">
 </head>
 <body>
   <div class="wrap">
@@ -48,7 +48,13 @@
           <div class="reader-head">
             <div>
               <div class="reader-kicker" id="readerKicker">NEW TESTAMENT</div>
-              <h1 id="bookTitle">불러오는 중</h1>
+              <div class="book-title-row">
+                <h1 id="bookTitle">불러오는 중</h1>
+                <button id="mobileHighlightToggle" class="mobile-highlight-toggle" type="button" aria-haspopup="dialog" aria-expanded="false" aria-label="전체 마킹 리스트 열기, 0개">
+                  <span>마킹</span>
+                  <strong id="mobileHighlightCount">0</strong>
+                </button>
+              </div>
               <div id="bookEnglishTitle" class="book-english-title">Loading</div>
               <p id="bookDesc">데이터를 불러오고 있습니다.</p>
             </div>
@@ -130,6 +136,6 @@
       </aside>
     </div>
   </div>
-  <script src="./app.js?v=20260508-mobile-popup-hide-panels-v3"></script>
+  <script src="./app.js?v=20260508-mobile-highlight-button-v4"></script>
 </body>
 </html>
