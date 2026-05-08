@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-scholar-actual-interpretations-v19";
+const APP_BUILD_ID = "20260508-gospel-event-views-v20";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
