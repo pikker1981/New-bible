@@ -1,0 +1,21 @@
+{
+  "book": "1john",
+  "bookKo": "요한일서",
+  "chapterCount": 5,
+  "actualChapterCount": 5,
+  "verseCount": 105,
+  "actualVerseCount": 105,
+  "notesCount": 27,
+  "bodyFootnoteMarkerCount": 27,
+  "uniqueBodyFootnoteMarkerCount": 27,
+  "numericFootnotes": [],
+  "missingFootnoteDefinitions": [],
+  "unusedFootnoteDefinitions": [],
+  "duplicateHonorificPatternsFound": [],
+  "nonHangulScriptResidual": [],
+  "manualFixes": [],
+  "mechanicalRewriteCount": 0,
+  "jsonSchemaOk": true,
+  "designFilesModified": false,
+  "status": "PASS"
+}
