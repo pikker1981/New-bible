@@ -1,0 +1,20 @@
+{
+  "id": "philemon",
+  "bookKo": "빌레몬서",
+  "chapterCount": 1,
+  "declaredChapterCount": 1,
+  "verseCount": 25,
+  "declaredVerseCount": 25,
+  "notesCount": 17,
+  "bodyFootnoteMarkerCount": 17,
+  "uniqueBodyFootnoteMarkers": 17,
+  "numericFootnotes": [],
+  "missingNoteDefinitions": [],
+  "unusedNoteDefinitions": [],
+  "duplicateHonorificErrors": [],
+  "nonKoreanScriptInBody": [],
+  "manualEdits": [],
+  "schemaOk": true,
+  "designFilesModified": false,
+  "status": "pass"
+}
