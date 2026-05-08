@@ -1,0 +1,13 @@
+{
+  "id": "2peter",
+  "order": 22,
+  "bookKo": "베드로후서",
+  "bookEn": "2 Peter",
+  "chapterCount": 3,
+  "verseCount": 61,
+  "data": "data/2peter.json",
+  "path": "data/2peter.json",
+  "file": "data/2peter.json",
+  "dataFile": "data/2peter.json",
+  "json": "data/2peter.json"
+}
