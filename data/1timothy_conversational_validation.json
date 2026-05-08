@@ -1,0 +1,21 @@
+{
+  "book_id": "1timothy",
+  "bookKo": "디모데전서",
+  "bookEn": "1 Timothy",
+  "chapter_count": 6,
+  "declared_chapterCount": 6,
+  "verse_count": 113,
+  "declared_verseCount": 113,
+  "notes_count": 15,
+  "body_footnote_marker_count": 15,
+  "numeric_footnotes": 0,
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_errors": {},
+  "non_korean_script_verse_refs": [],
+  "manual_fixes": [],
+  "mechanical_transform_count": 0,
+  "json_schema_status": "pass",
+  "design_files_modified": false,
+  "status": "pass"
+}
