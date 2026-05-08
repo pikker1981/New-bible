@@ -1,5 +1,5 @@
 {
-  "updatedBooks": 24,
+  "updatedBooks": 25,
   "books": [
     {
       "id": "matthew",
@@ -312,8 +312,25 @@
       "file": "data/2john.json",
       "dataFile": "data/2john.json",
       "json": "data/2john.json"
+    },
+    {
+      "id": "3john",
+      "order": 25,
+      "bookKo": "요한삼서",
+      "bookEn": "3 John",
+      "chapterCount": 1,
+      "verseCount": 15,
+      "data": "data/3john.json",
+      "path": "data/3john.json",
+      "file": "data/3john.json",
+      "dataFile": "data/3john.json",
+      "json": "data/3john.json"
     }
   ],
   "lastUpdatedBook": "2john",
-  "lastUpdatedOrder": 24
+  "lastUpdatedOrder": 24,
+  "latestUpdatedBook": "3john",
+  "latestUpdatedOrder": 25,
+  "latestUpdatedBookKo": "요한삼서",
+  "latestUpdatedBookEn": "3 John"
 }
