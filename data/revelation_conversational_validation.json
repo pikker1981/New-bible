@@ -1,0 +1,33 @@
+{
+  "id": "revelation",
+  "bookKo": "요한계시록",
+  "chapterCount_declared": 22,
+  "chapterCount_actual": 22,
+  "verseCount_declared": 405,
+  "verseCount_actual": 405,
+  "notes_count": 90,
+  "body_footnote_marker_count": 124,
+  "unique_body_footnote_marker_count": 90,
+  "numeric_footnote_markers_count": 0,
+  "missing_note_definitions": [],
+  "unused_note_definitions": [],
+  "duplicate_honorific_error_hits": {
+    "습니습니다": 0,
+    "습니다습니다": 0,
+    "습니까습니까": 0
+  },
+  "archaic_style_hits": {
+    "하였느니라": 0,
+    "하였도다": 0,
+    "하리라": 0,
+    "하소서": 0,
+    "가라사대": 0
+  },
+  "replacement_character_hits": 0,
+  "non_korean_script_hits_in_body": [],
+  "manual_corrections": [],
+  "mechanical_modification_count": 0,
+  "json_schema_basic": true,
+  "design_files_modified": false,
+  "status": "pass"
+}
