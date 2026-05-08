@@ -27,38 +27,6 @@
         "conservative": {
           "scholars": [
             {
-              "name": "Matthew Henry",
-              "tradition": "Reformed / Puritan devotional commentary",
-              "relationType": "direct",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
-              "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
-              "summaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 가정과 교회 안에서 질서와 책임, 사랑과 순종을 다루는 목회적 권면으로 읽는다. 본문은 창조 질서와 복음 안에서 각자의 역할을 신실하게 감당하라는 요청으로 이해된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다."
-            },
-            {
-              "name": "John Calvin",
-              "tradition": "Reformed / classic Protestant commentary",
-              "relationType": "direct",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
-              "sourceTitle": "Calvin's Collected Commentaries",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
-              "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 가정과 교회 안에서 질서와 책임, 사랑과 순종을 다루는 목회적 권면으로 읽는다. 본문은 창조 질서와 복음 안에서 각자의 역할을 신실하게 감당하라는 요청으로 이해된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
-            },
-            {
               "name": "Thomas R. Schreiner",
               "tradition": "복음주의 / 언약신학·구속사적 신약신학",
               "relationType": "methodological",
@@ -73,144 +41,31 @@
               "lens": "복음주의 / 언약신학·구속사적 신약신학",
               "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 가정과 교회 안에서 질서와 책임, 사랑과 순종을 다루는 목회적 권면으로 읽는다. 본문은 창조 질서와 복음 안에서 각자의 역할을 신실하게 감당하라는 요청으로 이해된다. Schreiner식 독해는 이 본문을 신약 전체의 구속사 흐름 속에 놓는다. 사건이나 비유는 독립된 교훈이 아니라 그리스도 안에서 하나님의 약속이 성취되어 가는 한 장면으로 읽힌다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Schreiner식 접근은 「오네시모를 위한 호소」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다."
+              "methodSummaryKo": "Schreiner식 접근은 「오네시모를 위한 호소」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sameViewScholars": [
+                {
+                  "name": "John Calvin",
+                  "tradition": "Reformed / classic Protestant commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Calvin's Collected Commentaries",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Matthew Henry",
+                  "tradition": "Reformed / Puritan devotional commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
         "moderate": {
           "scholars": [
-            {
-              "name": "Albert Barnes",
-              "tradition": "Presbyterian / explanatory New Testament notes",
-              "relationType": "direct",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
-              "sourceTitle": "Barnes' New Testament Notes",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
-              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
-            },
-            {
-              "name": "Adam Clarke",
-              "tradition": "Methodist / critical and philological commentary",
-              "relationType": "direct",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
-              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
-              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
-            },
-            {
-              "name": "Tyndale Open Study Notes 편집진",
-              "tradition": "Open study notes / historical and literary background",
-              "relationType": "background",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
-              "sourceTitle": "Tyndale Open Study Notes",
-              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
-              "license": "CC BY-SA 4.0",
-              "confidence": "high",
-              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
-              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
-            },
-            {
-              "name": "N. T. Wright",
-              "tradition": "Historical Jesus / New Testament theology",
-              "relationType": "methodology",
-              "claim": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Wright의 역사적 예수·하나님 나라 렌즈는 복음서와 사도행전 본문을 개인 경건만이 아니라 1세기 유대 세계와 하나님의 통치 선포 안에서 읽도록 돕는다.",
-              "sourceTitle": "N. T. Wright, Jesus and the Victory of God",
-              "sourceUrl": "https://spckpublishing.co.uk/jesus-and-the-victory-of-god",
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "현대 저작권 자료이므로 원문을 수록하지 않았다. 본문별 직접 주석이 아니라 역사적 예수·하나님 나라 해석 방법론의 관련 관점이다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Wright의 역사적 예수·하나님 나라 렌즈는 복음서와 사도행전 본문을 개인 경건만이 아니라 1세기 유대 세계와 하나님의 통치 선포 안에서 읽도록 돕는다.",
-              "summaryKo": "Wright의 관점은 예수와 바울의 메시지를 1세기 유대 세계와 하나님 나라의 선포 안에서 읽게 한다. 따라서 본문을 개인 경건이나 추상 교리로만 보지 않고, 이스라엘의 이야기와 하나님의 통치라는 큰 틀 안에 놓게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다. Wright식 독해는 이 본문을 제2성전기 유대교의 하나님 나라 기대 속에 놓는다. 예수의 말과 행동은 개인 영혼 구원만이 아니라 이스라엘의 이야기와 하나님의 통치가 새롭게 시작되는 사건으로 읽힌다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Wright의 관점은 예수와 바울의 메시지를 1세기 유대 세계와 하나님 나라의 선포 안에서 읽게 한다. 따라서 본문을 개인 경건이나 추상 교리로만 보지 않고, 이스라엘의 이야기와 하나님의 통치라는 큰 틀 안에 놓게 한다."
-            },
-            {
-              "name": "Laura Salah Nasrallah",
-              "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
-              "relationType": "background",
-              "claim": "「오네시모를 위한 호소」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
-              "sourceTitle": "Archaeology and the Letters of Paul",
-              "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
-              "publicationYear": 2019,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "high",
-              "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
-              "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
-            },
-            {
-              "name": "Jennifer A. Quigley",
-              "tradition": "Early Christianity / theo-economics, religion and economy",
-              "relationType": "methodology",
-              "claim": "「오네시모를 위한 호소」에 나타나는 빚, 선물, 품삯, 보상, 소유, 후원 언어를 단순 비유가 아니라 고대 지중해의 종교-경제적 상상력 안에서 읽도록 돕는다. Quigley의 최근 연구는 초기 그리스도인들이 경제 언어로 하나님과 인간의 관계를 어떻게 상상했는지 묻는다.",
-              "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
-              "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
-              "publicationYear": 2021,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "경제 언어가 두드러진 본문에 적용하는 방법론이다. 모든 비유를 경제 환원적으로 읽으면 안 된다.",
-              "claimOriginal": "「오네시모를 위한 호소」에 나타나는 빚, 선물, 품삯, 보상, 소유, 후원 언어를 단순 비유가 아니라 고대 지중해의 종교-경제적 상상력 안에서 읽도록 돕는다. Quigley의 최근 연구는 초기 그리스도인들이 경제 언어로 하나님과 인간의 관계를 어떻게 상상했는지 묻는다.",
-              "summaryKo": "Quigley의 관점은 초기 기독교의 신학 언어가 빚, 회계, 선물, 보상 같은 경제 언어와 분리되지 않았음을 보여준다. 그래서 은혜, 책임, 품삯, 재물 본문을 영적 의미와 물질적 현실이 얽힌 언어로 읽게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Quigley의 관점은 초기 기독교의 신학 언어가 빚, 회계, 선물, 보상 같은 경제 언어와 분리되지 않았음을 보여준다. 그래서 은혜, 책임, 품삯, 재물 본문을 영적 의미와 물질적 현실이 얽힌 언어로 읽게 한다."
-            },
-            {
-              "name": "John M. G. Barclay",
-              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
-              "relationType": "methodological",
-              "summaryKo": "Barclay의 관점은 「오네시모를 위한 호소」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
-              "claim": "Barclay의 관점은 「오네시모를 위한 호소」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
-              "sourceTitle": "Paul and the Gift",
-              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
-              "publicationYear": 2015,
-              "license": "source summary only",
-              "confidence": "medium",
-              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
-              "lens": "역사비평·사회인류학 / 은혜와 선물 연구",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다. Barclay의 선물/은혜 관점으로 보면, 이 본문은 은혜가 단순한 친절이 아니라 관계와 지위를 새롭게 만드는 힘이라는 점을 드러낸다. 하나님이 주시는 선물은 기존의 보상 논리와 공동체 경계를 흔든다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Barclay의 관점은 「오네시모를 위한 호소」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다."
-            },
-            {
-              "name": "Paula Fredriksen",
-              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
-              "relationType": "methodological",
-              "summaryKo": "Fredriksen식 접근은 「오네시모를 위한 호소」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
-              "claim": "Fredriksen식 접근은 「오네시모를 위한 호소」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
-              "sourceTitle": "Jesus of Nazareth, King of the Jews",
-              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
-              "publicationYear": 1999,
-              "license": "source summary only",
-              "confidence": "medium",
-              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
-              "lens": "역사적 예수 연구 / 유대교 맥락 복원",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다. Fredriksen식 독해는 예수를 유대교 바깥의 종교 창시자가 아니라 묵시적 기대를 품은 유대인으로 읽게 한다. 따라서 이 본문도 반유대주의적 대립 구도로 보기보다, 1세기 유대 세계 내부의 긴장과 희망 안에서 이해해야 한다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Fredriksen식 접근은 「오네시모를 위한 호소」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다."
-            },
             {
               "name": "N. T. Wright",
               "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
@@ -226,7 +81,66 @@
               "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수",
               "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 로마 가정법, 후원관계, 노예제, 초기 교회의 공적 평판 문제 안에서 읽는다. 본문은 단순히 현대 가족윤리를 직접 명령하기보다 당시 사회 질서 속에서 그리스도 공동체가 어떻게 살아남고 변형되는지를 보여 준다. Wright식 독해는 이 본문을 제2성전기 유대교의 하나님 나라 기대 속에 놓는다. 예수의 말과 행동은 개인 영혼 구원만이 아니라 이스라엘의 이야기와 하나님의 통치가 새롭게 시작되는 사건으로 읽힌다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Wright식 접근은 「오네시모를 위한 호소」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다."
+              "methodSummaryKo": "Wright식 접근은 「오네시모를 위한 호소」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sameViewScholars": [
+                {
+                  "name": "Paula Fredriksen",
+                  "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+                  "relationType": "methodological",
+                  "sourceTitle": "Jesus of Nazareth, King of the Jews",
+                  "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "John M. G. Barclay",
+                  "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+                  "relationType": "methodological",
+                  "sourceTitle": "Paul and the Gift",
+                  "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "Tyndale Open Study Notes 편집진",
+                  "tradition": "Open study notes / historical and literary background",
+                  "relationType": "background",
+                  "sourceTitle": "Tyndale Open Study Notes",
+                  "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Albert Barnes",
+                  "tradition": "Presbyterian / explanatory New Testament notes",
+                  "relationType": "direct",
+                  "sourceTitle": "Barnes' New Testament Notes",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Adam Clarke",
+                  "tradition": "Methodist / critical and philological commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Laura Salah Nasrallah",
+                  "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
+                  "relationType": "background",
+                  "sourceTitle": "Archaeology and the Letters of Paul",
+                  "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Jennifer A. Quigley",
+                  "tradition": "Early Christianity / theo-economics, religion and economy",
+                  "relationType": "methodology",
+                  "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
+                  "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
+                  "confidence": "medium"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -246,58 +160,34 @@
               "summaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다.",
               "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 젠더 위계와 노예제, 가부장제의 언어가 남긴 위험까지 함께 읽는다. 본문은 그대로 반복할 규범이라기보다, 그 안에서 억압받는 몸과 지워진 노동을 어떻게 회복할지 질문하게 한다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다."
-            },
-            {
-              "name": "Katherine A. Shaner",
-              "tradition": "New Testament / slavery, archaeology, enslaved leadership",
-              "relationType": "background",
-              "claim": "「오네시모를 위한 호소」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
-              "sourceTitle": "Enslaved Leadership in Early Christianity",
-              "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
-              "publicationYear": 2018,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "초기 기독교와 로마 세계의 노예제 배경 렌즈다. 본문을 현대 노예제 폐지 담론으로 곧장 환원하지 않도록 주의해야 한다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
-              "summaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 젠더 위계와 노예제, 가부장제의 언어가 남긴 위험까지 함께 읽는다. 본문은 그대로 반복할 규범이라기보다, 그 안에서 억압받는 몸과 지워진 노동을 어떻게 회복할지 질문하게 한다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다."
-            },
-            {
-              "name": "Lisa M. Bowens",
-              "tradition": "African American New Testament interpretation / Pauline reception",
-              "relationType": "reception",
-              "claim": "「오네시모를 위한 호소」을/를 읽을 때 바울 해석이 흑인 공동체 안에서 어떻게 수용·저항·변형되어 왔는지 묻게 한다. Bowens의 최근 연구는 바울 서신을 단일한 서구 교리 체계로만 읽지 않고, 억압받은 공동체의 해석사와 함께 보게 한다.",
-              "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
-              "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
-              "publicationYear": 2020,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "주로 바울 서신 수용사와 해석사에 해당한다. 본문 자체의 1세기 의미와 후대 수용사를 구분해야 한다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 읽을 때 바울 해석이 흑인 공동체 안에서 어떻게 수용·저항·변형되어 왔는지 묻게 한다. Bowens의 최근 연구는 바울 서신을 단일한 서구 교리 체계로만 읽지 않고, 억압받은 공동체의 해석사와 함께 보게 한다.",
-              "summaryKo": "Bowens의 관점은 바울 해석이 흑인 공동체 안에서 어떻게 수용, 저항, 변형되어 왔는지 보여준다. 그래서 바울 본문을 서구 교리 체계 안에만 가두지 않고 억압받은 공동체의 해석사와 함께 읽게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 젠더 위계와 노예제, 가부장제의 언어가 남긴 위험까지 함께 읽는다. 본문은 그대로 반복할 규범이라기보다, 그 안에서 억압받는 몸과 지워진 노동을 어떻게 회복할지 질문하게 한다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Bowens의 관점은 바울 해석이 흑인 공동체 안에서 어떻게 수용, 저항, 변형되어 왔는지 보여준다. 그래서 바울 본문을 서구 교리 체계 안에만 가두지 않고 억압받은 공동체의 해석사와 함께 읽게 한다."
-            },
-            {
-              "name": "Candida R. Moss",
-              "tradition": "Early Christianity / slavery, textual production, hidden labor",
-              "relationType": "related",
-              "claim": "「오네시모를 위한 호소」을/를 읽을 때 사도·저자 개인만이 아니라 편지 작성, 전달, 낭독, 보존에 참여한 노예·하위 지위 노동의 가능성을 함께 묻게 한다. Moss의 최근 연구는 신약 형성과 확산에서 지워진 협력자들의 역할을 재고하게 한다.",
-              "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
-              "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
-              "publicationYear": 2024,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "low",
-              "caution": "일부 주장은 학계 내 논쟁적·추론적 성격이 있다. 직접 주석이 아니라 논쟁적 관련 관점으로만 표시해야 한다.",
-              "claimOriginal": "「오네시모를 위한 호소」을/를 읽을 때 사도·저자 개인만이 아니라 편지 작성, 전달, 낭독, 보존에 참여한 노예·하위 지위 노동의 가능성을 함께 묻게 한다. Moss의 최근 연구는 신약 형성과 확산에서 지워진 협력자들의 역할을 재고하게 한다.",
-              "summaryKo": "Moss의 관점은 신약 문헌 형성 과정에 노예와 하위 지위 협력자의 쓰기 노동이 관여했을 가능성을 묻는다. 그래서 성경을 위대한 저자 개인의 산물만이 아니라 보이지 않는 노동과 권력관계 속에서 읽게 한다.",
-              "interpretationKo": "이 해석은 「오네시모를 위한 호소」을 젠더 위계와 노예제, 가부장제의 언어가 남긴 위험까지 함께 읽는다. 본문은 그대로 반복할 규범이라기보다, 그 안에서 억압받는 몸과 지워진 노동을 어떻게 회복할지 질문하게 한다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Moss의 관점은 신약 문헌 형성 과정에 노예와 하위 지위 협력자의 쓰기 노동이 관여했을 가능성을 묻는다. 그래서 성경을 위대한 저자 개인의 산물만이 아니라 보이지 않는 노동과 권력관계 속에서 읽게 한다."
+              "methodSummaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다.",
+              "sameViewScholars": [
+                {
+                  "name": "Candida R. Moss",
+                  "tradition": "Early Christianity / slavery, textual production, hidden labor",
+                  "relationType": "related",
+                  "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
+                  "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
+                  "confidence": "low"
+                },
+                {
+                  "name": "Katherine A. Shaner",
+                  "tradition": "New Testament / slavery, archaeology, enslaved leadership",
+                  "relationType": "background",
+                  "sourceTitle": "Enslaved Leadership in Early Christianity",
+                  "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "Lisa M. Bowens",
+                  "tradition": "African American New Testament interpretation / Pauline reception",
+                  "relationType": "reception",
+                  "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
+                  "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
+                  "confidence": "medium"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -317,23 +207,18 @@
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
               "interpretationKo": "이 본문에 대해 여러 관점이 공유하는 최소 합의는 「오네시모를 위한 호소」이 단순한 정보 전달이 아니라 공동체의 믿음과 삶을 재구성하는 본문이라는 점이다. 차이는 강조점에 있지만, 본문이 독자에게 하나님, 예수, 공동체, 세상에 대한 판단을 요구한다는 점은 공통적으로 인정된다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
-            },
-            {
-              "name": "unfoldingWord Translation Notes 편집진",
-              "tradition": "Translation notes / meaning, implied information, expression support",
-              "relationType": "background",
-              "claim": "「오네시모를 위한 호소」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
-              "sourceTitle": "unfoldingWord Translation Notes",
-              "sourceUrl": "https://unfoldingword.org/for-translators/content/",
-              "license": "CC BY-SA",
-              "confidence": "high",
-              "caution": "번역 보조 노트 성격이 강하다. 수정·번역 시 CC BY-SA 조건과 unfoldingWord 상표 정책을 구분해야 한다.",
-              "claimOriginal": "「오네시모를 위한 호소」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
-              "summaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다.",
-              "interpretationKo": "이 본문에 대해 여러 관점이 공유하는 최소 합의는 「오네시모를 위한 호소」이 단순한 정보 전달이 아니라 공동체의 믿음과 삶을 재구성하는 본문이라는 점이다. 차이는 강조점에 있지만, 본문이 독자에게 하나님, 예수, 공동체, 세상에 대한 판단을 요구한다는 점은 공통적으로 인정된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다."
+              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
+              "sameViewScholars": [
+                {
+                  "name": "unfoldingWord Translation Notes 편집진",
+                  "tradition": "Translation notes / meaning, implied information, expression support",
+                  "relationType": "background",
+                  "sourceTitle": "unfoldingWord Translation Notes",
+                  "sourceUrl": "https://unfoldingword.org/for-translators/content/",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -353,23 +238,18 @@
               "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
               "interpretationKo": "이 본문에서 해석이 갈리는 지점은 「오네시모를 위한 호소」을 교리적 확증, 역사적 문맥, 사회비판 중 어디에 무게를 두고 읽을 것인가이다. 같은 본문이라도 한쪽은 신앙 고백과 순종을, 다른 쪽은 당시 권력 구조와 배제된 사람들의 위치를 더 전면에 둔다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
-            },
-            {
-              "name": "Adam Clarke",
-              "tradition": "Methodist / critical and philological commentary",
-              "relationType": "direct",
-              "claim": "「오네시모를 위한 호소」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
-              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
-              "claimOriginal": "「오네시모를 위한 호소」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
-              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다.",
-              "interpretationKo": "이 본문에서 해석이 갈리는 지점은 「오네시모를 위한 호소」을 교리적 확증, 역사적 문맥, 사회비판 중 어디에 무게를 두고 읽을 것인가이다. 같은 본문이라도 한쪽은 신앙 고백과 순종을, 다른 쪽은 당시 권력 구조와 배제된 사람들의 위치를 더 전면에 둔다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
+              "sameViewScholars": [
+                {
+                  "name": "Adam Clarke",
+                  "tradition": "Methodist / critical and philological commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         }
@@ -388,38 +268,6 @@
         "conservative": {
           "scholars": [
             {
-              "name": "Matthew Henry",
-              "tradition": "Reformed / Puritan devotional commentary",
-              "relationType": "direct",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
-              "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "고전 경건 주석이다. 현대 역사비평·사회비평 자료로 읽지 말고, 전통적 교리·경건 적용의 참고 축으로만 사용해야 한다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Henry 계열의 고전 경건 주석은 이 본문을 교리, 회개, 순종, 은혜, 경건 적용의 관점에서 읽는 참고축을 제공한다.",
-              "summaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 하나님의 계시와 그리스도 중심의 구원 이야기 안에서 읽는다. 본문은 신자의 믿음과 순종을 형성하는 말씀으로서, 교리와 삶을 분리하지 않는다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 하나님의 은혜, 회개, 순종, 경건의 문제로 읽게 한다. 고전 경건 주석의 관점에서 본문은 교리적 확신과 실제 삶의 순종을 연결하는 대목으로 정리된다."
-            },
-            {
-              "name": "John Calvin",
-              "tradition": "Reformed / classic Protestant commentary",
-              "relationType": "direct",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
-              "sourceTitle": "Calvin's Collected Commentaries",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "개혁파 고전 주석이다. 해당 권 주석이 있는 경우에만 연결했으며, 현대 비평학의 대표 견해로 사용하면 안 된다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Calvin의 고전 개혁파 주석은 본문을 하나님의 주권, 그리스도, 교회, 은혜와 순종의 질서 안에서 해석하는 참고축을 제공한다.",
-              "summaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 하나님의 계시와 그리스도 중심의 구원 이야기 안에서 읽는다. 본문은 신자의 믿음과 순종을 형성하는 말씀으로서, 교리와 삶을 분리하지 않는다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 하나님의 주권, 그리스도 중심성, 은혜와 순종의 질서 안에서 읽게 한다. 개혁파 고전 주석의 관점에서 본문은 교회의 믿음과 삶을 형성하는 신학적 근거로 해석된다."
-            },
-            {
               "name": "Thomas R. Schreiner",
               "tradition": "복음주의 / 언약신학·구속사적 신약신학",
               "relationType": "methodological",
@@ -434,128 +282,31 @@
               "lens": "복음주의 / 언약신학·구속사적 신약신학",
               "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 하나님의 계시와 그리스도 중심의 구원 이야기 안에서 읽는다. 본문은 신자의 믿음과 순종을 형성하는 말씀으로서, 교리와 삶을 분리하지 않는다. Schreiner식 독해는 이 본문을 신약 전체의 구속사 흐름 속에 놓는다. 사건이나 비유는 독립된 교훈이 아니라 그리스도 안에서 하나님의 약속이 성취되어 가는 한 장면으로 읽힌다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Schreiner식 접근은 「나를 맞듯이 그를 맞으라」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다."
+              "methodSummaryKo": "Schreiner식 접근은 「나를 맞듯이 그를 맞으라」을 신약 전체의 큰 줄기, 곧 하나님이 그리스도 안에서 자신의 영광과 구원을 드러내는 흐름 속에 둔다. 개별 사건이나 비유를 독립된 윤리 교훈으로만 보지 않고, 언약·성취·구속사의 전개와 연결해 읽게 한다.",
+              "sameViewScholars": [
+                {
+                  "name": "John Calvin",
+                  "tradition": "Reformed / classic Protestant commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Calvin's Collected Commentaries",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=CalvinCommentaries",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Matthew Henry",
+                  "tradition": "Reformed / Puritan devotional commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Matthew Henry's Commentary on the Whole Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=MHC",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
         "moderate": {
           "scholars": [
-            {
-              "name": "Albert Barnes",
-              "tradition": "Presbyterian / explanatory New Testament notes",
-              "relationType": "direct",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
-              "sourceTitle": "Barnes' New Testament Notes",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "절별 설명과 난점 해설에 강한 고전 주석이다. 본문별 원문 인용은 넣지 않고 요약형 참조만 연결했다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Barnes의 신약 주석은 용어·구절·난점 설명과 성경 내 상호참조를 통해 문맥 중심 독해를 보조한다.",
-              "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
-            },
-            {
-              "name": "Adam Clarke",
-              "tradition": "Methodist / critical and philological commentary",
-              "relationType": "direct",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
-              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Clarke의 비평적 노트는 고전적 언어·역사 관찰과 메서디스트 전통의 윤리적 적용을 함께 제공한다.",
-              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
-            },
-            {
-              "name": "Tyndale Open Study Notes 편집진",
-              "tradition": "Open study notes / historical and literary background",
-              "relationType": "background",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
-              "sourceTitle": "Tyndale Open Study Notes",
-              "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
-              "license": "CC BY-SA 4.0",
-              "confidence": "high",
-              "caution": "CC BY-SA 자료이므로 번역·수정본을 공개 배포할 때 저작자 표시와 동일조건 공유가 필요하다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 본문 흐름과 신학적 메시지를 함께 고려해 읽도록 돕는다. Tyndale Open Study Notes는 책의 흐름, 배경, 인물·주제 설명을 통해 본문을 역사·문학 문맥 안에서 읽도록 돕는 공개 스터디 노트 자료다.",
-              "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
-            },
-            {
-              "name": "Laura Salah Nasrallah",
-              "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
-              "relationType": "background",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
-              "sourceTitle": "Archaeology and the Letters of Paul",
-              "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
-              "publicationYear": 2019,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "high",
-              "caution": "특정 절에 대한 직접 주석이 아니라 바울 서신과 사도행전의 사회사적 배경 렌즈다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 추상 교리만이 아니라 실제 도시·제국·경제·종교 공간 안의 공동체 경험으로 읽게 한다. Nasrallah의 최근 연구 축은 바울 서신과 초기 그리스도인들의 삶을 고고학 자료와 지중해 세계의 사회적 맥락 속에서 재구성하는 데 유용하다.",
-              "summaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Nasrallah의 연구는 바울 서신과 초기 그리스도인의 삶을 도시, 제국, 고고학적 공간, 사회적 지위 속에서 읽게 한다. 그래서 본문을 추상 교리 문서가 아니라 실제 지중해 세계의 권력·경제·종교 질서와 맞물린 공동체 문서로 보게 한다."
-            },
-            {
-              "name": "Jennifer A. Quigley",
-              "tradition": "Early Christianity / theo-economics, religion and economy",
-              "relationType": "methodology",
-              "claim": "「나를 맞듯이 그를 맞으라」에 나타나는 빚, 선물, 품삯, 보상, 소유, 후원 언어를 단순 비유가 아니라 고대 지중해의 종교-경제적 상상력 안에서 읽도록 돕는다. Quigley의 최근 연구는 초기 그리스도인들이 경제 언어로 하나님과 인간의 관계를 어떻게 상상했는지 묻는다.",
-              "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
-              "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
-              "publicationYear": 2021,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "경제 언어가 두드러진 본문에 적용하는 방법론이다. 모든 비유를 경제 환원적으로 읽으면 안 된다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」에 나타나는 빚, 선물, 품삯, 보상, 소유, 후원 언어를 단순 비유가 아니라 고대 지중해의 종교-경제적 상상력 안에서 읽도록 돕는다. Quigley의 최근 연구는 초기 그리스도인들이 경제 언어로 하나님과 인간의 관계를 어떻게 상상했는지 묻는다.",
-              "summaryKo": "Quigley의 관점은 초기 기독교의 신학 언어가 빚, 회계, 선물, 보상 같은 경제 언어와 분리되지 않았음을 보여준다. 그래서 은혜, 책임, 품삯, 재물 본문을 영적 의미와 물질적 현실이 얽힌 언어로 읽게 한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Quigley의 관점은 초기 기독교의 신학 언어가 빚, 회계, 선물, 보상 같은 경제 언어와 분리되지 않았음을 보여준다. 그래서 은혜, 책임, 품삯, 재물 본문을 영적 의미와 물질적 현실이 얽힌 언어로 읽게 한다."
-            },
-            {
-              "name": "John M. G. Barclay",
-              "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
-              "relationType": "methodological",
-              "summaryKo": "Barclay의 관점은 「나를 맞듯이 그를 맞으라」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
-              "claim": "Barclay의 관점은 「나를 맞듯이 그를 맞으라」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다.",
-              "sourceTitle": "Paul and the Gift",
-              "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
-              "publicationYear": 2015,
-              "license": "source summary only",
-              "confidence": "medium",
-              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
-              "lens": "역사비평·사회인류학 / 은혜와 선물 연구",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다. Barclay의 선물/은혜 관점으로 보면, 이 본문은 은혜가 단순한 친절이 아니라 관계와 지위를 새롭게 만드는 힘이라는 점을 드러낸다. 하나님이 주시는 선물은 기존의 보상 논리와 공동체 경계를 흔든다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Barclay의 관점은 「나를 맞듯이 그를 맞으라」을 은혜, 선물, 상호성, 사회적 지위의 문제와 연결해 읽게 한다. 특히 값없이 주어지는 은혜가 기존의 명예·보상·자격 질서를 어떻게 흔드는지 볼 때 유용하다."
-            },
-            {
-              "name": "Paula Fredriksen",
-              "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
-              "relationType": "methodological",
-              "summaryKo": "Fredriksen식 접근은 「나를 맞듯이 그를 맞으라」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
-              "claim": "Fredriksen식 접근은 「나를 맞듯이 그를 맞으라」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다.",
-              "sourceTitle": "Jesus of Nazareth, King of the Jews",
-              "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
-              "publicationYear": 1999,
-              "license": "source summary only",
-              "confidence": "medium",
-              "caution": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시했습니다.",
-              "lens": "역사적 예수 연구 / 유대교 맥락 복원",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다. Fredriksen식 독해는 예수를 유대교 바깥의 종교 창시자가 아니라 묵시적 기대를 품은 유대인으로 읽게 한다. 따라서 이 본문도 반유대주의적 대립 구도로 보기보다, 1세기 유대 세계 내부의 긴장과 희망 안에서 이해해야 한다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Fredriksen식 접근은 「나를 맞듯이 그를 맞으라」을 예수를 기독교 이후의 교리 인물로만 보지 않고, 1세기 유대교 세계 안의 묵시적 유대인으로 다시 위치시킨다. 이 관점은 복음서의 갈등 장면을 반유대주의적으로 읽지 않고, 유대 내부 논쟁과 로마 지배 상황 속에서 조심스럽게 해석하게 한다."
-            },
             {
               "name": "N. T. Wright",
               "tradition": "제2성전기 유대교 / 하나님 나라·역사적 예수",
@@ -571,7 +322,66 @@
               "lens": "제2성전기 유대교 / 하나님 나라·역사적 예수",
               "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」을 본문이 놓인 역사적 상황, 문학 구조, 공동체의 문제 안에서 읽는다. 핵심은 오늘의 적용을 서두르기 전에 당시 청중에게 이 말이 어떻게 들렸는지 복원하는 데 있다. Wright식 독해는 이 본문을 제2성전기 유대교의 하나님 나라 기대 속에 놓는다. 예수의 말과 행동은 개인 영혼 구원만이 아니라 이스라엘의 이야기와 하나님의 통치가 새롭게 시작되는 사건으로 읽힌다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Wright식 접근은 「나를 맞듯이 그를 맞으라」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다."
+              "methodSummaryKo": "Wright식 접근은 「나를 맞듯이 그를 맞으라」을 예수가 이스라엘의 이야기와 하나님 나라의 도래를 새롭게 실현하는 장면으로 읽는다. 개인 구원만이 아니라 성전, 왕권, 포로 귀환, 새 창조 같은 1세기 유대교의 큰 상징 세계를 함께 고려한다.",
+              "sameViewScholars": [
+                {
+                  "name": "Paula Fredriksen",
+                  "tradition": "역사적 예수 연구 / 유대교 맥락 복원",
+                  "relationType": "methodological",
+                  "sourceTitle": "Jesus of Nazareth, King of the Jews",
+                  "sourceUrl": "https://www.amazon.com/Jesus-Nazareth-King-Jews-Christianity/dp/0679767460",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "John M. G. Barclay",
+                  "tradition": "역사비평·사회인류학 / 은혜와 선물 연구",
+                  "relationType": "methodological",
+                  "sourceTitle": "Paul and the Gift",
+                  "sourceUrl": "https://eerdword.com/meet-this-book-paul-and-the-gift-by-john-barclay/",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "Tyndale Open Study Notes 편집진",
+                  "tradition": "Open study notes / historical and literary background",
+                  "relationType": "background",
+                  "sourceTitle": "Tyndale Open Study Notes",
+                  "sourceUrl": "https://www.stepbible.org/version.jsp?version=TNotes",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Albert Barnes",
+                  "tradition": "Presbyterian / explanatory New Testament notes",
+                  "relationType": "direct",
+                  "sourceTitle": "Barnes' New Testament Notes",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Barnes",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Adam Clarke",
+                  "tradition": "Methodist / critical and philological commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Laura Salah Nasrallah",
+                  "tradition": "Yale Divinity School / New Testament, archaeology, gender, race, status, power",
+                  "relationType": "background",
+                  "sourceTitle": "Archaeology and the Letters of Paul",
+                  "sourceUrl": "https://divinity.yale.edu/profile/laura-nasrallah",
+                  "confidence": "high"
+                },
+                {
+                  "name": "Jennifer A. Quigley",
+                  "tradition": "Early Christianity / theo-economics, religion and economy",
+                  "relationType": "methodology",
+                  "sourceTitle": "Divine Accounting: Theo-Economics in Early Christianity",
+                  "sourceUrl": "https://yalebooks.yale.edu/book/9780300253160/divine-accounting/",
+                  "confidence": "medium"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -591,58 +401,34 @@
               "summaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다.",
               "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」에서 권력, 배제, 젠더, 계층, 제국의 흔적을 살핀다. 본문은 신앙 고백인 동시에 누가 말하고 누가 침묵당했는지를 묻는 비판적 독해의 대상이 된다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다."
-            },
-            {
-              "name": "Katherine A. Shaner",
-              "tradition": "New Testament / slavery, archaeology, enslaved leadership",
-              "relationType": "background",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
-              "sourceTitle": "Enslaved Leadership in Early Christianity",
-              "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
-              "publicationYear": 2018,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "초기 기독교와 로마 세계의 노예제 배경 렌즈다. 본문을 현대 노예제 폐지 담론으로 곧장 환원하지 않도록 주의해야 한다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 자유인 중심의 교회 이야기로만 읽지 않고, 노예·해방노예·하위 지위 사람들이 실제 공동체와 종교 활동에서 맡았던 역할을 함께 묻게 한다. Shaner의 연구는 초기 기독교 리더십과 노예제의 긴장, 지워진 노동과 권한을 드러내는 데 유용하다.",
-              "summaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」에서 권력, 배제, 젠더, 계층, 제국의 흔적을 살핀다. 본문은 신앙 고백인 동시에 누가 말하고 누가 침묵당했는지를 묻는 비판적 독해의 대상이 된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Shaner의 관점은 초기 기독교의 리더십과 종교 활동에 노예와 하위 신분자도 깊이 관여했음을 보게 한다. 그래서 가정 규범, 종과 주인, 교회 질서 본문을 읽을 때 지워진 노동과 권력관계를 함께 묻게 한다."
-            },
-            {
-              "name": "Lisa M. Bowens",
-              "tradition": "African American New Testament interpretation / Pauline reception",
-              "relationType": "reception",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 읽을 때 바울 해석이 흑인 공동체 안에서 어떻게 수용·저항·변형되어 왔는지 묻게 한다. Bowens의 최근 연구는 바울 서신을 단일한 서구 교리 체계로만 읽지 않고, 억압받은 공동체의 해석사와 함께 보게 한다.",
-              "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
-              "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
-              "publicationYear": 2020,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "medium",
-              "caution": "주로 바울 서신 수용사와 해석사에 해당한다. 본문 자체의 1세기 의미와 후대 수용사를 구분해야 한다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 읽을 때 바울 해석이 흑인 공동체 안에서 어떻게 수용·저항·변형되어 왔는지 묻게 한다. Bowens의 최근 연구는 바울 서신을 단일한 서구 교리 체계로만 읽지 않고, 억압받은 공동체의 해석사와 함께 보게 한다.",
-              "summaryKo": "Bowens의 관점은 바울 해석이 흑인 공동체 안에서 어떻게 수용, 저항, 변형되어 왔는지 보여준다. 그래서 바울 본문을 서구 교리 체계 안에만 가두지 않고 억압받은 공동체의 해석사와 함께 읽게 한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」에서 권력, 배제, 젠더, 계층, 제국의 흔적을 살핀다. 본문은 신앙 고백인 동시에 누가 말하고 누가 침묵당했는지를 묻는 비판적 독해의 대상이 된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Bowens의 관점은 바울 해석이 흑인 공동체 안에서 어떻게 수용, 저항, 변형되어 왔는지 보여준다. 그래서 바울 본문을 서구 교리 체계 안에만 가두지 않고 억압받은 공동체의 해석사와 함께 읽게 한다."
-            },
-            {
-              "name": "Candida R. Moss",
-              "tradition": "Early Christianity / slavery, textual production, hidden labor",
-              "relationType": "related",
-              "claim": "「나를 맞듯이 그를 맞으라」을/를 읽을 때 사도·저자 개인만이 아니라 편지 작성, 전달, 낭독, 보존에 참여한 노예·하위 지위 노동의 가능성을 함께 묻게 한다. Moss의 최근 연구는 신약 형성과 확산에서 지워진 협력자들의 역할을 재고하게 한다.",
-              "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
-              "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
-              "publicationYear": 2024,
-              "license": "Source summary only; no source text reproduced",
-              "confidence": "low",
-              "caution": "일부 주장은 학계 내 논쟁적·추론적 성격이 있다. 직접 주석이 아니라 논쟁적 관련 관점으로만 표시해야 한다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」을/를 읽을 때 사도·저자 개인만이 아니라 편지 작성, 전달, 낭독, 보존에 참여한 노예·하위 지위 노동의 가능성을 함께 묻게 한다. Moss의 최근 연구는 신약 형성과 확산에서 지워진 협력자들의 역할을 재고하게 한다.",
-              "summaryKo": "Moss의 관점은 신약 문헌 형성 과정에 노예와 하위 지위 협력자의 쓰기 노동이 관여했을 가능성을 묻는다. 그래서 성경을 위대한 저자 개인의 산물만이 아니라 보이지 않는 노동과 권력관계 속에서 읽게 한다.",
-              "interpretationKo": "이 해석은 「나를 맞듯이 그를 맞으라」에서 권력, 배제, 젠더, 계층, 제국의 흔적을 살핀다. 본문은 신앙 고백인 동시에 누가 말하고 누가 침묵당했는지를 묻는 비판적 독해의 대상이 된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "Moss의 관점은 신약 문헌 형성 과정에 노예와 하위 지위 협력자의 쓰기 노동이 관여했을 가능성을 묻는다. 그래서 성경을 위대한 저자 개인의 산물만이 아니라 보이지 않는 노동과 권력관계 속에서 읽게 한다."
+              "methodSummaryKo": "Brueggemann의 관점은 성서 본문이 지배 질서와 종교적 무감각을 어떻게 비판하고, 다른 세계를 상상하게 하는지 묻게 한다. 그래서 본문을 순응의 언어가 아니라 예언자적 상상력과 사회적 전환의 언어로 읽게 한다.",
+              "sameViewScholars": [
+                {
+                  "name": "Candida R. Moss",
+                  "tradition": "Early Christianity / slavery, textual production, hidden labor",
+                  "relationType": "related",
+                  "sourceTitle": "God's Ghostwriters: Enslaved Christians and the Making of the Bible",
+                  "sourceUrl": "https://www.theguardian.com/books/2024/mar/28/you-can-see-it-as-a-revenge-fantasy-the-new-book-arguing-that-enslaved-people-co-authored-the-bible",
+                  "confidence": "low"
+                },
+                {
+                  "name": "Katherine A. Shaner",
+                  "tradition": "New Testament / slavery, archaeology, enslaved leadership",
+                  "relationType": "background",
+                  "sourceTitle": "Enslaved Leadership in Early Christianity",
+                  "sourceUrl": "https://global.oup.com/academic/product/enslaved-leadership-in-early-christianity-9780190275068",
+                  "confidence": "medium"
+                },
+                {
+                  "name": "Lisa M. Bowens",
+                  "tradition": "African American New Testament interpretation / Pauline reception",
+                  "relationType": "reception",
+                  "sourceTitle": "African American Readings of Paul: Reception, Resistance, and Transformation",
+                  "sourceUrl": "https://ptsem.edu/faculty/lisa-marie-bowens/",
+                  "confidence": "medium"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -662,23 +448,18 @@
               "summaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
               "interpretationKo": "이 본문에 대해 여러 관점이 공유하는 최소 합의는 「나를 맞듯이 그를 맞으라」이 단순한 정보 전달이 아니라 공동체의 믿음과 삶을 재구성하는 본문이라는 점이다. 차이는 강조점에 있지만, 본문이 독자에게 하나님, 예수, 공동체, 세상에 대한 판단을 요구한다는 점은 공통적으로 인정된다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다."
-            },
-            {
-              "name": "unfoldingWord Translation Notes 편집진",
-              "tradition": "Translation notes / meaning, implied information, expression support",
-              "relationType": "background",
-              "claim": "「나를 맞듯이 그를 맞으라」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
-              "sourceTitle": "unfoldingWord Translation Notes",
-              "sourceUrl": "https://unfoldingword.org/for-translators/content/",
-              "license": "CC BY-SA",
-              "confidence": "high",
-              "caution": "번역 보조 노트 성격이 강하다. 수정·번역 시 CC BY-SA 조건과 unfoldingWord 상표 정책을 구분해야 한다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」 관련 번역상 난점, 암시적 정보, 표현상의 선택을 점검하는 데 사용할 수 있는 공개 번역 노트 자료다.",
-              "summaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다.",
-              "interpretationKo": "이 본문에 대해 여러 관점이 공유하는 최소 합의는 「나를 맞듯이 그를 맞으라」이 단순한 정보 전달이 아니라 공동체의 믿음과 삶을 재구성하는 본문이라는 점이다. 차이는 강조점에 있지만, 본문이 독자에게 하나님, 예수, 공동체, 세상에 대한 판단을 요구한다는 점은 공통적으로 인정된다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 번역자가 놓치기 쉬운 암시적 의미, 관용 표현, 문장 연결을 풀어 준다. 본문을 자연어로 옮길 때 어떤 의미를 보존해야 하는지 확인하는 데 유용하다."
+              "methodSummaryKo": "이 자료는 본문을 책 전체의 흐름, 역사적 배경, 인물과 주제 설명 속에서 읽게 한다. 전문 주석보다 간결한 스터디 노트 형식으로 독자가 본문의 큰 맥락을 잡도록 돕는다.",
+              "sameViewScholars": [
+                {
+                  "name": "unfoldingWord Translation Notes 편집진",
+                  "tradition": "Translation notes / meaning, implied information, expression support",
+                  "relationType": "background",
+                  "sourceTitle": "unfoldingWord Translation Notes",
+                  "sourceUrl": "https://unfoldingword.org/for-translators/content/",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         },
@@ -698,23 +479,18 @@
               "summaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
               "interpretationKo": "이 본문에서 해석이 갈리는 지점은 「나를 맞듯이 그를 맞으라」을 교리적 확증, 역사적 문맥, 사회비판 중 어디에 무게를 두고 읽을 것인가이다. 같은 본문이라도 한쪽은 신앙 고백과 순종을, 다른 쪽은 당시 권력 구조와 배제된 사람들의 위치를 더 전면에 둔다.",
               "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다."
-            },
-            {
-              "name": "Adam Clarke",
-              "tradition": "Methodist / critical and philological commentary",
-              "relationType": "direct",
-              "claim": "「나를 맞듯이 그를 맞으라」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
-              "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
-              "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
-              "license": "Public Domain",
-              "confidence": "high",
-              "caution": "메서디스트 고전 주석이다. 역사·언어 관찰이 있으나 현대 학계 주석과 동일시하면 안 된다.",
-              "claimOriginal": "「나를 맞듯이 그를 맞으라」의 언어·역사·비평적 논점을 고전 주석 방식으로 검토하므로, 관점 간 충돌 지점을 확인할 때 보조 자료로 사용할 수 있다.",
-              "summaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다.",
-              "interpretationKo": "이 본문에서 해석이 갈리는 지점은 「나를 맞듯이 그를 맞으라」을 교리적 확증, 역사적 문맥, 사회비판 중 어디에 무게를 두고 읽을 것인가이다. 같은 본문이라도 한쪽은 신앙 고백과 순종을, 다른 쪽은 당시 권력 구조와 배제된 사람들의 위치를 더 전면에 둔다.",
-              "interpretationKind": "본문 적용 해석 요약",
-              "methodSummaryKo": "이 자료는 언어, 역사, 고대 관습에 대한 관찰을 통해 본문 이해를 돕는다. 동시에 메서디스트 전통의 윤리적 적용을 반영해 본문이 독자의 실제 삶에 요구하는 바를 강조한다."
+              "methodSummaryKo": "이 자료는 난해한 표현과 문맥을 절별로 풀어 주며, 본문을 성경 전체의 흐름 안에서 읽도록 돕는다. 교리적 결론보다 구절의 의미와 논리 전개를 차근히 설명하는 데 강점이 있다.",
+              "sameViewScholars": [
+                {
+                  "name": "Adam Clarke",
+                  "tradition": "Methodist / critical and philological commentary",
+                  "relationType": "direct",
+                  "sourceTitle": "Adam Clarke's Commentary and Critical Notes on the Bible",
+                  "sourceUrl": "https://www.crosswire.org/sword/modules/ModInfo.jsp?modName=Clarke",
+                  "confidence": "high"
+                }
+              ],
+              "dedupeNote": "같은 해석 요지의 반복 카드는 대표 신학자 한 명만 본문에 표시하고, 나머지는 동일 요지 참고 학자로 묶었습니다."
             }
           ]
         }
@@ -800,5 +576,7 @@
   ],
   "lastUpdated": "2026-05-08",
   "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다.",
-  "scholarInterpretationVersion": "pericope-applied-scholar-summary-v1"
+  "scholarInterpretationVersion": "pericope-applied-scholar-summary-v1",
+  "scholarDedupeVersion": "20260508-scholar-dedup-representative-v21",
+  "scholarDedupePolicy": "같은 본문·같은 관점 안에서 해석 요지가 같은 신학자 카드는 대표 카드 1개만 표시하고, 나머지는 sameViewScholars에 보존합니다."
 }

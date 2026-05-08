@@ -1,0 +1,202 @@
+{
+  "version": "20260508-scholar-dedup-representative-v21",
+  "strategy": "Within each intro/view, scholars with the same first two-sentence interpretation core are collapsed into one representative card. Removed scholars are preserved under sameViewScholars on the representative card.",
+  "files": {
+    "1corinthians_scholars.json": {
+      "beforeCards": 265,
+      "afterCards": 75,
+      "removedDuplicateCards": 190,
+      "groupsCollapsed": 75,
+      "representativeCardsWithRelated": 75
+    },
+    "1john_scholars.json": {
+      "beforeCards": 93,
+      "afterCards": 35,
+      "removedDuplicateCards": 58,
+      "groupsCollapsed": 28,
+      "representativeCardsWithRelated": 28
+    },
+    "1peter_scholars.json": {
+      "beforeCards": 25,
+      "afterCards": 10,
+      "removedDuplicateCards": 15,
+      "groupsCollapsed": 10,
+      "representativeCardsWithRelated": 10
+    },
+    "1thessalonians_scholars.json": {
+      "beforeCards": 32,
+      "afterCards": 10,
+      "removedDuplicateCards": 22,
+      "groupsCollapsed": 8,
+      "representativeCardsWithRelated": 8
+    },
+    "1timothy_scholars.json": {
+      "beforeCards": 50,
+      "afterCards": 15,
+      "removedDuplicateCards": 35,
+      "groupsCollapsed": 15,
+      "representativeCardsWithRelated": 15
+    },
+    "2corinthians_scholars.json": {
+      "beforeCards": 151,
+      "afterCards": 45,
+      "removedDuplicateCards": 106,
+      "groupsCollapsed": 45,
+      "representativeCardsWithRelated": 45
+    },
+    "2john_scholars.json": {
+      "beforeCards": 12,
+      "afterCards": 5,
+      "removedDuplicateCards": 7,
+      "groupsCollapsed": 4,
+      "representativeCardsWithRelated": 4
+    },
+    "2peter_scholars.json": {
+      "beforeCards": 31,
+      "afterCards": 15,
+      "removedDuplicateCards": 16,
+      "groupsCollapsed": 13,
+      "representativeCardsWithRelated": 13
+    },
+    "2thessalonians_scholars.json": {
+      "beforeCards": 49,
+      "afterCards": 15,
+      "removedDuplicateCards": 34,
+      "groupsCollapsed": 15,
+      "representativeCardsWithRelated": 15
+    },
+    "2timothy_scholars.json": {
+      "beforeCards": 47,
+      "afterCards": 15,
+      "removedDuplicateCards": 32,
+      "groupsCollapsed": 14,
+      "representativeCardsWithRelated": 14
+    },
+    "3john_scholars.json": {
+      "beforeCards": 13,
+      "afterCards": 5,
+      "removedDuplicateCards": 8,
+      "groupsCollapsed": 4,
+      "representativeCardsWithRelated": 4
+    },
+    "acts_scholars.json": {
+      "beforeCards": 169,
+      "afterCards": 50,
+      "removedDuplicateCards": 119,
+      "groupsCollapsed": 31,
+      "representativeCardsWithRelated": 31
+    },
+    "colossians_scholars.json": {
+      "beforeCards": 35,
+      "afterCards": 10,
+      "removedDuplicateCards": 25,
+      "groupsCollapsed": 10,
+      "representativeCardsWithRelated": 10
+    },
+    "ephesians_scholars.json": {
+      "beforeCards": 69,
+      "afterCards": 20,
+      "removedDuplicateCards": 49,
+      "groupsCollapsed": 20,
+      "representativeCardsWithRelated": 20
+    },
+    "galatians_scholars.json": {
+      "beforeCards": 109,
+      "afterCards": 30,
+      "removedDuplicateCards": 79,
+      "groupsCollapsed": 30,
+      "representativeCardsWithRelated": 30
+    },
+    "hebrews_scholars.json": {
+      "beforeCards": 150,
+      "afterCards": 65,
+      "removedDuplicateCards": 85,
+      "groupsCollapsed": 55,
+      "representativeCardsWithRelated": 55
+    },
+    "james_scholars.json": {
+      "beforeCards": 78,
+      "afterCards": 30,
+      "removedDuplicateCards": 48,
+      "groupsCollapsed": 30,
+      "representativeCardsWithRelated": 30
+    },
+    "john_scholars.json": {
+      "beforeCards": 673,
+      "afterCards": 454,
+      "removedDuplicateCards": 219,
+      "groupsCollapsed": 45,
+      "representativeCardsWithRelated": 45
+    },
+    "jude_scholars.json": {
+      "beforeCards": 12,
+      "afterCards": 5,
+      "removedDuplicateCards": 7,
+      "groupsCollapsed": 5,
+      "representativeCardsWithRelated": 5
+    },
+    "luke_scholars.json": {
+      "beforeCards": 1757,
+      "afterCards": 1076,
+      "removedDuplicateCards": 681,
+      "groupsCollapsed": 145,
+      "representativeCardsWithRelated": 145
+    },
+    "mark_scholars.json": {
+      "beforeCards": 1073,
+      "afterCards": 880,
+      "removedDuplicateCards": 193,
+      "groupsCollapsed": 40,
+      "representativeCardsWithRelated": 40
+    },
+    "matthew_scholars.json": {
+      "beforeCards": 1877,
+      "afterCards": 1046,
+      "removedDuplicateCards": 831,
+      "groupsCollapsed": 185,
+      "representativeCardsWithRelated": 185
+    },
+    "philemon_scholars.json": {
+      "beforeCards": 39,
+      "afterCards": 10,
+      "removedDuplicateCards": 29,
+      "groupsCollapsed": 10,
+      "representativeCardsWithRelated": 10
+    },
+    "philippians_scholars.json": {
+      "beforeCards": 18,
+      "afterCards": 5,
+      "removedDuplicateCards": 13,
+      "groupsCollapsed": 5,
+      "representativeCardsWithRelated": 5
+    },
+    "revelation_scholars.json": {
+      "beforeCards": 371,
+      "afterCards": 105,
+      "removedDuplicateCards": 266,
+      "groupsCollapsed": 105,
+      "representativeCardsWithRelated": 105
+    },
+    "romans_scholars.json": {
+      "beforeCards": 275,
+      "afterCards": 75,
+      "removedDuplicateCards": 200,
+      "groupsCollapsed": 75,
+      "representativeCardsWithRelated": 75
+    },
+    "titus_scholars.json": {
+      "beforeCards": 34,
+      "afterCards": 10,
+      "removedDuplicateCards": 24,
+      "groupsCollapsed": 10,
+      "representativeCardsWithRelated": 10
+    }
+  },
+  "totals": {
+    "beforeCards": 7507,
+    "afterCards": 4116,
+    "removedDuplicateCards": 3391,
+    "groupsCollapsed": 1032,
+    "representativeCardsWithRelated": 1032
+  }
+}
