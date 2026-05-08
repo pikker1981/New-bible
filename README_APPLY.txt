@@ -1,6 +1,1 @@
-# Jude data patch
-
-Apply these files to the project root, preserving paths.
-
-No design or structure files are included.
-Do not replace index.html, styles.css, or app.js.
+data 폴더의 파일만 교체하세요. index.html, styles.css, app.js는 포함하지 않았습니다.
