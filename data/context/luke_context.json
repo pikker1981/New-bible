@@ -1,0 +1,168 @@
+{
+  "bookId": "luke",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "theophilus": {
+      "type": "person",
+      "label": "데오빌로",
+      "aliases": [
+        "데오빌로 각하",
+        "데오필로"
+      ],
+      "refs": [
+        "1:3"
+      ],
+      "summary": "데오빌로는 누가복음과 사도행전의 수신자로 언급되는 인물입니다.",
+      "ancientContext": "고대 문헌에서 후원자나 특정 독자에게 글을 헌정하는 형식은 흔했습니다.",
+      "textFunction": "누가는 자신의 서술이 질서 있게 정리된 증언임을 밝히며 독자의 확신을 세우려 합니다.",
+      "avoidModernReading": "개인 편지로만 읽으면 누가-행전이 가진 역사 서술과 교육적 목적을 축소하게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "zechariah-temple": {
+      "type": "culture",
+      "label": "제사장 사가랴",
+      "aliases": [
+        "사가랴",
+        "제사장"
+      ],
+      "refs": [
+        "1:5-23"
+      ],
+      "summary": "사가랴는 성전에서 섬기는 제사장으로 등장합니다.",
+      "ancientContext": "제2성전기 유대교에서 성전은 제사, 정체성, 하나님 임재의 중심이었습니다.",
+      "textFunction": "누가는 예수 이야기의 시작을 성전과 제사장 전통 안에 배치하여 이스라엘의 희망과 연결합니다.",
+      "avoidModernReading": "단순한 출생 전 이야기로만 읽으면 성전 중심 신앙과 구원 기대의 무게를 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "nazareth": {
+      "type": "place",
+      "label": "나사렛",
+      "aliases": [
+        "나자렛"
+      ],
+      "refs": [
+        "1:26",
+        "2:39"
+      ],
+      "summary": "나사렛은 갈릴리의 작은 마을로, 예수의 성장 배경과 연결됩니다.",
+      "ancientContext": "로마 제국의 거대 도시나 성전 중심 예루살렘과 달리, 나사렛은 주변부적 성격을 가진 지역이었습니다.",
+      "textFunction": "누가복음은 하나님의 구원이 중심 권력의 장소가 아니라 변두리에서 시작된다는 분위기를 만듭니다.",
+      "avoidModernReading": "나사렛을 단순한 출신지 표기로만 읽으면 주변부에서 시작되는 복음의 역전을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "census-empire": {
+      "type": "history",
+      "label": "호적 등록",
+      "aliases": [
+        "호적",
+        "등록"
+      ],
+      "refs": [
+        "2:1-5"
+      ],
+      "summary": "누가복음 2장의 호적 등록은 로마 제국의 행정 질서 속에서 예수 탄생을 배치합니다.",
+      "ancientContext": "제국의 세금·인구 조사·통치 체계는 지방민의 삶에 직접 영향을 주었습니다.",
+      "textFunction": "예수의 탄생은 사적인 가족 사건이 아니라 로마 제국의 큰 질서와 맞물려 서술됩니다.",
+      "avoidModernReading": "낭만적 성탄 장면으로만 읽으면 제국 권력 아래 이동해야 했던 민중의 현실을 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

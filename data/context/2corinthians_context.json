@@ -1,0 +1,133 @@
+{
+  "bookId": "2corinthians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "apostolic-weakness": {
+      "type": "culture",
+      "label": "약함의 사도직",
+      "aliases": [
+        "약함",
+        "고난",
+        "능력"
+      ],
+      "refs": [
+        "4:7-12",
+        "11:23-30",
+        "12:9-10"
+      ],
+      "summary": "고린도후서는 바울의 약함과 고난을 사도직의 표지로 해석합니다.",
+      "ancientContext": "고대 수사 문화와 후원 문화에서는 강함, 명예, 설득력이 지도자의 자격처럼 보일 수 있었습니다.",
+      "textFunction": "바울은 십자가의 방식과 약함 안의 능력으로 자신의 사역을 변호합니다.",
+      "avoidModernReading": "리더십 자기계발 문장으로만 읽으면 고대 명예 문화에 대한 전복성을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "collection-for-jerusalem": {
+      "type": "history",
+      "label": "예루살렘 구제 헌금",
+      "aliases": [
+        "연보",
+        "헌금",
+        "구제"
+      ],
+      "refs": [
+        "8:1-15",
+        "9:1-15"
+      ],
+      "summary": "고린도후서 8–9장은 예루살렘 성도를 위한 연보를 다룹니다.",
+      "ancientContext": "이 헌금은 경제 지원만이 아니라 이방 교회와 유대 교회 사이의 연대 표시였습니다.",
+      "textFunction": "바울은 은혜와 균등함의 언어로 공동체 간 나눔을 설명합니다.",
+      "avoidModernReading": "현대식 모금 캠페인 정도로만 읽으면 초기 교회 안의 민족·경제적 연합 의미를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "false-apostles": {
+      "type": "person",
+      "label": "거짓 사도들",
+      "aliases": [
+        "거짓 사도",
+        "사도"
+      ],
+      "refs": [
+        "11:5-15"
+      ],
+      "summary": "고린도후서에는 바울의 권위를 도전하는 경쟁적 사역자들이 등장합니다.",
+      "ancientContext": "고대 세계에서 순회 교사와 수사가는 후원, 추천서, 말재주를 통해 권위를 얻기도 했습니다.",
+      "textFunction": "바울은 겉으로 강해 보이는 기준과 십자가적 사도직을 대비합니다.",
+      "avoidModernReading": "현대의 단순 이단 논쟁으로만 읽으면 고대 교사 경쟁과 후원 체계의 배경을 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

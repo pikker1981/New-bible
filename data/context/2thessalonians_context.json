@@ -1,0 +1,128 @@
+{
+  "bookId": "2thessalonians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "lawless-one": {
+      "type": "history",
+      "label": "불법의 사람",
+      "aliases": [
+        "불법",
+        "멸망의 아들"
+      ],
+      "refs": [
+        "2:3-12"
+      ],
+      "summary": "데살로니가후서 2장의 불법의 사람은 종말론적 혼란과 관련된 상징적 인물입니다.",
+      "ancientContext": "초기 그리스도 공동체는 박해와 정치 권력, 종말 기대 속에서 현재를 해석했습니다.",
+      "textFunction": "본문은 공동체가 흔들리지 않도록 경고와 인내를 제공합니다.",
+      "avoidModernReading": "현대 특정 정치인이나 사건에 곧장 대입하면 본문의 상징성과 고대 종말론 언어를 왜곡할 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "idleness": {
+      "type": "culture",
+      "label": "무질서하게 사는 사람들",
+      "aliases": [
+        "일하기",
+        "무질서"
+      ],
+      "refs": [
+        "3:6-12"
+      ],
+      "summary": "데살로니가후서에는 일하지 않고 무질서하게 지내는 사람들에 대한 권면이 나옵니다.",
+      "ancientContext": "고대 도시 공동체의 후원, 노동, 상호 부양 구조를 배경으로 읽을 필요가 있습니다.",
+      "textFunction": "바울은 공동체 부담과 책임 있는 삶을 함께 다룹니다.",
+      "avoidModernReading": "현대 복지 논쟁에 곧바로 끌어오면 당시 공동체 내부 질서 문제를 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "persecution-comfort": {
+      "type": "history",
+      "label": "박해와 위로",
+      "aliases": [
+        "박해",
+        "환난"
+      ],
+      "refs": [
+        "1:4-7"
+      ],
+      "summary": "데살로니가후서는 박해받는 공동체를 위로하고 견디도록 격려합니다.",
+      "ancientContext": "초기 신자들은 가족·도시·종교 네트워크에서 압력을 받을 수 있었습니다.",
+      "textFunction": "본문은 고난을 하나님의 정의와 최종 회복의 관점에서 해석합니다.",
+      "avoidModernReading": "고난을 개인적 성공 서사의 재료로만 읽으면 공동체적 위로와 심판의 언어를 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

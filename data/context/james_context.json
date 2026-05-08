@@ -1,0 +1,129 @@
+{
+  "bookId": "james",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "diaspora": {
+      "type": "history",
+      "label": "흩어진 열두 지파",
+      "aliases": [
+        "흩어진",
+        "열두 지파"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "야고보서는 흩어진 열두 지파에게 인사하는 형식으로 시작합니다.",
+      "ancientContext": "디아스포라 유대인은 팔레스타인 밖 여러 지역에 살며 유대 정체성을 유지했습니다.",
+      "textFunction": "편지는 흩어진 공동체의 삶과 시험, 지혜, 실천을 다룹니다.",
+      "avoidModernReading": "단순히 모든 현대 독자에게 쓴 일반 격언집으로만 읽으면 디아스포라 정체성의 배경을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "rich-poor": {
+      "type": "culture",
+      "label": "부자와 가난한 사람",
+      "aliases": [
+        "부자",
+        "가난한"
+      ],
+      "refs": [
+        "2:1-7",
+        "5:1-6"
+      ],
+      "summary": "야고보서는 부자와 가난한 사람의 차별 문제를 강하게 다룹니다.",
+      "ancientContext": "고대 사회에서 부, 토지, 법정 권력은 공동체 안팎의 불평등과 연결되었습니다.",
+      "textFunction": "본문은 믿음이 사회적 대우와 경제 윤리에서 드러나야 한다고 말합니다.",
+      "avoidModernReading": "개인적 시기심이나 성공 비판 정도로만 읽으면 구조적 불평등의 배경을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "faith-works": {
+      "type": "culture",
+      "label": "믿음과 행함",
+      "aliases": [
+        "믿음",
+        "행함"
+      ],
+      "refs": [
+        "2:14-26"
+      ],
+      "summary": "야고보서의 믿음과 행함 논의는 실천 없는 신앙을 비판합니다.",
+      "ancientContext": "고대 유대 지혜 전통에서는 하나님을 향한 신실함이 삶의 행위와 분리되지 않았습니다.",
+      "textFunction": "야고보는 말뿐인 고백이 아니라 자비와 순종으로 드러나는 믿음을 강조합니다.",
+      "avoidModernReading": "바울과 야고보를 단순 모순으로 읽으면 서로 다른 논쟁 상황과 용어 사용을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

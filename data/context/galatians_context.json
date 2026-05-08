@@ -1,0 +1,128 @@
+{
+  "bookId": "galatians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "galatia": {
+      "type": "place",
+      "label": "갈라디아",
+      "aliases": [
+        "갈라디아"
+      ],
+      "refs": [
+        "1:2"
+      ],
+      "summary": "갈라디아는 바울 편지의 수신 지역으로, 정확한 범위는 학계에서 논의됩니다.",
+      "ancientContext": "로마 행정 구역과 민족적 갈라디아 지역을 어떻게 볼지에 따라 해석상 세부 차이가 생깁니다.",
+      "textFunction": "갈라디아서의 논쟁은 지역 공동체가 어떤 복음 이해를 받아들일 것인지와 관련됩니다.",
+      "avoidModernReading": "현대의 단일 도시 교회 편지처럼 읽으면 지역 범위와 수신자 논의의 복잡성을 놓칠 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "circumcision": {
+      "type": "culture",
+      "label": "할례",
+      "aliases": [
+        "할례"
+      ],
+      "refs": [
+        "2:3",
+        "5:2-6",
+        "6:12-15"
+      ],
+      "summary": "할례는 유대 언약 정체성의 중요한 표지였습니다.",
+      "ancientContext": "제2성전기 유대교에서 할례는 단순한 의식이 아니라 하나님 백성 소속의 몸의 표지였습니다.",
+      "textFunction": "바울은 이방 신자에게 할례를 요구하는 문제를 복음의 자유와 연결해 다룹니다.",
+      "avoidModernReading": "현대의 의료 행위로만 읽으면 언약 정체성과 공동체 경계 문제를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "table-fellowship": {
+      "type": "culture",
+      "label": "식탁 교제",
+      "aliases": [
+        "식사",
+        "먹다"
+      ],
+      "refs": [
+        "2:11-14"
+      ],
+      "summary": "갈라디아서 2장의 안디옥 사건은 식탁 교제와 공동체 경계 문제를 보여줍니다.",
+      "ancientContext": "유대인과 이방인이 함께 먹는 문제는 정결, 율법, 사회적 압력과 관련될 수 있었습니다.",
+      "textFunction": "바울은 복음의 진리가 공동 식탁에서 실제로 드러나야 한다고 봅니다.",
+      "avoidModernReading": "단순한 인간관계 갈등으로만 읽으면 식탁이 가진 신학적·사회적 의미를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

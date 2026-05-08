@@ -1,0 +1,168 @@
+{
+  "bookId": "mark",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "gospel-beginning": {
+      "type": "history",
+      "label": "복음의 시작",
+      "aliases": [
+        "복음"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "마가복음은 예수 그리스도의 복음의 시작이라는 선언으로 문을 엽니다.",
+      "ancientContext": "복음이라는 말은 로마 세계에서 황제의 즉위나 승전 소식에도 쓰였고, 유대 전통에서는 하나님의 구원 소식과 연결되었습니다.",
+      "textFunction": "마가는 예수의 이야기를 개인 신앙담이 아니라 왕적·구원사적 소식으로 제시합니다.",
+      "avoidModernReading": "복음을 단순히 종교 교리 요약으로만 읽으면 로마 세계에서 이 단어가 가진 공적 울림을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "galilee": {
+      "type": "place",
+      "label": "갈릴리",
+      "aliases": [
+        "갈릴래아"
+      ],
+      "refs": [
+        "1:9",
+        "1:14",
+        "1:16"
+      ],
+      "summary": "갈릴리는 예수 활동의 주요 무대이며 유대 남부 중심부와는 다른 지역적 성격을 가졌습니다.",
+      "ancientContext": "1세기 갈릴리는 농촌·어촌·도시화가 공존하던 지역으로, 로마와 헤롯 왕조의 경제 질서도 영향을 주었습니다.",
+      "textFunction": "마가복음에서 갈릴리는 예수의 하나님 나라 선포와 제자 부르심이 시작되는 공간입니다.",
+      "avoidModernReading": "외딴 시골 배경 정도로만 읽으면 지역 경제·권력·민중 삶의 긴장을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "unclean-spirit": {
+      "type": "culture",
+      "label": "더러운 영",
+      "aliases": [
+        "악한 영",
+        "더러운 귀신"
+      ],
+      "refs": [
+        "1:23-27"
+      ],
+      "summary": "더러운 영은 고대 세계의 영적·정결 개념과 연결된 표현입니다.",
+      "ancientContext": "고대 유대 사회에서 정결과 부정은 단순 위생이 아니라 하나님 앞의 공동체 질서와 관련되었습니다.",
+      "textFunction": "마가복음은 예수의 권위를 병 고침뿐 아니라 영적 질서의 회복으로 보여줍니다.",
+      "avoidModernReading": "현대 심리학 용어로만 대체해 읽으면 고대 정결·영적 세계관의 의미를 놓칠 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "disciples-call": {
+      "type": "culture",
+      "label": "제자 부르심",
+      "aliases": [
+        "제자",
+        "그물"
+      ],
+      "refs": [
+        "1:16-20"
+      ],
+      "summary": "제자 부르심은 단순한 종교 동아리 가입이 아니라 삶의 소속과 생계 질서를 바꾸는 사건입니다.",
+      "ancientContext": "고대 스승과 제자의 관계는 배움뿐 아니라 생활 방식과 권위에 대한 결속을 포함했습니다.",
+      "textFunction": "어부들이 그물을 버리고 따른다는 표현은 예수의 권위와 하나님 나라의 긴급성을 드러냅니다.",
+      "avoidModernReading": "현대의 취미 활동이나 개인 선택 정도로 읽으면 생계·가문·공동체 질서를 떠나는 급진성을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

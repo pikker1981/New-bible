@@ -1,0 +1,127 @@
+{
+  "bookId": "1thessalonians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "thessalonica": {
+      "type": "place",
+      "label": "데살로니가",
+      "aliases": [
+        "데살로니가"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "데살로니가는 마케도니아의 주요 도시이며 바울 선교의 중요한 거점입니다.",
+      "ancientContext": "로마 도로망과 상업, 정치적 충성 문화가 도시 배경에 영향을 주었습니다.",
+      "textFunction": "데살로니가전서는 새 공동체가 박해와 종말 기대 속에서 어떻게 살아야 하는지를 다룹니다.",
+      "avoidModernReading": "종말 예언서처럼만 읽으면 도시 공동체의 실제 고난과 위로의 맥락을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "parousia": {
+      "type": "history",
+      "label": "주님의 오심",
+      "aliases": [
+        "오심",
+        "강림"
+      ],
+      "refs": [
+        "4:13-18",
+        "5:1-11"
+      ],
+      "summary": "주님의 오심은 데살로니가전서의 핵심 소망입니다.",
+      "ancientContext": "고대 세계에서 왕이나 황제의 방문을 가리키는 언어와도 연결되어 논의됩니다.",
+      "textFunction": "바울은 죽은 신자들과 살아 있는 신자들의 소망을 공동체적 위로로 설명합니다.",
+      "avoidModernReading": "현대식 휴거 시간표만 찾으면 본문의 위로와 충성의 메시지를 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "idols-living-god": {
+      "type": "culture",
+      "label": "우상을 버림",
+      "aliases": [
+        "우상"
+      ],
+      "refs": [
+        "1:9"
+      ],
+      "summary": "데살로니가 신자들은 우상을 버리고 살아 계신 하나님께 돌아섰다고 묘사됩니다.",
+      "ancientContext": "고대 도시의 종교 생활은 가족, 직업 조합, 도시 축제와 밀접했습니다.",
+      "textFunction": "우상을 버린다는 것은 단순한 생각의 변화가 아니라 사회적 관계와 생활 방식의 변화를 뜻할 수 있습니다.",
+      "avoidModernReading": "개인 내면의 종교 선택으로만 읽으면 도시 사회에서 생기는 실제 비용을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

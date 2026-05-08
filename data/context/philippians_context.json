@@ -1,0 +1,127 @@
+{
+  "bookId": "philippians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "philippi": {
+      "type": "place",
+      "label": "빌립보",
+      "aliases": [
+        "빌립보"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "빌립보는 로마 식민시로, 사도행전과 바울 서신 배경에서 중요한 도시입니다.",
+      "ancientContext": "로마 시민 정체성과 제국 충성 문화가 강한 도시로 이해됩니다.",
+      "textFunction": "빌립보서는 그리스도의 낮아짐과 시민권 언어를 로마 식민시 배경 속에서 들려줍니다.",
+      "avoidModernReading": "따뜻한 감사 편지로만 읽으면 로마적 명예와 시민권에 대한 대안적 상상력을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "citizenship-heaven": {
+      "type": "culture",
+      "label": "하늘 시민권",
+      "aliases": [
+        "시민권",
+        "하늘"
+      ],
+      "refs": [
+        "3:20"
+      ],
+      "summary": "하늘 시민권은 빌립보서의 중요한 정치적·상징적 표현입니다.",
+      "ancientContext": "로마 식민시 시민에게 시민권은 특권과 소속, 황제 질서에 대한 자부심과 연결되었습니다.",
+      "textFunction": "바울은 신자들의 궁극적 소속을 하늘, 곧 그리스도의 통치에 둡니다.",
+      "avoidModernReading": "사후 천국행 보증 정도로만 읽으면 로마 시민권 언어를 전복하는 힘을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "christ-hymn": {
+      "type": "history",
+      "label": "그리스도 찬가",
+      "aliases": [
+        "낮추셨다",
+        "이름"
+      ],
+      "refs": [
+        "2:6-11"
+      ],
+      "summary": "빌립보서 2:6-11은 그리스도의 낮아짐과 높아짐을 노래하는 찬가적 단락으로 자주 이해됩니다.",
+      "ancientContext": "고대 세계의 명예 상승 논리와 달리, 이 본문은 낮아짐과 순종을 통해 높아짐을 말합니다.",
+      "textFunction": "바울은 공동체의 태도를 그리스도의 길에 맞추도록 권면합니다.",
+      "avoidModernReading": "단순한 겸손 명언으로만 읽으면 로마적 명예 질서와 대비되는 신학적 구조를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "bookId": "1john",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "community-conflict": {
+      "type": "history",
+      "label": "공동체 분열",
+      "aliases": [
+        "떠났다",
+        "적그리스도"
+      ],
+      "refs": [
+        "2:18-19"
+      ],
+      "summary": "요한일서는 공동체 내부 갈등과 이탈을 배경으로 읽힙니다.",
+      "ancientContext": "초기 그리스도 공동체는 예수의 정체성과 삶의 윤리를 둘러싸고 분열을 겪을 수 있었습니다.",
+      "textFunction": "본문은 참된 앎, 사랑, 예수의 성육신 고백을 공동체 기준으로 제시합니다.",
+      "avoidModernReading": "추상적 사랑 명상집으로만 읽으면 실제 분열 상황에서 나온 논쟁적 성격을 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "incarnation-test": {
+      "type": "culture",
+      "label": "육체로 오신 예수",
+      "aliases": [
+        "육체",
+        "오셨다"
+      ],
+      "refs": [
+        "4:2-3"
+      ],
+      "summary": "요한일서는 예수 그리스도께서 육체로 오셨다는 고백을 중요하게 다룹니다.",
+      "ancientContext": "고대 세계의 다양한 철학·종교적 사상 속에서 물질과 몸을 낮게 보는 경향도 논의됩니다.",
+      "textFunction": "본문은 예수의 실제 성육신을 공동체 신앙의 기준으로 삼습니다.",
+      "avoidModernReading": "몸과 영혼을 단순 분리하는 현대적 영성으로 읽으면 성육신 고백의 논쟁성을 놓칠 수 있습니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "love-command": {
+      "type": "culture",
+      "label": "사랑의 계명",
+      "aliases": [
+        "사랑",
+        "형제"
+      ],
+      "refs": [
+        "3:11-18",
+        "4:7-21"
+      ],
+      "summary": "요한일서의 사랑은 감정이 아니라 공동체 안에서 드러나는 구체적 행동입니다.",
+      "ancientContext": "고대 소규모 공동체에서 형제자매 사랑은 물질적 돌봄과 충성의 형태로 나타났습니다.",
+      "textFunction": "본문은 하나님을 안다는 주장과 형제자매 사랑을 분리하지 않습니다.",
+      "avoidModernReading": "현대의 감정적 호감으로만 읽으면 사랑의 공동체적·실천적 의미를 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

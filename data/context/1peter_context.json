@@ -1,0 +1,132 @@
+{
+  "bookId": "1peter",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "diaspora-peter": {
+      "type": "history",
+      "label": "흩어진 나그네들",
+      "aliases": [
+        "나그네",
+        "흩어진"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "베드로전서는 여러 지역에 흩어진 나그네들에게 편지를 보냅니다.",
+      "ancientContext": "나그네와 체류자 언어는 사회적 주변성, 신앙 정체성, 소속의 긴장을 담습니다.",
+      "textFunction": "편지는 고난 속 공동체에게 거룩한 삶과 소망을 권면합니다.",
+      "avoidModernReading": "현대 여행자 이미지로만 읽으면 사회적 불안정성과 소수자 정체성을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "asia-minor-regions": {
+      "type": "place",
+      "label": "본도·갈라디아·갑바도기아·아시아·비두니아",
+      "aliases": [
+        "본도",
+        "갈라디아",
+        "갑바도기아",
+        "아시아",
+        "비두니아"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "베드로전서 1:1은 소아시아 여러 지역을 열거합니다.",
+      "ancientContext": "이 지역들은 로마 제국 내 다양한 도시와 농촌 공동체를 포함했습니다.",
+      "textFunction": "편지는 넓은 지역의 신자들에게 공동 정체성과 고난의 의미를 제공합니다.",
+      "avoidModernReading": "단일 교회 문제로만 읽으면 여러 지역에 흩어진 공동체를 묶는 회람 서신 성격을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "household-suffering": {
+      "type": "culture",
+      "label": "고난 속 가정 질서",
+      "aliases": [
+        "종",
+        "아내",
+        "남편"
+      ],
+      "refs": [
+        "2:18-3:7"
+      ],
+      "summary": "베드로전서는 종, 아내, 남편의 관계를 고난과 증언의 맥락에서 말합니다.",
+      "ancientContext": "고대 가정 질서는 권력 비대칭을 전제로 했고, 신자들은 그 구조 안에서 살아야 했습니다.",
+      "textFunction": "본문은 당시 사회 구조 속에서 공동체가 어떻게 비난을 견디며 살아갈지를 다룹니다.",
+      "avoidModernReading": "현대의 모든 사회적 불의에 침묵하라는 명령으로 읽으면 고대 가정 규범과 소수 공동체 생존 전략을 혼동하게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

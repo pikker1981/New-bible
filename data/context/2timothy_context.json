@@ -1,0 +1,131 @@
+{
+  "bookId": "2timothy",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "imprisonment": {
+      "type": "history",
+      "label": "감옥과 고난",
+      "aliases": [
+        "감옥",
+        "갇힘",
+        "고난"
+      ],
+      "refs": [
+        "1:8",
+        "1:16",
+        "2:9"
+      ],
+      "summary": "디모데후서는 바울의 투옥과 고난을 강하게 반영합니다.",
+      "ancientContext": "로마 제국 질서 속에서 복음 선포는 사회적 의심과 법적 위험을 동반할 수 있었습니다.",
+      "textFunction": "편지는 고난 속에서도 복음을 부끄러워하지 말라는 권면을 중심에 둡니다.",
+      "avoidModernReading": "개인 멘탈 관리 조언으로만 읽으면 제국 권력 아래의 실제 위험성을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "paul-final-charge": {
+      "type": "person",
+      "label": "바울의 마지막 권면",
+      "aliases": [
+        "바울",
+        "관제"
+      ],
+      "refs": [
+        "4:6-8"
+      ],
+      "summary": "디모데후서 4장은 바울의 죽음 인식과 사역 완주 언어를 담고 있습니다.",
+      "ancientContext": "고대 유언적 권면 형식은 후계자에게 정체성과 사명을 전하는 장치로 쓰일 수 있습니다.",
+      "textFunction": "바울은 디모데에게 말씀 선포와 인내를 맡깁니다.",
+      "avoidModernReading": "감동적인 은퇴 소감으로만 읽으면 사도적 사명 계승이라는 문학적 기능을 놓칠 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "scripture-training": {
+      "type": "culture",
+      "label": "성경과 교육",
+      "aliases": [
+        "성경",
+        "거룩한 글"
+      ],
+      "refs": [
+        "3:14-17"
+      ],
+      "summary": "디모데후서 3장은 성경이 가르침과 훈련에 유익하다고 말합니다.",
+      "ancientContext": "당시 말하는 성경은 우선 이스라엘의 거룩한 글들, 곧 유대 성경 전통을 가리킵니다.",
+      "textFunction": "본문은 디모데가 배워 온 전통과 복음 사역을 연결합니다.",
+      "avoidModernReading": "현대의 완성된 신구약 성경 목록 전체를 곧장 전제하면 당시 독자의 실제 성경 범위를 놓칠 수 있습니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "bookId": "colossians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "colossae": {
+      "type": "place",
+      "label": "골로새",
+      "aliases": [
+        "골로새"
+      ],
+      "refs": [
+        "1:2"
+      ],
+      "summary": "골로새는 소아시아 내륙의 도시로, 바울 서신의 수신 공동체 배경입니다.",
+      "ancientContext": "정확한 지역 종교 상황은 제한적으로만 알 수 있지만, 다양한 종교·철학적 영향이 논의됩니다.",
+      "textFunction": "골로새서는 그리스도의 우월성과 공동체의 정체성을 강조합니다.",
+      "avoidModernReading": "불확실한 배경을 과도하게 단정하면 본문보다 배경 추정이 앞서게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "powers-authorities": {
+      "type": "culture",
+      "label": "권세와 통치자들",
+      "aliases": [
+        "권세",
+        "통치자"
+      ],
+      "refs": [
+        "1:16",
+        "2:15"
+      ],
+      "summary": "골로새서의 권세와 통치자들은 우주적·영적 질서를 가리키는 표현으로 읽힙니다.",
+      "ancientContext": "고대 세계에서는 보이는 정치 권력과 보이지 않는 영적 권세가 분리되지 않는 방식으로 이해되기도 했습니다.",
+      "textFunction": "본문은 그리스도가 모든 권세 위에 있음을 강조합니다.",
+      "avoidModernReading": "현대 정치 권력 또는 귀신론 하나로만 좁히면 고대 우주론적 언어의 폭을 놓칩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "household-code-col": {
+      "type": "culture",
+      "label": "가정 규범",
+      "aliases": [
+        "아내",
+        "남편",
+        "종",
+        "주인"
+      ],
+      "refs": [
+        "3:18-4:1"
+      ],
+      "summary": "골로새서 후반에는 고대 가정 구성원 간 관계 규범이 나옵니다.",
+      "ancientContext": "그리스-로마 세계의 가정 규범은 가부장적 질서를 전제로 했습니다.",
+      "textFunction": "본문은 그 구조 안에서 주 안에서의 책임과 관계 방식을 말합니다.",
+      "avoidModernReading": "현대 사회 제도를 그대로 정당화하는 근거로 읽으면 고대 사회 구조와 복음 안의 재해석을 구분하지 못합니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "bookId": "ephesians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "ephesus": {
+      "type": "place",
+      "label": "에베소",
+      "aliases": [
+        "에베소"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "에베소는 소아시아의 중요한 도시이며 초기 그리스도 운동의 주요 거점 중 하나였습니다.",
+      "ancientContext": "상업, 종교, 제국 숭배, 아르테미스 신전 전통이 도시 정체성에 영향을 주었습니다.",
+      "textFunction": "에베소서는 교회와 새 인류, 영적 권세의 주제를 제국 도시 배경 속에서 읽게 합니다.",
+      "avoidModernReading": "개인 경건서로만 읽으면 도시·제국·종교 다원성의 배경을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "dividing-wall": {
+      "type": "history",
+      "label": "막힌 담",
+      "aliases": [
+        "담",
+        "원수 된 것"
+      ],
+      "refs": [
+        "2:14"
+      ],
+      "summary": "막힌 담은 유대인과 이방인 사이의 분리를 설명하는 강한 이미지입니다.",
+      "ancientContext": "성전 공간과 정결 경계, 민족 정체성은 당시 실제 사회적 거리를 만들었습니다.",
+      "textFunction": "에베소서는 그리스도 안에서 적대감이 무너지고 새 공동체가 형성된다고 말합니다.",
+      "avoidModernReading": "현대의 일반 화해 담론으로만 읽으면 유대-이방 관계라는 구체적 배경을 놓치게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "household-code": {
+      "type": "culture",
+      "label": "가정 규범",
+      "aliases": [
+        "아내",
+        "남편",
+        "종",
+        "주인"
+      ],
+      "refs": [
+        "5:21-6:9"
+      ],
+      "summary": "에베소서 후반에는 아내와 남편, 자녀와 부모, 종과 주인의 관계가 나옵니다.",
+      "ancientContext": "고대 그리스-로마 세계에는 가정을 질서 있게 다루는 가정 규범 전통이 있었습니다.",
+      "textFunction": "본문은 당시 사회 구조 안에서 그리스도 중심의 관계 윤리를 말합니다.",
+      "avoidModernReading": "현대 가정 모델을 그대로 정당화하는 본문으로 읽으면 고대 가부장적 사회 구조와 본문의 변형 지점을 구분하지 못하게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

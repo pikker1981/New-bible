@@ -1,0 +1,126 @@
+{
+  "bookId": "3john",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "gaius": {
+      "type": "person",
+      "label": "가이오",
+      "aliases": [
+        "가이오"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "가이오는 요한삼서의 수신자로, 순회 사역자들을 환대하는 인물로 보입니다.",
+      "ancientContext": "초기 그리스도 공동체는 이동하는 교사와 선교자들을 가정 네트워크로 지원했습니다.",
+      "textFunction": "본문은 신실한 환대와 공동체 협력을 칭찬합니다.",
+      "avoidModernReading": "개인 칭찬 편지로만 읽으면 초기 선교 네트워크의 실제 운영 방식을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "diotrephes": {
+      "type": "person",
+      "label": "디오드레베",
+      "aliases": [
+        "디오드레베"
+      ],
+      "refs": [
+        "1:9-10"
+      ],
+      "summary": "디오드레베는 공동체 안에서 권위를 독점하고 사절을 거부하는 인물로 묘사됩니다.",
+      "ancientContext": "가정교회 네트워크에서는 환대와 추천이 공동체 연결을 유지하는 중요한 방식이었습니다.",
+      "textFunction": "본문은 권위 남용과 환대 거부가 복음 사역을 방해하는 문제로 나타납니다.",
+      "avoidModernReading": "단순한 성격 나쁜 사람 이야기로만 읽으면 초기 교회 네트워크의 권력 문제를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "itinerant-mission": {
+      "type": "culture",
+      "label": "순회 사역자",
+      "aliases": [
+        "나그네",
+        "형제"
+      ],
+      "refs": [
+        "1:5-8"
+      ],
+      "summary": "요한삼서는 낯선 형제들을 맞이하고 보내는 일을 칭찬합니다.",
+      "ancientContext": "순회 사역자는 지역 공동체의 환대와 물질적 지원에 의존했습니다.",
+      "textFunction": "본문은 환대가 진리를 위한 동역이 될 수 있음을 보여줍니다.",
+      "avoidModernReading": "현대 여행 경비 지원 정도로만 읽으면 초기 선교의 인프라로서 환대의 의미를 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

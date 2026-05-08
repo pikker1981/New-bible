@@ -1,0 +1,171 @@
+{
+  "bookId": "revelation",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "seven-churches": {
+      "type": "place",
+      "label": "일곱 교회",
+      "aliases": [
+        "일곱 교회",
+        "아시아"
+      ],
+      "refs": [
+        "1:4",
+        "1:11"
+      ],
+      "summary": "요한계시록은 아시아의 일곱 교회에 보내는 예언적 편지로 시작합니다.",
+      "ancientContext": "이 교회들은 로마 제국 아래 도시 생활, 제국 숭배, 경제 압력 속에 있었습니다.",
+      "textFunction": "계시록의 환상은 실제 지역 교회들의 충성, 타협, 고난 문제를 향합니다.",
+      "avoidModernReading": "미래 사건 암호표로만 읽으면 1세기 소아시아 교회에 주어진 메시지를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "patmos": {
+      "type": "place",
+      "label": "밧모",
+      "aliases": [
+        "밧모"
+      ],
+      "refs": [
+        "1:9"
+      ],
+      "summary": "밧모는 요한이 계시를 받았다고 말하는 섬입니다.",
+      "ancientContext": "로마 제국의 통치 질서 안에서 유배나 격리의 장소로 이해되기도 합니다.",
+      "textFunction": "요한계시록은 고난 중에 있는 증언자의 위치에서 쓰인 책으로 시작합니다.",
+      "avoidModernReading": "신비 체험 장소로만 읽으면 제국 권력과 증언의 고난이라는 배경을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "apocalyptic-symbolism": {
+      "type": "culture",
+      "label": "묵시 상징",
+      "aliases": [
+        "짐승",
+        "상징",
+        "환상"
+      ],
+      "refs": [
+        "1:12-20",
+        "13:1-18"
+      ],
+      "summary": "요한계시록은 상징, 숫자, 환상 이미지가 많은 묵시 문학입니다.",
+      "ancientContext": "고대 묵시 문학은 제국과 악의 현실을 하늘 관점에서 드러내는 방식으로 상징을 사용했습니다.",
+      "textFunction": "본문은 독자에게 현실을 다른 시각으로 보게 하고 충성을 요구합니다.",
+      "avoidModernReading": "상징을 현대 뉴스의 1:1 암호로만 해독하려 하면 본문의 예배·저항·인내 메시지를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "babylon-rome": {
+      "type": "history",
+      "label": "바벨론과 로마",
+      "aliases": [
+        "바벨론",
+        "큰 성"
+      ],
+      "refs": [
+        "17:1-18",
+        "18:1-24"
+      ],
+      "summary": "계시록의 바벨론은 제국적 도시와 권력 체계를 상징하는 이름으로 읽힙니다.",
+      "ancientContext": "유대·기독교 전통에서 바벨론은 하나님의 백성을 압제한 제국의 상징이었습니다.",
+      "textFunction": "계시록은 로마 제국의 경제적 사치와 폭력을 상징 언어로 비판합니다.",
+      "avoidModernReading": "현대 특정 국가나 도시 하나에 곧장 대입하면 1세기 제국 비판의 상징 구조를 놓칠 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

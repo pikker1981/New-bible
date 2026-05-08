@@ -1,0 +1,131 @@
+{
+  "bookId": "1corinthians",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "corinth": {
+      "type": "place",
+      "label": "고린도",
+      "aliases": [
+        "고린도"
+      ],
+      "refs": [
+        "1:2"
+      ],
+      "summary": "고린도는 로마 제국의 항구 도시이자 상업·사회적 다양성이 큰 도시였습니다.",
+      "ancientContext": "부와 지위 경쟁, 후원 관계, 수사 문화가 도시 생활에 영향을 주었습니다.",
+      "textFunction": "고린도전서는 분열, 성, 우상 제물, 은사 문제를 도시 문화와 공동체 현실 속에서 다룹니다.",
+      "avoidModernReading": "단순한 교회 문제 목록으로만 읽으면 도시의 명예 경쟁과 사회적 계층 구조를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "patronage-status": {
+      "type": "culture",
+      "label": "후원 관계와 지위 경쟁",
+      "aliases": [
+        "파벌",
+        "분열",
+        "자랑"
+      ],
+      "refs": [
+        "1:10-12",
+        "3:4",
+        "11:17-22"
+      ],
+      "summary": "고대 도시 사회에는 후원자와 피후원자 관계, 명예와 지위 경쟁이 강하게 작동했습니다.",
+      "ancientContext": "공동 식사와 모임에서도 사회적 서열이 드러날 수 있었습니다.",
+      "textFunction": "바울은 십자가와 공동체 질서를 통해 고린도 교회의 지위 경쟁을 비판합니다.",
+      "avoidModernReading": "현대의 단순 파벌 싸움으로만 읽으면 당시 명예 문화의 압력을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "idol-meat": {
+      "type": "culture",
+      "label": "우상 제물",
+      "aliases": [
+        "우상",
+        "제물"
+      ],
+      "refs": [
+        "8:1-13",
+        "10:14-22"
+      ],
+      "summary": "우상 제물은 고린도전서에서 공동체 양심과 식탁 교제를 둘러싼 문제입니다.",
+      "ancientContext": "고대 도시의 고기 소비와 사회적 모임은 신전, 제사, 후원 관계와 얽혀 있었습니다.",
+      "textFunction": "바울은 지식보다 사랑, 자유보다 약한 형제자매를 세우는 책임을 강조합니다.",
+      "avoidModernReading": "현대의 음식 취향 문제로만 읽으면 종교·경제·사회관계가 얽힌 실제 압력을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

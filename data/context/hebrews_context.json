@@ -1,0 +1,130 @@
+{
+  "bookId": "hebrews",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "priesthood": {
+      "type": "culture",
+      "label": "대제사장",
+      "aliases": [
+        "제사장",
+        "대제사장"
+      ],
+      "refs": [
+        "4:14-16",
+        "7:1-28"
+      ],
+      "summary": "히브리서는 예수를 큰 대제사장으로 설명합니다.",
+      "ancientContext": "제사장과 성소, 제사 언어는 유대 성전 전통의 핵심 요소입니다.",
+      "textFunction": "본문은 예수의 죽음과 중보를 성전 제사 체계의 언어로 해석합니다.",
+      "avoidModernReading": "현대 직업적 성직자 이미지로만 읽으면 성소·제사·중보의 상징 체계를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "melchizedek": {
+      "type": "person",
+      "label": "멜기세덱",
+      "aliases": [
+        "멜기세덱"
+      ],
+      "refs": [
+        "7:1-10"
+      ],
+      "summary": "멜기세덱은 창세기와 시편 전통을 배경으로 히브리서에 등장합니다.",
+      "ancientContext": "히브리서는 멜기세덱을 통해 레위 계열과 다른 제사장직을 논증합니다.",
+      "textFunction": "예수의 제사장직을 설명하기 위한 성경 해석의 핵심 장치입니다.",
+      "avoidModernReading": "난해한 신비 인물로만 읽으면 본문이 펼치는 성경 해석 논리를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "temple-sacrifice": {
+      "type": "history",
+      "label": "제사와 성소",
+      "aliases": [
+        "성소",
+        "제사",
+        "피"
+      ],
+      "refs": [
+        "9:1-14",
+        "10:1-18"
+      ],
+      "summary": "히브리서는 성소와 제사를 통해 그리스도의 사역을 설명합니다.",
+      "ancientContext": "제2성전기 유대교에서 제사는 죄, 정결, 언약 관계를 다루는 중심 제도였습니다.",
+      "textFunction": "본문은 반복 제사와 그리스도의 단번의 제사를 대비합니다.",
+      "avoidModernReading": "제사를 미개한 종교 관습으로만 읽으면 속죄와 언약 회복의 고대적 의미를 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

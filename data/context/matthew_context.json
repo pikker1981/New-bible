@@ -1,0 +1,212 @@
+{
+  "bookId": "matthew",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "genealogy-of-jesus": {
+      "type": "history",
+      "label": "족보",
+      "aliases": [
+        "아브라함",
+        "다윗"
+      ],
+      "refs": [
+        "1:1-17"
+      ],
+      "summary": "마태복음의 족보는 예수의 혈통을 아브라함과 다윗에게 연결합니다.",
+      "ancientContext": "고대 유대 사회에서 족보는 개인 소개가 아니라 정체성, 언약, 상속, 왕권의 정당성을 보여주는 장치였습니다.",
+      "textFunction": "마태는 예수를 이스라엘 이야기의 연속선, 특히 다윗 왕권과 아브라함 언약의 흐름 안에 배치합니다.",
+      "avoidModernReading": "현대식 가족관계 기록으로만 읽으면 족보가 가진 신학적·공동체적 기능을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "역사"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "magi": {
+      "type": "culture",
+      "label": "동방 박사들",
+      "aliases": [
+        "박사",
+        "동방"
+      ],
+      "refs": [
+        "2:1-12"
+      ],
+      "summary": "동방 박사들은 별의 움직임을 해석하는 지식인 또는 점성술적 전통과 관련된 인물들로 이해됩니다.",
+      "ancientContext": "고대 근동과 헬레니즘 세계에서 천체 현상은 왕의 탄생이나 제국적 사건과 연결되어 해석되곤 했습니다.",
+      "textFunction": "마태복음은 유대 밖 사람들이 예수의 왕권을 알아보는 장면을 통해 복음의 범위를 넓힙니다.",
+      "avoidModernReading": "현대의 낭만적 크리스마스 장식 요소로만 읽으면 당시 천문·왕권·이방인의 방문이라는 의미를 축소하게 됩니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "herod-the-great": {
+      "type": "person",
+      "label": "헤롯",
+      "aliases": [
+        "헤롯 왕",
+        "헤롯"
+      ],
+      "refs": [
+        "2:1-18"
+      ],
+      "summary": "헤롯은 로마의 후원을 받아 유대 지역을 통치한 왕으로, 신약 배경에서 권력과 불안의 상징으로 등장합니다.",
+      "ancientContext": "그의 통치는 건축 사업과 정치적 계산으로 알려졌지만, 왕권 위협에 민감한 통치자로도 기억되었습니다.",
+      "textFunction": "마태복음 2장에서 헤롯은 새 왕으로 태어난 예수를 위협하는 기존 권력의 대표로 기능합니다.",
+      "avoidModernReading": "단순한 악역으로만 읽으면 로마 제국 질서 아래 유대 왕권의 불안정성을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "kingdom-of-heaven": {
+      "type": "culture",
+      "label": "하늘나라",
+      "aliases": [
+        "천국",
+        "하늘 나라",
+        "하늘나라"
+      ],
+      "refs": [
+        "3:2",
+        "4:17",
+        "5:3"
+      ],
+      "summary": "마태복음의 하늘나라는 하나님이 다스리시는 통치를 가리키는 표현입니다.",
+      "ancientContext": "유대적 경건 전통에서는 하나님의 이름을 직접 말하는 것을 조심하는 경향이 있었고, 마태는 하나님 나라를 하늘나라로 표현합니다.",
+      "textFunction": "예수의 선포는 사후 세계 안내가 아니라 지금 역사 안으로 다가오는 하나님의 통치를 말합니다.",
+      "avoidModernReading": "현대식 천국 공간 개념으로만 읽으면 예수 선포의 왕권·통치·회복 의미가 약해집니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "jesus-messiah": {
+      "type": "person",
+      "label": "예수",
+      "aliases": [
+        "예수 그리스도",
+        "그리스도",
+        "메시아"
+      ],
+      "refs": [
+        "1:1"
+      ],
+      "summary": "예수는 신약 본문의 중심 인물이며, 복음서에서는 이스라엘의 메시아이자 하나님의 나라를 선포하는 분으로 제시됩니다.",
+      "ancientContext": "1세기 유대 세계에서 메시아 기대는 로마 지배, 성전 중심 신앙, 다윗 왕조의 회복 기대와 연결되어 있었습니다.",
+      "textFunction": "본문의 예수 호칭은 개인 이름 이상의 신학적·역사적 정체성 선언으로 기능합니다.",
+      "avoidModernReading": "현대의 개인 윤리 교사나 종교 창시자 이미지로만 읽으면 1세기 유대 메시아 기대와 정치·종교적 긴장을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

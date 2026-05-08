@@ -1,0 +1,127 @@
+{
+  "bookId": "titus",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "crete": {
+      "type": "place",
+      "label": "그레데",
+      "aliases": [
+        "그레데",
+        "크레타"
+      ],
+      "refs": [
+        "1:5"
+      ],
+      "summary": "디도서는 디도가 그레데에 남아 공동체 질서를 세우는 상황을 배경으로 합니다.",
+      "ancientContext": "그레데는 지중해 섬으로, 고대 문헌에서 특정 문화적 평판과 함께 언급되기도 했습니다.",
+      "textFunction": "편지는 지역 공동체의 지도자 세움과 건전한 가르침을 강조합니다.",
+      "avoidModernReading": "지역민 비하 문장으로만 읽으면 고대 수사적 관용구와 편지의 교정 목적을 구분하지 못하게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "titus-person": {
+      "type": "person",
+      "label": "디도",
+      "aliases": [
+        "디도"
+      ],
+      "refs": [
+        "1:4"
+      ],
+      "summary": "디도는 바울의 동역자로, 지역 공동체 정비를 맡은 인물입니다.",
+      "ancientContext": "초기 그리스도 운동은 여러 지역에 신뢰받는 동역자를 파견하여 공동체를 세웠습니다.",
+      "textFunction": "디도서는 디도의 역할을 통해 가르침과 삶의 질서를 연결합니다.",
+      "avoidModernReading": "현대 조직 관리자 정도로 읽으면 사도적 위임과 지역 공동체 형성의 성격을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "elders-overseers": {
+      "type": "culture",
+      "label": "장로와 감독",
+      "aliases": [
+        "장로",
+        "감독"
+      ],
+      "refs": [
+        "1:5-9"
+      ],
+      "summary": "디도서의 장로와 감독은 초기 공동체 지도자 역할과 관련됩니다.",
+      "ancientContext": "고대 가정·도시 공동체의 신뢰도와 평판은 지도자 자격 평가에 중요했습니다.",
+      "textFunction": "본문은 지도자의 사생활, 가르침, 공동체 평판을 함께 봅니다.",
+      "avoidModernReading": "현대 교단 직제 그대로 대입하면 초기 공동체 지도 구조의 유동성을 놓칠 수 있습니다.",
+      "certainty": "medium",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

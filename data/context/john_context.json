@@ -1,0 +1,170 @@
+{
+  "bookId": "john",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "logos": {
+      "type": "culture",
+      "label": "말씀",
+      "aliases": [
+        "로고스",
+        "말씀"
+      ],
+      "refs": [
+        "1:1-14"
+      ],
+      "summary": "요한복음의 말씀은 창조, 계시, 하나님의 자기표현을 담는 핵심 표현입니다.",
+      "ancientContext": "유대 지혜 전통과 헬레니즘 세계의 로고스 언어가 모두 배경으로 논의됩니다.",
+      "textFunction": "요한은 예수를 단순한 예언자보다 더 깊은 하나님의 자기 계시로 제시합니다.",
+      "avoidModernReading": "말씀을 단순한 문장이나 성경책 자체로만 읽으면 요한복음 서문의 우주적·계시적 의미를 좁히게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "samaria": {
+      "type": "place",
+      "label": "사마리아",
+      "aliases": [
+        "사마리아인",
+        "사마리아 여인"
+      ],
+      "refs": [
+        "4:4-9"
+      ],
+      "summary": "사마리아는 유대와 갈릴리 사이의 지역이며, 유대인과 사마리아인 사이의 긴장과 관련됩니다.",
+      "ancientContext": "두 집단은 성전, 예배 장소, 정체성 문제를 두고 오랜 갈등을 가지고 있었습니다.",
+      "textFunction": "요한복음 4장의 사마리아 여인 장면은 단순한 우연한 만남이 아니라 경계 넘기의 장면입니다.",
+      "avoidModernReading": "현대의 평범한 지역 이동 정도로 읽으면 유대-사마리아 갈등의 사회적 충격을 놓치게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "jerusalem-temple": {
+      "type": "place",
+      "label": "성전",
+      "aliases": [
+        "예루살렘",
+        "성전"
+      ],
+      "refs": [
+        "2:13-22"
+      ],
+      "summary": "예루살렘 성전은 제2성전기 유대교의 예배와 정체성의 중심이었습니다.",
+      "ancientContext": "성전은 제사와 순례뿐 아니라 경제·정치·종교 권위가 만나는 공간이었습니다.",
+      "textFunction": "요한복음에서 성전 사건은 예수의 정체성과 예배의 중심이 어디에 있는지를 묻는 장면입니다.",
+      "avoidModernReading": "단순한 종교 시설 비판으로만 읽으면 성전이 당시 유대인 삶에서 차지한 중심성을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "지명"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "pharisees-john": {
+      "type": "person",
+      "label": "바리새인",
+      "aliases": [
+        "니고데모",
+        "바리새파"
+      ],
+      "refs": [
+        "3:1",
+        "7:32",
+        "9:13"
+      ],
+      "summary": "바리새인은 제2성전기 유대교의 주요 종교 집단 중 하나입니다.",
+      "ancientContext": "율법 해석, 정결, 전통, 일상 속 경건을 중시한 집단으로 이해됩니다.",
+      "textFunction": "요한복음에서는 예수와 긴장 관계를 보이는 종교 지도층의 일부로 등장합니다.",
+      "avoidModernReading": "바리새인 전체를 위선자의 동의어처럼 읽으면 1세기 유대교 내부의 다양성을 왜곡하게 됩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}

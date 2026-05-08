@@ -1,0 +1,126 @@
+{
+  "bookId": "philemon",
+  "schema": "nt-modern-context-v1",
+  "updatedAt": "2026-05-08",
+  "note": "인물·지명·문화·역사 배경을 현대 독자의 오독 방지 목적에 맞춰 정리한 컨텍스트 데이터입니다.",
+  "contexts": {
+    "philemon-person": {
+      "type": "person",
+      "label": "빌레몬",
+      "aliases": [
+        "빌레몬"
+      ],
+      "refs": [
+        "1:1-2"
+      ],
+      "summary": "빌레몬은 바울의 동역자이자 가정교회와 연결된 인물로 등장합니다.",
+      "ancientContext": "초기 그리스도 공동체는 가정 공간을 중심으로 모이기도 했습니다.",
+      "textFunction": "바울은 빌레몬에게 오네시모를 새로운 관계 안에서 받아들이라고 권면합니다.",
+      "avoidModernReading": "사적인 부탁 편지로만 읽으면 가정·노예제·공동체 명예가 얽힌 긴장을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "onesimus": {
+      "type": "person",
+      "label": "오네시모",
+      "aliases": [
+        "오네시모"
+      ],
+      "refs": [
+        "1:10-16"
+      ],
+      "summary": "오네시모는 빌레몬서의 핵심 인물로, 바울은 그를 사랑받는 형제로 받아들이라고 말합니다.",
+      "ancientContext": "로마 제국의 노예제는 경제와 가정 질서의 일부였지만, 오늘의 인권 기준으로 정당화될 수 없습니다.",
+      "textFunction": "편지는 기존 사회 구조 안에서 관계의 재구성을 요구하는 방식으로 작동합니다.",
+      "avoidModernReading": "본문을 노예제 승인으로 읽거나 현대 자유노동 관계로 단순화하면 양쪽 모두 오독입니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "인물"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    },
+    "house-church": {
+      "type": "culture",
+      "label": "가정교회",
+      "aliases": [
+        "집에 모이는 교회",
+        "집"
+      ],
+      "refs": [
+        "1:2"
+      ],
+      "summary": "빌레몬서에는 집에 모이는 교회가 언급됩니다.",
+      "ancientContext": "초기 그리스도인들은 전용 예배당보다 가정과 후원 네트워크를 통해 모이는 경우가 많았습니다.",
+      "textFunction": "가정 공간은 신앙 공동체와 사회적 관계가 만나는 장소였습니다.",
+      "avoidModernReading": "현대 교회 건물 중심으로 읽으면 초기 공동체의 사적·공적 경계가 다른 점을 놓칩니다.",
+      "certainty": "high",
+      "basis": "scholarly-consensus",
+      "category": [
+        "문화"
+      ],
+      "sources": [
+        {
+          "title": "SBL Bible Odyssey",
+          "type": "academic-public",
+          "url": "https://www.bibleodyssey.org/",
+          "note": "성경 인물·지명·역사·문학 배경 설명의 학술 대중 자료"
+        },
+        {
+          "title": "NET Bible Full Notes Edition",
+          "type": "study-notes",
+          "url": "https://www.thomasnelsonbibles.com/product/net-bible-full-notes-edition/",
+          "note": "역사·문화 배경, 난해 표현, 문맥 설명을 포함하는 주석 모델 참고"
+        },
+        {
+          "title": "BibleProject — Ancient historical context",
+          "type": "educational",
+          "url": "https://bibleproject.com/podcasts/bible-wasnt-written-english/",
+          "note": "고대 역사·문화 맥락을 존중해 읽는 원칙 참고"
+        }
+      ]
+    }
+  }
+}
