@@ -1,0 +1,8 @@
+{
+  "fix": "mobile books selectable row restored",
+  "app_js_contains_book_select_indicator": true,
+  "css_contains_clickable_mobile_open": true,
+  "desktop_layout_changed": false,
+  "search_logic_changed": false,
+  "notes_spacing_preserved": true
+}

@@ -234,6 +234,7 @@ function renderBookList() {
       '<span class="book-mobile-name" aria-hidden="true">' + escapeHTML(book.bookEn || book.bookKo || book.id) + '</span>' +
       '<span class="book-full">' + order + ' ' + escapeHTML(book.bookKo) + '</span>' +
       '<small>' + book.chapterCount + '장</small>' +
+      '<span class="book-select-indicator" aria-hidden="true">' + (active ? '선택됨' : '선택') + '</span>' +
       '</button>' 
     );
   }).join("");
