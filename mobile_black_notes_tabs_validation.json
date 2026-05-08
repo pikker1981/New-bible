@@ -1,0 +1,20 @@
+{
+  "target": "mobile neutral book/chapter selectors + selected note above scripture + glossary tab",
+  "modified_files": [
+    "app.js",
+    "index.html",
+    "mobile_black_notes_tabs.css"
+  ],
+  "checks": {
+    "app_exists": true,
+    "css_exists": true,
+    "index_exists": true,
+    "has_responsive_note_layout": true,
+    "has_mobile_glossary_shell": true,
+    "has_black_mobile_book_override": true,
+    "has_note_move_slot": true,
+    "index_links_css": true,
+    "node_syntax_ok": true
+  },
+  "node_stderr": ""
+}

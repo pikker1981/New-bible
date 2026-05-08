@@ -317,6 +317,7 @@ function render() {
   };
 
   renderNoteList();
+  setupResponsiveNoteLayout();
   renderChapter();
 
   const firstNote = Object.keys(book.notes || {})[0];
@@ -484,6 +485,7 @@ function renderNoteList() {
   const ids = Object.keys(notes);
 
   els.noteCount.textContent = ids.length;
+  syncMobileGlossaryCount();
   els.noteList.innerHTML = ids.map((id) => {
     const title = noteTitleFromText(id, notes[id]);
     const preview = plainFromNote(notes[id]).slice(0, 76);
@@ -514,8 +516,14 @@ function showNote(noteId, scrollToPanel) {
   });
 
   if (scrollToPanel && window.innerWidth < 1280) {
-    const rail = document.querySelector(".right-rail");
-    if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (isMobileReaderLayout()) {
+      closeMobileGlossary();
+      const note = document.querySelector(".active-note");
+      if (note) note.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      const rail = document.querySelector(".right-rail");
+      if (rail) rail.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 }
 
@@ -577,14 +585,15 @@ function getSelectionContext() {
   const focusMark = focusEl.closest(".user-mark");
   const isSameExistingMark = Boolean(anchorMark && focusMark && anchorMark === focusMark);
   const text = isSameExistingMark ? normalizeHighlightText(anchorMark.textContent) : selectedText;
-  const mode = isSameExistingMark || hasVerseHighlight(state.currentBookId, meta.chapter, meta.verse, text) ? "delete" : "mark";
+  const markBookId = meta.bookId || state.currentBookId;
+  const mode = isSameExistingMark || hasVerseHighlight(markBookId, meta.chapter, meta.verse, text) ? "delete" : "mark";
 
   const range = selection.getRangeAt(0);
   const rect = range.getBoundingClientRect();
   if (!rect || rect.width === 0) return null;
 
   return {
-    bookId: meta.bookId || state.currentBookId,
+    bookId: markBookId,
     chapter: meta.chapter,
     verse: meta.verse,
     text,
@@ -681,6 +690,99 @@ function bindSelectionMarker() {
   document.addEventListener("scroll", () => hideMarkMenu(), true);
 }
 
+
+function isMobileReaderLayout() {
+  return window.matchMedia("(max-width: 900px)").matches;
+}
+
+function ensureMobileNoteSlot() {
+  let slot = document.getElementById("mobileNoteSlot");
+  if (slot) return slot;
+
+  const chapterTitleWrap = document.querySelector(".chapter-title-wrap");
+  if (!chapterTitleWrap || !chapterTitleWrap.parentElement) return null;
+
+  slot = document.createElement("div");
+  slot.id = "mobileNoteSlot";
+  slot.className = "mobile-note-slot";
+  slot.setAttribute("aria-label", "모바일 선택 설명 영역");
+  chapterTitleWrap.parentElement.insertBefore(slot, chapterTitleWrap);
+  return slot;
+}
+
+function ensureMobileGlossaryShell() {
+  let shell = document.getElementById("mobileGlossaryShell");
+  if (shell) return shell;
+
+  shell = document.createElement("section");
+  shell.id = "mobileGlossaryShell";
+  shell.className = "mobile-glossary-shell";
+  shell.innerHTML =
+    '<button id="mobileGlossaryToggle" class="mobile-glossary-toggle" type="button" aria-expanded="false">' +
+      '<span>설명 리스트</span>' +
+      '<strong id="mobileGlossaryCount">0</strong>' +
+    '</button>' +
+    '<div id="mobileGlossaryPanel" class="mobile-glossary-panel" hidden></div>';
+
+  shell.querySelector("#mobileGlossaryToggle").addEventListener("click", () => {
+    const panel = shell.querySelector("#mobileGlossaryPanel");
+    const toggle = shell.querySelector("#mobileGlossaryToggle");
+    const nextOpen = panel.hasAttribute("hidden");
+    panel.toggleAttribute("hidden", !nextOpen);
+    shell.classList.toggle("open", nextOpen);
+    toggle.setAttribute("aria-expanded", String(nextOpen));
+  });
+
+  return shell;
+}
+
+function syncMobileGlossaryCount() {
+  const mobileCount = document.getElementById("mobileGlossaryCount");
+  if (mobileCount && els.noteCount) mobileCount.textContent = els.noteCount.textContent || "0";
+}
+
+function closeMobileGlossary() {
+  const shell = document.getElementById("mobileGlossaryShell");
+  if (!shell) return;
+  const panel = shell.querySelector("#mobileGlossaryPanel");
+  const toggle = shell.querySelector("#mobileGlossaryToggle");
+  if (panel) panel.setAttribute("hidden", "");
+  if (toggle) toggle.setAttribute("aria-expanded", "false");
+  shell.classList.remove("open");
+}
+
+function setupResponsiveNoteLayout() {
+  const rightRail = document.querySelector(".right-rail");
+  const activeNote = document.querySelector(".active-note");
+  const noteListCard = document.querySelector(".note-list-card");
+  const quoteSection = document.querySelector(".quote-section");
+  if (!rightRail || !activeNote || !noteListCard) return;
+
+  const mobile = isMobileReaderLayout();
+  const slot = ensureMobileNoteSlot();
+  const shell = ensureMobileGlossaryShell();
+  const panel = shell.querySelector("#mobileGlossaryPanel");
+
+  if (mobile && slot && panel) {
+    if (activeNote.parentElement !== slot) slot.appendChild(activeNote);
+    if (shell.parentElement !== slot) slot.appendChild(shell);
+    if (noteListCard.parentElement !== panel) panel.appendChild(noteListCard);
+  } else {
+    if (activeNote.parentElement !== rightRail) rightRail.insertBefore(activeNote, rightRail.firstElementChild || null);
+    const insertBefore = quoteSection && quoteSection.parentElement === rightRail ? quoteSection : null;
+    if (noteListCard.parentElement !== rightRail) rightRail.insertBefore(noteListCard, insertBefore);
+    closeMobileGlossary();
+  }
+
+  syncMobileGlossaryCount();
+}
+
+function bindResponsiveNoteLayout() {
+  setupResponsiveNoteLayout();
+  window.addEventListener("resize", () => setupResponsiveNoteLayout());
+  window.addEventListener("orientationchange", () => setTimeout(setupResponsiveNoteLayout, 120));
+}
+
 els.searchInput.addEventListener("input", (event) => {
   state.query = event.target.value;
   hideMarkMenu();
@@ -694,6 +796,7 @@ async function init() {
       throw new Error("manifest.json에 books 정보가 없습니다.");
     }
     bindSelectionMarker();
+    bindResponsiveNoteLayout();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
     console.error(error);
