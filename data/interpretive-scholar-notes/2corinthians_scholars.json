@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "bookId": "2corinthians",
+  "description": "Source-verified scholar/annotator notes for interpretive perspective popups. Keep empty until a claim has verifiable source/licensing metadata.",
+  "relationTypes": {
+    "direct": "The scholar/commentator directly comments on this passage.",
+    "methodology": "The scholar's broader method is cautiously applied to this passage.",
+    "related": "The scholar provides a related interpretive lens, not a direct comment.",
+    "background": "The source provides historical/cultural background relevant to the passage."
+  },
+  "items": []
+}
