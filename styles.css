@@ -1651,6 +1651,36 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 }
 
 
+
+/* v33: typewriter animation for selected interpretation boxes. */
+.interpretive-typing-box{
+  box-shadow:0 12px 28px rgba(0,0,0,.08), inset 0 0 0 1px color-mix(in srgb, var(--accent) 24%, transparent);
+  transition:box-shadow .24s ease;
+}
+.interpretive-typewriter-active{
+  color:#333!important;
+  min-height:1.35em;
+  white-space:pre-wrap;
+}
+.interpretive-typewriter-active::after{
+  content:"";
+  display:inline-block;
+  width:2px;
+  height:1em;
+  margin-left:3px;
+  background:var(--accent);
+  vertical-align:-.12em;
+  animation:interpretiveTypingCaret .72s steps(2,end) infinite;
+}
+@keyframes interpretiveTypingCaret{
+  0%, 45%{opacity:1}
+  46%, 100%{opacity:0}
+}
+@media (prefers-reduced-motion: reduce){
+  .interpretive-typing-box{box-shadow:none;transition:none}
+  .interpretive-typewriter-active::after{display:none}
+}
+
 /* v30: user marking is a red underline, not a yellow highlight. */
 .user-mark{
   background:transparent!important;

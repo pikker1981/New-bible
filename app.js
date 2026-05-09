@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-matthew-debated-passages-v32";
+const APP_BUILD_ID = "20260509-interpretive-typing-animation-v33";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -79,6 +79,10 @@ const state = {
   cloudHighlightsLoaded: false,
   cloudSyncInProgress: false
 };
+
+const interpretiveTypingOriginalHtml = new WeakMap();
+const interpretiveTypingTimers = new WeakMap();
+let interpretiveTypingAnimationBound = false;
 
 const $ = (id) => document.getElementById(id);
 
@@ -566,6 +570,121 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
   );
 }
 
+
+const INTERPRETIVE_TYPING_TARGET_SELECTOR = [
+  ".interpretive-popup-note",
+  ".interpretive-view-card li",
+  ".interpretive-summary-grid li",
+  ".interpretive-detail-copy p",
+  ".interpretive-detail-recap li",
+  ".interpretive-scholar-note",
+  ".interpretive-scholar-body.single-paragraph p",
+  ".interpretive-scholar-expanded:not([hidden]) p",
+  ".interpretive-scholar-caution",
+  ".interpretive-scholar-related strong",
+  ".interpretive-scholar-empty"
+].join(",");
+
+function prefersReducedTypingMotion() {
+  return Boolean(window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches);
+}
+
+function hasActiveSelectionInside(root) {
+  const selection = window.getSelection();
+  if (!selection || selection.isCollapsed) return false;
+  const anchorEl = getElementFromNode(selection.anchorNode);
+  const focusEl = getElementFromNode(selection.focusNode);
+  return Boolean(root && ((anchorEl && root.contains(anchorEl)) || (focusEl && root.contains(focusEl))));
+}
+
+function getInterpretiveTypingTargets(scope) {
+  if (!scope) return [];
+  const direct = scope.matches?.(INTERPRETIVE_TYPING_TARGET_SELECTOR) ? [scope] : [];
+  const nested = Array.from(scope.querySelectorAll?.(INTERPRETIVE_TYPING_TARGET_SELECTOR) || []);
+  const targets = [...direct, ...nested];
+  return [...new Set(targets)].filter((target) => {
+    if (!target || target.closest("[hidden]")) return false;
+    const text = normalizeHighlightText(target.textContent || "");
+    return text.length >= 6;
+  });
+}
+
+function restoreInterpretiveTypingElement(target) {
+  const originalHtml = interpretiveTypingOriginalHtml.get(target);
+  if (typeof originalHtml === "string") target.innerHTML = originalHtml;
+  target.classList.remove("interpretive-typewriter-active");
+  target.removeAttribute("aria-busy");
+  interpretiveTypingTimers.delete(target);
+}
+
+function animateInterpretiveTextElement(target, indexOffset = 0) {
+  if (!target || prefersReducedTypingMotion()) return;
+
+  const existingTimer = interpretiveTypingTimers.get(target);
+  if (existingTimer) {
+    clearInterval(existingTimer);
+    restoreInterpretiveTypingElement(target);
+  }
+
+  const originalHtml = target.innerHTML;
+  const plainText = normalizeHighlightText(target.textContent || "");
+  if (plainText.length < 6) return;
+
+  interpretiveTypingOriginalHtml.set(target, originalHtml);
+  target.classList.add("interpretive-typewriter-active");
+  target.setAttribute("aria-busy", "true");
+  target.textContent = "";
+
+  const chars = Array.from(plainText);
+  const chunkSize = chars.length > 380 ? 8 : chars.length > 220 ? 6 : chars.length > 120 ? 4 : 2;
+  let cursor = 0;
+
+  window.setTimeout(() => {
+    const timer = window.setInterval(() => {
+      cursor = Math.min(chars.length, cursor + chunkSize);
+      target.textContent = chars.slice(0, cursor).join("");
+
+      if (cursor >= chars.length) {
+        clearInterval(timer);
+        window.setTimeout(() => restoreInterpretiveTypingElement(target), 90);
+      }
+    }, 15);
+
+    interpretiveTypingTimers.set(target, timer);
+  }, indexOffset * 55);
+}
+
+function runInterpretiveTypingAnimation(scope) {
+  if (!scope || prefersReducedTypingMotion() || hasActiveSelectionInside(scope)) return;
+
+  const targets = getInterpretiveTypingTargets(scope).slice(0, 18);
+  if (!targets.length) return;
+
+  const box = scope.closest?.(".interpretive-view-card, .interpretive-summary-grid section, .interpretive-detail-panel, .interpretive-scholar-card, .interpretive-popup-note") || scope;
+  box.classList.add("interpretive-typing-box");
+  window.setTimeout(() => box.classList.remove("interpretive-typing-box"), 900);
+
+  targets.forEach((target, index) => animateInterpretiveTextElement(target, index));
+}
+
+function scheduleInterpretiveTypingAnimation(scope) {
+  if (!scope) return;
+  window.requestAnimationFrame(() => runInterpretiveTypingAnimation(scope));
+}
+
+function bindInterpretiveTypingAnimation() {
+  if (interpretiveTypingAnimationBound) return;
+  interpretiveTypingAnimationBound = true;
+
+  document.addEventListener("click", (event) => {
+    if (event.target.closest("button, a, input, textarea, select, .mark-menu")) return;
+    const box = event.target.closest(".interpretive-view-card, .interpretive-summary-grid section, .interpretive-detail-panel, .interpretive-scholar-card, .interpretive-popup-note");
+    if (!box || !box.closest(".interpretive-popup-body, .mobile-info-body")) return;
+    if (hasActiveSelectionInside(box)) return;
+    scheduleInterpretiveTypingAnimation(box);
+  });
+}
+
 function refreshInterpretivePopupContent(introId, detailKey) {
   const item = getSectionIntroById(introId);
   if (!item || !item.interpretiveViews) return;
@@ -576,6 +695,7 @@ function refreshInterpretivePopupContent(introId, detailKey) {
     desktopContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
     markActiveInterpretiveDetailButton(desktopContent, detailKey);
     scrollInterpretiveDetailIntoView(desktopContent);
+    if (detailKey) scheduleInterpretiveTypingAnimation(desktopContent.querySelector(".interpretive-detail-panel"));
     return;
   }
 
@@ -585,6 +705,7 @@ function refreshInterpretivePopupContent(introId, detailKey) {
     mobileContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
     markActiveInterpretiveDetailButton(mobileContent, detailKey);
     scrollInterpretiveDetailIntoView(mobileContent);
+    if (detailKey) scheduleInterpretiveTypingAnimation(mobileContent.querySelector(".interpretive-detail-panel"));
   }
 }
 
@@ -619,6 +740,7 @@ function bindInterpretiveDetailDelegation() {
       scholarContentToggle.textContent = willOpen ? "내용 접기" : "내용 보기";
       body.classList.toggle("expanded", willOpen);
       body.classList.toggle("collapsed", !willOpen);
+      if (willOpen) scheduleInterpretiveTypingAnimation(content);
       return;
     }
 
@@ -687,7 +809,9 @@ function showInterpretiveView(introId) {
     body
   })) {
     const mobilePopup = document.getElementById("mobileInfoPopup");
-    markActiveInterpretiveDetailButton(mobilePopup?.querySelector("#mobileInfoBody"), null);
+    const mobileBody = mobilePopup?.querySelector("#mobileInfoBody");
+    markActiveInterpretiveDetailButton(mobileBody, null);
+    scheduleInterpretiveTypingAnimation(mobileBody?.querySelector(".interpretive-popup-note"));
     return;
   }
 
@@ -700,6 +824,7 @@ function showInterpretiveView(introId) {
   if (contentEl) {
     contentEl.innerHTML = body;
     markActiveInterpretiveDetailButton(contentEl, null);
+    scheduleInterpretiveTypingAnimation(contentEl.querySelector(".interpretive-popup-note"));
   }
 
   popup.setAttribute("aria-hidden", "false");
@@ -2748,6 +2873,7 @@ async function init() {
     bindMobileHighlightToggle();
     bindContextTabs();
     bindInterpretiveDetailDelegation();
+    bindInterpretiveTypingAnimation();
     bindFirebaseAuth();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
