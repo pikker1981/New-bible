@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-divine-english-uppercase-v24";
+const APP_BUILD_ID = "20260509-talent-progressive-sermon-label-v26";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
