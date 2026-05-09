@@ -1,0 +1,331 @@
+{
+  "version": "20260509-pagels-beyond-belief-gospel-notes-v29",
+  "sourceFile": "beyond_belief_full_publication_final.md",
+  "sourceTitle": "Beyond Belief: The Secret Gospel of Thomas / 믿음을 넘어서 - 도마의 비밀 복음서",
+  "author": "Elaine Pagels / 일레인 페이절스",
+  "policy": "원문 장문 수록 없이 본문별 한국어 요약/의역으로 반영. 개인 열람/연구용 OCR 자료의 공개 배포 주의.",
+  "addedCount": 32,
+  "notFound": [],
+  "targets": [
+    {
+      "book": "matthew",
+      "chapter": 22,
+      "verse": 34,
+      "title": "가장 큰 계명",
+      "introId": "matthew-22-34-가장-큰-계명",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "matthew",
+      "chapter": 25,
+      "verse": 31,
+      "title": "양과 염소의 심판",
+      "introId": "matthew-25-31-양과-염소의-심판",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "matthew",
+      "chapter": 26,
+      "verse": 17,
+      "title": "마지막 만찬",
+      "introId": "matthew-26-17-마지막-만찬",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "matthew",
+      "chapter": 27,
+      "verse": 32,
+      "title": "십자가 처형",
+      "introId": "matthew-27-32-십자가-처형",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "matthew",
+      "chapter": 3,
+      "verse": 13,
+      "title": "예수의 세례",
+      "introId": "matthew-3-13-예수의-세례",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 1,
+      "verse": 9,
+      "title": "예수의 세례",
+      "introId": "mark-1-9-예수의-세례",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 8,
+      "verse": 27,
+      "title": "베드로의 고백",
+      "introId": "mark-8-27-베드로의-고백",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 12,
+      "verse": 28,
+      "title": "가장 큰 계명",
+      "introId": "mark-12-28-가장-큰-계명",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 13,
+      "verse": 1,
+      "title": "성전 파괴와 마지막 때",
+      "introId": "mark-13-1-성전-파괴와-마지막-때",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 14,
+      "verse": 12,
+      "title": "마지막 만찬",
+      "introId": "mark-14-12-마지막-만찬",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "mark",
+      "chapter": 15,
+      "verse": 21,
+      "title": "십자가 처형",
+      "introId": "mark-15-21-십자가-처형",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "luke",
+      "chapter": 3,
+      "verse": 21,
+      "title": "예수의 세례",
+      "introId": "luke-3-21-예수의-세례",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "luke",
+      "chapter": 17,
+      "verse": 20,
+      "title": "하나님 나라와 사람의 아들의 날",
+      "introId": "luke-17-20-하나님-나라와-사람의-",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "luke",
+      "chapter": 21,
+      "verse": 5,
+      "title": "성전과 마지막 때",
+      "introId": "luke-21-5-성전과-마지막-때",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "luke",
+      "chapter": 22,
+      "verse": 7,
+      "title": "마지막 만찬",
+      "introId": "luke-22-7-마지막-만찬",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "luke",
+      "chapter": 23,
+      "verse": 26,
+      "title": "십자가 처형",
+      "introId": "luke-23-26-십자가-처형",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 1,
+      "verse": 1,
+      "title": "말씀 서문",
+      "introId": "john-1-1-말씀-서문",
+      "paragraphs": 3,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 2,
+      "verse": 13,
+      "title": "성전 정화",
+      "introId": "john-2-13-성전-정화",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 3,
+      "verse": 1,
+      "title": "니고데모와의 대화",
+      "introId": "john-3-1-니고데모와의-대화",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 6,
+      "verse": 22,
+      "title": "생명의 빵 담화",
+      "introId": "john-6-22-생명의-빵-담화",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 8,
+      "verse": 12,
+      "title": "세상의 빛",
+      "introId": "john-8-12-세상의-빛",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 9,
+      "verse": 1,
+      "title": "태어날 때부터 눈먼 사람",
+      "introId": "john-9-1-태어날-때부터-눈먼-사",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 10,
+      "verse": 1,
+      "title": "선한 목자 담화",
+      "introId": "john-10-1-선한-목자-담화",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 11,
+      "verse": 1,
+      "title": "나사로를 살리심",
+      "introId": "john-11-1-나사로를-살리심",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 13,
+      "verse": 1,
+      "title": "제자들의 발을 씻기심",
+      "introId": "john-13-1-제자들의-발을-씻기심",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 13,
+      "verse": 31,
+      "title": "새 계명과 이별 담화 시작",
+      "introId": "john-13-31-새-계명과-이별-담화-",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 14,
+      "verse": 1,
+      "title": "길과 진리와 생명",
+      "introId": "john-14-1-길과-진리와-생명",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 19,
+      "verse": 16,
+      "title": "십자가 처형",
+      "introId": "john-19-16-십자가-처형",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 20,
+      "verse": 19,
+      "title": "제자들에게 나타나심",
+      "introId": "john-20-19-제자들에게-나타나심",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 20,
+      "verse": 24,
+      "title": "도마의 고백",
+      "introId": "john-20-24-도마의-고백",
+      "paragraphs": 3,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 21,
+      "verse": 15,
+      "title": "베드로의 회복",
+      "introId": "john-21-15-베드로의-회복",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    },
+    {
+      "book": "john",
+      "chapter": 20,
+      "verse": 1,
+      "title": "빈 무덤",
+      "introId": "john-20-1-빈-무덤",
+      "paragraphs": 2,
+      "status": "added",
+      "previousPagelsRemoved": 0
+    }
+  ]
+}
