@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-firebase-auth-highlights-v22";
+const APP_BUILD_ID = "20260509-private-auth-highlights-v23";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -59,7 +59,7 @@ const state = {
   currentChapter: 1,
   query: "",
   currentNoteId: null,
-  highlights: loadHighlights(),
+  highlights: {},
   highlightView: "all",
   contexts: {},
   contextStatus: {},
@@ -682,16 +682,35 @@ function storageKey() {
   return "nt-modern-ko-highlights-v1";
 }
 
+function legacyLocalHighlightStorageKey() {
+  return storageKey();
+}
+
 function loadHighlights() {
+  // 개인 마킹은 로그인한 계정의 Firestore 데이터만 화면에 표시합니다.
+  // 비로그인 상태에서는 localStorage에 남은 이전 마킹도 읽지 않습니다.
+  return {};
+}
+
+function loadLegacyLocalHighlights() {
   try {
-    return JSON.parse(localStorage.getItem(storageKey()) || "{}");
+    return JSON.parse(localStorage.getItem(legacyLocalHighlightStorageKey()) || "{}");
   } catch (_) {
     return {};
   }
 }
 
 function saveHighlights() {
-  localStorage.setItem(storageKey(), JSON.stringify(state.highlights));
+  // 로그인 기반 개인 데이터 정책: 본문 마킹은 localStorage에 저장하지 않습니다.
+  // Firestore 저장 실패 시에도 다른 사용자가 같은 브라우저에서 보는 것을 막기 위해 로컬 보존을 하지 않습니다.
+}
+
+function clearPrivateHighlightState() {
+  state.highlights = {};
+  state.cloudHighlightsLoaded = false;
+  hideMarkMenu();
+  renderChapter();
+  renderHighlightList();
 }
 
 function firebaseApiReady() {
@@ -746,7 +765,7 @@ async function saveHighlightToCloud(bookId, chapter, verse, text) {
     setCloudSyncStatus("마킹 동기화됨", "ok");
   } catch (error) {
     console.error("마킹 클라우드 저장 실패", error);
-    setCloudSyncStatus("클라우드 저장 실패 · 로컬에는 저장됨", "warn");
+    setCloudSyncStatus("클라우드 저장 실패 · 로그인 데이터에 저장되지 않음", "warn");
   }
 }
 
@@ -766,7 +785,7 @@ async function deleteHighlightFromCloud(bookId, chapter, verse, text) {
     setCloudSyncStatus("마킹 삭제 동기화됨", "ok");
   } catch (error) {
     console.error("마킹 클라우드 삭제 실패", error);
-    setCloudSyncStatus("클라우드 삭제 실패 · 로컬에는 반영됨", "warn");
+    setCloudSyncStatus("클라우드 삭제 실패 · 화면에서만 반영됨", "warn");
   }
 }
 
@@ -784,57 +803,37 @@ function mergeHighlightIntoState(bookId, chapter, verse, text) {
 async function loadCloudHighlights(user) {
   if (!user || !firebaseApiReady()) return;
   try {
-    setCloudSyncStatus("클라우드 마킹 불러오는 중...", "loading");
+    setCloudSyncStatus("내 계정 마킹 불러오는 중...", "loading");
+    state.highlights = {};
+
     const snapshot = await window.firebaseFns.getDocs(
       window.firebaseFns.collection(window.firebaseDb, "users", user.uid, "highlights")
     );
 
-    let merged = 0;
     snapshot.forEach((docSnap) => {
       const item = docSnap.data() || {};
       if (!item.bookId || !item.chapter || !item.verse || !item.text) return;
-      if (mergeHighlightIntoState(item.bookId, item.chapter, item.verse, item.text)) merged += 1;
+      mergeHighlightIntoState(item.bookId, item.chapter, item.verse, item.text);
     });
 
-    if (merged > 0) {
-      saveHighlights();
-      renderChapter();
-      renderHighlightList();
-    } else {
-      renderHighlightList();
-    }
+    renderChapter();
+    renderHighlightList();
 
     state.cloudHighlightsLoaded = true;
-    setCloudSyncStatus(snapshot.size + "개 클라우드 마킹 확인", "ok");
+    setCloudSyncStatus(snapshot.size + "개 내 계정 마킹 표시", "ok");
   } catch (error) {
     console.error("클라우드 마킹 불러오기 실패", error);
-    setCloudSyncStatus("클라우드 마킹 불러오기 실패", "warn");
+    state.highlights = {};
+    renderChapter();
+    renderHighlightList();
+    setCloudSyncStatus("클라우드 마킹 불러오기 실패 · 개인 마킹 숨김", "warn");
   }
 }
-
 async function uploadLocalHighlightsToCloud(user) {
-  if (!user || !firebaseApiReady() || state.cloudSyncInProgress) return;
-  const items = getHighlightItems();
-  if (!items.length) {
-    setCloudSyncStatus("동기화할 로컬 마킹 없음", "idle");
-    return;
-  }
-
-  state.cloudSyncInProgress = true;
-  try {
-    setCloudSyncStatus("로컬 마킹 계정 동기화 중...", "loading");
-    for (const item of items) {
-      await saveHighlightToCloud(item.bookId, item.chapter, item.verse, item.text);
-    }
-    setCloudSyncStatus(items.length + "개 마킹 계정 동기화 완료", "ok");
-  } catch (error) {
-    console.error("로컬 마킹 업로드 실패", error);
-    setCloudSyncStatus("로컬 마킹 업로드 실패", "warn");
-  } finally {
-    state.cloudSyncInProgress = false;
-  }
+  // v23부터 자동 로컬 마킹 업로드를 중단합니다.
+  // 공용 기기에서 이전 사용자의 localStorage 마킹이 다른 계정으로 섞이는 것을 막기 위한 정책입니다.
+  return;
 }
-
 function updateAuthUI(user) {
   state.authUser = user || null;
   document.body.classList.toggle("is-signed-in", Boolean(user));
@@ -843,7 +842,7 @@ function updateAuthUI(user) {
   if (els.googleLogoutBtn) els.googleLogoutBtn.hidden = !user;
 
   if (els.authStatus) {
-    els.authStatus.textContent = user ? "Google 계정 연결됨" : "로그인하면 마킹이 계정에 저장됩니다.";
+    els.authStatus.textContent = user ? "Google 계정 연결됨" : "로그인해야 개인 마킹이 표시됩니다.";
   }
   if (els.authUserName) {
     els.authUserName.textContent = user ? (user.displayName || user.email || "사용자") : "로그인 전";
@@ -867,7 +866,7 @@ function bindFirebaseAuth() {
     window.addEventListener("firebase-ready", bindFirebaseAuth, { once: true });
     window.addEventListener("firebase-error", (event) => {
       console.error("Firebase 초기화 실패", event.detail);
-      setCloudSyncStatus("Firebase 초기화 실패 · 로컬 저장만 사용", "warn");
+      setCloudSyncStatus("Firebase 초기화 실패 · 개인 마킹 숨김", "warn");
     }, { once: true });
     return;
   }
@@ -898,12 +897,16 @@ function bindFirebaseAuth() {
   window.firebaseFns.onAuthStateChanged(window.firebaseAuth, async (user) => {
     updateAuthUI(user);
     if (user) {
+      state.highlights = {};
+      renderChapter();
+      renderHighlightList();
       await loadCloudHighlights(user);
-      await uploadLocalHighlightsToCloud(user);
       renderHighlightList();
     } else {
       state.cloudHighlightsLoaded = false;
-      setCloudSyncStatus("로컬 저장 모드", "idle");
+      state.highlights = {};
+      setCloudSyncStatus("비로그인 상태 · 개인 마킹 숨김", "idle");
+      renderChapter();
       renderHighlightList();
     }
   });
@@ -974,6 +977,12 @@ function hasVerseHighlight(bookId, chapter, verse, text) {
 }
 
 function addVerseHighlight(bookId, chapter, verse, text) {
+  const user = getCurrentFirebaseUser();
+  if (!user) {
+    setCloudSyncStatus("마킹은 Google 로그인 후 사용할 수 있습니다.", "warn");
+    return false;
+  }
+
   const clean = normalizeHighlightText(text);
   if (!clean) return false;
 
@@ -987,6 +996,12 @@ function addVerseHighlight(bookId, chapter, verse, text) {
 }
 
 function removeVerseHighlight(bookId, chapter, verse, text) {
+  const user = getCurrentFirebaseUser();
+  if (!user) {
+    setCloudSyncStatus("마킹 삭제는 Google 로그인 후 사용할 수 있습니다.", "warn");
+    return false;
+  }
+
   const clean = normalizeHighlightText(text);
   if (!clean) return false;
 
