@@ -1,0 +1,11 @@
+{
+  "version": "20260509-section-intro-typewriter-before-popup-v36",
+  "changes": [
+    "해석 관점 팝업 내부 안내문 애니메이션 제거",
+    "섹션 소개 카드의 제목/본문에 해석 관점 버튼 클릭 전 타이핑 애니메이션 추가",
+    "타이핑 애니메이션 종료 후 해석 관점 팝업 진입",
+    "자세히/신학자별/내용 보기 본문은 애니메이션 제외",
+    "기존 빨간 밑줄 마킹 기능 유지"
+  ],
+  "target": "section-intro-card strong + p before opening interpretive popup"
+}
