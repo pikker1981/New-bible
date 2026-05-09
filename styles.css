@@ -1652,33 +1652,47 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 
 
 
-/* v33: typewriter animation for selected interpretation boxes. */
-.interpretive-typing-box{
-  box-shadow:0 12px 28px rgba(0,0,0,.08), inset 0 0 0 1px color-mix(in srgb, var(--accent) 24%, transparent);
-  transition:box-shadow .24s ease;
+/* v34: wave entry animation for the first interpretation intro box only. */
+.interpretive-wave-box{
+  box-shadow:0 12px 28px rgba(0,0,0,.08), inset 0 0 0 1px color-mix(in srgb, var(--accent) 22%, transparent);
+  transition:box-shadow .3s ease;
 }
-.interpretive-typewriter-active{
+.interpretive-wave-entry-active{
   color:#333!important;
   min-height:1.35em;
   white-space:pre-wrap;
+  overflow:hidden;
 }
-.interpretive-typewriter-active::after{
-  content:"";
+.interpretive-wave-char{
   display:inline-block;
-  width:2px;
-  height:1em;
-  margin-left:3px;
-  background:var(--accent);
-  vertical-align:-.12em;
-  animation:interpretiveTypingCaret .72s steps(2,end) infinite;
+  opacity:0;
+  transform:translate3d(-10px, 16px, 0) rotate(-1deg);
+  filter:blur(2px);
+  animation:interpretiveWaveIn .78s cubic-bezier(.22,.85,.24,1) forwards;
+  animation-delay:calc(var(--i) * 34ms);
+  will-change:opacity, transform, filter;
 }
-@keyframes interpretiveTypingCaret{
-  0%, 45%{opacity:1}
-  46%, 100%{opacity:0}
+@keyframes interpretiveWaveIn{
+  0%{
+    opacity:0;
+    transform:translate3d(-10px, 16px, 0) rotate(-1deg);
+    filter:blur(2px);
+  }
+  45%{
+    opacity:.82;
+    transform:translate3d(2px, -4px, 0) rotate(.5deg);
+    filter:blur(.6px);
+  }
+  100%{
+    opacity:1;
+    transform:translate3d(0, 0, 0) rotate(0);
+    filter:blur(0);
+  }
 }
 @media (prefers-reduced-motion: reduce){
-  .interpretive-typing-box{box-shadow:none;transition:none}
-  .interpretive-typewriter-active::after{display:none}
+  .interpretive-wave-box{box-shadow:none;transition:none}
+  .interpretive-wave-entry-active{overflow:visible}
+  .interpretive-wave-char{opacity:1;transform:none;filter:none;animation:none}
 }
 
 /* v30: user marking is a red underline, not a yellow highlight. */

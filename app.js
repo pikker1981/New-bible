@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-interpretive-typing-animation-v33";
+const APP_BUILD_ID = "20260509-interpretive-wave-intro-v34";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -571,19 +571,7 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
 }
 
 
-const INTERPRETIVE_TYPING_TARGET_SELECTOR = [
-  ".interpretive-popup-note",
-  ".interpretive-view-card li",
-  ".interpretive-summary-grid li",
-  ".interpretive-detail-copy p",
-  ".interpretive-detail-recap li",
-  ".interpretive-scholar-note",
-  ".interpretive-scholar-body.single-paragraph p",
-  ".interpretive-scholar-expanded:not([hidden]) p",
-  ".interpretive-scholar-caution",
-  ".interpretive-scholar-related strong",
-  ".interpretive-scholar-empty"
-].join(",");
+const INTERPRETIVE_TYPING_TARGET_SELECTOR = ".interpretive-popup-note[data-interpretive-wave-note='true']";
 
 function prefersReducedTypingMotion() {
   return Boolean(window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches);
@@ -612,17 +600,23 @@ function getInterpretiveTypingTargets(scope) {
 function restoreInterpretiveTypingElement(target) {
   const originalHtml = interpretiveTypingOriginalHtml.get(target);
   if (typeof originalHtml === "string") target.innerHTML = originalHtml;
-  target.classList.remove("interpretive-typewriter-active");
+  target.classList.remove("interpretive-wave-entry-active");
   target.removeAttribute("aria-busy");
   interpretiveTypingTimers.delete(target);
 }
 
-function animateInterpretiveTextElement(target, indexOffset = 0) {
+function renderWaveCharacter(char, index) {
+  const safeIndex = Math.min(index, 96);
+  const safeChar = char === " " ? "&nbsp;" : char === "\n" ? "<br>" : escapeHTML(char);
+  return '<span class="interpretive-wave-char" style="--i:' + safeIndex + '">' + safeChar + '</span>';
+}
+
+function animateInterpretiveTextElement(target) {
   if (!target || prefersReducedTypingMotion()) return;
 
   const existingTimer = interpretiveTypingTimers.get(target);
   if (existingTimer) {
-    clearInterval(existingTimer);
+    clearTimeout(existingTimer);
     restoreInterpretiveTypingElement(target);
   }
 
@@ -631,40 +625,24 @@ function animateInterpretiveTextElement(target, indexOffset = 0) {
   if (plainText.length < 6) return;
 
   interpretiveTypingOriginalHtml.set(target, originalHtml);
-  target.classList.add("interpretive-typewriter-active");
+  target.classList.add("interpretive-wave-entry-active");
   target.setAttribute("aria-busy", "true");
-  target.textContent = "";
+  target.innerHTML = Array.from(plainText).map(renderWaveCharacter).join("");
 
-  const chars = Array.from(plainText);
-  const chunkSize = chars.length > 380 ? 8 : chars.length > 220 ? 6 : chars.length > 120 ? 4 : 2;
-  let cursor = 0;
-
-  window.setTimeout(() => {
-    const timer = window.setInterval(() => {
-      cursor = Math.min(chars.length, cursor + chunkSize);
-      target.textContent = chars.slice(0, cursor).join("");
-
-      if (cursor >= chars.length) {
-        clearInterval(timer);
-        window.setTimeout(() => restoreInterpretiveTypingElement(target), 90);
-      }
-    }, 15);
-
-    interpretiveTypingTimers.set(target, timer);
-  }, indexOffset * 55);
+  const restoreDelay = Math.min(4800, 1300 + Array.from(plainText).length * 18);
+  const timer = window.setTimeout(() => restoreInterpretiveTypingElement(target), restoreDelay);
+  interpretiveTypingTimers.set(target, timer);
 }
 
 function runInterpretiveTypingAnimation(scope) {
   if (!scope || prefersReducedTypingMotion() || hasActiveSelectionInside(scope)) return;
 
-  const targets = getInterpretiveTypingTargets(scope).slice(0, 18);
-  if (!targets.length) return;
+  const target = getInterpretiveTypingTargets(scope)[0];
+  if (!target) return;
 
-  const box = scope.closest?.(".interpretive-view-card, .interpretive-summary-grid section, .interpretive-detail-panel, .interpretive-scholar-card, .interpretive-popup-note") || scope;
-  box.classList.add("interpretive-typing-box");
-  window.setTimeout(() => box.classList.remove("interpretive-typing-box"), 900);
-
-  targets.forEach((target, index) => animateInterpretiveTextElement(target, index));
+  target.classList.add("interpretive-wave-box");
+  window.setTimeout(() => target.classList.remove("interpretive-wave-box"), 1100);
+  animateInterpretiveTextElement(target);
 }
 
 function scheduleInterpretiveTypingAnimation(scope) {
@@ -678,10 +656,10 @@ function bindInterpretiveTypingAnimation() {
 
   document.addEventListener("click", (event) => {
     if (event.target.closest("button, a, input, textarea, select, .mark-menu")) return;
-    const box = event.target.closest(".interpretive-view-card, .interpretive-summary-grid section, .interpretive-detail-panel, .interpretive-scholar-card, .interpretive-popup-note");
-    if (!box || !box.closest(".interpretive-popup-body, .mobile-info-body")) return;
-    if (hasActiveSelectionInside(box)) return;
-    scheduleInterpretiveTypingAnimation(box);
+    const noteBox = event.target.closest(".interpretive-popup-note[data-interpretive-wave-note='true']");
+    if (!noteBox || !noteBox.closest(".interpretive-popup-body, .mobile-info-body")) return;
+    if (hasActiveSelectionInside(noteBox)) return;
+    scheduleInterpretiveTypingAnimation(noteBox);
   });
 }
 
@@ -695,7 +673,7 @@ function refreshInterpretivePopupContent(introId, detailKey) {
     desktopContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
     markActiveInterpretiveDetailButton(desktopContent, detailKey);
     scrollInterpretiveDetailIntoView(desktopContent);
-    if (detailKey) scheduleInterpretiveTypingAnimation(desktopContent.querySelector(".interpretive-detail-panel"));
+    // 자세히/신학자별 패널 본문은 애니메이션 대상에서 제외한다.
     return;
   }
 
@@ -705,7 +683,7 @@ function refreshInterpretivePopupContent(introId, detailKey) {
     mobileContent.innerHTML = renderInterpretiveViewsContent(item, detailKey);
     markActiveInterpretiveDetailButton(mobileContent, detailKey);
     scrollInterpretiveDetailIntoView(mobileContent);
-    if (detailKey) scheduleInterpretiveTypingAnimation(mobileContent.querySelector(".interpretive-detail-panel"));
+    // 자세히/신학자별 패널 본문은 애니메이션 대상에서 제외한다.
   }
 }
 
@@ -740,7 +718,7 @@ function bindInterpretiveDetailDelegation() {
       scholarContentToggle.textContent = willOpen ? "내용 접기" : "내용 보기";
       body.classList.toggle("expanded", willOpen);
       body.classList.toggle("collapsed", !willOpen);
-      if (willOpen) scheduleInterpretiveTypingAnimation(content);
+      // 긴 자료 본문은 애니메이션 대상에서 제외한다. 첫 안내 박스만 wave 처리.
       return;
     }
 
