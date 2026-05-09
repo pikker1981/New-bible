@@ -1,0 +1,14 @@
+{
+  "version": "20260509-interpretive-wave-intro-visible-fix-v35",
+  "fixes": [
+    "Added missing data-interpretive-wave-note attribute to the first interpretation note box",
+    "Delayed animation trigger until popup is visible",
+    "Clicking anywhere inside interpretation popup retriggers only the first note box animation",
+    "Made wave/box entrance animation visually stronger",
+    "Kept detail/scholar/content bodies excluded from animation"
+  ],
+  "validated": {
+    "app_js": "pass",
+    "json": "pass"
+  }
+}
