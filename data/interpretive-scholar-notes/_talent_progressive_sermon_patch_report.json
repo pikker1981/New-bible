@@ -1,0 +1,20 @@
+{
+  "version": "20260509-talent-progressive-sermon-v25",
+  "changedFiles": [
+    "data/interpretive-scholar-notes/matthew_scholars.json",
+    "data/section-intros/matthew_intros.json"
+  ],
+  "target": {
+    "bookId": "matthew",
+    "chapter": 25,
+    "verse": 14,
+    "introId": "matthew-25-14-달란트-비유"
+  },
+  "addedScholar": "최주훈",
+  "source": "달란트_비유_다르게_읽기.md",
+  "summary": "달란트 비유의 진보적 시선에 맘몬/로마 제국 비판, 세 번째 종의 양심적 저항, 마 25:31의 그러나 연결 독해를 추가했습니다.",
+  "checks": {
+    "jsonParse": "ok",
+    "appJsSyntax": "ok"
+  }
+}

@@ -11011,6 +11011,28 @@
         "progressive": {
           "scholars": [
             {
+              "name": "최주훈",
+              "tradition": "중앙루터교회 담임목사",
+              "relationType": "direct",
+              "summaryKo": "이 해석은 달란트 비유를 ‘재능을 활용하라’는 성공 윤리가 아니라, 맘몬과 제국의 착취 질서를 폭로하는 이야기로 읽는다. 주인은 하나님이 아니라 불로소득과 권력을 요구하는 지배 체제에 가깝고, 세 번째 종은 게으른 실패자가 아니라 그 체제에 협조하지 않은 양심적 증언자로 해석된다.",
+              "interpretationKo": "달란트 비유의 주인은 재림하실 하나님으로 보기 어렵다. 그는 심지 않은 데서 거두고, 뿌리지 않은 데서 모으며, 이자까지 요구하는 인물로 그려지기 때문에 맘몬 혹은 로마 제국적 지배 권력을 상징하는 쪽이 더 자연스럽다. 두 종은 그 체제 안에서 자본을 불려 칭찬받는 사람들인 반면, 한 달란트 받은 종은 돈을 땅에 묻어 보존하고 주인의 착취성을 폭로한다. 이 관점에서 세 번째 종은 악하고 게으른 사람이 아니라, 하나님 뜻을 따르기 위해 불의한 게임을 거부한 고독한 신앙인이다. 특히 마태복음 25:31의 ‘그러나’ 흐름을 이어 읽으면, 바깥 어둠으로 쫓겨난 이 종의 운명은 양과 염소의 심판 장면 속에서 다시 평가될 수 있다.",
+              "detailsKo": [
+                "이 독해는 달란트의 막대한 규모와 1세기 팔레스타인 농촌 사회의 경제 현실을 먼저 본다. 큰돈을 투자해 단기간에 두 배로 불리는 행위는 가난한 청중의 일상적 경건이 아니라, 권력자와 부유층의 착취적 경제 질서와 더 가깝다는 문제의식에서 출발한다.",
+                "세 번째 종이 돈을 땅에 묻은 행동은 무능함의 표시가 아니라, 불의한 이자 수취와 자본 증식의 질서에 가담하지 않는 선택으로 읽힌다. 그는 주인 앞에서 ‘심지 않은 데서 거두는’ 존재라고 말함으로써 주인의 본질을 드러낸다.",
+                "이 관점은 25장 14–30절을 31절 이하와 분리하지 않는다. ‘그러나’라는 접속을 살리면, 바깥 어둠으로 밀려난 사람과 ‘지극히 작은 자’에게 하신 일을 심판의 기준으로 삼는 인자의 장면이 서로 맞물린다. 따라서 이 비유는 재능 개발의 윤리보다 맘몬 질서에 맞서 깨어 있으라는 종말론적 경고로 읽힌다."
+              ],
+              "sourceTitle": "달란트 비유 다르게 읽기",
+              "sourceAuthor": "최주훈",
+              "sourceContext": "중앙루터교회 담임목사",
+              "sourceUrl": "달란트_비유_다르게_읽기.md",
+              "publicationYear": 2020,
+              "license": "user-provided source summary",
+              "confidence": "high",
+              "caution": "사용자가 제공한 설교문을 바탕으로 한 한국어 요약/의역입니다. 원문 전문을 그대로 수록하지 않고 핵심 논지를 축약했습니다.",
+              "lens": "사회·비평 중심 / 맘몬·제국 비판 / 주변부 증언",
+              "interpretationKind": "본문 적용 해석 요약"
+            },
+            {
               "name": "Amy-Jill Levine",
               "tradition": "유대교 배경·비유 연구 / 반유대주의 비판",
               "relationType": "methodological",
@@ -24699,10 +24721,11 @@
       "use": "first two centuries, Jesus movements, plurality before later institutional Christianity"
     }
   ],
-  "lastUpdated": "2026-05-08",
+  "lastUpdated": "2026-05-09",
   "editorialPolicy": "현대 저작권 자료는 원문을 수록하지 않고, 출처 기반 한국어 요약/의역으로만 제시합니다. 사용자가 제공한 학자 목록을 출처 메타데이터와 함께 확장 반영했습니다.",
   "scholarInterpretationVersion": "pericope-applied-scholar-summary-v1",
   "gospelEventScholarVersion": "20260508-gospel-event-views-v20",
   "scholarDedupeVersion": "20260508-scholar-dedup-representative-v21",
-  "scholarDedupePolicy": "같은 본문·같은 관점 안에서 해석 요지가 같은 신학자 카드는 대표 카드 1개만 표시하고, 나머지는 sameViewScholars에 보존합니다."
+  "scholarDedupePolicy": "같은 본문·같은 관점 안에서 해석 요지가 같은 신학자 카드는 대표 카드 1개만 표시하고, 나머지는 sameViewScholars에 보존합니다.",
+  "talentProgressiveSermonPatchVersion": "20260509-talent-progressive-sermon-v25"
 }
