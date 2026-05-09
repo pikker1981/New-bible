@@ -1593,3 +1593,14 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   .auth-actions{grid-template-columns:1fr 1fr}
   .auth-btn[hidden]{display:none}
 }
+
+.interpretive-scholar-body{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin:10px 0 0;
+}
+.interpretive-scholar-body p{
+  margin:0;
+  line-height:1.78;
+}

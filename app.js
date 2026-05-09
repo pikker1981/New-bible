@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-talent-progressive-sermon-label-v26";
+const APP_BUILD_ID = "20260509-talent-progressive-sermon-expanded-v27";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -447,6 +447,32 @@ function renderSameViewScholars(scholar) {
   );
 }
 
+
+function renderScholarClaimBody(scholar) {
+  const baseClaim = scholar.interpretationKo || scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
+  const pieces = [];
+
+  if (Array.isArray(baseClaim)) {
+    pieces.push(...baseClaim);
+  } else if (baseClaim) {
+    pieces.push(...String(baseClaim).split(/\n{2,}/g));
+  }
+
+  if (Array.isArray(scholar.inlineDetailsKo)) {
+    pieces.push(...scholar.inlineDetailsKo);
+  }
+
+  const paragraphs = pieces
+    .map((item) => String(item || "").trim())
+    .filter(Boolean);
+
+  if (!paragraphs.length) return '<p>검증된 요약이 아직 입력되지 않았습니다.</p>';
+
+  return '<div class="interpretive-scholar-body">' +
+    paragraphs.map((paragraph) => '<p>' + escapeDisplay(paragraph) + '</p>').join("") +
+    '</div>';
+}
+
 function renderInterpretiveScholarPanel(item, scholarKey) {
   const key = String(scholarKey || "").replace(/^scholars:/, "");
   const scholars = getScholarEntriesForKey(item, key);
@@ -466,7 +492,6 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
       (scholars.length ? '<div class="interpretive-scholar-list">' + scholars.map((scholar) => {
         const relation = scholarRelationLabel(scholar.relationType || scholar.relation || scholar.type);
         const confidence = scholarConfidenceLabel(scholar.confidence);
-        const claim = scholar.interpretationKo || scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
         const sourceLine = renderScholarSourceLine(scholar);
         return (
           '<article class="interpretive-scholar-card">' +
@@ -475,7 +500,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
               '<span>' + escapeHTML(relation) + '</span>' +
             '</div>' +
             (scholar.tradition || scholar.field ? '<div class="interpretive-scholar-tradition">' + escapeHTML(scholar.tradition || scholar.field) + '</div>' : '') +
-            (claim ? '<p>' + escapeDisplay(claim) + '</p>' : '<p>검증된 요약이 아직 입력되지 않았습니다.</p>') +
+            renderScholarClaimBody(scholar) +
             '<div class="interpretive-scholar-meta">확실성: ' + escapeHTML(confidence) + (sourceLine ? ' · 출처: ' + sourceLine : ' · 출처: 미입력') + '</div>' +
             renderSameViewScholars(scholar) +
             (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeDisplay(scholar.caution || scholar.warning) + '</div>' : '') +
