@@ -1,0 +1,25 @@
+{
+  "version": "20260509-luke-gerasene-views-marking-v30",
+  "sourceFile": "luke_8_26_39_progressive_interpretations.md",
+  "updatedIntro": "luke-8-26-거라사-귀신-들린-사람",
+  "addedScholars": [
+    "Richard A. Horsley",
+    "Ched Myers",
+    "Warren Carter",
+    "Luis Menéndez-Antuña",
+    "Elizabeth Arnold & James McConnell",
+    "Joshua Garroway"
+  ],
+  "labelChanges": {
+    "conservative": "전통적 시선",
+    "moderate": "복음주의적 시선",
+    "progressive": "현대신학적 시선"
+  },
+  "uiChanges": [
+    "interpretive popup text marking enabled",
+    "red underline user mark style",
+    "long scholar content remains behind 내용 보기 button"
+  ],
+  "contentPolicy": "본문 개요/비교/종합/한국교회 적용/참고문헌은 제외하고, 학자 소개와 해석 내용 섹션만 앱 표시용으로 반영했습니다.",
+  "addedContentMode": "multi-paragraph collapsed under 내용 보기"
+}
