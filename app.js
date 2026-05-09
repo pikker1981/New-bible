@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-interpretive-wave-intro-visible-fix-v35";
+const APP_BUILD_ID = "20260509-section-intro-typewriter-before-popup-v36";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -653,18 +653,11 @@ function scheduleInterpretiveTypingAnimation(scope) {
 }
 
 function bindInterpretiveTypingAnimation() {
+  // v36: interpretive popup content itself is no longer animated.
+  // The click on the main section intro card runs a typewriter animation first,
+  // then opens the interpretation popup.
   if (interpretiveTypingAnimationBound) return;
   interpretiveTypingAnimationBound = true;
-
-  document.addEventListener("click", (event) => {
-    if (event.target.closest("button, a, input, textarea, select, .mark-menu")) return;
-    const interpretiveScope = event.target.closest(".interpretive-popup-body, .mobile-info-body");
-    if (!interpretiveScope) return;
-    const noteBox = interpretiveScope.querySelector(".interpretive-popup-note[data-interpretive-wave-note='true']");
-    if (!noteBox) return;
-    if (hasActiveSelectionInside(interpretiveScope)) return;
-    scheduleInterpretiveTypingAnimation(noteBox);
-  });
 }
 
 function refreshInterpretivePopupContent(introId, detailKey) {
@@ -793,7 +786,6 @@ function showInterpretiveView(introId) {
     const mobilePopup = document.getElementById("mobileInfoPopup");
     const mobileBody = mobilePopup?.querySelector("#mobileInfoBody");
     markActiveInterpretiveDetailButton(mobileBody, null);
-    scheduleInterpretiveTypingAnimation(mobileBody?.querySelector(".interpretive-popup-note"));
     return;
   }
 
@@ -812,7 +804,6 @@ function showInterpretiveView(introId) {
   popup.classList.add("show");
   document.body.classList.add("interpretive-popup-open");
   hideMarkMenu();
-  scheduleInterpretiveTypingAnimation(contentEl?.querySelector(".interpretive-popup-note[data-interpretive-wave-note='true']"));
 
   requestAnimationFrame(() => {
     if (sheet) sheet.focus({ preventScroll: true });
@@ -827,13 +818,97 @@ function closeInterpretivePopup() {
   document.body.classList.remove("interpretive-popup-open");
 }
 
+
+let sectionIntroTypewriterOpenPending = false;
+
+function sectionIntroTypewriterDelay(char) {
+  if (char === " " || char === "\n") return 18;
+  if (/[.,!?;:。．、，…]/.test(char)) return 130;
+  return 34;
+}
+
+function typeSectionIntroText(target, text) {
+  return new Promise((resolve) => {
+    if (!target) {
+      resolve();
+      return;
+    }
+
+    const chars = Array.from(text || "");
+    target.textContent = "";
+    target.classList.add("section-intro-typewriter-text");
+
+    let index = 0;
+    const step = () => {
+      if (index >= chars.length) {
+        target.classList.remove("section-intro-typewriter-text");
+        resolve();
+        return;
+      }
+      target.textContent += chars[index];
+      const delay = sectionIntroTypewriterDelay(chars[index]);
+      index += 1;
+      window.setTimeout(step, delay);
+    };
+
+    step();
+  });
+}
+
+async function animateSectionIntroBeforeInterpretiveOpen(card, callback) {
+  if (!card || prefersReducedTypingMotion()) {
+    callback?.();
+    return;
+  }
+
+  if (sectionIntroTypewriterOpenPending || card.dataset.typewriterActive === "true") return;
+
+  const titleEl = card.querySelector("strong");
+  const bodyEl = card.querySelector("p");
+  const button = card.querySelector(".section-intro-view-btn");
+  const originalTitleHtml = titleEl?.innerHTML || "";
+  const originalBodyHtml = bodyEl?.innerHTML || "";
+  const titleText = normalizeHighlightText(titleEl?.textContent || "");
+  const bodyText = normalizeHighlightText(bodyEl?.textContent || "");
+
+  sectionIntroTypewriterOpenPending = true;
+  card.dataset.typewriterActive = "true";
+  card.classList.add("section-intro-typewriter-active");
+  if (button) {
+    button.disabled = true;
+    button.setAttribute("aria-busy", "true");
+  }
+
+  try {
+    if (titleEl) titleEl.textContent = "";
+    if (bodyEl) bodyEl.textContent = "";
+    await typeSectionIntroText(titleEl, titleText);
+    await new Promise((resolve) => window.setTimeout(resolve, 180));
+    await typeSectionIntroText(bodyEl, bodyText);
+    await new Promise((resolve) => window.setTimeout(resolve, 420));
+  } finally {
+    if (titleEl) titleEl.innerHTML = originalTitleHtml;
+    if (bodyEl) bodyEl.innerHTML = originalBodyHtml;
+    card.classList.remove("section-intro-typewriter-active");
+    delete card.dataset.typewriterActive;
+    if (button) {
+      button.disabled = false;
+      button.removeAttribute("aria-busy");
+    }
+    sectionIntroTypewriterOpenPending = false;
+  }
+
+  callback?.();
+}
+
 function bindSectionIntroButtons() {
   els.verses.querySelectorAll(".section-intro-view-btn").forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
       window.getSelection()?.removeAllRanges();
-      showInterpretiveView(button.dataset.introView);
+      const card = button.closest(".section-intro-card");
+      animateSectionIntroBeforeInterpretiveOpen(card, () => showInterpretiveView(button.dataset.introView));
     });
   });
 }
