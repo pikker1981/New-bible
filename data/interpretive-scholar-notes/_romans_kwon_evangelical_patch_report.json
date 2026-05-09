@@ -1,0 +1,152 @@
+{
+  "version": "20260509-romans-kwon-evangelical-v37",
+  "sourceFile": "/mnt/data/romans_walk_combined_expanded_editorial.md",
+  "sourceDisplay": "권연경, 「로마서 산책」 통합 편집본",
+  "note": "업로드 파일에는 저자명이 권연경으로 표기되어 있어 데이터에도 해당 표기를 사용했습니다.",
+  "changedFiles": [
+    "data/section-intros/romans_intros.json",
+    "data/interpretive-scholar-notes/romans_scholars.json"
+  ],
+  "createdInterpretivePopups": [
+    "romans-1-1-인사와-사도직",
+    "romans-12-1-삶으로-드리는-예배"
+  ],
+  "addedScholarCards": 17,
+  "targetView": "moderate / 복음주의적 시선",
+  "mappings": [
+    {
+      "introId": "romans-1-1-인사와-사도직",
+      "sourceChapters": [
+        1,
+        2
+      ],
+      "title": "로마서의 역사적·해석학적 입구"
+    },
+    {
+      "introId": "romans-1-16-로마서의-중심-선언",
+      "sourceChapters": [
+        3
+      ],
+      "title": "복음, 하나님의 능력"
+    },
+    {
+      "introId": "romans-1-18-이방-세계의-죄",
+      "sourceChapters": [
+        4
+      ],
+      "title": "하나님의 진노 이야기"
+    },
+    {
+      "introId": "romans-2-1-판단하는-사람의-문제",
+      "sourceChapters": [
+        5
+      ],
+      "title": "계급장 떼고 시작하기"
+    },
+    {
+      "introId": "romans-2-17-율법을-가진-유대인의-책임",
+      "sourceChapters": [
+        5
+      ],
+      "title": "율법·할례 특권과 실제 순종"
+    },
+    {
+      "introId": "romans-3-21-믿음으로-드러난-하나님의-의",
+      "sourceChapters": [
+        6
+      ],
+      "title": "율법의 행위들과 하나님의 의"
+    },
+    {
+      "introId": "romans-4-1-아브라함의-믿음",
+      "sourceChapters": [
+        7
+      ],
+      "title": "아브라함을 통해 본 믿음의 논리"
+    },
+    {
+      "introId": "romans-5-1-의롭다-하심과-화평",
+      "sourceChapters": [
+        8
+      ],
+      "title": "칭의와 구원, 그리고 하나님의 사랑"
+    },
+    {
+      "introId": "romans-5-12-아담과-그리스도",
+      "sourceChapters": [
+        9
+      ],
+      "title": "죄의 다스림에서 은총의 다스림으로"
+    },
+    {
+      "introId": "romans-6-1-죄에-대해-죽은-사람들",
+      "sourceChapters": [
+        10
+      ],
+      "title": "영생을 향한 거룩한 삶의 여정"
+    },
+    {
+      "introId": "romans-7-1-율법과-죄의-관계",
+      "sourceChapters": [
+        11
+      ],
+      "title": "참을 수 없는 율법의 연약함"
+    },
+    {
+      "introId": "romans-8-1-성령-안의-생명",
+      "sourceChapters": [
+        12,
+        13
+      ],
+      "title": "성령 안의 생명과 자녀 됨"
+    },
+    {
+      "introId": "romans-8-18-현재-고난과-장차-영광",
+      "sourceChapters": [
+        14
+      ],
+      "title": "소망의 근거, 하나님의 사랑"
+    },
+    {
+      "introId": "romans-9-1-이스라엘의-문제",
+      "sourceChapters": [
+        15
+      ],
+      "title": "하나님의 선택은 유효한가"
+    },
+    {
+      "introId": "romans-10-1-믿음의-말씀",
+      "sourceChapters": [
+        16
+      ],
+      "title": "구원의 믿음과 이스라엘의 불신앙"
+    },
+    {
+      "introId": "romans-11-1-남은-자와-이방인의-접붙임",
+      "sourceChapters": [
+        17
+      ],
+      "title": "이스라엘, 이방인, 하나님의 비밀"
+    },
+    {
+      "introId": "romans-12-1-삶으로-드리는-예배",
+      "sourceChapters": [
+        18
+      ],
+      "title": "새로운 마음, 변화된 삶"
+    }
+  ],
+  "excluded": [
+    "문서 상단 편집 원칙",
+    "전체 논지 한눈에 보기",
+    "목차",
+    "통합 해설",
+    "핵심 개념 사전",
+    "로마서 논증 구조표",
+    "연구·강의용 토론 질문",
+    "원자료 목록"
+  ],
+  "validation": {
+    "json": "passed"
+  }
+}
