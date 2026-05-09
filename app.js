@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-talent-progressive-sermon-expanded-v27";
+const APP_BUILD_ID = "20260509-talent-7-progressive-content-v28";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -468,8 +468,17 @@ function renderScholarClaimBody(scholar) {
 
   if (!paragraphs.length) return '<p>검증된 요약이 아직 입력되지 않았습니다.</p>';
 
-  return '<div class="interpretive-scholar-body">' +
-    paragraphs.map((paragraph) => '<p>' + escapeDisplay(paragraph) + '</p>').join("") +
+  if (paragraphs.length === 1) {
+    return '<div class="interpretive-scholar-body single-paragraph">' +
+      '<p>' + escapeDisplay(paragraphs[0]) + '</p>' +
+      '</div>';
+  }
+
+  return '<div class="interpretive-scholar-body collapsed" data-scholar-body>' +
+    '<button class="scholar-content-toggle" type="button" data-scholar-content-toggle="true" aria-expanded="false">내용 보기</button>' +
+    '<div class="interpretive-scholar-expanded" data-scholar-content hidden>' +
+      paragraphs.map((paragraph) => '<p>' + escapeDisplay(paragraph) + '</p>').join("") +
+    '</div>' +
     '</div>';
 }
 
@@ -581,6 +590,22 @@ function bindInterpretiveDetailDelegation() {
   if (interpretiveDetailDelegationBound) return;
   interpretiveDetailDelegationBound = true;
   document.addEventListener("click", (event) => {
+    const scholarContentToggle = event.target.closest("[data-scholar-content-toggle]");
+    if (scholarContentToggle) {
+      event.preventDefault();
+      event.stopPropagation();
+      const body = scholarContentToggle.closest("[data-scholar-body]");
+      const content = body?.querySelector("[data-scholar-content]");
+      if (!content) return;
+      const willOpen = content.hasAttribute("hidden");
+      content.toggleAttribute("hidden", !willOpen);
+      scholarContentToggle.setAttribute("aria-expanded", String(willOpen));
+      scholarContentToggle.textContent = willOpen ? "내용 접기" : "내용 보기";
+      body.classList.toggle("expanded", willOpen);
+      body.classList.toggle("collapsed", !willOpen);
+      return;
+    }
+
     const detailButton = event.target.closest("[data-interpretive-detail]");
     if (detailButton) {
       event.preventDefault();
