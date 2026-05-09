@@ -1,0 +1,283 @@
+{
+  "version": "20260509-matthew-debated-passages-v32",
+  "sourceFile": "matthew_debated_passages_conservative_progressive_expanded.md",
+  "sourcePolicy": "서론·결론·활용 가이드·참고문헌 제외. 33개 본문별 전통적/현대신학적 해석 내용만 scholar cards로 추가.",
+  "totalPassagesParsed": 33,
+  "createdIntroSections": 4,
+  "updatedIntroSections": 29,
+  "createdScholarItems": 4,
+  "updatedScholarItems": 29,
+  "addedScholarCards": 66,
+  "createdIntroIds": [
+    "matthew-10-5-이방인에게-가지-말라",
+    "matthew-19-3-이혼과-독신",
+    "matthew-26-26-최후의-만찬",
+    "matthew-27-24-그-피를-우리와-우리-자손에게"
+  ],
+  "targets": [
+    {
+      "no": 1,
+      "ref": "마 1:1–17",
+      "chapter": 1,
+      "verse": 1,
+      "title": "족보와 네 여성",
+      "issue": "메시아 정체성, 이방성, 여성의 위치"
+    },
+    {
+      "no": 2,
+      "ref": "마 1:18–25",
+      "chapter": 1,
+      "verse": 18,
+      "title": "처녀 탄생과 임마누엘",
+      "issue": "역사적 사건, 이사야 7:14 인용, 성육신 교리"
+    },
+    {
+      "no": 3,
+      "ref": "마 2:1–23",
+      "chapter": 2,
+      "verse": 1,
+      "title": "동방박사·헤롯·애굽 피난",
+      "issue": "역사성, 모세 유형론, 폭력 권력 비판"
+    },
+    {
+      "no": 4,
+      "ref": "마 3:13–17",
+      "chapter": 3,
+      "verse": 13,
+      "title": "예수의 세례",
+      "issue": "죄 없는 예수가 왜 세례를 받는가"
+    },
+    {
+      "no": 5,
+      "ref": "마 4:1–11",
+      "chapter": 4,
+      "verse": 1,
+      "title": "광야 시험",
+      "issue": "사탄, 제국 권력, 이스라엘 재현"
+    },
+    {
+      "no": 6,
+      "ref": "마 5:1–12",
+      "chapter": 5,
+      "verse": 1,
+      "title": "팔복",
+      "issue": "영적 덕목인가, 사회적 역전 선언인가"
+    },
+    {
+      "no": 7,
+      "ref": "마 5:17–20",
+      "chapter": 5,
+      "verse": 17,
+      "title": "율법의 완성",
+      "issue": "율법 지속성, 성취, 반율법주의 논쟁"
+    },
+    {
+      "no": 8,
+      "ref": "마 5:21–48",
+      "chapter": 5,
+      "verse": 21,
+      "title": "여섯 반제",
+      "issue": "예수의 권위, 율법 강화, 비폭력 윤리"
+    },
+    {
+      "no": 9,
+      "ref": "마 6:9–13",
+      "chapter": 6,
+      "verse": 9,
+      "title": "주기도문",
+      "issue": "하나님 나라, 일용할 양식, 빚 탕감의 사회성"
+    },
+    {
+      "no": 10,
+      "ref": "마 7:13–23",
+      "chapter": 7,
+      "verse": 13,
+      "title": "좁은 문·거짓 제자",
+      "issue": "행위와 은혜, 심판 기준"
+    },
+    {
+      "no": 11,
+      "ref": "마 8–9장",
+      "chapter": 8,
+      "verse": 1,
+      "title": "치유와 축귀",
+      "issue": "기적 역사성, 정결 체계, 주변자 회복"
+    },
+    {
+      "no": 12,
+      "ref": "마 10:5–23",
+      "chapter": 10,
+      "verse": 5,
+      "title": "이방인에게 가지 말라",
+      "issue": "이스라엘 우선 선교와 보편 선교의 긴장"
+    },
+    {
+      "no": 13,
+      "ref": "마 11:25–30",
+      "chapter": 11,
+      "verse": 25,
+      "title": "내 멍에는 쉽다",
+      "issue": "지혜 전통, 제국의 멍에 대안"
+    },
+    {
+      "no": 14,
+      "ref": "마 12:1–14",
+      "chapter": 12,
+      "verse": 1,
+      "title": "안식일 논쟁",
+      "issue": "율법 해석권, 자비와 제의의 관계"
+    },
+    {
+      "no": 15,
+      "ref": "마 13장",
+      "chapter": 13,
+      "verse": 1,
+      "title": "천국 비유",
+      "issue": "비유의 은폐성, 심판과 은혜의 병존"
+    },
+    {
+      "no": 16,
+      "ref": "마 15:21–28",
+      "chapter": 15,
+      "verse": 21,
+      "title": "가나안 여인",
+      "issue": "배타성, 인종·젠더·타자성 논쟁"
+    },
+    {
+      "no": 17,
+      "ref": "마 16:13–20",
+      "chapter": 16,
+      "verse": 13,
+      "title": "베드로와 반석",
+      "issue": "교황권, 교회론, 고백과 권위"
+    },
+    {
+      "no": 18,
+      "ref": "마 17:24–27",
+      "chapter": 17,
+      "verse": 24,
+      "title": "성전세",
+      "issue": "성전 권위, 시민권, 제국·종교세 논쟁"
+    },
+    {
+      "no": 19,
+      "ref": "마 18:15–35",
+      "chapter": 18,
+      "verse": 15,
+      "title": "교회 권징과 용서",
+      "issue": "공동체 징계, 권위주의, 무한 용서"
+    },
+    {
+      "no": 20,
+      "ref": "마 19:3–12",
+      "chapter": 19,
+      "verse": 3,
+      "title": "이혼과 독신",
+      "issue": "결혼 윤리, 여성 보호, 성적 소명"
+    },
+    {
+      "no": 21,
+      "ref": "마 19:16–30",
+      "chapter": 19,
+      "verse": 16,
+      "title": "부자 청년",
+      "issue": "재물, 완전함, 구원과 소유 포기"
+    },
+    {
+      "no": 22,
+      "ref": "마 20:1–16",
+      "chapter": 20,
+      "verse": 1,
+      "title": "포도원 품꾼",
+      "issue": "은혜, 경제 정의, 공정성 논쟁"
+    },
+    {
+      "no": 23,
+      "ref": "마 20:20–28",
+      "chapter": 20,
+      "verse": 20,
+      "title": "섬김과 대속물",
+      "issue": "대속 교리, 권력 전복, 제자도"
+    },
+    {
+      "no": 24,
+      "ref": "마 21:12–17",
+      "chapter": 21,
+      "verse": 12,
+      "title": "성전 정화",
+      "issue": "정화인가 폐기인가, 반성전 신학"
+    },
+    {
+      "no": 25,
+      "ref": "마 21:33–46",
+      "chapter": 21,
+      "verse": 33,
+      "title": "악한 농부 비유",
+      "issue": "이스라엘 대체론, 심판, 반유대주의 위험"
+    },
+    {
+      "no": 26,
+      "ref": "마 22:15–22",
+      "chapter": 22,
+      "verse": 15,
+      "title": "가이사의 것은 가이사에게",
+      "issue": "국가 권력, 납세, 제국비평"
+    },
+    {
+      "no": 27,
+      "ref": "마 23장",
+      "chapter": 23,
+      "verse": 1,
+      "title": "서기관과 바리새인 화",
+      "issue": "반유대주의, 내부 유대교 논쟁, 위선 비판"
+    },
+    {
+      "no": 28,
+      "ref": "마 24장",
+      "chapter": 24,
+      "verse": 1,
+      "title": "감람산 강화",
+      "issue": "종말론, 성전 파괴, 미래 예언 논쟁"
+    },
+    {
+      "no": 29,
+      "ref": "마 25:1–13",
+      "chapter": 25,
+      "verse": 1,
+      "title": "열 처녀 비유",
+      "issue": "준비, 배제, 종말 공동체 윤리"
+    },
+    {
+      "no": 30,
+      "ref": "마 25:31–46",
+      "chapter": 25,
+      "verse": 31,
+      "title": "양과 염소",
+      "issue": "행위 심판, 가난한 자, 선교사 해석 논쟁"
+    },
+    {
+      "no": 31,
+      "ref": "마 26:26–29",
+      "chapter": 26,
+      "verse": 26,
+      "title": "최후의 만찬",
+      "issue": "성만찬, 새 언약, 대속의 의미"
+    },
+    {
+      "no": 32,
+      "ref": "마 27:24–25",
+      "chapter": 27,
+      "verse": 24,
+      "title": "그 피를 우리와 우리 자손에게",
+      "issue": "반유대주의 수용사, 책임 전가 논쟁"
+    },
+    {
+      "no": 33,
+      "ref": "마 28:16–20",
+      "chapter": 28,
+      "verse": 16,
+      "title": "부활과 대위임령",
+      "issue": "부활 역사성, 선교 명령, 제국적 언어 전복"
+    }
+  ]
+}
