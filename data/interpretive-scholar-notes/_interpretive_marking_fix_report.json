@@ -1,0 +1,14 @@
+{
+  "version": "20260509-interpretive-marking-fix-v31",
+  "summary": "Fix marking menu visibility and selection handling inside interpretive view popups.",
+  "changes": [
+    "Raised .mark-menu z-index above interpretive popup/modal layers.",
+    "Kept text selection enabled inside interpretive popup, scholar panels, detail panels, and mobile bottom sheet.",
+    "Prevented popup-internal scrolling from immediately hiding the marking menu.",
+    "Updated cache-busting version query in index.html."
+  ],
+  "validation": {
+    "nodeCheck": "passed",
+    "jsonParse": "passed"
+  }
+}
