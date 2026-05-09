@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-private-auth-highlights-v23";
+const APP_BUILD_ID = "20260509-divine-english-uppercase-v24";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -260,8 +260,8 @@ function renderSectionIntro(item) {
         '<div class="section-intro-meta">' + escapeHTML(type) + '</div>' +
         (hasViews ? '<button class="section-intro-view-btn" type="button" data-intro-view="' + escapeHTML(item.id || "") + '">해석 관점</button>' : '') +
       '</div>' +
-      '<strong>' + escapeHTML(title) + '</strong>' +
-      '<p>' + escapeHTML(intro) + '</p>' +
+      '<strong>' + escapeDisplay(title) + '</strong>' +
+      '<p>' + escapeDisplay(intro) + '</p>' +
     '</aside>'
   );
 }
@@ -273,7 +273,7 @@ function getSectionIntroById(introId) {
 
 function renderPointList(points) {
   if (!Array.isArray(points) || points.length === 0) return "";
-  return '<ul>' + points.map((point) => '<li>' + escapeHTML(point) + '</li>').join("") + '</ul>';
+  return '<ul>' + points.map((point) => '<li>' + escapeDisplay(point) + '</li>').join("") + '</ul>';
 }
 
 function hasInterpretiveDetail(item, detailKey) {
@@ -308,11 +308,11 @@ function renderInterpretiveViewBlock(item, viewKey, fallbackLabel) {
   const view = views[viewKey];
   if (!view) return "";
   const label = view.label || fallbackLabel;
-  const lens = view.lens ? '<span>' + escapeHTML(view.lens) + '</span>' : '';
+  const lens = view.lens ? '<span>' + escapeDisplay(view.lens) + '</span>' : '';
   return (
     '<section class="interpretive-view-card" data-detail-card="' + escapeHTML(viewKey) + '">' +
       '<div class="interpretive-card-head">' +
-        '<h4>' + escapeHTML(label) + lens + '</h4>' +
+        '<h4>' + escapeDisplay(label) + lens + '</h4>' +
         renderInterpretiveCardActions(item, viewKey) +
       '</div>' +
       renderPointList(view.points || []) +
@@ -324,7 +324,7 @@ function renderInterpretiveSummaryBlock(item, title, points, detailKey) {
   return (
     '<section data-detail-card="' + escapeHTML(detailKey) + '">' +
       '<div class="interpretive-card-head">' +
-        '<h4>' + escapeHTML(title) + '</h4>' +
+        '<h4>' + escapeDisplay(title) + '</h4>' +
         renderInterpretiveCardActions(item, detailKey) +
       '</div>' +
       renderPointList(points) +
@@ -372,18 +372,18 @@ function getInterpretiveDetailPayload(item, detailKey) {
 function renderInterpretiveDetailPanel(item, detailKey) {
   const payload = getInterpretiveDetailPayload(item, detailKey);
   if (!payload || payload.details.length === 0) return "";
-  const lens = payload.lens ? '<span>' + escapeHTML(payload.lens) + '</span>' : '';
+  const lens = payload.lens ? '<span>' + escapeDisplay(payload.lens) + '</span>' : '';
   return (
     '<section class="interpretive-detail-panel" data-detail-panel="' + escapeHTML(detailKey) + '">' +
       '<div class="interpretive-detail-panel-head">' +
         '<div>' +
           '<div class="interpretive-detail-kicker">DETAIL</div>' +
-          '<h3>' + escapeHTML(payload.title) + lens + '</h3>' +
+          '<h3>' + escapeDisplay(payload.title) + lens + '</h3>' +
         '</div>' +
         '<button class="interpretive-detail-close" type="button" data-interpretive-detail-close="true">접기</button>' +
       '</div>' +
       '<div class="interpretive-detail-copy">' +
-        payload.details.map((detail) => '<p>' + escapeHTML(detail) + '</p>').join("") +
+        payload.details.map((detail) => '<p>' + escapeDisplay(detail) + '</p>').join("") +
       '</div>' +
       (payload.points.length ? '<div class="interpretive-detail-recap"><strong>요점</strong>' + renderPointList(payload.points) + '</div>' : '') +
     '</section>'
@@ -458,11 +458,11 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
       '<div class="interpretive-detail-panel-head">' +
         '<div>' +
           '<div class="interpretive-detail-kicker">SCHOLARS</div>' +
-          '<h3>' + escapeHTML(title) + '<span>신학자별 보기</span></h3>' +
+          '<h3>' + escapeDisplay(title) + '<span>신학자별 보기</span></h3>' +
         '</div>' +
         '<button class="interpretive-detail-close" type="button" data-interpretive-detail-close="true">접기</button>' +
       '</div>' +
-      '<p class="interpretive-scholar-note">' + escapeHTML(note) + '</p>' +
+      '<p class="interpretive-scholar-note">' + escapeDisplay(note) + '</p>' +
       (scholars.length ? '<div class="interpretive-scholar-list">' + scholars.map((scholar) => {
         const relation = scholarRelationLabel(scholar.relationType || scholar.relation || scholar.type);
         const confidence = scholarConfidenceLabel(scholar.confidence);
@@ -475,10 +475,10 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
               '<span>' + escapeHTML(relation) + '</span>' +
             '</div>' +
             (scholar.tradition || scholar.field ? '<div class="interpretive-scholar-tradition">' + escapeHTML(scholar.tradition || scholar.field) + '</div>' : '') +
-            (claim ? '<p>' + escapeHTML(claim) + '</p>' : '<p>검증된 요약이 아직 입력되지 않았습니다.</p>') +
+            (claim ? '<p>' + escapeDisplay(claim) + '</p>' : '<p>검증된 요약이 아직 입력되지 않았습니다.</p>') +
             '<div class="interpretive-scholar-meta">확실성: ' + escapeHTML(confidence) + (sourceLine ? ' · 출처: ' + sourceLine : ' · 출처: 미입력') + '</div>' +
             renderSameViewScholars(scholar) +
-            (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeHTML(scholar.caution || scholar.warning) + '</div>' : '') +
+            (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeDisplay(scholar.caution || scholar.warning) + '</div>' : '') +
           '</article>'
         );
       }).join("") + '</div>' :
@@ -501,7 +501,7 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
 
   return (
     '<div class="interpretive-popup-body" data-active-detail="' + escapeHTML(activeDetailKey || "") + '">' +
-      '<p class="interpretive-popup-note">' + escapeHTML(note) + '</p>' +
+      '<p class="interpretive-popup-note">' + escapeDisplay(note) + '</p>' +
       '<div class="interpretive-view-grid">' +
         renderInterpretiveViewBlock(item, "conservative", "보수적 시선") +
         renderInterpretiveViewBlock(item, "moderate", "중도적 시선") +
@@ -677,6 +677,44 @@ function escapeHTML(value) {
 function escapeRegExp(value) {
   return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
+
+const DIVINE_ENGLISH_TERMS = [
+  ["Kingdom of Heaven", "KINGDOM OF HEAVEN"],
+  ["Kingdom of God", "KINGDOM OF GOD"],
+  ["Jesus Christ", "JESUS CHRIST"],
+  ["Holy Spirit", "HOLY SPIRIT"],
+  ["Spirit of God", "SPIRIT OF GOD"],
+  ["Son of God", "SON OF GOD"],
+  ["Son of Man", "SON OF MAN"],
+  ["Lord Jesus", "LORD JESUS"],
+  ["Lord", "LORD"],
+  ["Messiah", "MESSIAH"],
+  ["Christ", "CHRIST"],
+  ["Jesus", "JESUS"],
+  ["God", "GOD"]
+];
+
+function normalizeDivineEnglishTerms(value) {
+  let result = String(value ?? "");
+  DIVINE_ENGLISH_TERMS.forEach(([from, to]) => {
+    const pattern = from.split(/\s+/).map(escapeRegExp).join("\\s+");
+    result = result.replace(new RegExp("\\b" + pattern + "\\b", "gi"), to);
+  });
+  return result;
+}
+
+function escapeDisplay(value) {
+  return escapeHTML(normalizeDivineEnglishTerms(value));
+}
+
+function divineNoteLabel(noteId) {
+  const raw = String(noteId || "").trim();
+  const spaced = raw.replace(/[-_]+/g, " ");
+  const normalized = normalizeDivineEnglishTerms(spaced);
+  if (normalized !== spaced) return normalized;
+  return raw;
+}
+
 
 function storageKey() {
   return "nt-modern-ko-highlights-v1";
@@ -1023,17 +1061,17 @@ function applyBookAccent(bookId) {
 }
 
 function mdInlineToHTML(text) {
-  let html = escapeHTML(text);
+  let html = escapeDisplay(text);
   html = html.replace(/\{\{ctx:([^}|]+)(?:\|([^}]+))?\}\}/g, function (_, contextId, label) {
     const safeId = escapeHTML(String(contextId || "").trim());
-    const safeLabel = label ? escapeHTML(String(label).trim()) : "맥락";
+    const safeLabel = label ? escapeDisplay(String(label).trim()) : "맥락";
     const isInlineLabel = Boolean(label);
     return '<button class="ctx-link' + (isInlineLabel ? ' text-label' : '') + '" type="button" data-context="' + safeId + '" title="당시 배경 보기">' + safeLabel + '</button>';
   });
   html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/\[\^([^\]]+)\]/g, function (_, noteId) {
     const safeId = escapeHTML(noteId);
-    return '<button class="fn" type="button" data-note="' + safeId + '" title="설명 보기">' + safeId + "</button>";
+    return '<button class="fn" type="button" data-note="' + safeId + '" title="설명 보기">' + escapeDisplay(divineNoteLabel(noteId)) + "</button>";
   });
   return html;
 }
@@ -1529,8 +1567,8 @@ function renderNoteList() {
     const active = id === state.currentNoteId ? " active" : "";
     return (
       '<button class="note-item' + active + '" type="button" data-note="' + escapeHTML(id) + '">' +
-      "<strong>" + escapeHTML(title) + "</strong>" +
-      "<span>" + escapeHTML(preview) + "</span>" +
+      "<strong>" + escapeDisplay(title) + "</strong>" +
+      "<span>" + escapeDisplay(preview) + "</span>" +
       "</button>"
     );
   }).join("");
@@ -1607,8 +1645,8 @@ function renderMobileHighlightListBody(items) {
     return (
       '<button class="mobile-highlight-item" type="button" data-index="' + index + '" style="--book-accent:' + escapeHTML(item.color) + '">' +
         '<span class="mobile-highlight-ref">' + escapeHTML(ref) + '</span>' +
-        '<strong>' + escapeHTML(item.text) + '</strong>' +
-        '<em>' + escapeHTML(excerpt) + '</em>' +
+        '<strong>' + escapeDisplay(item.text) + '</strong>' +
+        '<em>' + escapeDisplay(excerpt) + '</em>' +
       '</button>'
     );
   }).join("") + '</div>';
@@ -1683,8 +1721,8 @@ function renderHighlightList() {
     return (
       '<article class="highlight-item" tabindex="0" role="button" data-index="' + index + '" style="--book-accent:' + escapeHTML(item.color) + '">' +
         '<div class="highlight-ref">' + escapeHTML(ref) + '</div>' +
-        '<div class="highlight-picked">' + escapeHTML(item.text) + '</div>' +
-        '<div class="highlight-excerpt">' + escapeHTML(excerpt) + '</div>' +
+        '<div class="highlight-picked">' + escapeDisplay(item.text) + '</div>' +
+        '<div class="highlight-excerpt">' + escapeDisplay(excerpt) + '</div>' +
         '<button class="highlight-remove" type="button" data-index="' + index + '" aria-label="마킹 삭제">삭제</button>' +
       '</article>'
     );
@@ -2010,9 +2048,9 @@ function renderContextList() {
     return (
       '<button class="context-item' + active + '" type="button" data-context="' + escapeHTML(item.id) + '">' +
         '<span class="context-type">' + escapeHTML(item.typeLabel) + '</span>' +
-        '<strong>' + escapeHTML(title) + '</strong>' +
-        (refs ? '<em>' + escapeHTML(refs) + '</em>' : '') +
-        '<small>' + escapeHTML(preview || "설명 내용 없음") + '</small>' +
+        '<strong>' + escapeDisplay(title) + '</strong>' +
+        (refs ? '<em>' + escapeDisplay(refs) + '</em>' : '') +
+        '<small>' + escapeDisplay(preview || "설명 내용 없음") + '</small>' +
       '</button>'
     );
   }).join("");
@@ -2024,17 +2062,17 @@ function renderContextList() {
 
 function renderContextParagraph(title, body) {
   if (!body) return "";
-  return '<div class="context-section"><h4>' + escapeHTML(title) + '</h4><p>' + mdInlineToHTML(body) + '</p></div>';
+  return '<div class="context-section"><h4>' + escapeDisplay(title) + '</h4><p>' + mdInlineToHTML(body) + '</p></div>';
 }
 
 function renderContextSources(sources) {
   if (!Array.isArray(sources) || sources.length === 0) return "";
   return '<div class="context-section context-sources"><h4>출처/근거</h4>' +
     sources.map((source) => {
-      if (typeof source === "string") return '<p>' + escapeHTML(source) + '</p>';
+      if (typeof source === "string") return '<p>' + escapeDisplay(source) + '</p>';
       const title = source.title || source.name || source.url || "출처";
       const note = source.note ? ' — ' + source.note : '';
-      return '<p><strong>' + escapeHTML(title) + '</strong>' + escapeHTML(note) + '</p>';
+      return '<p><strong>' + escapeDisplay(title) + '</strong>' + escapeDisplay(note) + '</p>';
     }).join("") +
     '</div>';
 }
@@ -2138,7 +2176,7 @@ function showContext(contextId, scrollToPanel) {
   els.contextBody.innerHTML =
     '<div class="context-selected-head">' +
       '<span>' + escapeHTML(meta.join(" · ")) + '</span>' +
-      '<h3>' + escapeHTML(title) + '</h3>' +
+      '<h3>' + escapeDisplay(title) + '</h3>' +
       (categories.length ? '<div class="context-chips">' + categories.map((cat) => '<b>' + escapeHTML(cat) + '</b>').join("") + '</div>' : '') +
     '</div>' +
     renderContextParagraph("무엇인가", item.summary || item.definition || item.description) +
