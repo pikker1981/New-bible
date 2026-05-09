@@ -1,0 +1,12 @@
+{
+  "version": "20260509-interpretive-wave-intro-v34",
+  "changed": [
+    "Disabled v33 broad typewriter animation for detail panels, scholar cards, summary lists, and content-view panels.",
+    "Added wave-entry animation only to the first interpretation intro note box.",
+    "Kept red underline marking behavior and restored original HTML after the wave animation completes."
+  ],
+  "validation": {
+    "appJsSyntax": "passed",
+    "jsonMutation": "none"
+  }
+}
