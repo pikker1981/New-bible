@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-interpretive-wave-intro-v34";
+const APP_BUILD_ID = "20260509-interpretive-wave-intro-visible-fix-v35";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -555,7 +555,7 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
 
   return (
     '<div class="interpretive-popup-body" data-mark-scope="interpretive" data-book="' + escapeHTML(state.currentBookId || "") + '" data-chapter="' + escapeHTML(String(item.chapter || "")) + '" data-verse="' + escapeHTML(String(item.verse || "")) + '" data-intro-id="' + escapeHTML(item.id || "") + '" data-active-detail="' + escapeHTML(activeDetailKey || "") + '">' +
-      '<p class="interpretive-popup-note">' + markableDisplay(note, state.currentBookId, item.chapter, item.verse) + '</p>' +
+      '<p class="interpretive-popup-note" data-interpretive-wave-note="true" aria-live="polite">' + markableDisplay(note, state.currentBookId, item.chapter, item.verse) + '</p>' +
       '<div class="interpretive-view-grid">' +
         renderInterpretiveViewBlock(item, "conservative", "전통적 시선") +
         renderInterpretiveViewBlock(item, "moderate", "복음주의적 시선") +
@@ -647,7 +647,9 @@ function runInterpretiveTypingAnimation(scope) {
 
 function scheduleInterpretiveTypingAnimation(scope) {
   if (!scope) return;
-  window.requestAnimationFrame(() => runInterpretiveTypingAnimation(scope));
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => runInterpretiveTypingAnimation(scope));
+  });
 }
 
 function bindInterpretiveTypingAnimation() {
@@ -656,9 +658,11 @@ function bindInterpretiveTypingAnimation() {
 
   document.addEventListener("click", (event) => {
     if (event.target.closest("button, a, input, textarea, select, .mark-menu")) return;
-    const noteBox = event.target.closest(".interpretive-popup-note[data-interpretive-wave-note='true']");
-    if (!noteBox || !noteBox.closest(".interpretive-popup-body, .mobile-info-body")) return;
-    if (hasActiveSelectionInside(noteBox)) return;
+    const interpretiveScope = event.target.closest(".interpretive-popup-body, .mobile-info-body");
+    if (!interpretiveScope) return;
+    const noteBox = interpretiveScope.querySelector(".interpretive-popup-note[data-interpretive-wave-note='true']");
+    if (!noteBox) return;
+    if (hasActiveSelectionInside(interpretiveScope)) return;
     scheduleInterpretiveTypingAnimation(noteBox);
   });
 }
@@ -802,13 +806,13 @@ function showInterpretiveView(introId) {
   if (contentEl) {
     contentEl.innerHTML = body;
     markActiveInterpretiveDetailButton(contentEl, null);
-    scheduleInterpretiveTypingAnimation(contentEl.querySelector(".interpretive-popup-note"));
   }
 
   popup.setAttribute("aria-hidden", "false");
   popup.classList.add("show");
   document.body.classList.add("interpretive-popup-open");
   hideMarkMenu();
+  scheduleInterpretiveTypingAnimation(contentEl?.querySelector(".interpretive-popup-note[data-interpretive-wave-note='true']"));
 
   requestAnimationFrame(() => {
     if (sheet) sheet.focus({ preventScroll: true });
