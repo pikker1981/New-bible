@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-talent-7-progressive-content-v28";
+const APP_BUILD_ID = "20260509-pagels-beyond-belief-gospel-notes-v29";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
