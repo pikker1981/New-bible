@@ -1,0 +1,14 @@
+{
+  "version": "20260509-talent-progressive-sermon-expanded-v27",
+  "target": "마태복음 25:14 달란트 비유 / 진보적 시선 / 최주훈",
+  "changes": [
+    "interpretationKo 확장",
+    "inlineDetailsKo 4단락 추가",
+    "detailsKo 6항목 확장",
+    "신학자별 카드 다단락 렌더링 지원"
+  ],
+  "validation": {
+    "matthew_scholars_json": "ok",
+    "app_js": "ok"
+  }
+}
