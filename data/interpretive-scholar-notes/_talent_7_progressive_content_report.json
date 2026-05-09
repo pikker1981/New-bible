@@ -1,0 +1,29 @@
+{
+  "version": "20260509-talent-7-progressive-content-v28",
+  "sourceFile": "달란트_비유_대안해석_신학자_7인.md",
+  "target": "matthew 25:14 달란트 비유 progressive scholars",
+  "addedScholars": [
+    "윌리엄 R. 헤르조그 2세 (William R. Herzog II)",
+    "리처드 L. 로바우 (Richard L. Rohrbaugh)",
+    "루이제 쇼트로프 (Luise Schottroff)",
+    "바바라 레이드 O.P. (Barbara E. Reid, O.P.)",
+    "워런 카터 (Warren Carter)",
+    "마크 데이비스 (Mark Davis)",
+    "존 도미닉 크로산 (John Dominic Crossan)"
+  ],
+  "paragraphCounts": {
+    "윌리엄 R. 헤르조그 2세 (William R. Herzog II)": 13,
+    "리처드 L. 로바우 (Richard L. Rohrbaugh)": 12,
+    "루이제 쇼트로프 (Luise Schottroff)": 11,
+    "바바라 레이드 O.P. (Barbara E. Reid, O.P.)": 10,
+    "워런 카터 (Warren Carter)": 11,
+    "마크 데이비스 (Mark Davis)": 10,
+    "존 도미닉 크로산 (John Dominic Crossan)": 12
+  },
+  "uiChange": "multi-paragraph scholar content is collapsed behind 내용 보기; single-paragraph content remains unchanged",
+  "excludedSections": [
+    "들어가며",
+    "종합: 공명과 차이",
+    "참고 문헌"
+  ]
+}
