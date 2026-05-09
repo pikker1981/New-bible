@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-interpretive-marking-fix-v31";
+const APP_BUILD_ID = "20260509-matthew-debated-passages-v32";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
