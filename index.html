@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>신약 현대어 번역</title>
   <meta name="description" content="신약 성서 그리스어 원문 기반 현대어 한국어 번역 웹앱">
-  <meta name="app-build" content="20260508-gospel-event-views-v20">
+  <meta name="app-build" content="20260509-firebase-auth-highlights-v22">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
-  <link rel="stylesheet" href="./styles.css?v=20260508-scholar-dedup-representative-v21">
+  <link rel="stylesheet" href="./styles.css?v=20260509-firebase-auth-highlights-v22">
   <link rel="stylesheet" href="./mobile_books_abbr_outline_gray.css?v=20260508-mobile-bottom-arrow-nav-v8">
 </head>
 <body>
@@ -30,6 +30,22 @@
             <div class="stat"><div class="stat-n"><span class="u">KO</span></div><div class="stat-l">현대어<br>번역</div></div>
           </div>
         </div>
+
+        <section class="panel auth-panel" aria-label="계정 동기화">
+          <div class="panel-head"><span>ACCOUNT</span><strong>SYNC</strong></div>
+          <div class="auth-card">
+            <img id="authUserPhoto" class="auth-photo" alt="" hidden>
+            <div class="auth-copy">
+              <strong id="authUserName">로그인 전</strong>
+              <span id="authStatus">로그인하면 마킹이 계정에 저장됩니다.</span>
+            </div>
+          </div>
+          <div class="auth-actions">
+            <button id="googleLoginBtn" class="auth-btn primary" type="button">Google 로그인</button>
+            <button id="googleLogoutBtn" class="auth-btn" type="button" hidden>로그아웃</button>
+          </div>
+          <div id="cloudSyncStatus" class="cloud-sync-status" data-kind="idle">로컬 저장 모드</div>
+        </section>
 
         <section class="panel">
           <label class="panel-label" for="searchInput">SEARCH</label>
@@ -136,6 +152,7 @@
       </aside>
     </div>
   </div>
-  <script src="./app.js?v=20260508-scholar-dedup-representative-v21"></script>
+  <script type="module" src="./firebase-init.js?v=20260509-firebase-auth-highlights-v22"></script>
+  <script src="./app.js?v=20260509-firebase-auth-highlights-v22"></script>
 </body>
 </html>

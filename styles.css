@@ -1570,3 +1570,26 @@ body.interpretive-popup-open{overflow:hidden}
   color:#555;
   font-weight:750;
 }
+
+/* Firebase account sync */
+.auth-panel{position:relative;overflow:hidden}
+.auth-card{display:flex;align-items:center;gap:12px;margin-top:2px;padding:12px;border:1px solid var(--line-soft);background:#fff}
+.auth-photo{width:36px;height:36px;border-radius:999px;object-fit:cover;border:1px solid var(--line)}
+.auth-copy{display:flex;min-width:0;flex-direction:column;gap:4px}
+.auth-copy strong{font-size:13px;letter-spacing:-.02em;color:#222;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.auth-copy span{font-size:11px;line-height:1.45;color:#999;word-break:keep-all}
+.auth-actions{display:grid;grid-template-columns:1fr;gap:8px;margin-top:10px}
+.auth-btn{width:100%;min-height:38px;border:1px solid var(--line);background:#fff;color:#333;font-size:12px;font-weight:850;letter-spacing:-.01em;cursor:pointer;transition:.15s ease}
+.auth-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+.auth-btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.auth-btn.primary:hover{filter:brightness(.96);color:#fff}
+.cloud-sync-status{margin-top:9px;font-size:11px;line-height:1.5;color:#999;word-break:keep-all}
+.cloud-sync-status[data-kind="ok"]{color:var(--accent);font-weight:750}
+.cloud-sync-status[data-kind="warn"]{color:#B45309;font-weight:750}
+.cloud-sync-status[data-kind="loading"]{color:#555;font-weight:750}
+body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--accent) 14%, transparent)}
+@media (max-width:860px){
+  .auth-card{padding:11px}
+  .auth-actions{grid-template-columns:1fr 1fr}
+  .auth-btn[hidden]{display:none}
+}

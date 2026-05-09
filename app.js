@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260508-scholar-dedup-representative-v21";
+const APP_BUILD_ID = "20260509-firebase-auth-highlights-v22";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -74,7 +74,10 @@ const state = {
   selectionProbeTimer: null,
   searchRunId: 0,
   globalSearchResultCount: 0,
-  motionReady: false
+  motionReady: false,
+  authUser: null,
+  cloudHighlightsLoaded: false,
+  cloudSyncInProgress: false
 };
 
 const $ = (id) => document.getElementById(id);
@@ -110,7 +113,13 @@ const els = {
   contextCount: $("contextCount"),
   contextList: $("contextList"),
   contextBody: $("contextBody"),
-  contextTabs: document.querySelectorAll("[data-context-view]")
+  contextTabs: document.querySelectorAll("[data-context-view]"),
+  authStatus: $("authStatus"),
+  authUserName: $("authUserName"),
+  authUserPhoto: $("authUserPhoto"),
+  googleLoginBtn: $("googleLoginBtn"),
+  googleLogoutBtn: $("googleLogoutBtn"),
+  cloudSyncStatus: $("cloudSyncStatus")
 };
 
 async function loadJSON(path) {
@@ -685,6 +694,221 @@ function saveHighlights() {
   localStorage.setItem(storageKey(), JSON.stringify(state.highlights));
 }
 
+function firebaseApiReady() {
+  return Boolean(window.firebaseAuth && window.firebaseDb && window.firebaseFns);
+}
+
+function getCurrentFirebaseUser() {
+  return firebaseApiReady() ? window.firebaseAuth.currentUser : null;
+}
+
+function cloudHighlightDocId(bookId, chapter, verse, text) {
+  const clean = normalizeHighlightText(text);
+  const base = [bookId, chapter, verse].join("_");
+  return base.replace(/[^a-zA-Z0-9_-]/g, "_") + "_" + hashString(clean);
+}
+
+function buildCloudHighlightPayload(bookId, chapter, verse, text) {
+  const clean = normalizeHighlightText(text);
+  return {
+    bookId: String(bookId),
+    chapter: Number(chapter),
+    verse: Number(verse),
+    text: clean,
+    key: highlightKey(bookId, chapter, verse),
+    updatedAt: Date.now(),
+    appBuild: APP_BUILD_ID
+  };
+}
+
+function setCloudSyncStatus(message, kind = "idle") {
+  if (!els.cloudSyncStatus) return;
+  els.cloudSyncStatus.textContent = message || "";
+  els.cloudSyncStatus.dataset.kind = kind;
+}
+
+async function saveHighlightToCloud(bookId, chapter, verse, text) {
+  const user = getCurrentFirebaseUser();
+  if (!user || !firebaseApiReady()) return;
+
+  const clean = normalizeHighlightText(text);
+  if (!clean) return;
+
+  const docId = cloudHighlightDocId(bookId, chapter, verse, clean);
+  const payload = buildCloudHighlightPayload(bookId, chapter, verse, clean);
+
+  try {
+    await window.firebaseFns.setDoc(
+      window.firebaseFns.doc(window.firebaseDb, "users", user.uid, "highlights", docId),
+      payload,
+      { merge: true }
+    );
+    setCloudSyncStatus("마킹 동기화됨", "ok");
+  } catch (error) {
+    console.error("마킹 클라우드 저장 실패", error);
+    setCloudSyncStatus("클라우드 저장 실패 · 로컬에는 저장됨", "warn");
+  }
+}
+
+async function deleteHighlightFromCloud(bookId, chapter, verse, text) {
+  const user = getCurrentFirebaseUser();
+  if (!user || !firebaseApiReady()) return;
+
+  const clean = normalizeHighlightText(text);
+  if (!clean) return;
+
+  const docId = cloudHighlightDocId(bookId, chapter, verse, clean);
+
+  try {
+    await window.firebaseFns.deleteDoc(
+      window.firebaseFns.doc(window.firebaseDb, "users", user.uid, "highlights", docId)
+    );
+    setCloudSyncStatus("마킹 삭제 동기화됨", "ok");
+  } catch (error) {
+    console.error("마킹 클라우드 삭제 실패", error);
+    setCloudSyncStatus("클라우드 삭제 실패 · 로컬에는 반영됨", "warn");
+  }
+}
+
+function mergeHighlightIntoState(bookId, chapter, verse, text) {
+  const clean = normalizeHighlightText(text);
+  if (!clean) return false;
+  const key = highlightKey(bookId, chapter, verse);
+  const list = state.highlights[key] || [];
+  if (list.includes(clean)) return false;
+  list.push(clean);
+  state.highlights[key] = list;
+  return true;
+}
+
+async function loadCloudHighlights(user) {
+  if (!user || !firebaseApiReady()) return;
+  try {
+    setCloudSyncStatus("클라우드 마킹 불러오는 중...", "loading");
+    const snapshot = await window.firebaseFns.getDocs(
+      window.firebaseFns.collection(window.firebaseDb, "users", user.uid, "highlights")
+    );
+
+    let merged = 0;
+    snapshot.forEach((docSnap) => {
+      const item = docSnap.data() || {};
+      if (!item.bookId || !item.chapter || !item.verse || !item.text) return;
+      if (mergeHighlightIntoState(item.bookId, item.chapter, item.verse, item.text)) merged += 1;
+    });
+
+    if (merged > 0) {
+      saveHighlights();
+      renderChapter();
+      renderHighlightList();
+    } else {
+      renderHighlightList();
+    }
+
+    state.cloudHighlightsLoaded = true;
+    setCloudSyncStatus(snapshot.size + "개 클라우드 마킹 확인", "ok");
+  } catch (error) {
+    console.error("클라우드 마킹 불러오기 실패", error);
+    setCloudSyncStatus("클라우드 마킹 불러오기 실패", "warn");
+  }
+}
+
+async function uploadLocalHighlightsToCloud(user) {
+  if (!user || !firebaseApiReady() || state.cloudSyncInProgress) return;
+  const items = getHighlightItems();
+  if (!items.length) {
+    setCloudSyncStatus("동기화할 로컬 마킹 없음", "idle");
+    return;
+  }
+
+  state.cloudSyncInProgress = true;
+  try {
+    setCloudSyncStatus("로컬 마킹 계정 동기화 중...", "loading");
+    for (const item of items) {
+      await saveHighlightToCloud(item.bookId, item.chapter, item.verse, item.text);
+    }
+    setCloudSyncStatus(items.length + "개 마킹 계정 동기화 완료", "ok");
+  } catch (error) {
+    console.error("로컬 마킹 업로드 실패", error);
+    setCloudSyncStatus("로컬 마킹 업로드 실패", "warn");
+  } finally {
+    state.cloudSyncInProgress = false;
+  }
+}
+
+function updateAuthUI(user) {
+  state.authUser = user || null;
+  document.body.classList.toggle("is-signed-in", Boolean(user));
+
+  if (els.googleLoginBtn) els.googleLoginBtn.hidden = Boolean(user);
+  if (els.googleLogoutBtn) els.googleLogoutBtn.hidden = !user;
+
+  if (els.authStatus) {
+    els.authStatus.textContent = user ? "Google 계정 연결됨" : "로그인하면 마킹이 계정에 저장됩니다.";
+  }
+  if (els.authUserName) {
+    els.authUserName.textContent = user ? (user.displayName || user.email || "사용자") : "로그인 전";
+  }
+  if (els.authUserPhoto) {
+    if (user && user.photoURL) {
+      els.authUserPhoto.src = user.photoURL;
+      els.authUserPhoto.alt = (user.displayName || "사용자") + " 프로필";
+      els.authUserPhoto.hidden = false;
+    } else {
+      els.authUserPhoto.removeAttribute("src");
+      els.authUserPhoto.alt = "";
+      els.authUserPhoto.hidden = true;
+    }
+  }
+}
+
+function bindFirebaseAuth() {
+  if (!firebaseApiReady()) {
+    setCloudSyncStatus("Firebase 준비 중...", "loading");
+    window.addEventListener("firebase-ready", bindFirebaseAuth, { once: true });
+    window.addEventListener("firebase-error", (event) => {
+      console.error("Firebase 초기화 실패", event.detail);
+      setCloudSyncStatus("Firebase 초기화 실패 · 로컬 저장만 사용", "warn");
+    }, { once: true });
+    return;
+  }
+
+  if (els.googleLoginBtn) {
+    els.googleLoginBtn.addEventListener("click", async () => {
+      try {
+        setCloudSyncStatus("Google 로그인 중...", "loading");
+        await window.firebaseFns.signInWithPopup(window.firebaseAuth, window.firebaseProvider);
+      } catch (error) {
+        console.error("Google 로그인 실패", error);
+        setCloudSyncStatus("Google 로그인 실패", "warn");
+      }
+    });
+  }
+
+  if (els.googleLogoutBtn) {
+    els.googleLogoutBtn.addEventListener("click", async () => {
+      try {
+        await window.firebaseFns.signOut(window.firebaseAuth);
+      } catch (error) {
+        console.error("로그아웃 실패", error);
+        setCloudSyncStatus("로그아웃 실패", "warn");
+      }
+    });
+  }
+
+  window.firebaseFns.onAuthStateChanged(window.firebaseAuth, async (user) => {
+    updateAuthUI(user);
+    if (user) {
+      await loadCloudHighlights(user);
+      await uploadLocalHighlightsToCloud(user);
+      renderHighlightList();
+    } else {
+      state.cloudHighlightsLoaded = false;
+      setCloudSyncStatus("로컬 저장 모드", "idle");
+      renderHighlightList();
+    }
+  });
+}
+
 function noteListCollapseStorageKey() {
   return "nt-modern-ko-note-list-collapsed-v1";
 }
@@ -758,6 +982,7 @@ function addVerseHighlight(bookId, chapter, verse, text) {
   if (!list.includes(clean)) list.push(clean);
   state.highlights[key] = list;
   saveHighlights();
+  saveHighlightToCloud(bookId, chapter, verse, clean);
   return true;
 }
 
@@ -773,6 +998,7 @@ function removeVerseHighlight(bookId, chapter, verse, text) {
   if (next.length) state.highlights[key] = next;
   else delete state.highlights[key];
   saveHighlights();
+  deleteHighlightFromCloud(bookId, chapter, verse, clean);
   return true;
 }
 
@@ -2367,6 +2593,7 @@ async function init() {
     bindMobileHighlightToggle();
     bindContextTabs();
     bindInterpretiveDetailDelegation();
+    bindFirebaseAuth();
     await selectBook(state.manifest.books[0].id, 1);
   } catch (error) {
     console.error(error);
