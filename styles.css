@@ -371,7 +371,7 @@ mark{padding:0 2px}
 
 .mark-menu{
   position:absolute;
-  z-index:9999;
+  z-index:12080;
   transform:translateX(-50%);
   opacity:0;
   pointer-events:none;
@@ -409,7 +409,7 @@ mark{padding:0 2px}
 
 @media (max-width:900px){
   .mark-menu{
-    z-index:10020;
+    z-index:12080;
   }
   .mark-menu.mobile-below .mark-menu-btn{
     width:40px;
@@ -1677,4 +1677,34 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 .mobile-info-body button{
   -webkit-user-select:none;
   user-select:none;
+}
+
+
+/* v31: keep marking menu usable above interpretation/mobile popups. */
+.mark-menu{z-index:12080!important}
+.interpretive-popup-sheet,
+.interpretive-popup-content,
+.interpretive-popup-body,
+.interpretive-detail-panel,
+.interpretive-detail-copy,
+.interpretive-scholar-panel,
+.interpretive-scholar-list,
+.interpretive-scholar-card,
+.interpretive-scholar-body,
+.interpretive-scholar-expanded,
+.interpretive-summary-grid,
+.interpretive-view-card,
+.mobile-info-sheet,
+.mobile-info-body{
+  -webkit-user-select:text!important;
+  user-select:text!important;
+  -webkit-touch-callout:default!important;
+  touch-action:auto;
+}
+.interpretive-popup button,
+.mobile-info-body button,
+.mark-menu,
+.mark-menu *{
+  -webkit-user-select:none!important;
+  user-select:none!important;
 }

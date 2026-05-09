@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-luke-gerasene-views-marking-v30";
+const APP_BUILD_ID = "20260509-interpretive-marking-fix-v31";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -2617,7 +2617,18 @@ function bindSelectionMarker() {
     scheduleSelectionProbe([0, 80]);
   });
 
-  document.addEventListener("scroll", () => hideMarkMenu(), true);
+  document.addEventListener("scroll", (event) => {
+    const target = event.target;
+    const insideInterpretivePopup = target && target.closest && target.closest(".interpretive-popup-sheet, .mobile-info-body, .mobile-info-sheet");
+    if (insideInterpretivePopup) {
+      // 해석 관점 팝업 내부는 스크롤 가능한 영역이다.
+      // 이 영역에서 텍스트를 선택하는 동안 scroll 이벤트가 먼저 발생하면
+      // 마킹 메뉴가 즉시 사라지는 문제가 있어 선택 감지를 다시 예약한다.
+      scheduleSelectionProbe([40, 160]);
+      return;
+    }
+    hideMarkMenu();
+  }, true);
 }
 
 
