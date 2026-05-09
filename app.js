@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-pagels-beyond-belief-gospel-notes-v29";
+const APP_BUILD_ID = "20260509-luke-gerasene-views-marking-v30";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -271,11 +271,6 @@ function getSectionIntroById(introId) {
   return intros.find((item) => item.id === introId) || null;
 }
 
-function renderPointList(points) {
-  if (!Array.isArray(points) || points.length === 0) return "";
-  return '<ul>' + points.map((point) => '<li>' + escapeDisplay(point) + '</li>').join("") + '</ul>';
-}
-
 function hasInterpretiveDetail(item, detailKey) {
   const views = item?.interpretiveViews || {};
   if (["conservative", "moderate", "progressive"].includes(detailKey)) {
@@ -303,19 +298,39 @@ function renderInterpretiveCardActions(item, detailKey) {
   '</div>';
 }
 
+function interpretiveViewLabel(viewKey, fallbackLabel) {
+  return {
+    conservative: "전통적 시선",
+    moderate: "복음주의적 시선",
+    progressive: "현대신학적 시선"
+  }[viewKey] || fallbackLabel || "해석 관점";
+}
+
+function markableDisplay(value, bookId, chapter, verse) {
+  const html = escapeDisplay(value);
+  if (!bookId || !chapter || !verse) return html;
+  return applyUserHighlights(html, bookId, chapter, verse);
+}
+
+function renderPointList(points, markMeta) {
+  if (!Array.isArray(points) || points.length === 0) return "";
+  return '<ul>' + points.map((point) => '<li>' + markableDisplay(point, markMeta?.bookId, markMeta?.chapter, markMeta?.verse) + '</li>').join("") + '</ul>';
+}
+
 function renderInterpretiveViewBlock(item, viewKey, fallbackLabel) {
   const views = item?.interpretiveViews || {};
   const view = views[viewKey];
   if (!view) return "";
-  const label = view.label || fallbackLabel;
-  const lens = view.lens ? '<span>' + escapeDisplay(view.lens) + '</span>' : '';
+  const label = interpretiveViewLabel(viewKey, view.label || fallbackLabel);
+  const lens = view.lens ? '<span>' + markableDisplay(view.lens, state.currentBookId, item.chapter, item.verse) + '</span>' : '';
+  const markMeta = { bookId: state.currentBookId, chapter: item.chapter, verse: item.verse };
   return (
     '<section class="interpretive-view-card" data-detail-card="' + escapeHTML(viewKey) + '">' +
       '<div class="interpretive-card-head">' +
         '<h4>' + escapeDisplay(label) + lens + '</h4>' +
         renderInterpretiveCardActions(item, viewKey) +
       '</div>' +
-      renderPointList(view.points || []) +
+      renderPointList(view.points || [], markMeta) +
     '</section>'
   );
 }
@@ -327,7 +342,7 @@ function renderInterpretiveSummaryBlock(item, title, points, detailKey) {
         '<h4>' + escapeDisplay(title) + '</h4>' +
         renderInterpretiveCardActions(item, detailKey) +
       '</div>' +
-      renderPointList(points) +
+      renderPointList(points, { bookId: state.currentBookId, chapter: item.chapter, verse: item.verse }) +
     '</section>'
   );
 }
@@ -342,7 +357,7 @@ function getInterpretiveDetailPayload(item, detailKey) {
   const views = item?.interpretiveViews || {};
   if (["conservative", "moderate", "progressive"].includes(detailKey)) {
     const view = views[detailKey] || {};
-    const title = view.label || { conservative: "보수적 시선", moderate: "중도적 시선", progressive: "진보적 시선" }[detailKey];
+    const title = interpretiveViewLabel(detailKey, view.label || { conservative: "전통적 시선", moderate: "복음주의적 시선", progressive: "현대신학적 시선" }[detailKey]);
     const lens = view.lens || "";
     const details = normalizeDetailParagraphs(view.details || view.detailPoints || view.detail || view.detailText);
     return { title, lens, details, points: view.points || [] };
@@ -383,18 +398,18 @@ function renderInterpretiveDetailPanel(item, detailKey) {
         '<button class="interpretive-detail-close" type="button" data-interpretive-detail-close="true">접기</button>' +
       '</div>' +
       '<div class="interpretive-detail-copy">' +
-        payload.details.map((detail) => '<p>' + escapeDisplay(detail) + '</p>').join("") +
+        payload.details.map((detail) => '<p>' + markableDisplay(detail, state.currentBookId, item.chapter, item.verse) + '</p>').join("") +
       '</div>' +
-      (payload.points.length ? '<div class="interpretive-detail-recap"><strong>요점</strong>' + renderPointList(payload.points) + '</div>' : '') +
+      (payload.points.length ? '<div class="interpretive-detail-recap"><strong>요점</strong>' + renderPointList(payload.points, { bookId: state.currentBookId, chapter: item.chapter, verse: item.verse }) + '</div>' : '') +
     '</section>'
   );
 }
 
 function scholarKeyLabel(scholarKey) {
   return {
-    conservative: "보수적 시선",
-    moderate: "중도적 시선",
-    progressive: "진보적 시선",
+    conservative: "전통적 시선",
+    moderate: "복음주의적 시선",
+    progressive: "현대신학적 시선",
     agreement: "공통 지점",
     tension: "충돌 지점"
   }[scholarKey] || "신학자별 보기";
@@ -448,7 +463,7 @@ function renderSameViewScholars(scholar) {
 }
 
 
-function renderScholarClaimBody(scholar) {
+function renderScholarClaimBody(scholar, markMeta) {
   const baseClaim = scholar.interpretationKo || scholar.summaryKo || scholar.claim || scholar.summary || scholar.note || "";
   const pieces = [];
 
@@ -470,14 +485,14 @@ function renderScholarClaimBody(scholar) {
 
   if (paragraphs.length === 1) {
     return '<div class="interpretive-scholar-body single-paragraph">' +
-      '<p>' + escapeDisplay(paragraphs[0]) + '</p>' +
-      '</div>';
+      '<p>' + markableDisplay(paragraphs[0], markMeta?.bookId, markMeta?.chapter, markMeta?.verse) + '</p>' +
+      '</div>'; 
   }
 
   return '<div class="interpretive-scholar-body collapsed" data-scholar-body>' +
     '<button class="scholar-content-toggle" type="button" data-scholar-content-toggle="true" aria-expanded="false">내용 보기</button>' +
     '<div class="interpretive-scholar-expanded" data-scholar-content hidden>' +
-      paragraphs.map((paragraph) => '<p>' + escapeDisplay(paragraph) + '</p>').join("") +
+      paragraphs.map((paragraph) => '<p>' + markableDisplay(paragraph, markMeta?.bookId, markMeta?.chapter, markMeta?.verse) + '</p>').join("") +
     '</div>' +
     '</div>';
 }
@@ -487,6 +502,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
   const scholars = getScholarEntriesForKey(item, key);
   const title = scholarKeyLabel(key);
   const note = "직접 주석 / 방법론 적용 / 관련 관점을 구분해 표시합니다. 출처가 확인되지 않은 주장은 이 영역에 넣지 않습니다.";
+  const markMeta = { bookId: state.currentBookId, chapter: item.chapter, verse: item.verse };
 
   return (
     '<section class="interpretive-detail-panel interpretive-scholar-panel" data-detail-panel="scholars:' + escapeHTML(key) + '">' +
@@ -509,7 +525,7 @@ function renderInterpretiveScholarPanel(item, scholarKey) {
               '<span>' + escapeHTML(relation) + '</span>' +
             '</div>' +
             (scholar.tradition || scholar.field ? '<div class="interpretive-scholar-tradition">' + escapeHTML(scholar.tradition || scholar.field) + '</div>' : '') +
-            renderScholarClaimBody(scholar) +
+            renderScholarClaimBody(scholar, markMeta) +
             '<div class="interpretive-scholar-meta">확실성: ' + escapeHTML(confidence) + (sourceLine ? ' · 출처: ' + sourceLine : ' · 출처: 미입력') + '</div>' +
             renderSameViewScholars(scholar) +
             (scholar.caution || scholar.warning ? '<div class="interpretive-scholar-caution">주의: ' + escapeDisplay(scholar.caution || scholar.warning) + '</div>' : '') +
@@ -534,12 +550,12 @@ function renderInterpretiveViewsContent(item, activeDetailKey) {
   const tension = views.tension || [];
 
   return (
-    '<div class="interpretive-popup-body" data-active-detail="' + escapeHTML(activeDetailKey || "") + '">' +
-      '<p class="interpretive-popup-note">' + escapeDisplay(note) + '</p>' +
+    '<div class="interpretive-popup-body" data-mark-scope="interpretive" data-book="' + escapeHTML(state.currentBookId || "") + '" data-chapter="' + escapeHTML(String(item.chapter || "")) + '" data-verse="' + escapeHTML(String(item.verse || "")) + '" data-intro-id="' + escapeHTML(item.id || "") + '" data-active-detail="' + escapeHTML(activeDetailKey || "") + '">' +
+      '<p class="interpretive-popup-note">' + markableDisplay(note, state.currentBookId, item.chapter, item.verse) + '</p>' +
       '<div class="interpretive-view-grid">' +
-        renderInterpretiveViewBlock(item, "conservative", "보수적 시선") +
-        renderInterpretiveViewBlock(item, "moderate", "중도적 시선") +
-        renderInterpretiveViewBlock(item, "progressive", "진보적 시선") +
+        renderInterpretiveViewBlock(item, "conservative", "전통적 시선") +
+        renderInterpretiveViewBlock(item, "moderate", "복음주의적 시선") +
+        renderInterpretiveViewBlock(item, "progressive", "현대신학적 시선") +
       '</div>' +
       '<div class="interpretive-summary-grid">' +
         renderInterpretiveSummaryBlock(item, "공통 지점", agreement, "agreement") +
@@ -2349,14 +2365,33 @@ function getSelectionContext() {
 
   const anchorEl = getElementFromNode(selection.anchorNode);
   const focusEl = getElementFromNode(selection.focusNode);
-  if (!anchorEl || !focusEl || !els.verses.contains(anchorEl) || !els.verses.contains(focusEl)) return null;
+  if (!anchorEl || !focusEl) return null;
 
-  const startArticle = anchorEl.closest(".verse, .search-hit");
-  const endArticle = focusEl.closest(".verse, .search-hit");
-  if (!startArticle || !endArticle || startArticle !== endArticle) return null;
+  let meta = null;
+  let markScope = "verse";
+  let introId = "";
+  let activeDetail = "";
 
-  const meta = parseVerseMeta(startArticle);
-  if (!meta) return null;
+  if (els.verses.contains(anchorEl) && els.verses.contains(focusEl)) {
+    const startArticle = anchorEl.closest(".verse, .search-hit");
+    const endArticle = focusEl.closest(".verse, .search-hit");
+    if (!startArticle || !endArticle || startArticle !== endArticle) return null;
+    meta = parseVerseMeta(startArticle);
+  } else {
+    const startScope = anchorEl.closest('[data-mark-scope="interpretive"]');
+    const endScope = focusEl.closest('[data-mark-scope="interpretive"]');
+    if (!startScope || !endScope || startScope !== endScope) return null;
+    meta = {
+      bookId: startScope.dataset.book || state.currentBookId,
+      chapter: Number(startScope.dataset.chapter),
+      verse: Number(startScope.dataset.verse)
+    };
+    markScope = "interpretive";
+    introId = startScope.dataset.introId || "";
+    activeDetail = startScope.dataset.activeDetail || "";
+  }
+
+  if (!meta || !Number.isFinite(meta.chapter) || !Number.isFinite(meta.verse)) return null;
 
   const anchorMark = anchorEl.closest(".user-mark");
   const focusMark = focusEl.closest(".user-mark");
@@ -2392,7 +2427,10 @@ function getSelectionContext() {
     verse: meta.verse,
     text,
     mode,
-    rect
+    rect,
+    markScope,
+    introId,
+    activeDetail
   };
 }
 
@@ -2403,7 +2441,7 @@ function getMarkMenu() {
   menu = document.createElement("div");
   menu.id = "markMenu";
   menu.className = "mark-menu";
-  menu.innerHTML = '<button type="button" class="mark-menu-btn" title="형광펜 마킹">m</button>';
+  menu.innerHTML = '<button type="button" class="mark-menu-btn" title="빨간 밑줄 마킹">m</button>';
   document.body.appendChild(menu);
 
   menu.querySelector(".mark-menu-btn").addEventListener("mousedown", (event) => {
@@ -2434,7 +2472,7 @@ function showMarkMenu(context) {
   const isDelete = context.mode === "delete";
   const isMobile = shouldUseMobileMarkMenu();
   button.textContent = isDelete ? "d" : "m";
-  button.title = isDelete ? "형광펜 마킹 취소" : "형광펜 마킹";
+  button.title = isDelete ? "빨간 밑줄 취소" : "빨간 밑줄 마킹";
   menu.classList.toggle("delete-mode", isDelete);
   menu.classList.toggle("mobile-below", isMobile);
   menu.classList.toggle("mobile-bottom-dock", isMobile);
@@ -2491,6 +2529,9 @@ function applyPendingMarkAction() {
   if (changed) {
     renderChapter();
     renderHighlightList();
+    if (context.markScope === "interpretive" && context.introId) {
+      refreshInterpretivePopupContent(context.introId, context.activeDetail || null);
+    }
     const target = document.getElementById("v-" + context.chapter + "-" + context.verse) ||
       document.getElementById("search-" + context.bookId + "-" + context.chapter + "-" + context.verse);
     if (target) target.classList.add(context.mode === "delete" ? "mark-remove-flash" : "mark-flash");

@@ -214,7 +214,7 @@ button:disabled{opacity:.35;cursor:not-allowed}
 .fn:hover{background:var(--accent);color:#fff}
 mark{padding:0 2px}
 .search-mark{background:#FFF2A8}
-.user-mark{background:#FFF176;border-radius:3px;box-shadow:0 0 0 2px rgba(255,241,118,.35)}
+.user-mark{background:transparent;border-radius:0;box-shadow:none;padding:0 1px;text-decoration:underline;text-decoration-color:#DC2626;text-decoration-thickness:2px;text-underline-offset:.18em}
 .note-card{padding:24px}
 .active-note h2{font-size:24px;letter-spacing:-.03em;margin-top:10px}
 .note-body{margin-top:14px;font-size:14px;color:#555;line-height:1.85;word-break:keep-all}
@@ -1648,4 +1648,33 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 }
 @media (prefers-reduced-motion: reduce){
   .scholar-content-toggle{transition:none}
+}
+
+
+/* v30: user marking is a red underline, not a yellow highlight. */
+.user-mark{
+  background:transparent!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  padding:0 1px;
+  text-decoration-line:underline;
+  text-decoration-color:#DC2626;
+  text-decoration-thickness:2px;
+  text-underline-offset:.18em;
+}
+.interpretive-popup-content,
+.interpretive-popup-body,
+.interpretive-detail-copy,
+.interpretive-scholar-body,
+.interpretive-scholar-expanded,
+.mobile-info-body,
+.mobile-info-body *{
+  -webkit-user-select:text;
+  user-select:text;
+  -webkit-touch-callout:default;
+}
+.interpretive-popup button,
+.mobile-info-body button{
+  -webkit-user-select:none;
+  user-select:none;
 }
