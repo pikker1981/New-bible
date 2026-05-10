@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-krv-esv-button-order-v45";
+const APP_BUILD_ID = "20260510-common-nrsv-compare-v46";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -40,6 +40,15 @@ const KOREAN_REVISED_BIBLE_PATHS = [
   "./data/public-bibles/korean-revised/bible.json",
   "./bible.json"
 ];
+
+const PARALLEL_BIBLE_PATHS = [
+  "./data/public-bibles/common-nrsv/bible.json"
+];
+
+const PARALLEL_TRANSLATION_LABELS = {
+  common: "공동번역",
+  nrsv: "NRSV"
+};
 
 const KOREAN_REVISED_BOOK_KEYS = {
   matthew: "마",
@@ -156,7 +165,9 @@ const state = {
   cloudSyncInProgress: false,
   esvMemoryCache: {},
   koreanRevisedBible: null,
-  koreanRevisedBiblePromise: null
+  koreanRevisedBiblePromise: null,
+  parallelBible: null,
+  parallelBiblePromise: null
 };
 
 const interpretiveTypingOriginalHtml = new WeakMap();
@@ -1762,6 +1773,138 @@ async function toggleKoreanRevisedPanel(button) {
   }
 }
 
+
+function getParallelReferenceKey(bookId, chapter, verse) {
+  return String(bookId || "").toLowerCase() + ":" + Number(chapter) + ":" + Number(verse);
+}
+
+async function loadParallelBible() {
+  if (state.parallelBible) return state.parallelBible;
+  if (state.parallelBiblePromise) return state.parallelBiblePromise;
+
+  state.parallelBiblePromise = (async () => {
+    let lastError = null;
+    for (const path of PARALLEL_BIBLE_PATHS) {
+      try {
+        const response = await fetch(withDataCacheBust(path), {
+          method: "GET",
+          credentials: "same-origin",
+          cache: "no-store",
+          headers: { Accept: "application/json" }
+        });
+        if (!response.ok) {
+          lastError = new Error("HTTP " + response.status + " @ " + path);
+          continue;
+        }
+        const payload = await response.json();
+        if (!payload || typeof payload !== "object" || !payload.verses || typeof payload.verses !== "object") {
+          lastError = new Error("공동번역/NRSV JSON 형식이 올바르지 않습니다. @ " + path);
+          continue;
+        }
+        state.parallelBible = payload;
+        return payload;
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw lastError || new Error("공동번역/NRSV bible.json을 찾지 못했습니다.");
+  })();
+
+  try {
+    return await state.parallelBiblePromise;
+  } finally {
+    state.parallelBiblePromise = null;
+  }
+}
+
+function renderParallelPanelContent(bookId, chapter, verse, translationKey, text) {
+  const book = state.books[bookId];
+  const title = (book?.bookKo || bookId) + " " + Number(chapter) + ":" + Number(verse);
+  const label = PARALLEL_TRANSLATION_LABELS[translationKey] || translationKey;
+  const panelClass = translationKey === "nrsv" ? "nrsv" : "common";
+  const copyrightText = translationKey === "nrsv"
+    ? "NRSV 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요."
+    : "공동번역 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
+
+  return (
+    '<div class="' + panelClass + '-panel-head parallel-panel-head">' +
+      '<span>' + escapeHTML(label) + '</span>' +
+      '<strong>' + escapeHTML(title) + '</strong>' +
+    '</div>' +
+    '<pre class="' + panelClass + '-text parallel-text">' + escapeHTML(String(text || "").trim()) + '</pre>' +
+    '<div class="' + panelClass + '-copyright parallel-copyright">' + escapeHTML(copyrightText) + '</div>'
+  );
+}
+
+function findParallelPanel(button) {
+  const controls = button?.getAttribute("aria-controls");
+  if (!controls) return null;
+  return document.getElementById(controls);
+}
+
+async function toggleParallelPanel(button, translationKey) {
+  const panel = findParallelPanel(button);
+  if (!panel) return;
+
+  const label = PARALLEL_TRANSLATION_LABELS[translationKey] || translationKey;
+  const isOpen = button.getAttribute("aria-expanded") === "true";
+  if (isOpen) {
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = label;
+    panel.hidden = true;
+    return;
+  }
+
+  const bookId = button.dataset.book;
+  const chapter = Number(button.dataset.chapter);
+  const verse = Number(button.dataset.verse);
+  const refKey = getParallelReferenceKey(bookId, chapter, verse);
+
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  button.textContent = label;
+  panel.hidden = false;
+  panel.innerHTML = '<div class="parallel-loading">' + escapeHTML(label) + ' 본문을 불러오는 중입니다.</div>';
+
+  try {
+    const bible = await loadParallelBible();
+    const entry = bible.verses?.[refKey];
+    const verseText = entry?.[translationKey];
+    if (!verseText) throw new Error(refKey + " " + label + " 본문을 찾지 못했습니다.");
+    panel.innerHTML = renderParallelPanelContent(bookId, chapter, verse, translationKey, verseText);
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = label;
+  } catch (error) {
+    console.error(error);
+    panel.innerHTML = '<div class="parallel-error">' + escapeHTML(label) + ' 본문을 불러오지 못했습니다.<br><small>' + escapeHTML(error.message || "요청 실패") + '</small></div>';
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = label;
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
+}
+
+function bindParallelBibleButtons() {
+  els.verses.querySelectorAll(".common-toggle-btn").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      toggleParallelPanel(button, "common");
+    });
+  });
+
+  els.verses.querySelectorAll(".nrsv-toggle-btn").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      toggleParallelPanel(button, "nrsv");
+    });
+  });
+}
+
 function bindKoreanRevisedButtons() {
   els.verses.querySelectorAll(".krv-toggle-btn").forEach((button) => {
     button.addEventListener("click", (event) => {
@@ -1813,13 +1956,19 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
   const safeVerse = Number(verse);
   const esvId = "esv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const krId = "krv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const commonId = "common-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const nrsvId = "nrsv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
 
   return (
     '<div class="verse-support">' +
       '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정</button>' +
+      '<button class="common-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + commonId + '">공동번역</button>' +
       '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV</button>' +
+      '<button class="nrsv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvId + '">NRSV</button>' +
       '<div class="krv-panel" id="' + krId + '" hidden></div>' +
+      '<div class="common-panel" id="' + commonId + '" hidden></div>' +
       '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
+      '<div class="nrsv-panel" id="' + nrsvId + '" hidden></div>' +
     '</div>'
   );
 }
@@ -2002,6 +2151,7 @@ function renderChapter() {
   bindSectionIntroButtons();
   bindChapterBottomNav();
   bindKoreanRevisedButtons();
+  bindParallelBibleButtons();
   bindEsvButtons();
   updateSearchMeta();
   renderHighlightList();
