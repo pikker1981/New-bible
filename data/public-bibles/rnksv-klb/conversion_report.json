@@ -1,0 +1,27 @@
+{
+  "build": "20260510-rnksv-klb-compare-v47",
+  "files": [
+    "KoreanRNKSVBible.xml",
+    "KoreanKLBBible.xml"
+  ],
+  "verseCounts": {
+    "rnksv": 7958,
+    "klb": 7959,
+    "merged": 7959
+  },
+  "missing": {
+    "rnksv": {
+      "count": 1,
+      "sample": [
+        "2corinthians:13:14"
+      ]
+    },
+    "klb": {
+      "count": 0,
+      "sample": []
+    }
+  },
+  "notes": [
+    "본문 텍스트는 XML의 verse 내용을 절 단위로 보존했고, XML 줄바꿈/탭으로 인한 공백만 단일 공백으로 정규화했습니다."
+  ]
+}
