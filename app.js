@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-english-versions-compare-v49";
+const APP_BUILD_ID = "20260510-nrsvue-compare-v50";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -44,7 +44,8 @@ const KOREAN_REVISED_BIBLE_PATHS = [
 const PARALLEL_BIBLE_PATHS = [
   "./data/public-bibles/common-nrsv/bible.json",
   "./data/public-bibles/rnksv-klb/bible.json",
-  "./data/public-bibles/english-versions/bible.json"
+  "./data/public-bibles/english-versions/bible.json",
+  "./data/public-bibles/nrsvue/bible.json"
 ];
 
 const PARALLEL_TRANSLATION_LABELS = {
@@ -53,7 +54,8 @@ const PARALLEL_TRANSLATION_LABELS = {
   klb: "현대인의 성경",
   niv: "NIV",
   csb: "CSB",
-  nrsv: "NRSV"
+  nrsv: "NRSV",
+  nrsvue: "NRSVUE"
 };
 
 const KOREAN_REVISED_BOOK_KEYS = {
@@ -1847,6 +1849,7 @@ function getParallelPanelClass(translationKey) {
   if (translationKey === "niv") return "niv";
   if (translationKey === "csb") return "csb";
   if (translationKey === "nrsv") return "nrsv";
+  if (translationKey === "nrsvue") return "nrsvue";
   return "common";
 }
 
@@ -1865,6 +1868,9 @@ function getParallelCopyrightText(translationKey) {
   }
   if (translationKey === "nrsv") {
     return "NRSV 본문. 공개 서비스 전 이용 허가와 권리 조건을 확인하세요.";
+  }
+  if (translationKey === "nrsvue") {
+    return "NRSVUE 본문. 공개 서비스 전 이용 허가와 권리 조건을 확인하세요.";
   }
   return "공동번역 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
 }
@@ -1942,7 +1948,8 @@ function bindParallelBibleButtons() {
     [".klb-toggle-btn", "klb"],
     [".niv-toggle-btn", "niv"],
     [".csb-toggle-btn", "csb"],
-    [".nrsv-toggle-btn", "nrsv"]
+    [".nrsv-toggle-btn", "nrsv"],
+    [".nrsvue-toggle-btn", "nrsvue"]
   ].forEach(([selector, translationKey]) => {
     els.verses.querySelectorAll(selector).forEach((button) => {
       button.addEventListener("click", (event) => {
@@ -2012,6 +2019,7 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
   const nivId = "niv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const csbId = "csb-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const nrsvId = "nrsv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const nrsvueId = "nrsvue-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
 
   return (
     '<div class="verse-support">' +
@@ -2023,6 +2031,7 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
       '<button class="niv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nivId + '">NIV</button>' +
       '<button class="csb-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + csbId + '">CSB</button>' +
       '<button class="nrsv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvId + '">NRSV</button>' +
+      '<button class="nrsvue-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvueId + '">NRSVUE</button>' +
       '<div class="krv-panel" id="' + krId + '" hidden></div>' +
       '<div class="common-panel" id="' + commonId + '" hidden></div>' +
       '<div class="rnksv-panel" id="' + rnksvId + '" hidden></div>' +
@@ -2031,6 +2040,7 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
       '<div class="niv-panel" id="' + nivId + '" hidden></div>' +
       '<div class="csb-panel" id="' + csbId + '" hidden></div>' +
       '<div class="nrsv-panel" id="' + nrsvId + '" hidden></div>' +
+      '<div class="nrsvue-panel" id="' + nrsvueId + '" hidden></div>' +
     '</div>'
   );
 }
