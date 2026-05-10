@@ -1,27 +1,126 @@
 {
-  "build": "20260510-rnksv-klb-compare-v47",
-  "files": [
-    "KoreanRNKSVBible.xml",
-    "KoreanKLBBible.xml"
+  "build": "20260510-standard-new-revised-compare-v48",
+  "sourceMarkdown": "standard_new_translation_edited.md",
+  "method": "Parsed NT sections only, removed markdown footnote references [^...], skipped 각주 sections, preserved verse text without editorial rewriting.",
+  "rnksvCount": 7958,
+  "klbCount": 7959,
+  "totalVerseKeys": 7959,
+  "emptyVersesAfterExtraction": [],
+  "recoveredVerseTextFromMisformattedHeading": [
+    "matthew:12:47"
   ],
-  "verseCounts": {
-    "rnksv": 7958,
-    "klb": 7959,
-    "merged": 7959
-  },
-  "missing": {
-    "rnksv": {
-      "count": 1,
-      "sample": [
-        "2corinthians:13:14"
-      ]
+  "missingRnksvKeysComparedWithKlbKeySet": [
+    "2corinthians:13:14"
+  ],
+  "note": "2corinthians:13:14 is absent because the supplied 표준새번역개정판 source numbers the final benediction as 2corinthians:13:13. No artificial verse was created.",
+  "countsByBook": {
+    "matthew": {
+      "rnksv": 1071,
+      "klb": 1071
     },
-    "klb": {
-      "count": 0,
-      "sample": []
+    "mark": {
+      "rnksv": 678,
+      "klb": 678
+    },
+    "luke": {
+      "rnksv": 1151,
+      "klb": 1151
+    },
+    "john": {
+      "rnksv": 879,
+      "klb": 879
+    },
+    "acts": {
+      "rnksv": 1007,
+      "klb": 1007
+    },
+    "romans": {
+      "rnksv": 433,
+      "klb": 433
+    },
+    "1corinthians": {
+      "rnksv": 437,
+      "klb": 437
+    },
+    "2corinthians": {
+      "rnksv": 256,
+      "klb": 257
+    },
+    "galatians": {
+      "rnksv": 149,
+      "klb": 149
+    },
+    "ephesians": {
+      "rnksv": 155,
+      "klb": 155
+    },
+    "philippians": {
+      "rnksv": 104,
+      "klb": 104
+    },
+    "colossians": {
+      "rnksv": 95,
+      "klb": 95
+    },
+    "1thessalonians": {
+      "rnksv": 89,
+      "klb": 89
+    },
+    "2thessalonians": {
+      "rnksv": 47,
+      "klb": 47
+    },
+    "1timothy": {
+      "rnksv": 113,
+      "klb": 113
+    },
+    "2timothy": {
+      "rnksv": 83,
+      "klb": 83
+    },
+    "titus": {
+      "rnksv": 46,
+      "klb": 46
+    },
+    "philemon": {
+      "rnksv": 25,
+      "klb": 25
+    },
+    "hebrews": {
+      "rnksv": 303,
+      "klb": 303
+    },
+    "james": {
+      "rnksv": 108,
+      "klb": 108
+    },
+    "1peter": {
+      "rnksv": 105,
+      "klb": 105
+    },
+    "2peter": {
+      "rnksv": 61,
+      "klb": 61
+    },
+    "1john": {
+      "rnksv": 105,
+      "klb": 105
+    },
+    "2john": {
+      "rnksv": 13,
+      "klb": 13
+    },
+    "3john": {
+      "rnksv": 15,
+      "klb": 15
+    },
+    "jude": {
+      "rnksv": 25,
+      "klb": 25
+    },
+    "revelation": {
+      "rnksv": 405,
+      "klb": 405
     }
-  },
-  "notes": [
-    "본문 텍스트는 XML의 verse 내용을 절 단위로 보존했고, XML 줄바꿈/탭으로 인한 공백만 단일 공백으로 정규화했습니다."
-  ]
+  }
 }
