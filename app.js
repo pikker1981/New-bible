@@ -1,6 +1,47 @@
-const APP_BUILD_ID = "20260509-section-intro-typewriter-before-popup-v36";
+const APP_BUILD_ID = "20260509-esv-api-view-v39";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
+
+const DATA_CACHE_BUST = APP_BUILD_ID;
+
+const ESV_WORKER_ENDPOINT = "https://solitary-credit-8f12.new-bible-esv-proxy.workers.dev";
+
+const ESV_BOOK_NAMES = {
+  matthew: "Matthew",
+  mark: "Mark",
+  luke: "Luke",
+  john: "John",
+  acts: "Acts",
+  romans: "Romans",
+  "1corinthians": "1 Corinthians",
+  "2corinthians": "2 Corinthians",
+  galatians: "Galatians",
+  ephesians: "Ephesians",
+  philippians: "Philippians",
+  colossians: "Colossians",
+  "1thessalonians": "1 Thessalonians",
+  "2thessalonians": "2 Thessalonians",
+  "1timothy": "1 Timothy",
+  "2timothy": "2 Timothy",
+  titus: "Titus",
+  philemon: "Philemon",
+  hebrews: "Hebrews",
+  james: "James",
+  "1peter": "1 Peter",
+  "2peter": "2 Peter",
+  "1john": "1 John",
+  "2john": "2 John",
+  "3john": "3 John",
+  jude: "Jude",
+  revelation: "Revelation"
+};
+
+function withDataCacheBust(path) {
+  if (!path || typeof path !== "string") return path;
+  if (/^https?:/i.test(path)) return path;
+  const separator = path.includes("?") ? "&" : "?";
+  return path + separator + "v=" + encodeURIComponent(DATA_CACHE_BUST);
+}
 
 const BOOK_ACCENT_PALETTE = [
   "#C0392B", "#2563EB", "#16A34A", "#7C3AED", "#D97706",
@@ -77,7 +118,8 @@ const state = {
   motionReady: false,
   authUser: null,
   cloudHighlightsLoaded: false,
-  cloudSyncInProgress: false
+  cloudSyncInProgress: false,
+  esvMemoryCache: {}
 };
 
 const interpretiveTypingOriginalHtml = new WeakMap();
@@ -127,14 +169,16 @@ const els = {
 };
 
 async function loadJSON(path) {
-  const response = await fetch(path, { cache: "no-store" });
+  const requestPath = withDataCacheBust(path);
+  const response = await fetch(requestPath, { cache: "no-store" });
   if (!response.ok) throw new Error(path + " 로딩 실패: HTTP " + response.status);
   return response.json();
 }
 
 async function tryLoadJSON(path) {
   try {
-    const response = await fetch(path, { cache: "no-store" });
+    const requestPath = withDataCacheBust(path);
+    const response = await fetch(requestPath, { cache: "no-store" });
     if (!response.ok) return null;
     return await response.json();
   } catch (_) {
@@ -1568,6 +1612,154 @@ function render() {
   if (firstNote) showNote(firstNote, false);
 }
 
+
+function getEsvBookName(bookId) {
+  const key = String(bookId || "").toLowerCase();
+  const book = state.books[bookId];
+  return ESV_BOOK_NAMES[key] || book?.bookEn || book?.bookKo || bookId;
+}
+
+function esvCacheKey(bookId, chapter, verse) {
+  return ["esv", bookId, chapter, verse].join(":");
+}
+
+function getEsvSessionCache(bookId, chapter, verse) {
+  const key = esvCacheKey(bookId, chapter, verse);
+  if (state.esvMemoryCache[key]) return state.esvMemoryCache[key];
+  try {
+    const raw = sessionStorage.getItem(key);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    state.esvMemoryCache[key] = parsed;
+    return parsed;
+  } catch (_) {
+    return null;
+  }
+}
+
+function setEsvSessionCache(bookId, chapter, verse, payload) {
+  const key = esvCacheKey(bookId, chapter, verse);
+  state.esvMemoryCache[key] = payload;
+  try {
+    sessionStorage.setItem(key, JSON.stringify(payload));
+  } catch (_) {
+    /* 세션 캐시 실패는 표시 기능을 막지 않는다. */
+  }
+}
+
+function renderEsvVerseSupport(bookId, chapter, verse) {
+  const id = "esv-" + escapeHTML(String(bookId)) + "-" + Number(chapter) + "-" + Number(verse);
+  return (
+    '<div class="verse-support">' +
+      '<button class="esv-toggle-btn" type="button" data-book="' + escapeHTML(bookId) + '" data-chapter="' + Number(chapter) + '" data-verse="' + Number(verse) + '" aria-expanded="false" aria-controls="' + id + '">ESV 보기</button>' +
+      '<div class="esv-panel" id="' + id + '" hidden></div>' +
+    '</div>'
+  );
+}
+
+function normalizeEsvPassageText(payload) {
+  const passages = Array.isArray(payload?.passages) ? payload.passages : [];
+  return passages
+    .map((item) => String(item || "").trim())
+    .filter(Boolean)
+    .join("\n\n");
+}
+
+function renderEsvPanelContent(payload) {
+  const canonical = payload?.canonical || payload?.query || "ESV";
+  const text = normalizeEsvPassageText(payload);
+  if (!text) {
+    return '<div class="esv-error">ESV 본문이 비어 있습니다.</div>';
+  }
+
+  return (
+    '<div class="esv-panel-head">' +
+      '<span>ESV</span>' +
+      '<strong>' + escapeHTML(canonical) + '</strong>' +
+    '</div>' +
+    '<pre class="esv-text">' + escapeHTML(text) + '</pre>' +
+    '<div class="esv-copyright">' +
+      'ESV® Bible. © 2001 by Crossway. Used by permission. All rights reserved. ' +
+      '<a href="https://www.esv.org/" target="_blank" rel="noopener">www.esv.org</a>' +
+    '</div>'
+  );
+}
+
+async function fetchEsvPassage(bookId, chapter, verse) {
+  const cached = getEsvSessionCache(bookId, chapter, verse);
+  if (cached) return cached;
+
+  const passage = getEsvBookName(bookId) + " " + Number(chapter) + ":" + Number(verse);
+  const url = ESV_WORKER_ENDPOINT + "?q=" + encodeURIComponent(passage);
+  const response = await fetch(url, { cache: "force-cache" });
+  if (!response.ok) {
+    throw new Error("ESV API 응답 오류: HTTP " + response.status);
+  }
+
+  const payload = await response.json();
+  if (payload?.error) {
+    throw new Error(String(payload.error));
+  }
+
+  setEsvSessionCache(bookId, chapter, verse, payload);
+  return payload;
+}
+
+function findEsvPanel(button) {
+  const controls = button?.getAttribute("aria-controls");
+  if (!controls) return null;
+  return document.getElementById(controls);
+}
+
+async function toggleEsvPanel(button) {
+  const panel = findEsvPanel(button);
+  if (!panel) return;
+
+  const isOpen = button.getAttribute("aria-expanded") === "true";
+  if (isOpen) {
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = "ESV 보기";
+    panel.hidden = true;
+    return;
+  }
+
+  const bookId = button.dataset.book;
+  const chapter = Number(button.dataset.chapter);
+  const verse = Number(button.dataset.verse);
+
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  button.textContent = "ESV 불러오는 중";
+  panel.hidden = false;
+  panel.innerHTML = '<div class="esv-loading">ESV 본문을 불러오는 중입니다.</div>';
+
+  try {
+    const payload = await fetchEsvPassage(bookId, chapter, verse);
+    panel.innerHTML = renderEsvPanelContent(payload);
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = "ESV 접기";
+  } catch (error) {
+    console.error(error);
+    panel.innerHTML = '<div class="esv-error">ESV 본문을 불러오지 못했습니다.<br><small>' + escapeHTML(error.message || "요청 실패") + '</small></div>';
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = "ESV 다시 시도";
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
+}
+
+function bindEsvButtons() {
+  els.verses.querySelectorAll(".esv-toggle-btn").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      toggleEsvPanel(button);
+    });
+  });
+}
+
 function renderChapter() {
   const book = state.books[state.currentBookId];
   if (!book) return;
@@ -1595,9 +1787,10 @@ function renderChapter() {
 
     return (
       sectionIntroHtml +
-      '<article class="verse" id="v-' + chapter.number + "-" + verse.number + '">' +
+      '<article class="verse" id="v-' + chapter.number + "-" + verse.number + '" data-book="' + escapeHTML(book.id) + '" data-chapter="' + chapter.number + '" data-verse="' + verse.number + '">' +
       '<div class="verse-num">' + verse.number + "</div>" +
       '<div class="verse-text">' + html + "</div>" +
+      renderEsvVerseSupport(book.id, chapter.number, verse.number) +
       "</article>"
     );
   }).join("") + renderChapterBottomNav(book, chapter);
@@ -1613,6 +1806,7 @@ function renderChapter() {
   bindContextButtons();
   bindSectionIntroButtons();
   bindChapterBottomNav();
+  bindEsvButtons();
   updateSearchMeta();
   renderHighlightList();
   renderContextList();
