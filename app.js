@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-common-nrsv-compare-v46";
+const APP_BUILD_ID = "20260510-rnksv-klb-compare-v47";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -42,11 +42,14 @@ const KOREAN_REVISED_BIBLE_PATHS = [
 ];
 
 const PARALLEL_BIBLE_PATHS = [
-  "./data/public-bibles/common-nrsv/bible.json"
+  "./data/public-bibles/common-nrsv/bible.json",
+  "./data/public-bibles/rnksv-klb/bible.json"
 ];
 
 const PARALLEL_TRANSLATION_LABELS = {
   common: "공동번역",
+  rnksv: "새번역",
+  klb: "현대인의 성경",
   nrsv: "NRSV"
 };
 
@@ -1783,7 +1786,13 @@ async function loadParallelBible() {
   if (state.parallelBiblePromise) return state.parallelBiblePromise;
 
   state.parallelBiblePromise = (async () => {
-    let lastError = null;
+    const merged = {
+      schema: "new-bible-parallel-merged-v1",
+      translations: {},
+      verses: {}
+    };
+    const errors = [];
+
     for (const path of PARALLEL_BIBLE_PATHS) {
       try {
         const response = await fetch(withDataCacheBust(path), {
@@ -1793,21 +1802,33 @@ async function loadParallelBible() {
           headers: { Accept: "application/json" }
         });
         if (!response.ok) {
-          lastError = new Error("HTTP " + response.status + " @ " + path);
+          errors.push("HTTP " + response.status + " @ " + path);
           continue;
         }
         const payload = await response.json();
         if (!payload || typeof payload !== "object" || !payload.verses || typeof payload.verses !== "object") {
-          lastError = new Error("공동번역/NRSV JSON 형식이 올바르지 않습니다. @ " + path);
+          errors.push("병렬성경 JSON 형식이 올바르지 않습니다. @ " + path);
           continue;
         }
-        state.parallelBible = payload;
-        return payload;
+
+        Object.assign(merged.translations, payload.translations || {});
+        Object.entries(payload.verses).forEach(([refKey, entry]) => {
+          if (!merged.verses[refKey]) merged.verses[refKey] = {};
+          if (entry && typeof entry === "object") {
+            Object.assign(merged.verses[refKey], entry);
+          }
+        });
       } catch (error) {
-        lastError = error;
+        errors.push((error && error.message) ? error.message : String(error));
       }
     }
-    throw lastError || new Error("공동번역/NRSV bible.json을 찾지 못했습니다.");
+
+    if (!Object.keys(merged.verses).length) {
+      throw new Error(errors.join(" / ") || "병렬성경 bible.json을 찾지 못했습니다.");
+    }
+
+    state.parallelBible = merged;
+    return merged;
   })();
 
   try {
@@ -1817,14 +1838,32 @@ async function loadParallelBible() {
   }
 }
 
+function getParallelPanelClass(translationKey) {
+  if (translationKey === "rnksv") return "rnksv";
+  if (translationKey === "klb") return "klb";
+  if (translationKey === "nrsv") return "nrsv";
+  return "common";
+}
+
+function getParallelCopyrightText(translationKey) {
+  if (translationKey === "rnksv") {
+    return "성경전서 새번역. 공개 서비스 전 대한성서공회 사용 허가 범위를 확인하세요.";
+  }
+  if (translationKey === "klb") {
+    return "현대인의 성경(KLB). 공개 서비스 전 Biblica 사용 허가 범위를 확인하세요.";
+  }
+  if (translationKey === "nrsv") {
+    return "NRSV 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
+  }
+  return "공동번역 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
+}
+
 function renderParallelPanelContent(bookId, chapter, verse, translationKey, text) {
   const book = state.books[bookId];
   const title = (book?.bookKo || bookId) + " " + Number(chapter) + ":" + Number(verse);
   const label = PARALLEL_TRANSLATION_LABELS[translationKey] || translationKey;
-  const panelClass = translationKey === "nrsv" ? "nrsv" : "common";
-  const copyrightText = translationKey === "nrsv"
-    ? "NRSV 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요."
-    : "공동번역 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
+  const panelClass = getParallelPanelClass(translationKey);
+  const copyrightText = getParallelCopyrightText(translationKey);
 
   return (
     '<div class="' + panelClass + '-panel-head parallel-panel-head">' +
@@ -1886,21 +1925,19 @@ async function toggleParallelPanel(button, translationKey) {
 }
 
 function bindParallelBibleButtons() {
-  els.verses.querySelectorAll(".common-toggle-btn").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      window.getSelection()?.removeAllRanges();
-      toggleParallelPanel(button, "common");
-    });
-  });
-
-  els.verses.querySelectorAll(".nrsv-toggle-btn").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      window.getSelection()?.removeAllRanges();
-      toggleParallelPanel(button, "nrsv");
+  [
+    [".common-toggle-btn", "common"],
+    [".rnksv-toggle-btn", "rnksv"],
+    [".klb-toggle-btn", "klb"],
+    [".nrsv-toggle-btn", "nrsv"]
+  ].forEach(([selector, translationKey]) => {
+    els.verses.querySelectorAll(selector).forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        window.getSelection()?.removeAllRanges();
+        toggleParallelPanel(button, translationKey);
+      });
     });
   });
 }
@@ -1957,16 +1994,22 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
   const esvId = "esv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const krId = "krv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const commonId = "common-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const rnksvId = "rnksv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const klbId = "klb-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const nrsvId = "nrsv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
 
   return (
     '<div class="verse-support">' +
       '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정</button>' +
       '<button class="common-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + commonId + '">공동번역</button>' +
+      '<button class="rnksv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + rnksvId + '">새번역</button>' +
+      '<button class="klb-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + klbId + '">현대인의 성경</button>' +
       '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV</button>' +
       '<button class="nrsv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvId + '">NRSV</button>' +
       '<div class="krv-panel" id="' + krId + '" hidden></div>' +
       '<div class="common-panel" id="' + commonId + '" hidden></div>' +
+      '<div class="rnksv-panel" id="' + rnksvId + '" hidden></div>' +
+      '<div class="klb-panel" id="' + klbId + '" hidden></div>' +
       '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
       '<div class="nrsv-panel" id="' + nrsvId + '" hidden></div>' +
     '</div>'

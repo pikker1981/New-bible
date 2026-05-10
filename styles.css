@@ -1836,13 +1836,17 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 }
 .verse-support .krv-toggle-btn{order:1}
 .verse-support .common-toggle-btn{order:2}
-.verse-support .esv-toggle-btn{order:3}
-.verse-support .nrsv-toggle-btn{order:4}
-.verse-support .krv-panel{order:5;flex:0 0 100%}
-.verse-support .common-panel{order:6;flex:0 0 100%}
-.verse-support .esv-panel{order:7;flex:0 0 100%}
-.verse-support .nrsv-panel{order:8;flex:0 0 100%}
-.esv-toggle-btn,.krv-toggle-btn,.common-toggle-btn,.nrsv-toggle-btn{
+.verse-support .rnksv-toggle-btn{order:3}
+.verse-support .klb-toggle-btn{order:4}
+.verse-support .esv-toggle-btn{order:5}
+.verse-support .nrsv-toggle-btn{order:6}
+.verse-support .krv-panel{order:7;flex:0 0 100%}
+.verse-support .common-panel{order:8;flex:0 0 100%}
+.verse-support .rnksv-panel{order:9;flex:0 0 100%}
+.verse-support .klb-panel{order:10;flex:0 0 100%}
+.verse-support .esv-panel{order:11;flex:0 0 100%}
+.verse-support .nrsv-panel{order:12;flex:0 0 100%}
+.esv-toggle-btn,.krv-toggle-btn,.common-toggle-btn,.rnksv-toggle-btn,.klb-toggle-btn,.nrsv-toggle-btn{
   font-family:"Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   appearance:none;
   border:1px solid color-mix(in srgb, var(--accent, #2563EB) 38%, #E5E7EB);
@@ -1856,13 +1860,13 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   cursor:pointer;
   transition:background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
-.esv-toggle-btn:hover,.krv-toggle-btn:hover,.common-toggle-btn:hover,.nrsv-toggle-btn:hover{
+.esv-toggle-btn:hover,.krv-toggle-btn:hover,.common-toggle-btn:hover,.rnksv-toggle-btn:hover,.klb-toggle-btn:hover,.nrsv-toggle-btn:hover{
   background:var(--accent, #2563EB);
   color:#fff;
   border-color:var(--accent, #2563EB);
   transform:translateY(-1px);
 }
-.esv-toggle-btn:disabled,.krv-toggle-btn:disabled,.common-toggle-btn:disabled,.nrsv-toggle-btn:disabled{
+.esv-toggle-btn:disabled,.krv-toggle-btn:disabled,.common-toggle-btn:disabled,.rnksv-toggle-btn:disabled,.klb-toggle-btn:disabled,.nrsv-toggle-btn:disabled{
   opacity:.68;
   cursor:wait;
   transform:none;
@@ -1886,6 +1890,24 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   border-color:#047857;
   color:#fff;
 }
+.rnksv-toggle-btn{
+  border-color:rgba(202,138,4,.36);
+  color:#A16207;
+}
+.rnksv-toggle-btn:hover{
+  background:#A16207;
+  border-color:#A16207;
+  color:#fff;
+}
+.klb-toggle-btn{
+  border-color:rgba(194,65,12,.34);
+  color:#C2410C;
+}
+.klb-toggle-btn:hover{
+  background:#C2410C;
+  border-color:#C2410C;
+  color:#fff;
+}
 .nrsv-toggle-btn{
   border-color:rgba(124,58,237,.32);
   color:#7C3AED;
@@ -1895,7 +1917,7 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   border-color:#7C3AED;
   color:#fff;
 }
-.esv-panel,.krv-panel,.common-panel,.nrsv-panel{
+.esv-panel,.krv-panel,.common-panel,.rnksv-panel,.klb-panel,.nrsv-panel{
   font-family:"Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   width:100%;
   border:1px solid rgba(17,24,39,.1);
@@ -1913,6 +1935,12 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 .common-panel{
   border-left-color:#047857;
 }
+.rnksv-panel{
+  border-left-color:#A16207;
+}
+.klb-panel{
+  border-left-color:#C2410C;
+}
 .nrsv-panel{
   border-left-color:#7C3AED;
 }
@@ -1922,13 +1950,19 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 .common-panel-head span{
   color:#047857;
 }
+.rnksv-panel-head span{
+  color:#A16207;
+}
+.klb-panel-head span{
+  color:#C2410C;
+}
 .nrsv-panel-head span{
   color:#7C3AED;
 }
-.krv-text,.common-text,.nrsv-text{
+.krv-text,.common-text,.rnksv-text,.klb-text,.nrsv-text{
   white-space:normal;
 }
-.esv-panel-head,.krv-panel-head,.common-panel-head,.nrsv-panel-head,.parallel-panel-head{
+.esv-panel-head,.krv-panel-head,.common-panel-head,.rnksv-panel-head,.klb-panel-head,.nrsv-panel-head,.parallel-panel-head{
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -1937,7 +1971,7 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   font-size:11px;
   color:#6B7280;
 }
-.esv-panel-head span,.krv-panel-head span,.common-panel-head span,.nrsv-panel-head span,.parallel-panel-head span{
+.esv-panel-head span,.krv-panel-head span,.common-panel-head span,.rnksv-panel-head span,.klb-panel-head span,.nrsv-panel-head span,.parallel-panel-head span{
   font-weight:900;
   color:var(--accent, #2563EB);
   letter-spacing:.08em;
@@ -1949,14 +1983,20 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 .common-panel-head span{
   color:#047857;
 }
+.rnksv-panel-head span{
+  color:#A16207;
+}
+.klb-panel-head span{
+  color:#C2410C;
+}
 .nrsv-panel-head span{
   color:#7C3AED;
 }
-.esv-panel-head strong,.krv-panel-head strong,.common-panel-head strong,.nrsv-panel-head strong,.parallel-panel-head strong{
+.esv-panel-head strong,.krv-panel-head strong,.common-panel-head strong,.rnksv-panel-head strong,.klb-panel-head strong,.nrsv-panel-head strong,.parallel-panel-head strong{
   font-weight:800;
   color:#111827;
 }
-.esv-text,.krv-text,.common-text,.nrsv-text,.parallel-text{
+.esv-text,.krv-text,.common-text,.rnksv-text,.klb-text,.nrsv-text,.parallel-text{
   margin:0;
   white-space:pre-wrap;
   word-break:keep-all;
@@ -1965,7 +2005,7 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   line-height:1.75;
   color:#1F2937;
 }
-.esv-copyright,.krv-copyright,.common-copyright,.nrsv-copyright,.parallel-copyright{
+.esv-copyright,.krv-copyright,.common-copyright,.rnksv-copyright,.klb-copyright,.nrsv-copyright,.parallel-copyright{
   margin-top:10px;
   padding-top:9px;
   border-top:1px solid rgba(17,24,39,.08);
@@ -1994,8 +2034,8 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
 
 @media (max-width: 720px){
   .verse-support{grid-column:2;margin-top:7px;gap:7px;flex-direction:row;flex-wrap:wrap}
-  .esv-toggle-btn,.krv-toggle-btn,.common-toggle-btn,.nrsv-toggle-btn{font-size:10.5px;padding:5px 10px}
-  .esv-panel,.krv-panel,.common-panel,.nrsv-panel{border-radius:14px;padding:12px 13px}
-  .esv-text,.krv-text,.common-text,.nrsv-text,.parallel-text{font-size:13.5px;line-height:1.7}
+  .esv-toggle-btn,.krv-toggle-btn,.common-toggle-btn,.rnksv-toggle-btn,.klb-toggle-btn,.nrsv-toggle-btn{font-size:10.5px;padding:5px 10px}
+  .esv-panel,.krv-panel,.common-panel,.rnksv-panel,.klb-panel,.nrsv-panel{border-radius:14px;padding:12px 13px}
+  .esv-text,.krv-text,.common-text,.rnksv-text,.klb-text,.nrsv-text,.parallel-text{font-size:13.5px;line-height:1.7}
 }
 
