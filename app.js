@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-korean-revised-compare-v42";
+const APP_BUILD_ID = "20260510-korean-revised-button-order-v43";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -1727,7 +1727,7 @@ async function toggleKoreanRevisedPanel(button) {
   const isOpen = button.getAttribute("aria-expanded") === "true";
   if (isOpen) {
     button.setAttribute("aria-expanded", "false");
-    button.textContent = "개역개정 보기";
+    button.textContent = "개역개정";
     panel.hidden = true;
     return;
   }
@@ -1816,10 +1816,10 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
 
   return (
     '<div class="verse-support">' +
-      '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정 보기</button>' +
       '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV 보기</button>' +
-      '<div class="krv-panel" id="' + krId + '" hidden></div>' +
+      '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정</button>' +
       '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
+      '<div class="krv-panel" id="' + krId + '" hidden></div>' +
     '</div>'
   );
 }
