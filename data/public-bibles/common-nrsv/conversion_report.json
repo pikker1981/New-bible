@@ -138,5 +138,14 @@
       "file": "27_요한묵시록.md",
       "verseCount": 404
     }
-  }
+  },
+  "build": "20260510-remove-nrsv-v51",
+  "removedTranslations": {
+    "nrsv": {
+      "label": "NRSV",
+      "removedVerseFields": 7932,
+      "reason": "User requested NRSV removal; Common Translation retained."
+    }
+  },
+  "nrsv_removed_hard_patch": "20260510-remove-nrsv-hard-v52"
 }

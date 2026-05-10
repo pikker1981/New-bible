@@ -1,9 +1,8 @@
 {
-  "build": "20260510-english-versions-compare-v49",
+  "build": "20260510-remove-nrsv-v51",
   "inputFiles": [
     "EnglishNIVBible.xml",
-    "EnglishCSBBible.xml",
-    "EnglishNRSVBible.xml"
+    "EnglishCSBBible.xml"
   ],
   "translations": {
     "niv": {
@@ -83,44 +82,6 @@
       },
       "missingAgainstNRSVBaseline": [],
       "extraAgainstNRSVBaseline": []
-    },
-    "nrsv": {
-      "sourceFile": "EnglishNRSVBible.xml",
-      "xmlTranslation": "English NRSV 1989 - Only for website",
-      "xmlStatus": "Copyright © 1989 the Division of Christian Education of the National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved.",
-      "rawNtVerseCount": 7958,
-      "appAlignedVerseCount": 7958,
-      "bookCounts": {
-        "matthew": 1071,
-        "mark": 678,
-        "luke": 1151,
-        "john": 879,
-        "acts": 1007,
-        "romans": 433,
-        "1corinthians": 437,
-        "2corinthians": 256,
-        "galatians": 149,
-        "ephesians": 155,
-        "philippians": 104,
-        "colossians": 95,
-        "1thessalonians": 89,
-        "2thessalonians": 47,
-        "1timothy": 113,
-        "2timothy": 83,
-        "titus": 46,
-        "philemon": 25,
-        "hebrews": 303,
-        "james": 108,
-        "1peter": 105,
-        "2peter": 61,
-        "1john": 105,
-        "2john": 13,
-        "3john": 15,
-        "jude": 25,
-        "revelation": 405
-      },
-      "missingAgainstNRSVBaseline": [],
-      "extraAgainstNRSVBaseline": []
     }
   },
   "postprocess": [
@@ -128,5 +89,13 @@
     "NIV 3 John 1:14 was split into 1:14 and 1:15 to match SBLGNT/app numbering."
   ],
   "totalReferenceKeys": 7958,
-  "note": "NIV has no separate Revelation 12:18 in the uploaded XML, so that verse remains unavailable for NIV."
+  "note": "NIV has no separate Revelation 12:18 in the uploaded XML, so that verse remains unavailable for NIV.",
+  "removedTranslations": {
+    "nrsv": {
+      "label": "NRSV",
+      "removedVerseFields": 7958,
+      "reason": "User requested NRSV removal; NRSVUE remains available."
+    }
+  },
+  "nrsv_removed_hard_patch": "20260510-remove-nrsv-hard-v52"
 }
