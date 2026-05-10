@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260509-esv-worker-url-fix-v41";
+const APP_BUILD_ID = "20260510-korean-revised-compare-v42";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -34,6 +34,41 @@ const ESV_BOOK_NAMES = {
   "3john": "3 John",
   jude: "Jude",
   revelation: "Revelation"
+};
+
+const KOREAN_REVISED_BIBLE_PATHS = [
+  "./data/public-bibles/korean-revised/bible.json",
+  "./bible.json"
+];
+
+const KOREAN_REVISED_BOOK_KEYS = {
+  matthew: "마",
+  mark: "막",
+  luke: "눅",
+  john: "요",
+  acts: "행",
+  romans: "롬",
+  "1corinthians": "고전",
+  "2corinthians": "고후",
+  galatians: "갈",
+  ephesians: "엡",
+  philippians: "빌",
+  colossians: "골",
+  "1thessalonians": "살전",
+  "2thessalonians": "살후",
+  "1timothy": "딤전",
+  "2timothy": "딤후",
+  titus: "딛",
+  philemon: "몬",
+  hebrews: "히",
+  james: "약",
+  "1peter": "벧전",
+  "2peter": "벧후",
+  "1john": "요일",
+  "2john": "요이",
+  "3john": "요삼",
+  jude: "유",
+  revelation: "계"
 };
 
 function withDataCacheBust(path) {
@@ -119,7 +154,9 @@ const state = {
   authUser: null,
   cloudHighlightsLoaded: false,
   cloudSyncInProgress: false,
-  esvMemoryCache: {}
+  esvMemoryCache: {},
+  koreanRevisedBible: null,
+  koreanRevisedBiblePromise: null
 };
 
 const interpretiveTypingOriginalHtml = new WeakMap();
@@ -1613,6 +1650,129 @@ function render() {
 }
 
 
+function getKoreanRevisedBookKey(bookId) {
+  return KOREAN_REVISED_BOOK_KEYS[String(bookId || "").toLowerCase()] || null;
+}
+
+function getKoreanRevisedReferenceKey(bookId, chapter, verse) {
+  const bookKey = getKoreanRevisedBookKey(bookId);
+  if (!bookKey) return null;
+  return bookKey + Number(chapter) + ":" + Number(verse);
+}
+
+async function loadKoreanRevisedBible() {
+  if (state.koreanRevisedBible) return state.koreanRevisedBible;
+  if (state.koreanRevisedBiblePromise) return state.koreanRevisedBiblePromise;
+
+  state.koreanRevisedBiblePromise = (async () => {
+    let lastError = null;
+    for (const path of KOREAN_REVISED_BIBLE_PATHS) {
+      try {
+        const response = await fetch(withDataCacheBust(path), {
+          method: "GET",
+          credentials: "same-origin",
+          cache: "no-store",
+          headers: { Accept: "application/json" }
+        });
+        if (!response.ok) {
+          lastError = new Error("HTTP " + response.status + " @ " + path);
+          continue;
+        }
+        const payload = await response.json();
+        if (!payload || typeof payload !== "object" || Array.isArray(payload)) {
+          lastError = new Error("개역개정 JSON 형식이 올바르지 않습니다. @ " + path);
+          continue;
+        }
+        state.koreanRevisedBible = payload;
+        return payload;
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw lastError || new Error("개역개정 bible.json을 찾지 못했습니다.");
+  })();
+
+  try {
+    return await state.koreanRevisedBiblePromise;
+  } finally {
+    state.koreanRevisedBiblePromise = null;
+  }
+}
+
+function renderKoreanRevisedPanelContent(bookId, chapter, verse, text) {
+  const book = state.books[bookId];
+  const title = (book?.bookKo || bookId) + " " + Number(chapter) + ":" + Number(verse);
+  return (
+    '<div class="krv-panel-head">' +
+      '<span>개역개정</span>' +
+      '<strong>' + escapeHTML(title) + '</strong>' +
+    '</div>' +
+    '<p class="krv-text">' + escapeHTML(String(text || "").trim()) + '</p>' +
+    '<div class="krv-copyright">' +
+      '성경전서 개역개정판. 공개 서비스 전 대한성서공회 사용 허가 여부를 확인하세요.' +
+    '</div>'
+  );
+}
+
+function findKoreanRevisedPanel(button) {
+  const controls = button?.getAttribute("aria-controls");
+  if (!controls) return null;
+  return document.getElementById(controls);
+}
+
+async function toggleKoreanRevisedPanel(button) {
+  const panel = findKoreanRevisedPanel(button);
+  if (!panel) return;
+
+  const isOpen = button.getAttribute("aria-expanded") === "true";
+  if (isOpen) {
+    button.setAttribute("aria-expanded", "false");
+    button.textContent = "개역개정 보기";
+    panel.hidden = true;
+    return;
+  }
+
+  const bookId = button.dataset.book;
+  const chapter = Number(button.dataset.chapter);
+  const verse = Number(button.dataset.verse);
+  const refKey = getKoreanRevisedReferenceKey(bookId, chapter, verse);
+
+  button.disabled = true;
+  button.setAttribute("aria-busy", "true");
+  button.textContent = "개역개정 불러오는 중";
+  panel.hidden = false;
+  panel.innerHTML = '<div class="krv-loading">개역개정 본문을 불러오는 중입니다.</div>';
+
+  try {
+    if (!refKey) throw new Error("지원하지 않는 권입니다.");
+    const bible = await loadKoreanRevisedBible();
+    const verseText = bible[refKey];
+    if (!verseText) throw new Error(refKey + " 본문을 찾지 못했습니다.");
+    panel.innerHTML = renderKoreanRevisedPanelContent(bookId, chapter, verse, verseText);
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = "개역개정 접기";
+  } catch (error) {
+    console.error(error);
+    panel.innerHTML = '<div class="krv-error">개역개정 본문을 불러오지 못했습니다.<br><small>' + escapeHTML(error.message || "요청 실패") + '</small></div>';
+    button.setAttribute("aria-expanded", "true");
+    button.textContent = "개역개정 다시 시도";
+  } finally {
+    button.disabled = false;
+    button.removeAttribute("aria-busy");
+  }
+}
+
+function bindKoreanRevisedButtons() {
+  els.verses.querySelectorAll(".krv-toggle-btn").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      window.getSelection()?.removeAllRanges();
+      toggleKoreanRevisedPanel(button);
+    });
+  });
+}
+
 function getEsvBookName(bookId) {
   const key = String(bookId || "").toLowerCase();
   const book = state.books[bookId];
@@ -1647,14 +1807,25 @@ function setEsvSessionCache(bookId, chapter, verse, payload) {
   }
 }
 
-function renderEsvVerseSupport(bookId, chapter, verse) {
-  const id = "esv-" + escapeHTML(String(bookId)) + "-" + Number(chapter) + "-" + Number(verse);
+function renderBibleCompareSupport(bookId, chapter, verse) {
+  const safeBookId = escapeHTML(String(bookId));
+  const safeChapter = Number(chapter);
+  const safeVerse = Number(verse);
+  const esvId = "esv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const krId = "krv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+
   return (
     '<div class="verse-support">' +
-      '<button class="esv-toggle-btn" type="button" data-book="' + escapeHTML(bookId) + '" data-chapter="' + Number(chapter) + '" data-verse="' + Number(verse) + '" aria-expanded="false" aria-controls="' + id + '">ESV 보기</button>' +
-      '<div class="esv-panel" id="' + id + '" hidden></div>' +
+      '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정 보기</button>' +
+      '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV 보기</button>' +
+      '<div class="krv-panel" id="' + krId + '" hidden></div>' +
+      '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
     '</div>'
   );
+}
+
+function renderEsvVerseSupport(bookId, chapter, verse) {
+  return renderBibleCompareSupport(bookId, chapter, verse);
 }
 
 function normalizeEsvPassageText(payload) {
@@ -1830,6 +2001,7 @@ function renderChapter() {
   bindContextButtons();
   bindSectionIntroButtons();
   bindChapterBottomNav();
+  bindKoreanRevisedButtons();
   bindEsvButtons();
   updateSearchMeta();
   renderHighlightList();
