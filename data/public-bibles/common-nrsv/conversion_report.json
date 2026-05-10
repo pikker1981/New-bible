@@ -1,0 +1,142 @@
+{
+  "totalBooks": 27,
+  "totalVerseEntries": 7936,
+  "missingBooks": [],
+  "bookStats": {
+    "matthew": {
+      "title": "마태오",
+      "file": "01_마태오.md",
+      "verseCount": 1071
+    },
+    "mark": {
+      "title": "마르코",
+      "file": "02_마르코.md",
+      "verseCount": 675
+    },
+    "luke": {
+      "title": "루카",
+      "file": "03_루카.md",
+      "verseCount": 1145
+    },
+    "john": {
+      "title": "요한복음",
+      "file": "04_요한.md",
+      "verseCount": 879
+    },
+    "acts": {
+      "title": "사도행전",
+      "file": "05_사도행전.md",
+      "verseCount": 1007
+    },
+    "romans": {
+      "title": "로마서",
+      "file": "06_로마서.md",
+      "verseCount": 432
+    },
+    "1corinthians": {
+      "title": "고린토1서",
+      "file": "07_고린토1서.md",
+      "verseCount": 431
+    },
+    "2corinthians": {
+      "title": "고린토2서",
+      "file": "08_고린토2서.md",
+      "verseCount": 256
+    },
+    "galatians": {
+      "title": "갈라디아서",
+      "file": "09_갈라디아서.md",
+      "verseCount": 149
+    },
+    "ephesians": {
+      "title": "에페소서",
+      "file": "10_에페소서.md",
+      "verseCount": 151
+    },
+    "philippians": {
+      "title": "필리피서",
+      "file": "11_필립비서.md",
+      "verseCount": 104
+    },
+    "colossians": {
+      "title": "골로사이",
+      "file": "12_골로사이.md",
+      "verseCount": 95
+    },
+    "1thessalonians": {
+      "title": "데살로니카1서",
+      "file": "13_데살로니카1서.md",
+      "verseCount": 89
+    },
+    "2thessalonians": {
+      "title": "데살로니카2서",
+      "file": "14_데살로니카2서.md",
+      "verseCount": 47
+    },
+    "1timothy": {
+      "title": "디모테오1서",
+      "file": "15_디모테오1서.md",
+      "verseCount": 113
+    },
+    "2timothy": {
+      "title": "디모테오2서",
+      "file": "16_디모테오2서.md",
+      "verseCount": 83
+    },
+    "titus": {
+      "title": "디도서",
+      "file": "17_디도서.md",
+      "verseCount": 46
+    },
+    "philemon": {
+      "title": "필레몬서",
+      "file": "18_필레몬서.md",
+      "verseCount": 25
+    },
+    "hebrews": {
+      "title": "히브리서",
+      "file": "19_히브리서.md",
+      "verseCount": 303
+    },
+    "james": {
+      "title": "야고보서",
+      "file": "20_야고보서.md",
+      "verseCount": 108
+    },
+    "1peter": {
+      "title": "베드로1서",
+      "file": "21_베드로1서.md",
+      "verseCount": 105
+    },
+    "2peter": {
+      "title": "베드로2서",
+      "file": "22_베드로2서.md",
+      "verseCount": 61
+    },
+    "1john": {
+      "title": "요한1서",
+      "file": "23_요한1서.md",
+      "verseCount": 105
+    },
+    "2john": {
+      "title": "요한2서",
+      "file": "24_요한2서.md",
+      "verseCount": 13
+    },
+    "3john": {
+      "title": "요한3서",
+      "file": "25_요한3서.md",
+      "verseCount": 14
+    },
+    "jude": {
+      "title": "유다서",
+      "file": "26_유다서.md",
+      "verseCount": 25
+    },
+    "revelation": {
+      "title": "요한묵시록",
+      "file": "27_요한묵시록.md",
+      "verseCount": 404
+    }
+  }
+}
