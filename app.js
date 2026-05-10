@@ -1,10 +1,10 @@
-const APP_BUILD_ID = "20260509-esv-fetch-cors-fix-v40";
+const APP_BUILD_ID = "20260509-esv-worker-url-fix-v41";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
 const DATA_CACHE_BUST = APP_BUILD_ID;
 
-const ESV_WORKER_ENDPOINT = "https://solitary-credit-8f12.new-bible-esv-proxy.workers.dev/";
+const ESV_WORKER_ENDPOINT = "https://solitary-credit-8f12.sdd98.workers.dev/";
 
 const ESV_BOOK_NAMES = {
   matthew: "Matthew",
