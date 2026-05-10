@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-korean-revised-button-order-v43";
+const APP_BUILD_ID = "20260510-krv-esv-button-order-v45";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -1739,7 +1739,7 @@ async function toggleKoreanRevisedPanel(button) {
 
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
-  button.textContent = "개역개정 불러오는 중";
+  button.textContent = "개역개정";
   panel.hidden = false;
   panel.innerHTML = '<div class="krv-loading">개역개정 본문을 불러오는 중입니다.</div>';
 
@@ -1750,12 +1750,12 @@ async function toggleKoreanRevisedPanel(button) {
     if (!verseText) throw new Error(refKey + " 본문을 찾지 못했습니다.");
     panel.innerHTML = renderKoreanRevisedPanelContent(bookId, chapter, verse, verseText);
     button.setAttribute("aria-expanded", "true");
-    button.textContent = "개역개정 접기";
+    button.textContent = "개역개정";
   } catch (error) {
     console.error(error);
     panel.innerHTML = '<div class="krv-error">개역개정 본문을 불러오지 못했습니다.<br><small>' + escapeHTML(error.message || "요청 실패") + '</small></div>';
     button.setAttribute("aria-expanded", "true");
-    button.textContent = "개역개정 다시 시도";
+    button.textContent = "개역개정";
   } finally {
     button.disabled = false;
     button.removeAttribute("aria-busy");
@@ -1816,10 +1816,10 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
 
   return (
     '<div class="verse-support">' +
-      '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV 보기</button>' +
       '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정</button>' +
-      '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
+      '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV</button>' +
       '<div class="krv-panel" id="' + krId + '" hidden></div>' +
+      '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
     '</div>'
   );
 }
@@ -1913,7 +1913,7 @@ async function toggleEsvPanel(button) {
   const isOpen = button.getAttribute("aria-expanded") === "true";
   if (isOpen) {
     button.setAttribute("aria-expanded", "false");
-    button.textContent = "ESV 보기";
+    button.textContent = "ESV";
     panel.hidden = true;
     return;
   }
@@ -1924,7 +1924,7 @@ async function toggleEsvPanel(button) {
 
   button.disabled = true;
   button.setAttribute("aria-busy", "true");
-  button.textContent = "ESV 불러오는 중";
+  button.textContent = "ESV";
   panel.hidden = false;
   panel.innerHTML = '<div class="esv-loading">ESV 본문을 불러오는 중입니다.</div>';
 
@@ -1932,12 +1932,12 @@ async function toggleEsvPanel(button) {
     const payload = await fetchEsvPassage(bookId, chapter, verse);
     panel.innerHTML = renderEsvPanelContent(payload);
     button.setAttribute("aria-expanded", "true");
-    button.textContent = "ESV 접기";
+    button.textContent = "ESV";
   } catch (error) {
     console.error(error);
     panel.innerHTML = '<div class="esv-error">ESV 본문을 불러오지 못했습니다.<br><small>' + escapeHTML(error.message || "요청 실패") + '</small></div>';
     button.setAttribute("aria-expanded", "true");
-    button.textContent = "ESV 다시 시도";
+    button.textContent = "ESV";
   } finally {
     button.disabled = false;
     button.removeAttribute("aria-busy");
