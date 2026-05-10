@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-rnksv-klb-compare-v47";
+const APP_BUILD_ID = "20260510-standard-new-revised-compare-v48";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -48,7 +48,7 @@ const PARALLEL_BIBLE_PATHS = [
 
 const PARALLEL_TRANSLATION_LABELS = {
   common: "공동번역",
-  rnksv: "새번역",
+  rnksv: "새번역(개정판)",
   klb: "현대인의 성경",
   nrsv: "NRSV"
 };
@@ -1847,7 +1847,7 @@ function getParallelPanelClass(translationKey) {
 
 function getParallelCopyrightText(translationKey) {
   if (translationKey === "rnksv") {
-    return "성경전서 새번역. 공개 서비스 전 대한성서공회 사용 허가 범위를 확인하세요.";
+    return "성경전서 표준새번역개정판. 공개 서비스 전 대한성서공회 사용 허가 범위를 확인하세요.";
   }
   if (translationKey === "klb") {
     return "현대인의 성경(KLB). 공개 서비스 전 Biblica 사용 허가 범위를 확인하세요.";
@@ -2002,7 +2002,7 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
     '<div class="verse-support">' +
       '<button class="krv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + krId + '">개역개정</button>' +
       '<button class="common-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + commonId + '">공동번역</button>' +
-      '<button class="rnksv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + rnksvId + '">새번역</button>' +
+      '<button class="rnksv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + rnksvId + '">새번역(개정판)</button>' +
       '<button class="klb-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + klbId + '">현대인의 성경</button>' +
       '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV</button>' +
       '<button class="nrsv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvId + '">NRSV</button>' +
