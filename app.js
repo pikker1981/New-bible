@@ -1,4 +1,4 @@
-const APP_BUILD_ID = "20260510-standard-new-revised-compare-v48";
+const APP_BUILD_ID = "20260510-english-versions-compare-v49";
 console.info("NT webapp build:", APP_BUILD_ID);
 document.documentElement.dataset.appBuild = APP_BUILD_ID;
 
@@ -43,13 +43,16 @@ const KOREAN_REVISED_BIBLE_PATHS = [
 
 const PARALLEL_BIBLE_PATHS = [
   "./data/public-bibles/common-nrsv/bible.json",
-  "./data/public-bibles/rnksv-klb/bible.json"
+  "./data/public-bibles/rnksv-klb/bible.json",
+  "./data/public-bibles/english-versions/bible.json"
 ];
 
 const PARALLEL_TRANSLATION_LABELS = {
   common: "공동번역",
   rnksv: "새번역(개정판)",
   klb: "현대인의 성경",
+  niv: "NIV",
+  csb: "CSB",
   nrsv: "NRSV"
 };
 
@@ -1841,6 +1844,8 @@ async function loadParallelBible() {
 function getParallelPanelClass(translationKey) {
   if (translationKey === "rnksv") return "rnksv";
   if (translationKey === "klb") return "klb";
+  if (translationKey === "niv") return "niv";
+  if (translationKey === "csb") return "csb";
   if (translationKey === "nrsv") return "nrsv";
   return "common";
 }
@@ -1852,8 +1857,14 @@ function getParallelCopyrightText(translationKey) {
   if (translationKey === "klb") {
     return "현대인의 성경(KLB). 공개 서비스 전 Biblica 사용 허가 범위를 확인하세요.";
   }
+  if (translationKey === "niv") {
+    return "NIV 본문. 공개 서비스 전 이용 허가와 권리 조건을 확인하세요.";
+  }
+  if (translationKey === "csb") {
+    return "CSB 본문. 공개 서비스 전 이용 허가와 권리 조건을 확인하세요.";
+  }
   if (translationKey === "nrsv") {
-    return "NRSV 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
+    return "NRSV 본문. 공개 서비스 전 이용 허가와 권리 조건을 확인하세요.";
   }
   return "공동번역 본문. 공개 서비스 사용 전 이용 허가와 권리 조건을 확인하세요.";
 }
@@ -1929,6 +1940,8 @@ function bindParallelBibleButtons() {
     [".common-toggle-btn", "common"],
     [".rnksv-toggle-btn", "rnksv"],
     [".klb-toggle-btn", "klb"],
+    [".niv-toggle-btn", "niv"],
+    [".csb-toggle-btn", "csb"],
     [".nrsv-toggle-btn", "nrsv"]
   ].forEach(([selector, translationKey]) => {
     els.verses.querySelectorAll(selector).forEach((button) => {
@@ -1996,6 +2009,8 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
   const commonId = "common-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const rnksvId = "rnksv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const klbId = "klb-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const nivId = "niv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
+  const csbId = "csb-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
   const nrsvId = "nrsv-" + safeBookId + "-" + safeChapter + "-" + safeVerse;
 
   return (
@@ -2005,12 +2020,16 @@ function renderBibleCompareSupport(bookId, chapter, verse) {
       '<button class="rnksv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + rnksvId + '">새번역(개정판)</button>' +
       '<button class="klb-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + klbId + '">현대인의 성경</button>' +
       '<button class="esv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + esvId + '">ESV</button>' +
+      '<button class="niv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nivId + '">NIV</button>' +
+      '<button class="csb-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + csbId + '">CSB</button>' +
       '<button class="nrsv-toggle-btn" type="button" data-book="' + safeBookId + '" data-chapter="' + safeChapter + '" data-verse="' + safeVerse + '" aria-expanded="false" aria-controls="' + nrsvId + '">NRSV</button>' +
       '<div class="krv-panel" id="' + krId + '" hidden></div>' +
       '<div class="common-panel" id="' + commonId + '" hidden></div>' +
       '<div class="rnksv-panel" id="' + rnksvId + '" hidden></div>' +
       '<div class="klb-panel" id="' + klbId + '" hidden></div>' +
       '<div class="esv-panel" id="' + esvId + '" hidden></div>' +
+      '<div class="niv-panel" id="' + nivId + '" hidden></div>' +
+      '<div class="csb-panel" id="' + csbId + '" hidden></div>' +
       '<div class="nrsv-panel" id="' + nrsvId + '" hidden></div>' +
     '</div>'
   );
