@@ -1,0 +1,33 @@
+{
+  "build": "20260510-nrsvue-compare-v50",
+  "sourceFile": "new-revised-standard-version-updated-edition-with-deuterocanonical-and-apocryphal-books-of-the-old-testament-9781733075947_compress.pdf",
+  "translation": "NRSVUE",
+  "extraction": {
+    "scope": "New Testament only",
+    "method": "PyMuPDF span extraction; removed superscript note markers and cross-reference asterisks; kept verse-number spans; section headings excluded.",
+    "verseCount": 7942,
+    "combinedVerseMarkersHandled": [
+      "james:1:7,8 duplicated to james:1:7 and james:1:8 for one-click verse lookup"
+    ],
+    "emptyVerseTexts": []
+  },
+  "missingComparedToExistingAppVerseSet": [
+    "matthew:17:21",
+    "matthew:18:11",
+    "matthew:23:14",
+    "mark:7:16",
+    "mark:9:44",
+    "mark:9:46",
+    "mark:11:26",
+    "mark:15:28",
+    "luke:17:36",
+    "luke:23:17",
+    "john:5:4",
+    "acts:8:37",
+    "acts:15:34",
+    "acts:24:7",
+    "acts:28:29",
+    "romans:16:24"
+  ],
+  "note": "Missing references are not present as independent verse text in the uploaded NRSVUE PDF extraction; omitted/later-addition verse numbering was not artificially created."
+}
