@@ -898,11 +898,14 @@ body.mobile-popup-open{overflow:hidden;touch-action:none}
   -webkit-touch-callout:default;
 }
 .fn,
-.ctx-link,
 .mark-menu,
 .mark-menu *{
   -webkit-user-select:none;
   user-select:none;
+}
+.ctx-link{
+  -webkit-user-select:text;
+  user-select:text;
 }
 .verse-text{
   touch-action:auto;
@@ -1736,7 +1739,8 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   text-decoration-thickness:2px;
   text-underline-offset:.18em;
 }
-.user-mark .fn{
+.user-mark .fn,
+.user-mark .ctx-link{
   text-decoration:underline;
   text-decoration-color:#DC2626;
   text-decoration-thickness:2px;
