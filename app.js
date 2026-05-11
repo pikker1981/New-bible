@@ -385,7 +385,7 @@ function renderSectionIntro(item) {
     '<aside class="section-intro-card" data-intro-id="' + escapeHTML(item.id || "") + '">' +
       '<div class="section-intro-topline">' +
         '<div class="section-intro-meta">' + escapeHTML(type) + '</div>' +
-        (hasViews ? '<button class="section-intro-view-btn" type="button" data-intro-view="' + escapeHTML(item.id || "") + '">해석 관점</button>' : '') +
+        (hasViews ? '<button class="section-intro-view-btn" type="button" data-intro-view="' + escapeHTML(item.id || "") + '">해석 관점에서 해석 관점 보기</button>' : '') +
       '</div>' +
       '<strong>' + escapeDisplay(title) + '</strong>' +
       '<p>' + escapeDisplay(intro) + '</p>' +
