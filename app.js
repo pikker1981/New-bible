@@ -1400,10 +1400,10 @@ function applyUserMarkPhrase(html, phrase) {
   const directPattern = new RegExp("(" + escapeRegExp(escaped) + ")", "g");
   const direct = replaceOutsideTags(html, directPattern, '<mark class="user-mark">$1</mark>');
   if (direct !== html) return direct;
-  const FN_SLOT = '(?:<button\\b[^>]*\\bclass=["\']fn["\'][^>]*>[^<]*<\\/button>\\s*)*';
+  const TAG_SLOT = '(?:<button\\b[^>]*\\bclass=["\']fn["\'][^>]*>[^<]*<\\/button>|<[^>]+>)*';
   const fnPattern = [...escaped].map((c, i) => {
     const ec = c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    return i === 0 ? ec : FN_SLOT + ec;
+    return i === 0 ? ec : TAG_SLOT + ec;
   }).join("");
   try {
     return html.replace(new RegExp("(" + fnPattern + ")", "g"), '<mark class="user-mark">$1</mark>');
