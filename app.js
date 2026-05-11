@@ -1589,7 +1589,7 @@ async function ensureAllBooks() {
   return metas.map((meta) => state.books[meta.id]).filter(Boolean);
 }
 
-const READER_MOTION_MS = 560;
+const READER_MOTION_MS = 850;
 
 function restartElementAnimation(element, className) {
   if (!element) return;

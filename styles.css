@@ -12,6 +12,7 @@
   --bg:#F9F9F9;
   --ease-out:cubic-bezier(.2,.8,.2,1);
   --ease-spring:cubic-bezier(.18,.89,.32,1.18);
+  --ease-crystal:cubic-bezier(.16,1,.3,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -289,45 +290,50 @@ mark{padding:0 2px}
 .error-box{border-color:#f2c3bd;background:#fff7f5;color:#5d1910}
 
 
+.reader-card{
+  will-change:transform,opacity;
+}
 .reader-card.reader-book-switch{
-  animation:readerBookSwitch .48s var(--ease-out);
+  animation:readerBookSwitch .72s var(--ease-crystal) both;
 }
 .reader-card.reader-chapter-switch{
-  animation:readerChapterSwitch .34s var(--ease-out);
+  animation:readerChapterSwitch .56s var(--ease-crystal) both;
 }
 .chapter-title-wrap.chapter-title-enter{
-  animation:chapterTitleEnter .36s var(--ease-out);
+  animation:chapterTitleEnter .5s var(--ease-crystal) both;
 }
 .verses.verses-enter .verse,
 .verses.verses-enter .search-hit{
-  animation:verseFadeUp .42s var(--ease-out) both;
+  animation:verseFadeUp .65s var(--ease-crystal) both;
 }
 .verses.verses-enter .verse:nth-child(1),
-.verses.verses-enter .search-hit:nth-child(1){animation-delay:.01s}
+.verses.verses-enter .search-hit:nth-child(1){animation-delay:.02s}
 .verses.verses-enter .verse:nth-child(2),
-.verses.verses-enter .search-hit:nth-child(2){animation-delay:.025s}
+.verses.verses-enter .search-hit:nth-child(2){animation-delay:.04s}
 .verses.verses-enter .verse:nth-child(3),
-.verses.verses-enter .search-hit:nth-child(3){animation-delay:.04s}
+.verses.verses-enter .search-hit:nth-child(3){animation-delay:.06s}
 .verses.verses-enter .verse:nth-child(4),
-.verses.verses-enter .search-hit:nth-child(4){animation-delay:.055s}
+.verses.verses-enter .search-hit:nth-child(4){animation-delay:.08s}
 .verses.verses-enter .verse:nth-child(5),
-.verses.verses-enter .search-hit:nth-child(5){animation-delay:.07s}
+.verses.verses-enter .search-hit:nth-child(5){animation-delay:.1s}
 .verses.verses-enter .verse:nth-child(n+6),
-.verses.verses-enter .search-hit:nth-child(n+6){animation-delay:.085s}
+.verses.verses-enter .search-hit:nth-child(n+6){animation-delay:.115s}
 @keyframes readerBookSwitch{
-  0%{opacity:.82;transform:translateY(8px) scale(.995)}
-  100%{opacity:1;transform:translateY(0) scale(1)}
+  0%{opacity:0;transform:scale(.98);filter:blur(3px)}
+  60%{filter:blur(0)}
+  100%{opacity:1;transform:scale(1);filter:blur(0)}
 }
 @keyframes readerChapterSwitch{
-  0%{opacity:.9;transform:translateY(5px)}
-  100%{opacity:1;transform:translateY(0)}
+  0%{opacity:0;transform:translateY(6px) scale(.993);filter:blur(2px)}
+  60%{filter:blur(0)}
+  100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
 }
 @keyframes chapterTitleEnter{
-  0%{opacity:.35;transform:translateX(-8px)}
+  0%{opacity:0;transform:translateX(-10px)}
   100%{opacity:1;transform:translateX(0)}
 }
 @keyframes verseFadeUp{
-  0%{opacity:0;transform:translateY(9px)}
+  0%{opacity:0;transform:translateY(6px)}
   100%{opacity:1;transform:translateY(0)}
 }
 @keyframes activeChapterPop{
