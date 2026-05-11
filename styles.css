@@ -1736,6 +1736,12 @@ body.is-signed-in .auth-panel{box-shadow:inset 0 0 0 1px color-mix(in srgb, var(
   text-decoration-thickness:2px;
   text-underline-offset:.18em;
 }
+.user-mark .fn{
+  text-decoration:underline;
+  text-decoration-color:#DC2626;
+  text-decoration-thickness:2px;
+  text-underline-offset:.18em;
+}
 .interpretive-popup-content,
 .interpretive-popup-body,
 .interpretive-detail-copy,

@@ -1380,6 +1380,38 @@ function normalizeHighlightText(text) {
   return String(text || "").replace(/\s+/g, " ").trim();
 }
 
+function selectionTextWithoutFn(selection) {
+  if (!selection || selection.rangeCount === 0) return "";
+  const range = selection.getRangeAt(0);
+  const fragment = range.cloneContents();
+  fragment.querySelectorAll(".fn").forEach((el) => el.remove());
+  return normalizeHighlightText(fragment.textContent || "");
+}
+
+function elementTextWithoutFn(element) {
+  const clone = element.cloneNode(true);
+  clone.querySelectorAll(".fn").forEach((el) => el.remove());
+  return normalizeHighlightText(clone.textContent || "");
+}
+
+function applyUserMarkPhrase(html, phrase) {
+  const escaped = escapeHTML(phrase);
+  if (!escaped) return html;
+  const directPattern = new RegExp("(" + escapeRegExp(escaped) + ")", "g");
+  const direct = replaceOutsideTags(html, directPattern, '<mark class="user-mark">$1</mark>');
+  if (direct !== html) return direct;
+  const FN_SLOT = '(?:<button\\b[^>]*\\bclass=["\']fn["\'][^>]*>[^<]*<\\/button>\\s*)*';
+  const fnPattern = [...escaped].map((c, i) => {
+    const ec = c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return i === 0 ? ec : FN_SLOT + ec;
+  }).join("");
+  try {
+    return html.replace(new RegExp("(" + fnPattern + ")", "g"), '<mark class="user-mark">$1</mark>');
+  } catch (e) {
+    return html;
+  }
+}
+
 function hasVerseHighlight(bookId, chapter, verse, text) {
   const clean = normalizeHighlightText(text);
   return getVerseHighlights(bookId, chapter, verse).includes(clean);
@@ -1482,10 +1514,7 @@ function applyUserHighlights(html, bookId, chapter, verse) {
     .sort((a, b) => b.length - a.length);
 
   return highlights.reduce((current, phrase) => {
-    const escapedPhrase = escapeHTML(phrase);
-    if (!escapedPhrase) return current;
-    const pattern = new RegExp("(" + escapeRegExp(escapedPhrase) + ")", "g");
-    return replaceOutsideTags(current, pattern, '<mark class="user-mark">$1</mark>');
+    return applyUserMarkPhrase(current, phrase);
   }, html);
 }
 
@@ -3169,7 +3198,7 @@ function getSelectionContext() {
   const selection = window.getSelection();
   if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return null;
 
-  const selectedText = normalizeHighlightText(selection.toString());
+  const selectedText = selectionTextWithoutFn(selection);
   if (!selectedText || selectedText.length < 2) return null;
 
   const anchorEl = getElementFromNode(selection.anchorNode);
@@ -3205,7 +3234,7 @@ function getSelectionContext() {
   const anchorMark = anchorEl.closest(".user-mark");
   const focusMark = focusEl.closest(".user-mark");
   const isSameExistingMark = Boolean(anchorMark && focusMark && anchorMark === focusMark);
-  const text = isSameExistingMark ? normalizeHighlightText(anchorMark.textContent) : selectedText;
+  const text = isSameExistingMark ? elementTextWithoutFn(anchorMark) : selectedText;
   const markBookId = meta.bookId || state.currentBookId;
   const mode = isSameExistingMark || hasVerseHighlight(markBookId, meta.chapter, meta.verse, text) ? "delete" : "mark";
 
